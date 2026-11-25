@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "title": "3D GIS",
+    "subtitle": "ArcGIS Capabilities",
+    "bgImage": "/3d-gis/main-banner-wide.jpg"
+  },
+  "intro": {
+    "title": "Our world is 3D",
+    "description": "The interactive 3D web scene below was built using ArcGIS and the ArcGIS API for JavaScript.",
+    "linkText": "Click to view in arcgis.com",
+    "linkHref": "https://developers.arcgis.com/javascript/latest/",
+    "embedUrl": "https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayer-edges/live/index.html"
+  },
+  "strip": {
+    "title": "ArcGIS is 3D",
+    "bgImage": "/3d-gis/icon-text-link-stack-analyze-banner.jpg",
+    "items": [
+      {
+        "icon": "cube",
+        "title": "Create",
+        "desc": "Build accurate 3D content from BIM, lidar, and imagery."
+      },
+      {
+        "icon": "analyze",
+        "title": "Analyze",
+        "desc": "Perform advanced spatial analysis and evaluate alternatives."
+      },
+      {
+        "icon": "visualize",
+        "title": "Visualize",
+        "desc": "Explore city-scale twins and global terrain in context."
+      },
+      {
+        "icon": "share",
+        "title": "Communicate",
+        "desc": "Share interactive 3D experiences across web and devices."
+      }
+    ]
+  },
+  "building": {
+    "title": "Build with 3D GIS",
+    "subtitle": "Create immersive 3D visualizations that transform how you understand and communicate spatial data across different scales.",
+    "image": "/3d-gis/building-bim.jpg",
+    "imageAlt": "3D building model",
+    "captionTitle": "Building Information",
+    "captionText": "Make better decisions with design-ready, real-world context.",
+    "useCasesTitle": "How can you use 3D?",
+    "useCases": [
+      { "label": "Building Information Modeling" },
+      { "label": "Corridor Management" },
+      { "label": "City Planning" },
+      { "label": "Topographic / Geologic Analysis" },
+      { "label": "Global Views" }
+    ],
+    "images": {
+      "building": {
+        "alt": "3D Building Visualization",
+        "title": "Building Infoormation",
+        "description": "Model interiors of buildings for planning, analysis and visualization.",
+        "href": "See How →",
+        "link": "https://www.esri.com/about/newsroom/arcnews/using-the-arcgis-platform-to-visualize-facility-information?rmedium=arcnews&rsource=https://www.esri.com/esri-news/arcnews/winter16articles/using-the-arcgis-platform-to-visualize-facility-information"
+      },
+      "campus": {
+        "alt": "3D Campus Visualization",
+        "title": "Campus Management",
+        "description": "Visualize as-built or new designs within the real-world space they occupy.",
+        "href": "See How →",
+        "link": "https://www.esri.com/about/newsroom/arcuser/creating-a-3d-campus-scene-using-esri-cityengine?rmedium=arcuser&rsource=https://www.esri.com/esri-news/arcuser/winter-2016/creating-a-3d-campus-scene-using-esri-cityengine"
+      },
+      "city": {
+        "alt": "3D City Visualization",
+        "title": "City Planning",
+        "description": "Model an entire city for master planning, economic development, and operational efficiency.",
+        "href": "See How →",
+        "link": "https://www.esri.com/about/newsroom/arcuser/planning-the-city-of-tomorrow-in-3d?rmedium=arcuser&rsource=https://www.esri.com/esri-news/arcuser/winter-2017/planning-the-city-of-tomorrow-in-3d"
+      },
+      "region": {
+        "alt": "3D Regional Visualization",
+        "title": "Regional Analysis",
+        "description": "Look at a large region in 3D for big picture understanding.",
+        "href": "See How →",
+        "link": "https://www.esri.com/about/newsroom/announcements/fire-globe-delivers-esri-3d-visualization-to-us-firefighters?rmedium=newsrelease&rsource=https://www.esri.com/esri-news/releases/16-1qtr/fire-globe-delivers-esri-3d-visualization-to-us-firefighters"
+      },
+      "globe": {
+        "alt": "3D Global Visualization",
+        "title": "Global Views",
+        "description": "Use the whole globe to get a true sense of your data.",
+        "href": "See How →",
+        "link": "https://www.esri.com/arcgis-blog/products/arcgis-online/3d-gis/3d-web-scenes-take-flight?rmedium=redirect&rsource=blogs.esri.com/esri/arcgis/2014/12/16/3d-web-scenes-take-flight"
+      }
+    }
+  },
+  "closerLook": {
+    "title": "Take a Closer Look at Esri",
+    "image": "/3d-gis/closer-look.jpg",
+    "imageAlt": "Aerial 3D view"
+  },
+  "crossPlatform": {
+    "title": "Cross-platform Capability",
+    "categories": ["3D Apps", "3D App Builders"]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Analyze Data",
+    "subtitle": "Analyze data in the context of location",
+    "bgGraphic": "/arcgisOnline/analyzeData/arcgis-online-indigo-banner-background-data-topography.jpg",
+    "mediaImage": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-banner-foreground.png",
+    "mediaAlt": "Analyst exploring charts and spatial data"
+  },
+  "understand": {
+    "title": "Understand your data",
+    "desc": "Analysis is an iterative process. Viewing your results on an interactive map makes it easy to adjust and tweak your analysis until you find the answers you need.",
+    "bullets": [
+      "Analyze patterns to make predictions and determine next steps",
+      "Reveal relationships and outliers in your data",
+      "Join data located in multiple places or add a location element to your data"
+    ],
+    "collageLeft": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-understand-your-data.jpg",
+    "ctaText": "Explore ArcGIS styles",
+    "ctaHref": "#"
+  },
+  "findLocation": {
+    "title": "Find the best location",
+    "desc": "Ready to start or expand your business? Choosing the correct location is critical for success. Using the analysis tools in ArcGIS Online you can:",
+    "bullets": [
+      "Discover locations that meet your requirements",
+      "Identify locations with similar characteristics of other locations",
+      "Map the demographics and population segments of potential and existing customers",
+      "Identify the optimum site to maximize profit and minimize customer travel"
+    ],
+    "photoRight": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-find-the-best-location.jpg",
+    "photoAlt": "Retail storefront",
+    "overlayMap": "/arcgisOnline/analyzeData/location-map.png"
+  },
+  "routes": {
+    "title": "Use optimal directions and routes",
+    "desc": "Need to choose your route based on specific requirements such as speed limits, toll roads, or overpass heights? Hoping to save money by cutting travel costs? ArcGIS Online analysis tools help you optimize your directions and routes.",
+    "bullets": [
+      "Identify the best routes",
+      "Calculate travel costs by time and distance",
+      "Choose directions based on organizational requirements or vehicle limitations",
+      "Gain maximum efficiency by planning stops and routes for each vehicle"
+    ],
+    "photoLeft": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-use-optimal-directions-and-routes.jpg",
+    "photoAlt": "Courier delivering packages",
+    "overlayRoute": "/arcgisOnline/analyzeData/routes-overlay.png"
+  },
+  "learnLocation": {
+    "title": "Learn more about your location",
+    "desc": "Looking to learn more about what is going on in your neighborhood, city, or state? Wondering how many people are impacted by an event? ArcGIS Online includes tools to help you understand what’s going on at any given location.",
+    "bullets": [
+      "Gather information about people, places of interest, and businesses",
+      "Identify the number and type of people or facilities within a certain number of miles.",
+      "Estimate the number of people impacted by an event"
+    ],
+    "photoRight": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-learn-more-about-your-location.jpg",
+    "photoAlt": "Customer using a tablet"
+  },
+  "discover": {
+    "heading": "Discover more ArcGIS Online capabilities",
+    "cards": [
+      {
+        "title": "Make maps",
+        "desc": "Quickly create maps and make your data visually stunning.",
+        "linkText": "Learn more about making maps",
+        "href": "#",
+        "bgImage": "/arcgisOnline/analyzeData/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Make maps"
+      },
+      {
+        "title": "Share & collaborate",
+        "desc": "Instantly share your maps with anyone, anywhere. Collaborate with your colleagues.",
+        "linkText": "Ways to share and collaborate",
+        "href": "#",
+        "bgImage": "/arcgisOnline/analyzeData/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Share and collaborate"
+      },
+      {
+        "title": "Work with Your Data",
+        "desc": "Bring your data into a powerful system that geoenables, hosts, and scales.",
+        "linkText": "Explore data tools",
+        "href": "#",
+        "bgImage": "/arcgisOnline/analyzeData/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Work with data"
+      }
+    ]
+  },
+  "duoCta": {
+    "left": {
+      "title": "Want to try ArcGIS Online?",
+      "button": "Try now",
+      "href": "#"
+    },
+    "right": {
+      "title": "Ready to buy ArcGIS Online?",
+      "button": "Purchase",
+      "href": "#"
+    }
+  },
+  "help": {
+    "heading": "Have any questions?",
+    "subHeading": "Need Help in trying or buying ArcGIS Online? Or Have Questions?",
+    "href": "Contact Us",
+    "link": "#"
+  }
+}

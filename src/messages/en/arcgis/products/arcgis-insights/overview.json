@@ -1,0 +1,191 @@
+{
+  "hero": {
+    "title": "ArcGIS Insights",
+    "subtitle": "Self-service location analytics",
+    "image": "/arcgisInsights/arcgis-insights-banner-fg.png",
+    "icon": "/arcgisInsights/Insights.png",
+    "ctaPrimary": { "label": "Try Insights", "href": "#" }
+  },
+  "intro": {
+    "paragraph": "Part of the Esri Geospatial Cloud, ArcGIS Insights is analysis software that fuses location analytics with open data science and business intelligence workflows. Answer questions you didn’t know to ask, analyze data completely, and unlock new insights.  Empower analyst of all skill levels, across departments, to directly connect data, perform advanced analytics, and take results into 3rd party systems."
+  },
+  "capabilities": {
+    "title": "Powerful analysis made simple",
+    "desc": "Explore data and perform advanced analytics such as spatial, statistical, predictive, and link analysis within an intuitive experience that works the way you do. Revolutionize decision-making with analysis that visually informs the organization of new, previously unexplored insights gained from the perspective of “where”.",
+    "tabs": [
+      {
+        "image": "/arcgisInsights/tab-blend-data.jpg",
+        "title": "Use all relevant data"
+      },
+      {
+        "image": "/arcgisInsights/tab-interactive-charts.jpg",
+        "title": "Map visuals without limits"
+      },
+      {
+        "image": "/arcgisInsights/tab-model-document.jpg",
+        "title": "Put data into context"
+      },
+      {
+        "image": "/arcgisInsights/tab-analytical-processes.jpg",
+        "title": "Analytics for all questions"
+      },
+      {
+        "image": "/arcgisInsights/tab-deliver-insights.jpg",
+        "title": "Deliver insightful results"
+      }
+    ],
+    "blocks": [
+      {
+        "side": "image-left",
+        "label": "Use all relevant data",
+        "title": "Analyze data from multiple sources",
+        "desc": "Are you using multiple tools to accomplish one thing? Benefit from intuitive, visual analytics that brings location and business data together. Directly connect to data, whether it’s in ArcGIS, relational databases, spreadsheets, or from ArcGIS Living Atlas of the World.",
+        "image": "/arcgisInsights/overview-page-value-1-bring-your-data-together-adding-data-to-insights.gif"
+      },
+      {
+        "side": "image-left",
+        "label": "Map visuals without limits",
+        "title": "Map any location value and analyze it",
+        "desc": "Map any value with projection and location accuracy—addresses, coordinates, lines, or boundaries. Work with an unlimited number of map layers at once. Perform advanced spatial analysis techniques, such as spatial aggregation, find nearest, and drive times, in three clicks or less.",
+        "image": "/arcgisInsights/overview-page-value-2-unexplored-insights-await-enable-location.gif"
+      },
+      {
+        "side": "image-left",
+        "label": "Put data into context",
+        "title": "Close data gaps with Esri’s location data",
+        "desc": "Ground your data to the real-world by enriching it with variables such as Esri’s demographics, psychographics, and socioeconomic data. Tap into the world's largest collection of ready-to-use geographic content for more than 130 countries. Perform granular analysis that scales down to local geographic levels.",
+        "image": "/arcgisInsights/overview-page-value-4-put-data-into-context.jpg"
+      },
+      {
+        "side": "image-left",
+        "label": "Analytics for all questions",
+        "title": "Answer questions you didn’t know you had",
+        "desc": "Transform complex datasets into manageable questions. Use exploratory analysis techniques to quickly uncover patterns, trends, correlations, and relationships. Use advanced analytics, such as spatial, statistical, and link analyses, to further analyze data.",
+        "image": "/arcgisInsights/Insights-2-analytics-your-way.gif"
+      },
+      {
+        "side": "image-left",
+        "label": "Deliver insightful results",
+        "title": "Share your findings with confidence",
+        "desc": "Create reports that use text, links, images, videos, and branding to clearly communicate your results and show how you reached them. Auto-record analysis workflows that establish repeatable processes and allow you to share your findings with confidence. Publish reports internally or publicly to keep stakeholders informed.",
+        "image": "/arcgisInsights/overview-page-value-5-deliver-insightful-results.jpg"
+      }
+    ]
+  },
+  "how": {
+    "heading": "How ArcGIS Insights works",
+    "steps": [
+      {
+        "title": "Bring in your data",
+        "icon": "/arcgisInsights/layers.svg",
+        "desc": "Directly connect to your data. Put your data onto a page by performing a drag-and-drop operation. Visualize data on cards as maps, charts, and tables to unlock endless possibilities for analysis and data exploration."
+      },
+      {
+        "title": "Find answers in your data",
+        "icon": "/arcgisInsights/network.svg",
+        "desc": "Analyze data with ease. Answer questions that guide you to the best tool or dive right into analysis. Quickly aggregate data on a map; reveal hot spots and outliers; make predictions; join data spatially; show relationships between people, places, and events; and more."
+      },
+      {
+        "title": "Show your work",
+        "icon": "/arcgisInsights/images.svg",
+        "desc": "Clearly communicate how you arrived at your results. Share a step-by-step model of your analysis or create an interactive data story that informs internal or external stakeholders."
+      }
+    ]
+  },
+  "case": {
+    "background": "/arcgisInsights/river_mountains_trees.jpg",
+    "headTitle": "Case Study",
+    "title": "Data analysis guides Susquehanna River restoration",
+    "desc": "See how ArcGIS Insights helps organizations make data-driven decisions for environmental restoration, economic development, and community impact.",
+    "pills": [
+      {
+        "label": "Data analysis guides Susquehanna River restoration",
+        "image": "/arcgisInsights/chesapeake-conservancy-case-study-centered-content-switcher-thumbnail.jpg",
+        "title": "Data analysis guides Susquehanna River restoration",
+        "desc": "Conservation Innovation Center narrows down thousands of parcels, across four counties, to focus on where restoration has an impact on water quality.",
+        "actionType": "story",
+        "actionText": "Read the case study",
+        "actionUrl": "https://www.esri.com/en-us/landing-page/product/2019/chesapeake-conservancy-case-study"
+      },
+      {
+        "label": "Location analytics supports wildfire relief effort",
+        "image": "/arcgisInsights/direct-relief-thumbnail.jpg",
+        "title": "Location analytics supports wildfire relief effort",
+        "desc": "Direct Relief uses Facebook Disaster Maps to understand large-scale movement during a disaster and efficiently supply resources to health care agencies and first responders.",
+        "actionType": "story",
+        "actionText": "Read the case study",
+        "actionUrl": "https://www.esri.com/en-us/landing-page/product/2019/direct-relief-case-study-v2"
+      },
+      {
+        "label": "Insights power the solar and wind energy industry",
+        "image": "/arcgisInsights/aegean-case-study-switcher-thumb.jpg",
+        "title": "Insights power the solar and wind energy industry",
+        "desc": "Stakeholders gain visibility into development issues and whether a project is on time and on budget using location analytics.",
+        "actionType": "story",
+        "actionText": "Read the case study",
+        "actionUrl": "https://www.esri.com/en-us/landing-page/product/2019/aegean-case-study"
+      },
+      {
+        "label": "Driving economic growth with location intelligence",
+        "image": "/arcgisInsights/thumbnail.jpg",
+        "title": "Driving economic growth with location intelligence",
+        "desc": "Government officials and business leaders get meaningful and actionable information from ArcGIS instead of sorting through sheets of data.",
+        "actionType": "story",
+        "actionText": "Read the case study",
+        "actionUrl": "https://www.esri.com/en-us/landing-page/product/2019/east-hant-case-study"
+      },
+      {
+        "label": "Support for local government initiatives in France",
+        "image": "/arcgisInsights/indre-et-loire-committee-council-thumbnail.jpg",
+        "title": "Support for local government initiatives in France",
+        "desc": "When decision-makers need statistics on how the community works, they no longer need to ask. Decision-makers can use Insights to find the answer and act immediately.",
+        "actionType": "story",
+        "actionText": "Read the case study",
+        "actionUrl": "https://www.esri.com/en-us/landing-page/product/2019/indre-et-loire-committee-council-case-study"
+      },
+      {
+        "label": "Insights increases revenue for this water utility ",
+        "image": "/arcgisInsights/case-study-operational-insights-increase-revenue-thumbnail.jpg",
+        "title": "Insights increases revenue for this water utility ",
+        "desc": "Opelika Utilities identified hundreds of dead meters and enough water loss to merit a net gain of $25,000 per month in revenue.",
+        "actionType": "video",
+        "actionText": "Watch the video",
+        "actionUrl": "https://www.youtube.com/embed/3zvRy8rm0KM?si=PUWFyn-HuJBwKRMv"
+      }
+    ]
+  },
+  "deploy": {
+    "heading": "Get started with ArcGIS Insights",
+    "desc": "ArcGIS Insights leverages the power of the ArcGIS platform to offer you flexible implementation and deployment options. Select the offering that fits your business needs.",
+    "backdropImage": "/arcgisInsights/overview-get-started-background-people-data.jpg",
+    "options": [
+      {
+        "title": "SaaS deployment",
+        "desc": "Get up and running quickly. Always use the most up-to-date technology anywhere, on any device, anytime.",
+        "cta": { "label": "Explore our SaaS option", "href": "#" }
+      },
+      {
+        "title": "On-premises deployment",
+        "desc": "Make ArcGIS Insights accessible across your organization, behind your firewall or on infrastructure that you manage.",
+        "cta": { "label": "Explore our on-premises option", "href": "#" }
+      },
+      {
+        "title": "Desktop deployment",
+        "desc": "Complement your SaaS or on-premises deployment with Insights installed natively on your Windows or Mac.",
+        "cta": { "label": "Explore our desktop option", "href": "#" }
+      }
+    ]
+  },
+  "getStarted": {
+    "leftImage": "/arcgisInsights/chat.svg",
+    "leftTitle": "Read the blog",
+    "leftDesc": "Get the latest news on ArcGIS Insights—what’s new and what’s coming.",
+    "leftLink": "https://www.esri.com/arcgis-blog/?s=#&products=insights",
+    "leftCta": "Visit the ArcGIS Blog",
+    "rightImage": "/arcgisInsights/conversation.svg",
+    "rightTitle": "Join the conversation",
+    "rightDesc": "Give feedback and get ideas from a community of users and experts.",
+    "rightLink": "https://community.esri.com/t5/arcgis-insights/ct-p/arcgis-insights",
+    "rightCta": "Join the community"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Surveillance des marées noires",
+    "text": "Geomatic propose un service de surveillance proactive des marées noires causées par les suintements naturels ou par des déversements d’origine humaine tels que les rejets illégaux de navires et les fuites provenant des infrastructures pétrolières offshore. Ces phénomènes sont parmi les principales causes de pollution environnementale et ont un impact direct sur les écosystèmes.",
+    "bgImage": "/Solutions/PartnersSolutions/oil/shutterstock127132946-2400.jpg"
+  },
+  "brochure": {
+    "title": "Solution de surveillance des marées noires",
+    "text": "Service de télédétection pour les zones offshore, avec des rapports quotidiens ou hebdomadaires en période normale, notamment pour l’identification des marées noires dans les zones maritimes.",
+    "image": "/Solutions/PartnersSolutions/oil/oil-spill_169w.webp"
+  },
+  "steps": {
+    "title": "De l’image satellite au tableau de bord",
+    "items": [
+      {
+        "title": "Collecte des données",
+        "points": [
+          "Imagerie satellite",
+          "Données en temps réel",
+          "Données SIG"
+        ]
+      },
+      {
+        "title": "Analyse des nappes",
+        "points": [
+          "Analyse des marées noires par des algorithmes d’apprentissage automatique"
+        ]
+      },
+      {
+        "title": "Rapports",
+        "points": [
+          "Rapports PDF",
+          "Fichiers de formes (shapefiles)",
+          "Services de carte"
+        ]
+      },
+      {
+        "title": "Intégrations",
+        "points": [
+          "Application bureautique",
+          "Application web",
+          "Tableau de bord"
+        ]
+      }
+    ]
+  }
+}

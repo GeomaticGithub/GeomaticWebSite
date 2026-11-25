@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "kicker": "capability",
+    "title": "Opérations de Terrain",
+    "subtitle": "Emportez la puissance de la localisation partout",
+    "text": "Optimisez l'efficacité des activités de terrain avec la puissance de l'intelligence de localisation.",
+    "bgImage": "/fieldOperations/overview-banner-background.jpg"
+  },
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Utilisez la puissance de la localisation pour améliorer la coordination et l'efficacité opérationnelle dans les activités de main-d'œuvre de terrain. Les solutions d'Esri pour les opérations de terrain intégrées assurent que les travailleurs de terrain et le personnel de bureau utilisent les mêmes données autoritatives pour réduire les erreurs, augmenter la productivité et économiser de l'argent."
+    },
+    {
+      "type": "embed",
+      "kicker": "video",
+      "title": "Transformez numériquement vos opérations de terrain",
+      "text": "Découvrez comment la suite d’applications de terrain ArcGIS réunit des activités et des processus dispersés en un flux de travail unifié.",
+      "url": "https://www.esri.com/videos/iframe?videoid=ThgnRajgDh8"
+    },
+    {
+      "type": "band",
+      "kicker": "benefits",
+      "title": "Des activités de terrain enrichies par la localisation",
+      "text": "Adoptez des flux de travail modernes. Supprimez ou réduisez le recours aux processus papier."
+    },
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Planifier",
+          "text": "Exploitez la puissance de la localisation pour comprendre où le travail doit être fait et coordonner et dispatcher efficacement les ressources.",
+          "tags": [
+            "Workforce for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-plan.png"
+        },
+        {
+          "title": "Comprendre",
+          "text": "Emportez les cartes numériques de votre organisation avec vous, n'importe où et n'importe quand. Promouvez votre conscience spatiale lors de l'exécution d'inspections ou autres activités qui bénéficient du contexte spatial.",
+          "tags": [
+            "Explorer for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-understand.png"
+        },
+        {
+          "title": "Surveiller",
+          "text": "Des tableaux de bord et cartes faciles à comprendre soutiennent la prise de décision éclairée. Communiquez le statut des opérations de terrain aux gestionnaires en surveillant, suivant et rapportant des données temps réel.",
+          "tags": [
+            "Operations Dashboard for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-monitor.png"
+        },
+        {
+          "title": "Capturer",
+          "text": "Abandonnez les flux de travail obsolètes basés sur papier. Permettez aux travailleurs de terrain d'effectuer facilement une collecte de données précise et des inspections d'actifs dans tout environnement avec des applications conscientes de la localisation que les travailleurs de tous niveaux d'expérience peuvent utiliser.",
+          "tags": [
+            "Survey123 for ArcGIS",
+            "Collector for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-capture.png"
+        },
+        {
+          "title": "Naviguer",
+          "text": "Utilisez les itinéraires les plus efficaces pour arriver à temps et faire le travail. Utilisez le routage guidé par la voix qui considère même le type de véhicule conduit et les restrictions routières le long de l'itinéraire.",
+          "tags": [
+            "Navigator for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-navigate.png"
+        },
+        {
+          "title": "Suivre",
+          "text": "Permettez à ceux sur le terrain de partager leurs traces de localisation pour que vous puissiez savoir où tout le monde est et où ils ont été. Le suivi peut être accompli à travers une application mobile qui est entièrement contrôlée par l'utilisateur.",
+          "tags": [
+            "Tracker for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-app-track.png"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "users",
+      "title": "Types d’utilisateurs",
+      "text": "Soutenir les opérations de terrain nécessite plusieurs personnes dans votre organisation, chacune avec une fonction distincte. Leurs fonctions uniques se reflètent dans les licences de types d'utilisateurs ArcGIS Online ci-dessous.",
+      "items": [
+        {
+          "title": "Professionnel SIG",
+          "text": "Accédez, produisez et partagez des données et cartes de référence.",
+          "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview",
+          "linkLabel": "En savoir plus"
+        },
+        {
+          "title": "Créateur",
+          "text": "Analysez les données pour comprendre les tendances et partager des cartes avec les parties prenantes.",
+          "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview",
+          "linkLabel": "En savoir plus"
+        },
+        {
+          "title": "Agent de terrain",
+          "text": "Utilisez des applications pour la collecte de données, enquêtes et inspections. Partagez des mises à jour en temps réel.",
+          "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview",
+          "linkLabel": "En savoir plus"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "products",
+      "title": "Commencez à cartographier et comprendre vos données",
+      "text": "Il y a de nombreuses façons d'accéder aux capacités de cartographie d'Esri...",
+      "items": [
+        {
+          "label": "SaaS basé nuage",
+          "title": "ArcGIS Online",
+          "text": "Commencez avec ArcGIS Online, le produit logiciel-en-tant-que-service basé nuage d'Esri. Vos cartes, applications et données sont hébergées et accessibles partout.",
+          "href": "/arcgis/products/arcgis-online/overview"
+        },
+        {
+          "label": "Infrastructure auto-gérée",
+          "title": "ArcGIS Enterprise",
+          "text": "Gérez-vous votre propre infrastructure derrière un pare-feu ou dans le nuage ? Utilisez ArcGIS Enterprise pour vos besoins de cartographie et d'activation de localisation.",
+          "href": "/arcgis/products/arcgis-enterprise/overview"
+        },
+        {
+          "label": "Outils développeur",
+          "title": "Outils Développeur ArcGIS",
+          "text": "Utilisez un ensemble robuste d'outils développeur pour développer des applications ou personnaliser des cartes et applications construites dans ArcGIS Online ou ArcGIS Enterprise.",
+          "href": "/arcgis/products/arcgis-for-developers/overview"
+        },
+        {
+          "label": "Desktop",
+          "title": "ArcGIS Pro",
+          "text": "Complétez des flux de travail avancés de cartographie, analyse et gestion de données en utilisant ArcGIS Pro.",
+          "href": "/arcgis/products/arcgis-pro/overview"
+        }
+      ]
+    }
+  ]
+}

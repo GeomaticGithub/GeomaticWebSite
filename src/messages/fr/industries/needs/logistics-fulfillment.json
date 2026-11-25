@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "title": "Logistique et exécution",
+    "subtitle1": "Répondez aux demandes complexes du marché.",
+    "subtitle2": "Partagez les informations pour éviter les perturbations et respecter les attentes en matière de service.",
+    "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-banner-bg.png"
+  },
+  "intro": {
+    "title": "La livraison ponctuelle exige une vision en temps réel",
+    "paragraph": "Dans la gestion logistique, être à l’heure et répondre aux attentes des clients est primordial. Les répartiteurs doivent se préparer à toute menace pesant sur les opérations de livraison — de la contamination aux catastrophes naturelles en passant par le vol. Des tableaux de bord numériques faciles à comprendre, qui combinent l’intelligence géographique et toutes les données opérationnelles, fournissent des informations en temps réel. Les ajustements peuvent être faits immédiatement, et les retards réduits pour rester dans les délais."
+  },
+  "band": {
+    "title": "La livraison ponctuelle exige une vision en temps réel",
+    "body": "Obtenez une vue en temps réel des opérations logistiques grâce à l’intelligence géographique. Surveillez les itinéraires, les commandes et l’état du réseau pour prévoir les temps d’arrivée, protéger votre réputation et maintenir les opérations dans les délais."
+  },
+  "routes": {
+    "title": "Découvrez les itinéraires les plus intelligents que d’autres ne peuvent pas voir",
+    "intro": "Les plus grandes entreprises de livraison au monde utilisent l’intelligence géographique pour optimiser les trajets, arriver comme prévu et répondre aux attentes élevées des clients.",
+    "bullets": [
+      "Respectez vos engagements en matière de produits, de services et d’exécution des commandes.",
+      "Optimisez les itinéraires en fonction de la localisation des clients, des créneaux horaires, des transferts de cargaison et d’autres facteurs.",
+      "Gérez les risques en planifiant les catastrophes naturelles et autres événements.",
+      "Réagissez aux perturbations en temps réel et ajustez-vous pour protéger votre réputation en matière d’exécution.",
+      "Réduisez les coûts grâce à l’optimisation intelligente des itinéraires et aux autres outils géospatiaux."
+    ],
+    "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-5050-see-the-smartest-routes-others-cant.png"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Prenez les meilleures décisions d’acheminement et bénéficiez d’une vue en temps réel des opérations logistiques grâce à la technologie d’intelligence géographique du cloud géospatial d’Esri.",
+    "items": [
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Analysez et affichez les données en temps réel provenant de capteurs, d’appareils et de flux issus des réseaux sociaux. Obtenez une connaissance situationnelle de vos données en continu, que vous suiviez des actifs en mouvement ou des capteurs fixes.",
+        "cta": "Donnez du sens aux big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Analyse spatiale et science des données",
+        "body": "Décelez les schémas cachés dans vos données de chaîne d’approvisionnement. Accédez aux capacités d’analyse spatiale à la demande et à grande échelle avec le cloud géospatial d’Esri.",
+        "cta": "Améliorez vos analyses",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Imagerie et télédétection",
+        "body": "Accédez aux flux d’imagerie et de télédétection pour surveiller l’état des livraisons. Obtenez des réponses rapides basées sur des données en temps réel visualisées dans une carte intelligente.",
+        "cta": "Transformez l’observation en information",
+        "href": "https://www.esri.com/en-us/capabilities/imagery-remote-sensing/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fimagery-remote-sensing%2Foverview",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/business-needs-capabilities-imagery-remote-sensing.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Besoins associés",
+    "bgGraphic": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-simple-cards-bg.png",
+    "items": [
+      {
+        "title": "Efficacité opérationnelle",
+        "body": "Rationalisez les projets et identifiez les domaines nécessitant des améliorations. Appuyez-vous sur des données fiables pour réduire les erreurs et mieux allouer les ressources.",
+        "href": "/industries/needs/operational-efficiency",
+        "icon": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/operationalEfficiency.svg"
+      },
+      {
+        "title": "Suivi et analyse des actifs",
+        "body": "Visualisez de manière dynamique les actifs mobiles et fixes. Améliorez la performance grâce à des outils de suivi permettant d’enregistrer avec précision l’emplacement et l’état de vos actifs.",
+        "href": "/industries/needs/asset-tracking-analysis",
+        "icon": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/assetTrackingAndAnalysis.svg"
+      },
+      {
+        "title": "Connaissance situationnelle",
+        "body": "Soyez proactif : prenez de meilleures décisions en intégrant, en analysant et en affichant les données issues des capteurs, des appareils et des flux sociaux/médias.",
+        "href": "/industries/needs/situational-awareness",
+        "icon": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/situationalAwareness.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur la logistique et l’exécution",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "La logistique des livraisons de vacances à l’heure",
+        "source": "WhereNext Magazine",
+        "excerpt": "L’expert en logistique Rodney Conger explore l’efficacité de la chaîne d’approvisionnement, l’innovation et l’intelligence géographique nécessaires pour livrer les colis de vacances.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/holiday-deliveries-and-logistics",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-card-logistics-of-on-time-holiday-deliveries.png"
+      },
+      {
+        "tag": "Article",
+        "title": "Innovation : Une histoire de UPS",
+        "source": "WhereNext Magazine",
+        "excerpt": "Jack Levis, directeur principal de la gestion des processus chez UPS, évoque la prochaine vague de changements dans un monde logistique en pleine évolution.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/buzzwords-hidden-dimensions-and-innovation-a-ups-story",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-card-innovation-ups-story.png"
+      },
+      {
+        "tag": "Article",
+        "title": "Un jumeau numérique pour la chaîne d’approvisionnement",
+        "source": "WhereNext Magazine",
+        "excerpt": "Le jumeau numérique peut aider les opérateurs de la chaîne logistique à servir un consommateur de plus en plus exigeant — et à gagner une place dans la salle du conseil.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/digital-twin-for-supply-chain-management",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-card-digital-twin-supply-chain.jpg"
+      }
+    ]
+  }
+}

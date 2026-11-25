@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "kicker": "product",
+    "title": "ArcGIS Mission",
+    "subtitle": "Une solution logicielle de gestion des missions et de connaissance tactique de la situation.",
+    "bgImage": "/arcgisMission/hero-bg.jpg",
+    "image": "/arcgisMission/arcgis-mission-banner-fg.jpg"
+  },
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "ArcGIS Mission est une solution complète de gestion des missions et de connaissance tactique de la situation, qui offre aux organisations une compréhension globale de leur environnement opérationnel. Les membres de l’équipe peuvent suivre, surveiller et coordonner les déplacements grâce au partage de position et à la communication en pair-à-pair. ArcGIS Mission permet d’assigner des équipes, de désigner des cartes et de partager des documents pour les opérations de mission, afin que les équipes prennent de meilleures décisions à partir d’un système de référence unique et fiable."
+    },
+    {
+      "type": "band",
+      "kicker": "benefits",
+      "title": "Avantages d’ArcGIS Mission",
+      "text": "Une mission, une vision opérationnelle commune",
+      "image": "/arcgisMission/arcgis-mission-lcs-benefits-fg.png"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Une seule plateforme",
+          "text": "Utilisez une seule plateforme pour créer, gérer, surveiller et analyser efficacement les données de mission dans votre organisation.",
+          "icon": "/arcgisMission/one-platform-icon.svg"
+        },
+        {
+          "title": "Connaissance tactique de la situation",
+          "text": "Sachez où se trouvent les membres de la mission et coordonnez les actions de l’équipe en fonction des événements et activités en temps réel.",
+          "icon": "/arcgisMission/tactical-situational-awareness-icon.svg"
+        },
+        {
+          "title": "Communication pair-à-pair",
+          "text": "La communication persistante en pair-à-pair (P2P) permet aux équipes de partager leur position, leurs déplacements et leurs messages pour une meilleure collaboration, même dans des environnements déconnectés.",
+          "icon": "/arcgisMission/peer-to-peer-communication-icon.svg"
+        },
+        {
+          "title": "Meilleure compréhension",
+          "text": "Exploitez les données de mission pour obtenir des informations, prendre des décisions plus éclairées, accroître la transparence et renforcer la confiance au sein de votre organisation.",
+          "icon": "/arcgisMission/improved-understanding-icon.svg"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "how",
+      "image": "/arcgisMission/arcgis-mission-fss-how-it-works-fg.png",
+      "steps": [
+        {
+          "title": "Planifier",
+          "desc": "Créez la mission, désignez l’emplacement, assignez les équipes et partagez les documents."
+        },
+        {
+          "title": "Exécuter",
+          "desc": "Accédez aux informations de mission pour suivre, surveiller et coordonner les actions grâce au partage de position et à la communication pair-à-pair."
+        },
+        {
+          "title": "Analyser",
+          "desc": "Analysez les missions avec votre équipe afin de comprendre les schémas, améliorer les performances et préparer les futures opérations."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "platform",
+      "title": "Une plateforme, de multiples perspectives",
+      "text": "ArcGIS Mission est une solution complète de gestion des missions et de connaissance tactique de la situation composée de trois composants intégrés à la plateforme ArcGIS.",
+      "items": [
+        {
+          "title": "ArcGIS Mission Manager",
+          "text": "ArcGIS Mission Manager est une application web qui permet aux responsables de mission d’assigner des équipes, de désigner des cartes, de partager des documents et de surveiller l’activité des membres de l’équipe.",
+          "image": "/arcgisMission/tile-manager.jpg"
+        },
+        {
+          "title": "ArcGIS Mission Responder",
+          "text": "ArcGIS Mission Responder est une application mobile qui permet aux utilisateurs de terrain d’accéder aux missions. Les utilisateurs peuvent partager leur connectivité et leur position et communiquer via le chat, des points d’intérêt, des photos, des images en mouvement et plus encore.",
+          "image": "/arcgisMission/tile-responder.jpg"
+        },
+        {
+          "title": "ArcGIS Mission Server",
+          "text": "ArcGIS Mission Server est un rôle serveur d’ArcGIS Enterprise qui fournit le traitement nécessaire à la communication entre les composants d’ArcGIS Mission.",
+          "image": "/arcgisMission/tile-server.jpg"
+        }
+      ]
+    },
+    {
+      "type": "band",
+      "dark": true,
+      "title": "Profitez des avantages d’ArcGIS",
+      "text": "ArcGIS Mission répond aux besoins critiques de votre organisation tout en étendant les capacités de votre plateforme ArcGIS existante.",
+      "href": "https://www.esri.com/en-us/arcgis/geospatial-platform/overview",
+      "linkLabel": "En savoir plus sur ArcGIS"
+    }
+  ]
+}

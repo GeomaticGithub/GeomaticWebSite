@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "kicker": "À propos",
+    "title": "À propos de Geomatic",
+    "description": "La Science du Où",
+    "bgGraphic": "/aboutGeomatic/contact-us-banner.jpg",
+    "ctaLabel": "Regarder la vidéo",
+    "ctaHref": "https://www.youtube.com/embed/XrU8GX7manc"
+  },
+  "stats": [
+    {
+      "value": "1988",
+      "label": "Année de création"
+    },
+    {
+      "value": "30+",
+      "label": "ans d’expertise en SIG"
+    },
+    {
+      "value": "3",
+      "label": "régions : Maroc, Afrique de l’Ouest, Golfe"
+    },
+    {
+      "value": "Esri",
+      "label": "Distributeur officiel au Maroc"
+    }
+  ],
+  "story": {
+    "kicker": "Qui sommes-nous",
+    "title": "Le SIG au Maroc depuis 1988",
+    "lead": "Fondée en 1988, Geomatic est un leader marocain des systèmes d'information géographique (SIG), du cloud computing et des solutions Big Data. Forte de plus de trente ans d'expertise, Geomatic aide les organisations à exploiter l'intelligence géospatiale pour prendre des décisions plus éclairées, basées sur les données.",
+    "paragraphs": [
+      "Au-delà des SIG, l'entreprise se spécialise dans l'imagerie satellite, le traitement d'images et la géolocalisation par GPS, offrant des solutions de bout en bout allant de la distribution et du conseil de logiciels à la mise en œuvre de systèmes à grande échelle.",
+      "Geomatic a réalisé des projets majeurs au Maroc, en Afrique de l'Ouest et dans la région du Golfe, en collaboration avec les gouvernements et les partenaires internationaux tels que les Nations Unies, l'USAID, la GIZ et la Banque mondiale pour stimuler l'innovation et la transformation numérique grâce à la technologie SIG."
+    ],
+    "partnersLabel": "Partenaires internationaux",
+    "partners": [
+      "Nations Unies",
+      "USAID",
+      "GIZ",
+      "Banque mondiale"
+    ]
+  },
+  "expertise": {
+    "kicker": "Nos métiers",
+    "title": "Des solutions de bout en bout",
+    "items": [
+      {
+        "icon": "gis",
+        "title": "Systèmes d’information géographique",
+        "desc": "Distribution, déploiement et support des logiciels ArcGIS."
+      },
+      {
+        "icon": "imagery",
+        "title": "Imagerie satellite",
+        "desc": "Acquisition et traitement d’images pour observer et mesurer le territoire."
+      },
+      {
+        "icon": "gps",
+        "title": "Géolocalisation GPS",
+        "desc": "Positionnement et suivi sur le terrain."
+      },
+      {
+        "icon": "consulting",
+        "title": "Conseil et mise en œuvre",
+        "desc": "Du cadrage du besoin à la mise en place de systèmes à grande échelle."
+      }
+    ]
+  },
+  "values": {
+    "kicker": "Mission et vision",
+    "title": "Ce qui nous guide",
+    "cards": [
+      {
+        "label": "Notre mission",
+        "text": "Offrir aux organisations des solutions géospatiales intelligentes qui transforment les données en informations exploitables. Geomatic se consacre à promouvoir le développement durable et la transformation numérique grâce à des technologies SIG de pointe."
+      },
+      {
+        "label": "Notre vision",
+        "text": "Être le moteur de l'innovation géospatiale et de la transformation numérique en Afrique. Geomatic imagine un avenir où l'intelligence spatiale façonnera des communautés plus intelligentes, plus durables et plus connectées."
+      }
+    ]
+  }
+}

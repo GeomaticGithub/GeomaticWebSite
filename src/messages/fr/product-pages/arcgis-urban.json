@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "kicker": "product",
+    "title": "ArcGIS Urban",
+    "subtitle": "Planification urbaine intelligente",
+    "bgImage": "/arcgisUrban/urban-banner-bg.jpg",
+    "image": "/arcgisUrban/urban-banner-fg.png",
+    "text": "ArcGIS Urban est une expérience immersive en 3D conçue pour améliorer la planification urbaine et la prise de décision. Visualisez rapidement les projets dans leur contexte local et exploitez l’intelligence géographique pour prendre de meilleures décisions. Soyez plus proactif et moins réactif dans vos processus de planification. Simplifiez la collaboration entre les agences internes et les parties prenantes publiques."
+  },
+  "blocks": [
+    {
+      "type": "band",
+      "kicker": "overview",
+      "title": "Façonner les villes du futur",
+      "text": "ArcGIS Urban est une expérience immersive en 3D conçue pour stimuler une planification et un développement urbain intelligents.",
+      "image": "/arcgisUrban/urban-lcs-shaping-future-cities.jpg"
+    },
+    {
+      "type": "cards",
+      "kicker": "benefits",
+      "items": [
+        {
+          "title": "Améliorer la productivité de la planification",
+          "text": "Rationalisez les flux de travail et améliorez l’efficacité en concentrant les efforts là où cela compte le plus.",
+          "image": "/arcgisUrban/urban-tls-planning.jpg"
+        },
+        {
+          "title": "Visualiser les projets à l’échelle de la ville",
+          "text": "Visualisez les plans et projets dans une vue immersive en 3D pour comprendre les changements à l’échelle urbaine.",
+          "image": "/arcgisUrban/urban-tls-visualize.jpg"
+        },
+        {
+          "title": "Communiquer les tendances",
+          "text": "Mettez en évidence les informations sur les politiques et initiatives afin d’évaluer les performances et soutenir les décisions.",
+          "image": "/arcgisUrban/urban-tls-transparency.jpg"
+        },
+        {
+          "title": "Accroître l’engagement de la communauté",
+          "text": "Apportez de la transparence aux programmes de planification en partageant du contenu interactif avec la communauté.",
+          "image": "/arcgisUrban/urban-tls-community.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "image": "/arcgisUrban/urban-fss-planning-future-smart-cities.png",
+      "items": [
+        {
+          "title": "Modèle 3D de la ville comme contexte de changement",
+          "text": "Concevez une représentation 3D de la ville et obtenez des informations contextuelles pour évaluer la performance et soutenir la prise de décision.",
+          "icon": "/arcgisUrban/3d.svg"
+        },
+        {
+          "title": "Planification du zonage et de l’utilisation des sols",
+          "text": "Produisez des représentations visuelles et analytiques 3D de votre code de zonage légal et mesurez l’impact immédiat de vos conceptions proposées.",
+          "icon": "/arcgisUrban/zoning.svg"
+        },
+        {
+          "title": "Conception urbaine et partage de projets",
+          "text": "Créez rapidement des scénarios de planification détaillés et partagez votre travail avec les parties prenantes.",
+          "icon": "/arcgisUrban/share.svg"
+        }
+      ]
+    },
+    {
+      "type": "stories",
+      "kicker": "stories",
+      "title": "Excellence en planification urbaine",
+      "text": "Découvrez comment des villes du monde entier exploitent ArcGIS Urban pour transformer leurs processus de planification et prendre des décisions de développement intelligentes.",
+      "items": [
+        {
+          "label": "Ville et comté d’Honolulu",
+          "title": "Ville et comté d’Honolulu",
+          "desc": "Les yeux de nos urbanistes se sont vraiment écarquillés lorsqu’ils ont réalisé qu’ils pouvaient rapidement et facilement modifier les valeurs du code de zonage et voir quel serait l’impact sur le développement. — Ken Schmidt, Administrateur SIG",
+          "image": "/arcgisUrban/urban-ccs-honolulu-thumb.jpg",
+          "actionText": "Lire l’étude de cas",
+          "actionUrl": "https://www.esri.com/about/newsroom/blog/honolulu-planners-visualize-urban-development-patterns"
+        },
+        {
+          "label": "Département de la planification de San Francisco",
+          "title": "Département de la planification de San Francisco",
+          "desc": "Le principal défi de la planification à long terme est de concevoir la ville de demain pour offrir une expérience urbaine riche dans les limites de la capacité des infrastructures. — Planificateur stratégique principal en durabilité, Ville de San Francisco",
+          "image": "/arcgisUrban/urban-ccs-san-francisco-thumb.jpg",
+          "actionText": "Lire l’étude de cas",
+          "actionUrl": "https://www.esri.com/about/newsroom/publications/wherenext/space-premium-san-francisco-gets-creative"
+        },
+        {
+          "label": "Boston Planning & Development Agency",
+          "title": "Boston Planning & Development Agency",
+          "desc": "Nous voulions développer des flux de travail qui utilisent des métriques et un processus standardisé pour évaluer les projets à venir. — Architecte senior & Urban Designer, Boston Planning & Development Agency",
+          "image": "/arcgisUrban/urban-ccs-boston-thumb.jpg",
+          "actionText": "Lire l’étude de cas",
+          "actionUrl": "https://www.esri.com/about/newsroom/blog/3d-gis-boston-digital-twin"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "resources",
+      "title": "Ressources",
+      "items": [
+        {
+          "title": "Préparer",
+          "text": "Organisez les jeux de données préalables pour ArcGIS Urban.",
+          "href": "https://doc.arcgis.com/en/urban/latest/data/preparing-your-data.htm"
+        },
+        {
+          "title": "Configurer",
+          "text": "Lancez votre projet et connectez vos données.",
+          "href": "https://doc.arcgis.com/en/urban/latest/get-started/get-started-what-is-urban.htm"
+        },
+        {
+          "title": "Créer",
+          "text": "Concevez et évaluez des scénarios avec les outils d’ArcGIS Urban.",
+          "href": "https://doc.arcgis.com/en/urban/latest/help/help-intro.htm"
+        },
+        {
+          "title": "Support technique",
+          "text": "Obtenez de l’aide de nos spécialistes du support technique.",
+          "href": "https://support.esri.com/en-us/contact#us"
+        },
+        {
+          "title": "Formation",
+          "text": "Trouvez des cours et des ressources pour toute l’équipe.",
+          "href": "https://www.esri.com/training/catalog/5cf6d5c82845f65b2cca2ef3/get-started-with-arcgis-urban/"
+        },
+        {
+          "title": "ArcNews",
+          "text": "Lisez l’article sur ArcGIS Urban dans l’édition Été 2019 d’ArcNews.",
+          "href": "https://www.esri.com/about/newsroom/arcnews/arcgis-urban-transforms-city-planning"
+        },
+        {
+          "title": "Webinaires",
+          "text": "Inscrivez-vous pour en savoir plus sur la planification urbaine intelligente avec ArcGIS Urban.",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/webinars"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "GeoAttendance",
+    "subtitle": "Location-based attendance",
+    "text": "The GeoAttendance application lets employees check in and out daily within a specific geofence around the organization’s working areas, using their mobile phone. It is designed to improve the overall employee experience, resulting in better time management and increased productivity.",
+    "bgImage": "/Solutions/PartnersSolutions/geoAttendance/shutterstock762793465-2400.jpg"
+  },
+  "sections": [
+    {
+      "title": "Why GeoAttendance?",
+      "bullets": [
+        "User friendly",
+        "Reliable and accurate",
+        "Location based",
+        "Secure, modern technology"
+      ],
+      "image": "/Solutions/PartnersSolutions/geoAttendance/geo24.png"
+    },
+    {
+      "title": "Solution features",
+      "bullets": [
+        "Capture employee attendance from any location, at any given time",
+        "Save costs for small organizations",
+        "Efficient for large organizations",
+        "Easily integrated with internal modules such as HR and Payroll"
+      ],
+      "image": "/Solutions/PartnersSolutions/geoAttendance/geo20.png"
+    },
+    {
+      "title": "How it works",
+      "paragraphs": [
+        "The application lets employees check in and out within a very specific geofence around the organization’s working areas, all from their phone."
+      ],
+      "image": "/Solutions/PartnersSolutions/geoAttendance/geo6.png",
+      "fit": "contain"
+    }
+  ]
+}

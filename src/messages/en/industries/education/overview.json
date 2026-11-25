@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "eyebrow": "Éducation",
+    "title": "Education for a Brighter Future",
+    "kicker": "Mapping and spatial analysis enhance learning in schools and aid administrators.",
+    "backgroundImage": "/Solutions/Industries/education/overview-main-banner-wide.jpg",
+    "ctaHref": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/0NWKgTCCGwQ?si=CKk0w-JaEae2Z3HY"
+  },
+  "strengthen": {
+    "title": "Make every piece of information count",
+    "paragraph": "Successful financial institutions understand local consumers' needs. Geographic variation in consumer and business behaviors and demands affect bank performance. Advanced maps and spatial analytics reveal deeper insight into relationships and patterns, answer complex questions, and inform decisions.",
+    "imageSection": {
+      "image": "/Solutions/Industries/banking/device-get-insight-before-action.png",
+      "title": "Get insight before action",
+      "description": "Quickly analyze massive amounts of financial data to monitor performance and act on opportunity before the competition does."
+    }
+  },
+  "features": [
+    {
+      "title": "Discover new markets and opportunities",
+      "paragraph": "Understand the needs of the customer and the underserved market to optimize your return on investment.",
+      "image": "/Solutions/Industries/banking/device-discover-new-markets-and-opportunities.png",
+      "backgroundImage": "/Solutions/Industries/banking/discover-new-markets-and-opportunities-background-wide.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Ensure that the customer remains king",
+      "paragraph": "Increase value to customers and improve banking services with better customer insight and understanding.",
+      "image": "/Solutions/Industries/banking/device-ensure-customer-remaind-key.png",
+      "backgroundImage": "/Solutions/Industries/banking/ensure-customer-remaind-key-background-wide.jpg",
+      "layout": "left"
+    }
+  ],
+  "empower": {
+    "items": [
+      {
+        "title": "Schools",
+        "paragraph": "Interactive maps make learning come alive in mainstream subjects—like environmental science, math, history, and literature—and beyond.",
+        "icon": "/Solutions/Industries/education/schools.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/k-12-education/overview"
+        }
+      },
+      {
+        "title": "Higher Education",
+        "paragraph": "Students, faculty members, and campus administrators apply The Science of Where for better decision-making and a more sustainable future.",
+        "icon": "/Solutions/Industries/education/higherEducation.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/higher-education/overview"
+        }
+      },
+      {
+        "title": "Lifelong Learning",
+        "paragraph": "GIS users of all ages and stages of professional development are actively involved in learning, teaching, and mentoring. Esri embraces lifelong learning every step of the way.",
+        "icon": "/Solutions/Industries/education/lifelongLearning.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/students/overview"
+        }
+      }
+    ]
+  },
+  "news": {
+    "title": "News & Events",
+    "backgroundImage": "/Solutions/Industries/banking/background-news-events.jpg",
+    "cards": [
+      {
+        "eyebrow": "Event",
+        "title": "Esri Petroleum GIS Conference",
+        "blurb": "May 9-10, 2018 | Houston, Texas, USA",
+        "image": "/Solutions/Industries/banking/event-petroleum-user-conference-pug.jpg",
+        "meta": "May 1–3, Houston, USA",
+        "href": "https://www.esri.com/en-us/about/events/esri-energy-resources-gis-conference/save-date"
+      },
+      {
+        "eyebrow": "Event",
+        "title": "Esri User Conference",
+        "blurb": "July 9–13, 2018 | San Diego, California, USA",
+        "image": "/Solutions/Industries/banking/event-user-conference.jpg",
+        "meta": "July 15–19, San Diego, USA",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Gulfport Energy saves time and money",
+        "blurb": "Within one year of deploying ArcGIS apps for critical operations, Gulfport Energy cut costs by at least $2 million.",
+        "image": "/Solutions/Industries/banking/News_Emergency-Ops.jpg",
+        "href": "https://www.esri.com/~/media/files/pdfs/library/fliers/pdfs/gulfport-energy-saves-time.pdf"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Range Resources digitizes historic well data",
+        "blurb": "Intelligent, self-service maps give staff the data and insight necessary to speed up land management and title clearance.",
+        "image": "/Solutions/Industries/banking/News_Gulf.jpg",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/media/e-news/petroleum-historic-map-digitizing.pdf"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Find out how Geomatic can help your organization.",
+    "ctaLabel": "Get started",
+    "ctaHref": "#"
+  }
+}

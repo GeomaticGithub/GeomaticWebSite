@@ -1,0 +1,291 @@
+{
+  "ui": {
+    "kicker": "Produit ArcGIS",
+    "contact": "Parler à un expert",
+    "discover": "Voir les fonctionnalités",
+    "howKicker": "Fonctionnement",
+    "storiesKicker": "Études de cas",
+    "ecosystemKicker": "Écosystème",
+    "capabilitiesKicker": "Fonctionnalités",
+    "capabilitiesLabel": "Fonctionnalités d’ArcGIS Pro",
+    "howTitle": "Comment fonctionne ArcGIS Pro",
+    "extensionsKicker": "Extensions",
+    "learnMore": "En savoir plus"
+  },
+  "hero": {
+    "title": "ArcGIS Pro",
+    "subtitle": "ArcGIS Pro apporte la cartographie avancée 2D et 3D, l'analyse et la gestion de données à votre bureau.",
+    "bgImage": "/arcgisPro/pro-overview-banner-background-topography-dark.png",
+    "mediaImage": "/arcgisPro/pro-overview-banner-hero-foreground-illustration.png",
+    "logoImage": "/arcgisPro/ArcGIS-Pro.png",
+    "mediaAlt": "Montage ArcGIS Pro"
+  },
+  "intro": {
+    "paragraph": "Partie du Nuage Géospatial Esri, ArcGIS Pro est l'application SIG desktop unique et puissante d'Esri. Technologiquement en avance sur tout autre produit sur le marché, ArcGIS Pro supporte la visualisation de données, l'analyse avancée et la maintenance de données autoritatives en 2D et 3D. ArcGIS Pro est étroitement couplé avec la plateforme ArcGIS supportant le partage de données à travers ArcGIS Online et ArcGIS Enterprise via Web GIS."
+  },
+  "stories": {
+    "title": "Voir ArcGIS Pro en action",
+    "description": "Découvrez comment les organisations du monde entier utilisent ArcGIS Pro pour résoudre des problèmes spatiaux complexes et stimuler l'innovation.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Cartographie et Visualisation",
+        "description": "Travaillez avec des outils cartographiques intuitifs et intelligents à toute échelle de carte pour créer des cartes 2D et 3D impressionnantes pour l'impression, les applications, tableaux de bord et le web.",
+        "mainImage": "/arcgisPro/transform-data-tornado-visualization-animation-2.gif",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-tornado-visualization-animation.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "id": 2,
+        "title": "Analytique et Science des Données",
+        "description": "Découvrez le monde qui vous entoure. Utilisez des outils analytiques scientifiques sur des données 2D, 3D et temps réel pour identifier des motifs, faire des prédictions et répondre aux questions.",
+        "mainImage": "/arcgisPro/transform-data-analytics-and-data-science-2.jpg",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-analytics and data science.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "id": 3,
+        "title": "Automatisation",
+        "description": "Améliorez l'efficacité et la précision de vos tâches, flux de travail et analyses avec des outils d'automatisation.",
+        "mainImage": "/arcgisPro/transform-data-automation-2.jpg",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-automation.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "id": 4,
+        "title": "Gestion des Données",
+        "description": "Assurez l'intégrité et la précision des données avec un ensemble complet d'outils pour stocker, éditer, évaluer et gérer tous types de données spatiales—incluant les données temps réel et big data.",
+        "mainImage": "/arcgisPro/transform-data-data-management-2.jpg",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-data-management.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "id": 5,
+        "title": "Imagerie",
+        "description": "Drones, satellites, aérien, vidéo, lidar et plus, ArcGIS Pro fournit des outils puissants pour gérer et analyser l'imagerie.",
+        "mainImage": "/arcgisPro/transform-data-imagery-2.jpg",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-imagery.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "id": 6,
+        "title": "Intelligence Artificielle (IA)",
+        "description": "Mélangez les données IoT, l'intelligence de localisation pilotée par SIG et les algorithmes alimentés par l'intelligence artificielle (IA) et modèles d'apprentissage profond pour générer des insights, établir des motifs et relations, et prendre des décisions plus intelligentes.",
+        "mainImage": "/arcgisPro/transform-data-artificial-intelligence-2.jpg",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-artificial intelligence.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "id": 7,
+        "title": "Administration",
+        "description": "Déployez ArcGIS Pro à travers votre organisation en utilisant des outils qui sont sécurisés et évolutifs dans des machines physiques ou virtuelles.",
+        "mainImage": "/arcgisPro/transform-data-administration-2.jpg",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-administration.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "id": 8,
+        "title": "Personnaliser et Étendre",
+        "description": "Étendez et adaptez ArcGIS Pro avec des modules complémentaires et configurations développés avec le SDK ArcGIS Pro pour .NET.",
+        "mainImage": "/arcgisPro/transform-data-customize-and-extend-2.jpg",
+        "avatarImage": "/arcgisPro/transform-data-thumbnail-customize-and-extend.jpg",
+        "linkText": "En savoir plus",
+        "href": "#"
+      }
+    ]
+  },
+  "howItWorks": {
+    "illustration": "/arcgisPro/pro-overview-how-it-works-diagram.png",
+    "illustrationAlt": "Comment ArcGIS Pro fonctionne",
+    "steps": [
+      {
+        "title": "Intégrer des données de sources multiples",
+        "desc": "Combinez des données de diverses sources et formats. ArcGIS Pro supporte les standards de l'industrie et de la communauté pour assurer l'inclusion de tout jeu de données que vous avez."
+      },
+      {
+        "title": "Visualiser vos données",
+        "desc": "Affichez des données en 2D et 3D simultanément. Gérez des cartes et mises en page multiples dans un flux de travail basé projet unique."
+      },
+      {
+        "title": "Éditer et analyser vos données",
+        "desc": "Simplifiez l'édition et l'analyse de données avec des outils sensibles au contexte. Effectuez des analyses interactives 2D et 3D. Automatisez le travail avec ModelBuilder ou Python."
+      },
+      {
+        "title": "Partager votre travail avec le monde",
+        "desc": "Publiez des cartes et résultats d'analyse comme services web ou impressions haute qualité. Partagez des cartes et données sur ArcGIS Online, ArcGIS Enterprise ou comme package."
+      }
+    ]
+  },
+  "success": {
+    "background": "/arcgisPro/pro-overview-banner-background-topography-dark.png",
+    "headTitle": "ÉTUDE DE CAS",
+    "title": "SIG Desktop Avancé",
+    "desc": "Expérimentez la puissance d'ArcGIS Pro à travers des démos interactives et applications du monde réel.",
+    "ctaText": "En savoir plus",
+    "ctaHref": "#",
+    "pills": [
+      {
+        "label": "Département des Ressources Minérales de Thaïlande",
+        "image": "/arcgisPro/thumbnail-case-study-thailand-mineral-resources.jpg",
+        "title": "Département des Ressources Minérales de Thaïlande",
+        "desc": "Quand les cartes sont vitales pour sauver des vies",
+        "actionType": "story",
+        "actionText": "Lire l'étude de cas",
+        "actionUrl": "https://www.esri.com/about/newsroom/blog/technology-behind-thailand-cave-rescue?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-pro%2Fthailand-cave-rescue-case-study"
+      },
+      {
+        "label": "American Electric Power",
+        "image": "/arcgisPro/thumbnail-case-study-american-electric-power.png",
+        "title": "American Electric Power",
+        "desc": "L'utilitaire utilise ArcGIS Desktop pour promouvoir le développement économique",
+        "actionType": "story",
+        "actionText": "Lire l'étude de cas",
+        "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/utility-promotes-economic-development-case-study"
+      },
+      {
+        "label": "Comté de Collin, Texas",
+        "image": "/arcgisPro/thumbnail-case-study-tornado-damage-assessment.png",
+        "title": "Comté de Collin, Texas",
+        "desc": "Les gestionnaires d'urgence créent des cartes d'évaluation des dommages avec ArcGIS Pro",
+        "actionType": "story",
+        "actionText": "Lire l'étude de cas",
+        "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/tornado-damage-assessment-map-case-study"
+      }
+    ]
+  },
+  "ecosystem": {
+    "title": "Partie de l'écosystème ArcGIS",
+    "desc": "ArcGIS Pro s'intègre parfaitement avec la plateforme ArcGIS plus large pour étendre vos capacités.",
+    "items": [
+      {
+        "title": "ArcGIS Online",
+        "desc": "Connectez les personnes, emplacements et données en utilisant ArcGIS Online. Gérez votre contenu dans le nuage et partagez votre travail avec le monde sur le web, applications et médias sociaux.",
+        "hrefLabel": "En savoir plus sur ArcGIS Online",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-online/overview"
+      },
+      {
+        "title": "ArcGIS Living Atlas",
+        "desc": "Améliorez vos cartes avec la collection principale d'informations géographiques du monde entier ; accédez aux cartes de base et intégrez des données de sources autoritatives.",
+        "hrefLabel": "En savoir plus sur ArcGIS Living Atlas",
+        "href": "https://livingatlas.arcgis.com/en/home/"
+      },
+      {
+        "title": "Applications pour tous",
+        "desc": "Démarrez vos flux de travail avec les Applications ArcGIS pour fournir des insights et solutions pour les personnes sur le terrain ou au bureau.",
+        "hrefLabel": "En savoir plus sur les Applications ArcGIS",
+        "href": "https://www.esri.com/en-us/arcgis/products/index?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fapps-for-everyone%2Foverview"
+      },
+      {
+        "title": "Outils de Développement Logiciel",
+        "desc": "Construisez vos propres applications SIG pour desktop, web et appareils mobiles avec les API et SDK ArcGIS d'Esri.",
+        "hrefLabel": "En savoir plus sur les Outils Développeur d'Esri",
+        "href": "https://developers.arcgis.com/"
+      }
+    ],
+    "crossImage": "/arcgisPro/pro-overview-arcgis-platform-background-globe.jpg"
+  },
+  "extensions": {
+    "title": "Ajouter des capacités avec des extensions",
+    "categories": [
+      {
+        "label": "Analyse Avancée",
+        "cards": [
+          {
+            "title": "ArcGIS 3D Analyst",
+            "desc": "Capacités avancées de visualisation et d'analyse 3D.",
+            "image": "/arcgisPro/pro-desktop-card-3d-analyst.jpg",
+            "imageAlt": "3D Analyst",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-3d-analyst/overview"
+          },
+          {
+            "title": "ArcGIS Geostatistical Analyst",
+            "desc": "Étudiez vos données avec des outils statistiques avancés.",
+            "image": "/arcgisPro/pro-desktop-card-geostatistical analyst.jpg",
+            "imageAlt": "Geostatistical Analyst",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/geostatistical-analyst/overview"
+          },
+          {
+            "title": "ArcGIS Network Analyst",
+            "desc": "Effectuez un routage sophistiqué et une analyse sur les installations les plus proches ou zones de service.",
+            "image": "/arcgisPro/pro-desktop-card-network analyst.jpg",
+            "imageAlt": "Network Analyst",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-network-analyst/overview"
+          },
+          {
+            "title": "ArcGIS Spatial Analyst",
+            "desc": "Dérivez des réponses de vos données en utilisant l'analyse spatiale avancée.",
+            "image": "/arcgisPro/pro-desktop-card-spatial analyst.jpg",
+            "imageAlt": "Spatial Analyst",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-spatial-analyst/overview"
+          },
+          {
+            "title": "ArcGIS Image Analyst",
+            "desc": "Accédez à une station de travail d'analyse d'imagerie complète.",
+            "image": "/arcgisPro/pro-desktop-card-image analyst.jpg",
+            "imageAlt": "Image Analyst",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-image/options/arcgis-image-analyst?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-image-analyst%2Foverview"
+          },
+          {
+            "title": "ArcGIS Business Analyst",
+            "desc": "Combinez des données démographiques, de style de vie et de dépenses avec des analyses basées sur les cartes pour créer des rapports précis et présenter des insights de marché puissants.",
+            "image": "/arcgisPro/pro-desktop-card-business analyst.jpg",
+            "imageAlt": "Business Analyst",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-business-analyst/overview"
+          }
+        ]
+      },
+      {
+        "label": "Données et Flux de Travail",
+        "cards": [
+          {
+            "title": "ArcGIS Data Interoperability",
+            "desc": "Travaillez facilement avec différents formats de données.",
+            "image": "/arcgisPro/pro-desktop-card-data interoperability.jpg",
+            "imageAlt": "Data Interoperability",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-data-interoperability/overview"
+          },
+          {
+            "title": "ArcGIS Data Reviewer",
+            "desc": "Automatisez, simplifiez et améliorez la façon dont vous gérez le contrôle qualité des données.",
+            "image": "/arcgisPro/pro-desktop-card-data reviewer.jpg",
+            "imageAlt": "Data Reviewer",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-data-reviewer/overview"
+          },
+          {
+            "title": "ArcGIS Publisher",
+            "desc": "Partagez librement vos cartes et données avec un large éventail d'utilisateurs.",
+            "image": "/arcgisPro/pro-desktop-card-publisher.jpg",
+            "imageAlt": "ArcGIS Publisher",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-publisher/overview"
+          },
+          {
+            "title": "ArcGIS LocateXT",
+            "desc": "Extrayez des données de presque toute donnée non structurée, incluant messages, rapports, briefings et même médias sociaux.",
+            "image": "/arcgisPro/pro-desktop-card-locatext.jpg",
+            "imageAlt": "LocateXT",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/locatext/overview"
+          }
+        ]
+      },
+      {
+        "label": "Axé sur l'Industrie",
+        "cards": [
+          {
+            "title": "ArcGIS Pipeline Referencing",
+            "desc": "Créez, gérez et optimisez les données d'itinéraire et d'événement de pipeline.",
+            "image": "/arcgisPro/pro-desktop-card-pipeline referencing.jpg",
+            "imageAlt": "Pipeline Referencing",
+            "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-pipeline-referencing/overview"
+          }
+        ]
+      }
+    ]
+  }
+}

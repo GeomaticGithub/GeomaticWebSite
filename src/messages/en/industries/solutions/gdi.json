@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Telecommunication Infrastructure Management",
+    "text": "Networks are becoming extremely complex. Operators have to mix and manage more and more technologies, including Fiber To The X (FTTx), IP and Passive Optical Networks, in order to support the rush of new services, such as Triple Play, Voice over IP (VoIP), IP-TV and Metro Ethernet.",
+    "bgImage": "/Solutions/PartnersSolutions/gdi/archibus-background.png"
+  },
+  "lead": "As a result, the need for a planning and engineering system that can support any network, any technology and any type of equipment right down to the individual glass fiber is critical. It is the key to knowing where customers are located, linking them to the network, and efficiently managing the quality of converged services.",
+  "brochure": {
+    "title": "GDi VIZION",
+    "text": "GDi VIZION Network Inventory is a solution designed for storing and manipulating detailed information about cables and accompanying infrastructure assets comprising HFC (Hybrid Fiber Coax) networks. It provides the functionalities typical for HFC networks that operators expect.",
+    "image": "/Solutions/PartnersSolutions/gdi/gdi-logo.png",
+    "fit": "contain"
+  },
+  "examples": [
+    {
+      "title": "GDi VIZION solution overview",
+      "text": "The solution provides dedicated tools for automatic migration of system data from external sources, including databases, files and digital maps. Built on the ArcGIS platform, it supports many file formats for storing and managing geometry in the geodatabase and integrates with all required address models.",
+      "image": "/Solutions/PartnersSolutions/gdi/1597818696240.png"
+    },
+    {
+      "title": "System functionality",
+      "text": "The system comes with a built-in set of web services, and it is easy to define your own for specific operations. Its functionality is available as a set of specialized modules accessible as desktop applications.",
+      "image": "/Solutions/PartnersSolutions/gdi/1597818984926.png"
+    }
+  ]
+}

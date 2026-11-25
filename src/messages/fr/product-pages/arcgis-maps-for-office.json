@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "kicker": "product",
+    "icon": "/arcgisMapsForOffice/MapsforOffice.png",
+    "title": "ArcGIS Maps for Office",
+    "subtitle": "Des cartes interactives dans vos feuilles de calcul et présentations",
+    "bgImage": "/arcgisMapsForOffice/overview-banner-circles-background.jpg",
+    "image": "/arcgisMapsForOffice/overview-banner-hero-device-map-data.png",
+    "text": "Les feuilles de calcul et les graphiques donnent vie aux données. Désormais, vous pouvez utiliser des cartes interactives pour voir les données sous un autre angle. ArcGIS Maps for Office place les données de Microsoft Excel dans leur contexte géographique. Vous verrez des motifs et des relations pour mieux comprendre une situation et prendre des décisions plus avisées. Utilisez ensuite Microsoft PowerPoint pour partager les résultats."
+  },
+  "blocks": [
+    {
+      "type": "band",
+      "kicker": "overview",
+      "title": "Maximisez vos informations",
+      "text": "Cartographiez vos données pour en extraire le maximum de valeur en posant une toute nouvelle série de questions liées à la localisation. Obtenez des perspectives jusque-là manquées.",
+      "image": "/arcgisMapsForOffice/overview-maximize-your-information.jpg"
+    },
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Travaillez avec des données fiables et vérifiées",
+          "text": "Enrichissez vos données Excel en les cartographiant avec des couches de données mondiales fiables et vérifiées sur la démographie, le style de vie et la géographie.",
+          "image": "/arcgisMapsForOffice/overview-work-with-trusted-data.png"
+        },
+        {
+          "title": "Synchronisez et partagez votre travail",
+          "text": "Offrez à votre équipe un accès instantané à des informations à jour et fiables. Lorsque vous synchronisez vos cartes avec ArcGIS, vous partagez votre travail de manière sécurisée et étendue avec les personnes de votre choix.",
+          "image": "/arcgisMapsForOffice/overview-sync-and-share-work.png"
+        },
+        {
+          "title": "Racontez des histoires plus percutantes",
+          "text": "Impressionnez votre public en racontant votre histoire avec des présentations cartographiques dans PowerPoint. Mettez en avant des lieux clés ou utilisez la carte interactive pour répondre aux questions.",
+          "image": "/arcgisMapsForOffice/overview-tell-more-effective-stories.png"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "how",
+      "title": "Fonctionnement",
+      "steps": [
+        {
+          "title": "Commencez avec vos données",
+          "desc": "Trouvez les données dont vous avez besoin pour créer votre visualisation cartographique."
+        },
+        {
+          "title": "Choisissez un style de carte",
+          "desc": "Sélectionnez le style qui met le mieux en valeur vos données pour un impact maximum."
+        },
+        {
+          "title": "Repérez les motifs, gagnez en compréhension",
+          "desc": "Interprétez les tendances et relations dans vos données pour prendre de meilleures décisions."
+        },
+        {
+          "title": "Racontez votre histoire",
+          "desc": "Partagez les cartes que vous avez créées avec les parties prenantes et le public."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "microsoft",
+      "title": "Apporter la localisation aux produits Microsoft",
+      "text": "Les logiciels ArcGIS aident les utilisateurs de Microsoft à révéler l’intelligence de localisation au sein de leurs données métier.",
+      "items": [
+        {
+          "title": "ArcGIS Maps for Power BI",
+          "text": "ArcGIS Maps for Power BI fournit des cartes et des données démographiques dans Microsoft Power BI. Accédez aux données pour créer des cartes qui mettent en évidence motifs et tendances.",
+          "image": "/arcgisMapsForOffice/powerbi-banner-hero-monitor-yellow-data.jpg",
+          "href": "/arcgis/products/arcgis-maps-for-power-bi/overview",
+          "linkLabel": "Voir ArcGIS Maps for Power BI"
+        },
+        {
+          "title": "ArcGIS Maps for SharePoint",
+          "text": "ArcGIS Maps for SharePoint offre une nouvelle manière de cartographier et rechercher le contenu SharePoint. Visualisez, organisez et interagissez avec les données SharePoint via des cartes pour de meilleurs insights.",
+          "image": "/arcgisMapsForOffice/powerbi-banner-hero-monitor-yellow-data.jpg",
+          "href": "/arcgis/products/arcgis-maps-for-sharepoint/overview",
+          "linkLabel": "Voir ArcGIS Maps for SharePoint"
+        }
+      ]
+    }
+  ]
+}

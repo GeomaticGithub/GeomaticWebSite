@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "kicker": "capability",
+    "title": "SIG 3D",
+    "subtitle": "Notre monde est en 3D",
+    "bgImage": "/3d-gis/overview-hero.jpg"
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "kicker": "capabilities",
+      "title": "ArcGIS est en 3D",
+      "items": [
+        {
+          "title": "Créer",
+          "text": "Construisez du contenu 3D précis à partir de BIM, lidar et imagerie."
+        },
+        {
+          "title": "Analyser",
+          "text": "Effectuez des analyses spatiales avancées et évaluez les alternatives."
+        },
+        {
+          "title": "Visualiser",
+          "text": "Explorez des jumeaux numériques à l’échelle de la ville et des terrains mondiaux dans leur contexte."
+        },
+        {
+          "title": "Communiquer",
+          "text": "Partagez des expériences 3D interactives sur le web et les appareils."
+        }
+      ]
+    },
+    {
+      "type": "tabs",
+      "kicker": "examples",
+      "title": "Construire avec le SIG 3D",
+      "text": "Créez des visualisations 3D immersives qui transforment votre compréhension et votre communication des données spatiales à différentes échelles.",
+      "items": [
+        {
+          "title": "Informations sur le bâtiment",
+          "text": "Modélisez l’intérieur des bâtiments pour la planification, l’analyse et la visualisation.",
+          "image": "/3d-gis/large-image-swticher-building.jpg",
+          "thumb": "/3d-gis/large-image-switcher_building-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/arcnews/using-the-arcgis-platform-to-visualize-facility-information",
+          "linkLabel": "Voir comment"
+        },
+        {
+          "title": "Gestion de campus",
+          "text": "Visualisez des conceptions existantes ou nouvelles dans l’espace réel qu’elles occupent.",
+          "image": "/3d-gis/large-image-switcher-campus.jpg",
+          "thumb": "/3d-gis/large-image-switcher-campus-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/arcuser/creating-a-3d-campus-scene-using-esri-cityengine",
+          "linkLabel": "Voir comment"
+        },
+        {
+          "title": "Aménagement urbain",
+          "text": "Modélisez une ville entière pour la planification urbaine, le développement économique et l’efficacité opérationnelle.",
+          "image": "/3d-gis/large-image-switcher-city.jpg",
+          "thumb": "/3d-gis/large-image-switcher_city-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/arcuser/planning-the-city-of-tomorrow-in-3d",
+          "linkLabel": "Voir comment"
+        },
+        {
+          "title": "Analyse régionale",
+          "text": "Observez une grande région en 3D pour une compréhension globale.",
+          "image": "/3d-gis/large-image-switcher-region.jpg",
+          "thumb": "/3d-gis/large-image-switcher-region-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/announcements/fire-globe-delivers-esri-3d-visualization-to-us-firefighters",
+          "linkLabel": "Voir comment"
+        },
+        {
+          "title": "Vues globales",
+          "text": "Utilisez le globe entier pour obtenir une véritable perception de vos données.",
+          "image": "/3d-gis/large-image-switcher-globe.jpg",
+          "thumb": "/3d-gis/large-image-switcher-globe-thumbnail.jpg",
+          "href": "https://www.esri.com/arcgis-blog/products/arcgis-online/3d-gis/3d-web-scenes-take-flight",
+          "linkLabel": "Voir comment"
+        }
+      ]
+    },
+    {
+      "type": "embed",
+      "kicker": "video",
+      "title": "Regardez de plus près Esri",
+      "url": "https://www.esri.com/videos/iframe?videoid=JYkNBY7xuRo"
+    }
+  ]
+}

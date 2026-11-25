@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Développement économique",
+    "subtitle1": "Créer une croissance économique durable",
+    "subtitle2": "Découvrir où investir dans votre communauté pour un impact maximal",
+    "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-banner-bg.png"
+  },
+  "intro": {
+    "title": "Construire une communauté solide",
+    "paragraph": "Pour réussir, les développeurs économiques doivent comprendre les atouts de leur communauté — qu’il s’agisse d’une main-d’œuvre éduquée et diversifiée, d’un logement abordable, d’un coût de la vie plus faible, d’excellents transports ou d’une économie locale florissante. Les dirigeants peuvent utiliser l’intelligence géographique pour visualiser et analyser le potentiel de croissance des entreprises et des communautés, en combinant des données démographiques, de style de vie et de dépenses. Cette approche stratégique aide les communautés à créer des emplois, à identifier des opportunités de développement économique local et à attirer de nouvelles entreprises."
+  },
+  "community": {
+    "title": "Construire une communauté solide",
+    "body": "Voyez ce qui se passe à l’échelle de la communauté, concevez une stratégie et sachez où investir. Les cartes intelligentes vous aident à visualiser les personnes, les lieux et les actifs pour comprendre le potentiel de développement économique.",
+    "image": "/Solutions/BusinessNeeds/EconomicDevelopment/community-city.jpg"
+  },
+  "growth": {
+    "title": "Voir votre économie croître",
+    "intro": "Les cartes intelligentes fournissent aux dirigeants, aux entreprises et aux investisseurs des données clés et des plans de développement itératifs en temps réel.",
+    "bullets": [
+      "Attirez de nouveaux résidents et entreprises grâce à une image de destination alimentée par des analyses, des rapports et des cartes.",
+      "Identifiez les lacunes en biens, services et infrastructures pour améliorer la qualité de vie.",
+      "Soutenez le choix de sites, la planification, l’analyse de territoires, la comparaison du commerce de détail, l’évaluation de l’assortiment et la segmentation et le ciblage des clients.",
+      "Identifiez les zones d’opportunité et favorisez une croissance durable à l’aide de cartes pilotées par les données."
+    ],
+    "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-5050-see-the-potential-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Créez des stratégies économiques, accédez à des informations en temps réel et contextualisez les données métier grâce à la technologie d’intelligence géographique du cloud géospatial d’Esri.",
+    "items": [
+      {
+        "title": "Cartographie",
+        "body": "Visualisez les personnes, les lieux et les actifs pour comprendre clairement un potentiel de développement économique. Voyez ce qui se passe dans toute la communauté, concevez une stratégie et sachez où investir.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/business-needs-capabilities-mapping-visualization.jpg"
+      },
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Comprenez la démographie des clients et les plans de développement à l’échelle d’une communauté et surveillez les situations en évolution. Utilisez les big data et l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées basées sur les informations les plus récentes.",
+        "cta": "Donnez du sens aux big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Visualisation et analyses 3D",
+        "body": "Tirez parti de vos données pour résoudre des problèmes et voir des schémas, des tendances et des relations cachées. Créez des modèles qui facilitent le partage de votre vision et de vos idées.",
+        "cta": "Interagissez avec vos données",
+        "href": "https://www.esri.com/en-us/capabilities/3d-gis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2F3d-gis%2Foverview",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/business-needs-capabilities-3d-gis.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur le développement économique",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Un modèle 3D offre une vision pour lutter contre la dégradation urbaine",
+        "source": "Esri Blog",
+        "excerpt": "Une visualisation 3D capte l’imagination d’une communauté pour stimuler un effort de revitalisation, et la vision partagée accélère les plans de renouveau.",
+        "href": "https://www.esri.com/about/newsroom/blog/procedural-modeling-provides-vision",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-3d-model.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Une ville se bat pour attirer la main-d’œuvre des millennials",
+        "source": "WhereNext Magazine",
+        "excerpt": "La petite ville de Bentonville, Arkansas, a élaboré un plan global utilisant l’intelligence géographique pour faire croître et prospérer sa communauté.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/bentonville-fights-millennial-brain-drain",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-city-fights-for-the-millenial-workforce.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Une alternative méconnue à la course pour séduire Amazon",
+        "source": "WhereNext Magazine",
+        "excerpt": "Pour les villes qui ne peuvent pas — ou ne veulent pas — rivaliser pour attirer les géants du marché, il existe une autre option éprouvée : le développement économique local (« economic gardening »).",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/growing-companies-with-economic-gardening",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-little-known-alternative.jpg"
+      }
+    ]
+  }
+}

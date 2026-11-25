@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "kicker": "About",
+    "title": "About Geomatic",
+    "description": "The Science of Where",
+    "bgGraphic": "/aboutGeomatic/contact-us-banner.jpg",
+    "ctaLabel": "Watch the Video",
+    "ctaHref": "https://www.youtube.com/embed/XrU8GX7manc"
+  },
+  "stats": [
+    {
+      "value": "1988",
+      "label": "Year founded"
+    },
+    {
+      "value": "30+",
+      "label": "years of GIS expertise"
+    },
+    {
+      "value": "3",
+      "label": "regions: Morocco, West Africa, the Gulf"
+    },
+    {
+      "value": "Esri",
+      "label": "Official distributor in Morocco"
+    }
+  ],
+  "story": {
+    "kicker": "Who we are",
+    "title": "GIS in Morocco since 1988",
+    "lead": "Founded in 1988, Geomatic is a Moroccan leader in Geographic Information Systems (GIS), cloud computing, and big data solutions. With over three decades of expertise, Geomatic helps organizations leverage geospatial intelligence to make smarter, data-driven decisions.",
+    "paragraphs": [
+      "Beyond GIS, the company specializes in satellite imagery, image processing, and GPS-based geolocation, offering end-to-end solutions from software distribution and consulting to full-scale system implementation.",
+      "Geomatic has delivered major projects across Morocco, West Africa, and the Gulf region, working with governments and international partners such as the United Nations, USAID, GIZ, and the World Bank to drive innovation and digital transformation through GIS technology."
+    ],
+    "partnersLabel": "International partners",
+    "partners": [
+      "United Nations",
+      "USAID",
+      "GIZ",
+      "World Bank"
+    ]
+  },
+  "expertise": {
+    "kicker": "What we do",
+    "title": "End-to-end solutions",
+    "items": [
+      {
+        "icon": "gis",
+        "title": "Geographic information systems",
+        "desc": "Distribution, deployment and support of ArcGIS software."
+      },
+      {
+        "icon": "imagery",
+        "title": "Satellite imagery",
+        "desc": "Image acquisition and processing to observe and measure the territory."
+      },
+      {
+        "icon": "gps",
+        "title": "GPS geolocation",
+        "desc": "Positioning and tracking in the field."
+      },
+      {
+        "icon": "consulting",
+        "title": "Consulting and implementation",
+        "desc": "From scoping the need to deploying large-scale systems."
+      }
+    ]
+  },
+  "values": {
+    "kicker": "Mission and vision",
+    "title": "What guides us",
+    "cards": [
+      {
+        "label": "Our mission",
+        "text": "To empower organizations with intelligent geospatial solutions that transform data into actionable insight. Geomatic is dedicated to advancing sustainable development and digital transformation through cutting-edge GIS technologies."
+      },
+      {
+        "label": "Our vision",
+        "text": "To be the leading force driving geospatial innovation and digital transformation across Africa. Geomatic envisions a future where spatial intelligence shapes smarter, more sustainable, and more connected communities."
+      }
+    ]
+  }
+}

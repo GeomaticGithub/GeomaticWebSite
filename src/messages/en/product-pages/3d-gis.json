@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "kicker": "capability",
+    "title": "3D GIS",
+    "subtitle": "Our world is 3D",
+    "bgImage": "/3d-gis/overview-hero.jpg"
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "kicker": "capabilities",
+      "title": "ArcGIS is 3D",
+      "items": [
+        {
+          "title": "Create",
+          "text": "Build accurate 3D content from BIM, lidar, and imagery."
+        },
+        {
+          "title": "Analyze",
+          "text": "Perform advanced spatial analysis and evaluate alternatives."
+        },
+        {
+          "title": "Visualize",
+          "text": "Explore city-scale twins and global terrain in context."
+        },
+        {
+          "title": "Communicate",
+          "text": "Share interactive 3D experiences across web and devices."
+        }
+      ]
+    },
+    {
+      "type": "tabs",
+      "kicker": "examples",
+      "title": "Build with 3D GIS",
+      "text": "Create immersive 3D visualizations that transform how you understand and communicate spatial data across different scales.",
+      "items": [
+        {
+          "title": "Building Infoormation",
+          "text": "Model interiors of buildings for planning, analysis and visualization.",
+          "image": "/3d-gis/large-image-swticher-building.jpg",
+          "thumb": "/3d-gis/large-image-switcher_building-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/arcnews/using-the-arcgis-platform-to-visualize-facility-information",
+          "linkLabel": "See How"
+        },
+        {
+          "title": "Campus Management",
+          "text": "Visualize as-built or new designs within the real-world space they occupy.",
+          "image": "/3d-gis/large-image-switcher-campus.jpg",
+          "thumb": "/3d-gis/large-image-switcher-campus-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/arcuser/creating-a-3d-campus-scene-using-esri-cityengine",
+          "linkLabel": "See How"
+        },
+        {
+          "title": "City Planning",
+          "text": "Model an entire city for master planning, economic development, and operational efficiency.",
+          "image": "/3d-gis/large-image-switcher-city.jpg",
+          "thumb": "/3d-gis/large-image-switcher_city-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/arcuser/planning-the-city-of-tomorrow-in-3d",
+          "linkLabel": "See How"
+        },
+        {
+          "title": "Regional Analysis",
+          "text": "Look at a large region in 3D for big picture understanding.",
+          "image": "/3d-gis/large-image-switcher-region.jpg",
+          "thumb": "/3d-gis/large-image-switcher-region-thumbnail.jpg",
+          "href": "https://www.esri.com/about/newsroom/announcements/fire-globe-delivers-esri-3d-visualization-to-us-firefighters",
+          "linkLabel": "See How"
+        },
+        {
+          "title": "Global Views",
+          "text": "Use the whole globe to get a true sense of your data.",
+          "image": "/3d-gis/large-image-switcher-globe.jpg",
+          "thumb": "/3d-gis/large-image-switcher-globe-thumbnail.jpg",
+          "href": "https://www.esri.com/arcgis-blog/products/arcgis-online/3d-gis/3d-web-scenes-take-flight",
+          "linkLabel": "See How"
+        }
+      ]
+    },
+    {
+      "type": "embed",
+      "kicker": "video",
+      "title": "Take a Closer Look at Esri",
+      "url": "https://www.esri.com/videos/iframe?videoid=JYkNBY7xuRo"
+    }
+  ]
+}

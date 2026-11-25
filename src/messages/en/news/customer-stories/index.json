@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Customer Stories",
+    "subtitle": "ArcGIS at work around the world",
+    "text": "Energy, banking, telecommunications, health, retail: organizations tell what ArcGIS changed for them. These stories are published by Esri.",
+    "bgImage": "/news/customerStories/245545558-2400.jpg"
+  },
+  "ui": {
+    "kicker": "Publications",
+    "contact": "Talk about your project",
+    "anchor": "See the stories",
+    "listKicker": "Success stories",
+    "listTitle": "What ArcGIS changed for them",
+    "listText": "Each story is tied to its industry: the industry page details the matching uses of ArcGIS.",
+    "read": "Read on esri.com",
+    "sector": "See the industry",
+    "othersKicker": "See also",
+    "othersTitle": "Other publications"
+  }
+}

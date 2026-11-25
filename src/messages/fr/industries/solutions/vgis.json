@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "title": "Réalité augmentée et réalité virtuelle",
+    "text": "vGIS est le système de réalité augmentée (AR) le plus avancé pour les services publics. vGIS combine les données SIG avec des informations tierces issues de multiples sources afin de créer des projections holographiques et de réalité augmentée stables et précises.",
+    "bgImage": "/Solutions/PartnersSolutions/vgis/AdobeStock_157462783-2400.jpg"
+  },
+  "sections": [
+    {
+      "title": "Détails de la solution",
+      "paragraphs": [
+        "vGIS Utilities transforme vos informations d’actifs d’un format SIG traditionnel en hologrammes spectaculaires. Les canalisations d’eau, systèmes d’égouts, conduites de gaz et câbles électriques apparaissent dans votre champ de vision comme des extensions naturelles du monde réel. Vous pouvez utiliser votre téléphone, tablette ou casque holographique pour « voir » votre infrastructure souterraine."
+      ],
+      "image": "/Solutions/PartnersSolutions/vgis/vgis.png"
+    }
+  ],
+  "video": {
+    "title": "Présentation de vGIS",
+    "text": "Plateforme de visualisation BIM et SIG",
+    "youtubeId": "0rK_GRbYFmg"
+  },
+  "brochure": {
+    "title": "vGIS",
+    "text": "vGIS a été reconnu comme finaliste du Microsoft CityNext Award 2018. L’entreprise a été honorée parmi un large panel mondial de partenaires Microsoft pour son excellence en matière d’innovation. Les lauréats ont été choisis parmi plus de 2 600 participants issus de 115 pays dans le monde.",
+    "image": "/Solutions/PartnersSolutions/vgis/AdobeStock_159799664-2400.jpg",
+    "href": "https://www.vgis.io/wp-content/uploads/2019/01/Brochure-vGIS-Utilities-v3.pdf"
+  }
+}

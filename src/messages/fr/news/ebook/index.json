@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "title": "Livres électroniques",
+    "subtitle": "Approfondir le SIG",
+    "text": "Des ouvrages à lire en ligne ou à télécharger pour approfondir le SIG et l’analyse spatiale.",
+    "bgImage": "/news/ebook/adobestock166969650-2400.jpg"
+  },
+  "ui": {
+    "kicker": "Publications",
+    "contact": "Parler à un expert",
+    "anchor": "Voir les livres",
+    "listKicker": "À lire",
+    "listTitle": "Disponible dès maintenant",
+    "related": "Sur ce site",
+    "othersKicker": "À voir aussi",
+    "othersTitle": "Autres publications"
+  },
+  "books": [
+    {
+      "title": "The Language of Spatial Analysis",
+      "text": "La définition, le vocabulaire et la démarche de l’analyse spatiale, expliqués pas à pas.",
+      "meta": "Esri · PDF · en anglais",
+      "href": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/books/the-language-of-spatial-analysis.pdf",
+      "cta": "Lire le livre (PDF)",
+      "relatedLabel": "Analyse spatiale et science des données",
+      "relatedHref": "/arcgis/products/spatial-analytics-data-science/overview"
+    }
+  ]
+}

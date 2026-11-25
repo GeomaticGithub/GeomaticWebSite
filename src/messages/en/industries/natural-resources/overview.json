@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "eyebrow": "SUCCESS STORIES",
+    "title": "Tracing Each Oyster from Tide to Table",
+    "kicker": "The largest shellfish producer in the United States, Taylor Shellfish Farms, uses ArcGIS software throughout its operations. Smart maps and spatial analysis help the company overcome challenges of ocean acidification, increase yield, track farm bed contents, collect and share data with easy-to-use field apps, and access real-time data on farm conditions.",
+    "mediaImage": "/Solutions/Industries/naturalResources/video-tracing-each-oyster.jpg",
+    "documentUrl": "https://www.esri.com/about/newsroom/blog/tracing-each-oyster-from-tide-to-table"
+  },
+  "strengthen": {
+    "title": "Improve the efficiency of your production.",
+    "paragraph": "Whether you are managing the earth's resources or your field and staff resources, ArcGIS software enables you to streamline workflows and maximize productivity. Spatial insights reveal new patterns and trends to help you make better-informed decisions that will help your organization thrive. ",
+    "imageSection": {
+      "image": "/Solutions/Industries/naturalResources/device-create-central-repository-all-spatial-date.png",
+      "title": "Create a central repository for all spatial data.",
+      "description": "Provide a complete platform to enable everyone in the organization to easily find, share, and analyze information."
+    }
+  },
+  "features": [
+    {
+      "title": "Access a world of content.",
+      "paragraph": "Access the foremost collection of global geographic information including imagery, boundaries, landscape, and demographic data layers.",
+      "image": "/Solutions/Industries/naturalResources/device-access-world-content.png",
+      "backgroundImage": "/Solutions/Industries/naturalResources/access-world-of-content-background-wide.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Streamline daily workflows.",
+      "paragraph": "Transform your daily operations; collect data in the field and share real-time information with your colleagues in the office.",
+      "image": "/Solutions/Industries/naturalResources/device-streamline-daily-workflows.png",
+      "backgroundImage": "/Solutions/Industries/naturalResources/news-and-events-background-wide.jpg",
+      "layout": "left"
+    },
+    {
+      "title": "Gain competitive insight.",
+      "paragraph": "Advanced geospatial analytics allows you to uncover relationships in your data, empowering you to respond proactively rather than reactively.",
+      "image": "/Solutions/Industries/naturalResources/device-gain-competitive-insight.png",
+      "backgroundImage": "/Solutions/Industries/naturalResources/gain-competitive-insight-background-wide.jpg",
+      "layout": "right"
+    }
+  ],
+  "empower": {
+    "title": "Empower your organization with GIS.",
+    "paragraph": "Improve operational efficiency with mapping and spatial analysis. Use ArcGIS to achieve goals and compliance while mitigating environmental impacts.",
+    "items": [
+      {
+        "title": "Agriculture",
+        "paragraph": "Integrate remote-sensing and real-time data to maximize profits.",
+        "icon": "/Solutions/Industries/naturalResources/agriculture.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/natural-resources/segments/agriculture"
+        }
+      },
+      {
+        "title": "Forestry",
+        "paragraph": "Enhance regulatory reports and meet business objectives.",
+        "icon": "/Solutions/Industries/naturalResources/forestry.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/natural-resources/segments/forestry"
+        }
+      },
+      {
+        "title": "Mining",
+        "paragraph": "From exploration to mine remediation, support the project life cycle.",
+        "icon": "/Solutions/Industries/naturalResources/mining.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/natural-resources/segments/mining"
+        }
+      },
+      {
+        "title": "Renewables",
+        "paragraph": "Evaluate viability of wind, solar, and geothermal projects.",
+        "icon": "/Solutions/Industries/naturalResources/renewables.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/natural-resources/segments/renewables"
+        }
+      }
+    ]
+  },
+  "news": {
+    "title": "News & Events",
+    "backgroundImage": "/Solutions/Industries/naturalResources/news-and-events-background-wide.jpg",
+    "cards": [
+      {
+        "eyebrow": "Event",
+        "title": "Esri User Conference (UC)",
+        "blurb": "July 8-12, 2019 | San Diego, California, USA",
+        "image": "/Solutions/Industries/naturalResources/event-card-esriuc-2019.jpg",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "eyebrow": "Event",
+        "title": "Esri User Conference",
+        "blurb": "February 11-12, 2020 | Washington, D.C. , USA",
+        "image": "/Solutions/Industries/naturalResources/event-federal-gis.jpg",
+        "href": "https://www.esri.com/en-us/about/events/fedgis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fabout%2Fevents%2Ffederal-gis-conference%2Foverview"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Putting Agronomic Analysis in the Hands of Farmers",
+        "blurb": "Farmers can easily analyze land to determine conservation practices while optimizing production.",
+        "image": "/Solutions/Industries/naturalResources/news-agronomic-analysis.jpg",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/media/fliers/usda-nrcs-stone-environmental.pdf"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Striking Gold: Achieving safe, secure global data",
+        "blurb": "Barrick Gold decision-makers now have greater access to company data to find better solutions.",
+        "image": "/Solutions/Industries/naturalResources/news-striking-gold.jpg",
+        "href": "https://www.esri.ca/sites/default/files/resources/cr/ANN_Spring2013_StrikingGold_Linked.pdf"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Find out how Esri can help your organization.",
+    "ctaLabel": "Get started",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

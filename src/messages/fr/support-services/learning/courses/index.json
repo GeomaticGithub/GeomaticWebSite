@@ -1,0 +1,269 @@
+{
+  "ui": {
+    "kicker": "Catalogue des formations",
+    "heroText": "{count} formations ArcGIS classées par thème, pour débuter comme pour se spécialiser.",
+    "contact": "Demander un devis",
+    "anchor": "Parcourir le catalogue",
+    "catalogKicker": "Catalogue",
+    "filterLabel": "Rechercher une formation",
+    "filterPlaceholder": "Ex. : ArcGIS Pro, Python, géodatabase",
+    "clear": "Effacer",
+    "themes": "Filtrer par thème",
+    "all": "Toutes",
+    "count": "{count} formations",
+    "countOne": "1 formation",
+    "noResult": "Aucune formation ne correspond à « {query} ».",
+    "reset": "Afficher toutes les formations",
+    "planKicker": "Plan de formation",
+    "categories": {
+      "basics": "Fondamentaux",
+      "mapping": "Cartographie et visualisation",
+      "analysis": "Analyse spatiale et imagerie",
+      "sharing": "Partage et SIG web",
+      "data": "Gestion des données",
+      "enterprise": "ArcGIS Enterprise et administration",
+      "dev": "Développement et scripts",
+      "industry": "Réseaux et métiers"
+    }
+  },
+  "hero": {
+    "title": "Centre de formation agréé Esri au Maroc",
+    "description": "",
+    "bgGraphic": "/support-services/learning/courses/learning.png"
+  },
+  "intro": {
+    "title": "Vous souhaitez renforcer vos compétences en SIG ?",
+    "subTitle": "Nous pouvons vous aider à établir un plan de formation adapté à vos besoins.",
+    "bgGraphic": "/1x1.png",
+    "paragraph": "Discutez avec notre équipe pour construire un parcours d’apprentissage ArcGIS adapté à vos projets et à vos délais.",
+    "emailText": "Envoyez-nous un e-mail",
+    "phoneText": "Appelez-nous",
+    "email": "training@geomatic.com.ma",
+    "phone": "+212 522 26 00 20"
+  },
+  "community": {
+    "title": "Formations",
+    "cards": [
+      {
+        "title": "ArcGIS I : Introduction au SIG",
+        "category": "basics",
+        "link": "/training-courses/arcgis-i-introduction-to-gis"
+      },
+      {
+        "title": "Introduction au SIG avec ArcGIS",
+        "category": "basics",
+        "link": "/training-courses/introduction-to-gis-using-arcgis"
+      },
+      {
+        "title": "ArcGIS Pro : Flux de travail essentiels",
+        "category": "basics",
+        "link": "/training-courses/arcgis-pro-essential-workflows"
+      },
+      {
+        "title": "Utiliser ArcGIS dans toute votre organisation",
+        "category": "basics",
+        "link": "/training-courses/putting-arcgis-to-use-across-your-org"
+      },
+      {
+        "title": "Migrer d’ArcMap vers ArcGIS Pro",
+        "category": "basics",
+        "link": "/training-courses/migrating-from-arcmap-to-arcgis-pro"
+      },
+      {
+        "title": "ArcGIS 2 : Flux de travail essentiels",
+        "category": "basics",
+        "link": "/training-courses/arcgis-2-essential-workflows"
+      },
+      {
+        "title": "Créer des cartes et visualisations avec ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/creating-maps-and-visualizations-with-arcgis"
+      },
+      {
+        "title": "Créer des Story Maps avec ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/creating-story-maps-with-arcgis"
+      },
+      {
+        "title": "Concevoir des cartes avec ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/designing-maps-with-arcgis"
+      },
+      {
+        "title": "Bien démarrer avec Insights for ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/get-started-with-insights-for-arcgis"
+      },
+      {
+        "title": "Analyse spatiale avec ArcGIS Pro",
+        "category": "analysis",
+        "link": "/training-courses/spatial-analysis-with-arcgis-pro"
+      },
+      {
+        "title": "ArcGIS 3 : Réaliser des analyses",
+        "category": "analysis",
+        "link": "/training-courses/arcgis-3-performing-analysis"
+      },
+      {
+        "title": "Géotraitement des données raster avec ArcGIS Spatial Analyst",
+        "category": "analysis",
+        "link": "/training-courses/geoprocessing-raster-data-using-arcgis-spatial"
+      },
+      {
+        "title": "Créer et analyser des surfaces avec ArcGIS",
+        "category": "analysis",
+        "link": "/training-courses/creating-and-analyzing-surfaces-using-arcgis"
+      },
+      {
+        "title": "Analyse d’images avec ArcGIS",
+        "category": "analysis",
+        "link": "/training-courses/image-analysis-with-arcgis"
+      },
+      {
+        "title": "Travailler avec le SIG 3D dans ArcGIS",
+        "category": "analysis",
+        "link": "/training-courses/working-with-3d-gis-using-arcgis"
+      },
+      {
+        "title": "Utiliser ArcGIS Network Analyst",
+        "category": "analysis",
+        "link": "/training-courses/working-with-arcgis-network-analyst"
+      },
+      {
+        "title": "Partager du contenu SIG avec ArcGIS",
+        "category": "sharing",
+        "link": "/training-courses/sharing-gis-content-using-arcgis"
+      },
+      {
+        "title": "Flux de travail utilisateur pour ArcGIS Online",
+        "category": "sharing",
+        "link": "/training-courses/user-workflows-for-arcgis-online-organization"
+      },
+      {
+        "title": "ArcGIS 4 : Partager du contenu sur le web",
+        "category": "sharing",
+        "link": "/training-courses/arcgis-4-sharing-content-on-the-web"
+      },
+      {
+        "title": "Gérer les données géospatiales dans ArcGIS",
+        "category": "data",
+        "link": "/training-courses/managing-geospatial-data-in-arcgis"
+      },
+      {
+        "title": "Créer des géodatabases",
+        "category": "data",
+        "link": "/training-courses/building-geodatabases"
+      },
+      {
+        "title": "Collecte et gestion de données terrain — ArcGIS",
+        "category": "data",
+        "link": "/training-courses/field-data-collection-and-management-arcgis"
+      },
+      {
+        "title": "Créer et modifier des données avec ArcGIS Pro",
+        "category": "data",
+        "link": "/training-courses/creating-and-editing-data-with-arcgis-pro"
+      },
+      {
+        "title": "Modifier des données avec ArcGIS Desktop",
+        "category": "data",
+        "link": "/training-courses/editing-data-with-arcgis-for-desktop"
+      },
+      {
+        "title": "Bien démarrer avec ArcGIS Data Reviewer for Desktop",
+        "category": "data",
+        "link": "/training-courses/get-started-with-arcgis-data-reviewer-for-des"
+      },
+      {
+        "title": "Introduction à ArcGIS Workflow Manager",
+        "category": "data",
+        "link": "/training-courses/introduction-to-arcgis-workflow-manager"
+      },
+      {
+        "title": "Travailler avec des données CAO dans ArcGIS Desktop",
+        "category": "data",
+        "link": "/training-courses/working-with-cad-data-in-arcgis-desktop"
+      },
+      {
+        "title": "Déployer et maintenir une géodatabase multi-utilisateurs",
+        "category": "data",
+        "link": "/training-courses/deploying-and-maintaining-multiuser-geodatabase"
+      },
+      {
+        "title": "Mettre en œuvre des flux de travail versionnés dans une géodatabase multi-utilisateurs",
+        "category": "data",
+        "link": "/training-courses/implementing-versioned-workflows-in-multiuser"
+      },
+      {
+        "title": "Distribution des données à l’aide de réplicas de géodatabase",
+        "category": "data",
+        "link": "/training-courses/distributing-data-using-geodatabase-replicas"
+      },
+      {
+        "title": "ArcGIS Enterprise : Configuration d’un déploiement de base",
+        "category": "enterprise",
+        "link": "/training-courses/arcgis-enterprise-configuring-base-deployment"
+      },
+      {
+        "title": "ArcGIS Enterprise : Flux de travail d’administration",
+        "category": "enterprise",
+        "link": "/training-courses/arcgis-enterprise-administration-workflows"
+      },
+      {
+        "title": "ArcGIS for Server : Configuration et administration du site",
+        "category": "enterprise",
+        "link": "/training-courses/arcgis-for-server-site-config-and-admin"
+      },
+      {
+        "title": "Stratégies de conception d’architecture système",
+        "category": "enterprise",
+        "link": "/training-courses/system-architecture-design-strategies"
+      },
+      {
+        "title": "Déploiement de Portal for ArcGIS",
+        "category": "enterprise",
+        "link": "/training-courses/deploying-portal-for-arcgis"
+      },
+      {
+        "title": "Créer des scripts Python pour ArcGIS",
+        "category": "dev",
+        "link": "/training-courses/creating-python-scripts-for-arcgis"
+      },
+      {
+        "title": "Introduction aux scripts de géotraitement avec Python",
+        "category": "dev",
+        "link": "/training-courses/intro-to-geoprocessing-scripts-using-python"
+      },
+      {
+        "title": "Configurer des applications web avec Web AppBuilder for ArcGIS",
+        "category": "dev",
+        "link": "/training-courses/config-web-apps-using-web-appbuilder-for-arc"
+      },
+      {
+        "title": "Introduction au développement web avec ArcGIS",
+        "category": "dev",
+        "link": "/training-courses/introduction-to-web-development-using-arcgis"
+      },
+      {
+        "title": "Utiliser ArcGIS pour les flux de travail des services d’eau",
+        "category": "industry",
+        "link": "/training-courses/using-arcgis-for-water-utility-workflows"
+      },
+      {
+        "title": "Créer et gérer un Utility Network avec ArcGIS",
+        "category": "industry",
+        "link": "/training-courses/creating-and-managing-utility-network-with-arc"
+      },
+      {
+        "title": "Utiliser ArcGIS pour les flux de travail géoscientifiques miniers",
+        "category": "industry",
+        "link": "/training-courses/using-arcgis-for-mining-geoscience-workflows"
+      },
+      {
+        "title": "Travailler avec des réseaux géométriques pour les services publics",
+        "category": "industry",
+        "link": "/training-courses/working-with-geometric-networks-for-utilities"
+      }
+    ]
+  }
+}

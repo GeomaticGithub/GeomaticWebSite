@@ -1,0 +1,49 @@
+{
+  "empower": {
+    "title": "Empower all electric and gas utilities",
+    "paragraph": "Esri's mapping and analytics software improves performance at utilities of all sizes—from large multinational utilities to community-based utilities.",
+    "items": [
+      {
+        "title": "Electric Utilities",
+        "icon": "/Solutions/Industries/electricGasUtilities/electricUtilities.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/electric-gas-utilities/segments/electric"
+        }
+      },
+      {
+        "title": "Gas Utilities",
+        "icon": "/Solutions/Industries/electricGasUtilities/gasUtilities.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/electric-gas-utilities/segments/gas"
+        }
+      }
+    ]
+  },
+  "strengthen": {
+    "title": "GIS gives utilities an advantage",
+    "paragraph": "Location is fundamental to all electric and gas utilities. Empower staff to leverage critical location data with ArcGIS technology. Advanced mapping and real-time spatial analytics in ArcGIS strengthen operations and decision-making—from the field to the office.",
+    "imageSection": {
+      "image": "/Solutions/Industries/electricGasUtilities/Device_1_Access.png",
+      "title": "Access",
+      "description": "Connect everyone with maps and data. See assets, plans, compliance issues, and high-demand areas in one place to improve operations."
+    }
+  },
+  "features": [
+    {
+      "title": "Awareness",
+      "paragraph": "Keep a pulse on real-time weather, traffic, asset, and disaster information to speed response times.",
+      "image": "/Solutions/Industries/electricGasUtilities/Device_2_Awareness.png",
+      "backgroundImage": "/Solutions/Industries/electricGasUtilities/Background_Awareness.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Analytics",
+      "paragraph": "Reveal relationships in your data, such as areas of high usage that are vulnerable to disasters. Detect problems before they occur.",
+      "image": "/Solutions/Industries/electricGasUtilities/Device_3_Analytics.png",
+      "backgroundImage": "/Solutions/Industries/electricGasUtilities/Background_Analytics.jpg",
+      "layout": "left"
+    }
+  ]
+}

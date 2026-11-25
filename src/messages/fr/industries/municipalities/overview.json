@@ -1,0 +1,34 @@
+{
+  "strengthen": {
+    "title": "Les cartes intelligentes et l’analyse font progresser les gouvernements",
+    "paragraph": "Les gouvernements collectent et gèrent d’énormes quantités de données—toutes liées à la localisation. Les cartes et l’analyse spatiale permettent de les comprendre rapidement et de les rendre plus exploitables. Prendre des décisions fondées sur les données pour améliorer la qualité de vie est essentiel aux niveaux national, régional et local. Le logiciel ArcGIS le rend possible.",
+    "imageSection": {
+      "image": "/Solutions/Industries/municipalities/overvew-insightful-analytics.png",
+      "title": "Analyses pertinentes",
+      "description": "Créez et partagez des cartes et analyses faciles à utiliser qui améliorent la compréhension de tous. Analysez des problèmes complexes et révélez des modèles cachés dans les données. Facilitez la prise de décision éclairée."
+    }
+  },
+  "features": [
+    {
+      "title": "Collecte rapide de données",
+      "paragraph": "Simplifiez la collecte de données sur n’importe quel appareil, y compris les smartphones, les drones et les capteurs de l’Internet des objets (IoT). Assemblez rapidement des données issues de flux en temps réel, de multiples bases de données ou de tout référentiel public en ligne.",
+      "image": "/Solutions/Industries/municipalities/overvew-rapid-date-collection.png",
+      "backgroundImage": "/Solutions/Industries/municipalities/background-rapid-data-collection.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Partage simplifié",
+      "paragraph": "Partagez des cartes et des analyses de manière sécurisée avec le personnel ou les citoyens pour soutenir des initiatives intelligentes. Les tableaux de bord, story maps, cartes web interactives et infographies offrent des outils de communication intuitifs et efficaces.",
+      "image": "/Solutions/Industries/municipalities/overvew-simplified-sharing.png",
+      "backgroundImage": "/Solutions/Industries/municipalities/background-simplified-sharing.jpg",
+      "layout": "left"
+    },
+    {
+      "title": "Réponse coordonnée",
+      "paragraph": "Synchronisez les premiers intervenants grâce à des données de statut en temps réel et à des cartes dans un tableau de bord unifié. Agissez en toute confiance dans des situations dynamiques pour accélérer l’assistance et protéger les populations.",
+      "image": "/Solutions/Industries/municipalities/overvew-coordinated-response.png",
+      "backgroundImage": "/Solutions/Industries/municipalities/background-rapid-data-collection.jpg",
+      "layout": "right"
+    }
+  ]
+}

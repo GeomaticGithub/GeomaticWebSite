@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "title": "Suivi et analyse des actifs",
+    "subtitle1": "Gérer les actifs clés, prévenir les pannes",
+    "subtitle2": "Comprendre l’emplacement, l’état, la performance et le cycle de vie des actifs",
+    "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Améliorez la performance des actifs",
+    "paragraph": "Les gestionnaires d’actifs doivent minimiser les risques et maximiser les performances tout en gérant les coûts et les ressources pour les actifs fixes et mobiles. Les gestionnaires innovants utilisent des cartes intelligentes et des tableaux de bord pour obtenir une vue holistique de leurs actifs. L’intelligence géographique améliore les opérations quotidiennes telles que les inspections, la maintenance et la planification des investissements."
+  },
+  "enhance": {
+    "title": "Améliorez la performance des actifs",
+    "body": "Utilisez des cartes et des tableaux de bord pour unifier les données sur l’emplacement, l’état et la performance des actifs afin que vos équipes puissent agir plus rapidement et en toute confiance. Reliez les informations issues des inspections et des ordres de travail pour réduire les temps d’arrêt et prolonger la durée de vie des actifs.",
+    "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-5050-see-the-performance-others-cant.jpg"
+  },
+  "performance": {
+    "title": "Voyez les performances que d’autres ne voient pas",
+    "intro": "Lorsque les gestionnaires utilisent des cartes intelligentes et des visualisations pour effectuer le suivi et l’analyse des actifs, ils aident leurs organisations à réduire les erreurs, à gagner du temps et à prendre des décisions éclairées basées sur les données.",
+    "bullets": [
+      "Améliorer la précision de l’inventaire grâce aux applications modernes de collecte de données.",
+      "Suivre l’état et la performance des actifs en temps réel tout au long du cycle de vie.",
+      "Partager rapidement et facilement les mises à jour de statut entre le terrain et le bureau.",
+      "Prévoir les coûts et besoins de maintenance pour améliorer la fiabilité.",
+      "Gérer les attentes des clients.",
+      "S’intégrer pleinement aux systèmes de gestion des actifs et de suivi d’inventaire existants."
+    ],
+    "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-5050-see-the-performance-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Améliorez le suivi et l’analyse des actifs pour une meilleure gestion grâce à la technologie d’intelligence géographique du cloud géospatial Esri.",
+    "items": [
+      {
+        "title": "Analyse spatiale et science des données",
+        "body": "Utilisez la localisation comme fil conducteur pour révéler des schémas et tendances cachés, et ainsi améliorer le suivi et l’analyse des actifs. Obtenez un avantage concurrentiel en intégrant la localisation dans des modèles de machine learning et d’intelligence artificielle.",
+        "cta": "Améliorez vos analyses",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Connaissez l’emplacement et l’état des actifs en temps réel et prévoyez les pannes avant qu’elles ne surviennent. Utilisez l’intelligence géographique basée sur les données les plus récentes pour prendre des décisions éclairées sur le suivi et l’analyse des actifs.",
+        "cta": "Surveillez les actifs en temps réel",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Opérations sur le terrain",
+        "body": "Améliorez la coordination et l’efficacité opérationnelle des activités de vos équipes. Réduisez, voire éliminez, la dépendance au papier, modernisez les workflows pour des données fiables et accessibles, et accédez à la puissance de la localisation partout.",
+        "cta": "Coordonnez les activités terrain",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/business-needs-capabilities-field-operatioins.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur le suivi et l’analyse des actifs",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Fort Worth passe aux applications pour la gestion des actifs",
+        "source": "Esri Blog",
+        "excerpt": "La ville utilise désormais des processus numériques plutôt que papier pour inspecter, entretenir et gérer ses actifs.",
+        "href": "https://www.esri.com/about/newsroom/blog/fort-worth-moves-to-apps-for-real-time-asset-management",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-card-fort-worth.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Un nouveau modèle de données maintient une centrale solaire performante",
+        "source": "ArcNews",
+        "excerpt": "Pour gérer efficacement les actifs d’une nouvelle centrale solaire, la ville de Loveland suit non seulement les actifs mais aussi les calendriers et coûts de maintenance.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/a-vibrant-new-data-model-keeps-a-solar-field-beaming",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-card-a-new-data-model.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Le SIG et le BIM soutiennent les actifs de l’université",
+        "source": "ArcUser",
+        "excerpt": "L’Ohio State University a mis en place un nouveau système d’information de bâtiment pour améliorer la gestion de centaines d’installations et d’actifs sur ses campus.",
+        "href": "https://www.esri.com/about/newsroom/arcuser/gis-and-bim-provide-life-cycle-support-for-universitys-assets",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-card-gis-and-bim.jpg"
+      }
+    ]
+  }
+}

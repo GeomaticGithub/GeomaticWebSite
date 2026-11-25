@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "title": "Logistics and Fulfillment",
+    "subtitle1": "Meet complex market demands.",
+    "subtitle2": "Share information to prevent disruption and deliver on service expectations.",
+    "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-banner-bg.png"
+  },
+  "intro": {
+    "title": "On-time delivery demands real-time insight",
+    "paragraph": "In logistics management, being on time and meeting customer expectations is everything. Dispatchers need to prepare for any threat to delivery operations—from contamination to natural disasters to theft. Easy-to-understand digital dashboards that fuse location intelligence and all operational data provide real-time insights. Adjustments can be made in the moment, and delays minimized to stay on schedule."
+  },
+  "band": {
+    "title": "On-time delivery demands real-time insight",
+    "body": "Get a real-time view of logistics operations with location intelligence. Monitor routes, orders, and network health to predict arrival time, protect reputation, and keep operations on schedule."
+  },
+  "routes": {
+    "title": "See the smartest routes others can’t",
+    "intro": "The world’s largest delivery companies use location intelligence to optimize routes, arrive when projected, and meet high customer service expectations.",
+    "bullets": [
+      "Deliver on your promise of products, services, and order fulfillment.",
+      "Optimize routes based on customer location, time windows, cargo transfers, and other factors.",
+      "Manage risk by planning for natural disasters and other events.",
+      "Respond to disruptions in real time and adjust to protect your fulfillment reputation.",
+      "Reduce costs with smart routing and other location tools."
+    ],
+    "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-5050-see-the-smartest-routes-others-cant.png"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Get the best routing decisions and a real-time view of logistics operations using location intelligence technology from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Analyze and display real-time data from sensors, devices, and social media feeds. Gain situational awareness from your streaming data whether you are tracking moving assets or stationary sensors. ",
+        "cta": "Make sense of big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Spatial Analysis and Data Science",
+        "body": "See hidden patterns in your supply chain data. Access spatial analysis capabilities on demand and at scale with the Esri Geospatial Cloud.",
+        "cta": "Upgrade your analysis",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Imagery and Remote Sensing",
+        "body": "Access imagery and remote-sensing data feeds to monitor delivery status. Obtain timely answers based on real-time data visualized in a smart map.",
+        "cta": "Turn observation into insight",
+        "href": "https://www.esri.com/en-us/capabilities/imagery-remote-sensing/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fimagery-remote-sensing%2Foverview",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/business-needs-capabilities-imagery-remote-sensing.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Related needs",
+    "bgGraphic": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-simple-cards-bg.png",
+    "items": [
+      {
+        "title": "Operational Efficiency",
+        "body": "Streamline projects and identify areas that need improvement. Rely on authoritative data to reduce errors and better allocate resources.",
+        "href": "/industries/needs/operational-efficiency",
+        "icon": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/operationalEfficiency.svg"
+      },
+      {
+        "title": "Asset Tracking and Analysis",
+        "body": "Visualize moving and fixed assets dynamically. Improve performance with monitoring tools to accurately record the locations and health of your assets.",
+        "href": "/industries/needs/asset-tracking-analysis",
+        "icon": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/assetTrackingAndAnalysis.svg"
+      },
+      {
+        "title": "Situational Awareness",
+        "body": "Be proactive: make better decisions by integrating, analyzing, and displaying data from sensors, devices, and social/media feeds.",
+        "href": "/industries/needs/situational-awareness",
+        "icon": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/situationalAwareness.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about logistics and fulfillment",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "The Logistics of On-Time Holiday Deliveries",
+        "source": "WhereNext Magazine",
+        "excerpt": "Logistics expert Rodney Conger explores the supply chain efficiencies, innovation, and location intelligence needed to deliver holiday packages.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/holiday-deliveries-and-logistics",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-card-logistics-of-on-time-holiday-deliveries.png"
+      },
+      {
+        "tag": "Article",
+        "title": "Innovation: A UPS Story",
+        "source": "WhereNext Magazine",
+        "excerpt": "UPS senior director of process management Jack Levis discusses the next wave of change in a fast-moving logistics world.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/buzzwords-hidden-dimensions-and-innovation-a-ups-story",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-card-innovation-ups-story.png"
+      },
+      {
+        "tag": "Article",
+        "title": "A Digital Twin for the Supply Chain",
+        "source": "WhereNext Magazine",
+        "excerpt": "The digital twin may help supply chain operators serve an increasingly empowered consumer—and gain a seat in the boardroom.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/digital-twin-for-supply-chain-management",
+        "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-card-digital-twin-supply-chain.jpg"
+      }
+    ]
+  }
+}

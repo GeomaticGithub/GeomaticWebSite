@@ -1,0 +1,93 @@
+{
+  "strengthen": {
+    "title": "Support data-driven decisions",
+    "paragraph": "GIS brings efficiencies and better information to bear across your organization. From planning to delivery, operations, and maintenance, bring the power of location intelligence to your organization. Use ArcGIS software to organize your information for better decisions and customer satisfaction.",
+    "imageSection": {
+      "image": "/Solutions/Industries/transportation/device-build-a-system-of-record.jpg",
+      "title": "Build a system of record",
+      "description": "Organize and integrate information from across your organization to better support your business objectives."
+    }
+  },
+  "features": [
+    {
+      "title": "Empower your workforce",
+      "paragraph": "Give each business unit the tailored information it needs on any device, anytime, anywhere.",
+      "image": "/Solutions/Industries/transportation/device-empower-your-workforce.png",
+      "backgroundImage": "/Solutions/Industries/transportation/empower-your-workforce-banner-wide.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "Learn more",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fmapping-visualization"
+      }
+    },
+    {
+      "title": "Create seamless workflows",
+      "paragraph": "Bring spatial intelligence to your enterprise business systems. Break down silos and uncover deeper insights.",
+      "image": "/Solutions/Industries/transportation/device-create-seemless-workflows.png",
+      "backgroundImage": "/Solutions/Industries/transportation/background-create-seemless-workflows-wide.jpg",
+      "layout": "left",
+      "cta": {
+        "label": "Learn more",
+        "href": "https://www.arcgis.com/apps/Cascade/index.html?appid=7dc16f2ac82441bc89f03bc0e4bbcc65"
+      }
+    },
+    {
+      "title": "Take GIS to the field",
+      "paragraph": "Improve coordination and achieve operational efficiencies in field workforce activities. Reduce or even eliminate your reliance on paper.",
+      "image": "/Solutions/Industries/transportation/device-take-gis-to-the-field.png",
+      "backgroundImage": "/Solutions/Industries/transportation/background-take-gis-to-the-field-wide.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "Learn more",
+        "href": "https://www.esri.com/en-us/capabilities/data-management?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fdata-management&rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/data-management"
+      }
+    }
+  ],
+  "empower": {
+    "title": "Leverage location intelligence",
+    "paragraph": "Use the power of GIS for greater insight and operational performance.",
+    "items": [
+      {
+        "title": "Roads and Highways",
+        "paragraph": "Plan, monitor, and manage strategic infrastructure more effectively.",
+        "icon": "/Solutions/Industries/transportation/roadsAndHighways.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/transportation/segments/roads-highways"
+        }
+      },
+      {
+        "title": "Public Transport and Rail",
+        "paragraph": "Monitor assets in real time, optimize routing, and improve communication.",
+        "icon": "/Solutions/Industries/transportation/publicTransportAndRail.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/transportation/segments/public-transport"
+        }
+      },
+      {
+        "title": "Airports and Aviation",
+        "paragraph": "Improve management, safety and security, and regulatory compliance.",
+        "icon": "/Solutions/Industries/transportation/airportsAndAviation.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/transportation/segments/airports-aviation"
+        }
+      },
+      {
+        "title": "Ports and Maritime",
+        "paragraph": "Manage assets while enhancing your sustainability and security.",
+        "icon": "/Solutions/Industries/transportation/portsAndMaritime.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/transportation/segments/ports-maritime"
+        }
+      }
+    ]
+  },
+  "cta": {
+    "title": "Find out how Esri can help your organization.",
+    "ctaLabel": "Get started",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

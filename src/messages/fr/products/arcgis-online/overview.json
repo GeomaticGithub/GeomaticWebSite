@@ -1,0 +1,170 @@
+{
+  "ui": {
+    "kicker": "Produit ArcGIS",
+    "contact": "Parler à un expert",
+    "features": "Voir les fonctionnalités",
+    "powerKicker": "Fonctionnalités",
+    "designedKicker": "Atouts",
+    "expandKicker": "Aller plus loin",
+    "storiesKicker": "Témoignages clients",
+    "storiesTitle": "ArcGIS Online en pratique",
+    "onEsri": "sur esri.com"
+  },
+  "hero": {
+    "title": "ArcGIS Online",
+    "subtitle": "Cartographie et intelligence géographique pour tous",
+    "bgImage": "/arcgisOnline/arcgis-online-overview-banner-background-data-topography.jpg",
+    "mediaImage": "/arcgisOnline/arcgis-online-overview-banner-foreground-people-presenting.png",
+    "mediaAlt": "Personnes collaborant autour de solutions ArcGIS",
+    "icon": "/arcgisOnline/ArcGISOnline.png"
+  },
+  "intro": {
+    "text": "Faisant partie du Cloud géospatial Esri, ArcGIS Online vous permet de connecter les personnes, les lieux et les données en utilisant des cartes interactives. Travaillez avec des styles intelligents basés sur les données et des outils d'analyse intuitifs pour obtenir des insights géographiques. Délivrez de l'intelligence géographique. Partagez vos insights avec le monde ou des groupes spécifiques."
+  },
+  "power": {
+    "title": "La puissance d'ArcGIS Online",
+    "image": "/arcgisOnline/arcgis-online-overview-the-power-of-arcgis-online.jpg",
+    "imageAlt": "Collage des capacités d'ArcGIS Online"
+  },
+  "features": {
+    "items": [
+      {
+        "icon": "map",
+        "title": "Créer des cartes",
+        "desc": "Créez rapidement des cartes d'insights dans votre compte ArcGIS Online en utilisant des workflows glisser-déposer.",
+        "linkText": "En savoir plus sur la création de cartes",
+        "href": "/products/capabilities/mapping"
+      },
+      {
+        "icon": "share",
+        "title": "Partager et collaborer",
+        "desc": "Partagez instantanément vos cartes avec des groupes, partenaires ou le public. Travaillez en sécurité avec votre organisation grâce aux rôles et privilèges.",
+        "linkText": "Voir comment partager et collaborer",
+        "href": "/arcgis/products/arcgis-online/capabilities/share-collaborate"
+      },
+      {
+        "icon": "analyze",
+        "title": "Analyser les données",
+        "desc": "Les outils d'analyse intuitifs vous aident à découvrir des modèles, effectuer des analyses de site, réseau et d'aptitude.",
+        "linkText": "Découvrir les outils d'analyse",
+        "href": "/arcgis/products/arcgis-online/capabilities/analyze-data"
+      },
+      {
+        "icon": "data",
+        "title": "Travailler avec vos données",
+        "desc": "Importez des données depuis des feuilles de calcul, applications et services. Enrichissez, stylisez et transformez-les.",
+        "linkText": "Explorer les outils de données",
+        "href": ""
+      }
+    ]
+  },
+  "designed": {
+    "title": "Conçu pour votre succès",
+    "tabs": [
+      {
+        "label": "Cloud",
+        "title": "Basé sur le cloud",
+        "desc": "Parce qu'il est hébergé en tant que service, ArcGIS Online peut être utilisé à tout moment, n'importe où. Vos cartes s'adaptent à des millions d'utilisateurs sans maintenance serveur.",
+        "image": "/arcgisOnline/arcgis-online-overview-cloud-based.jpg",
+        "imageAlt": "ArcGIS Online basé sur le cloud"
+      },
+      {
+        "label": "Sécurisé et privé",
+        "title": "Sécurisé et privé",
+        "desc": "Sécurité et contrôles de confidentialité de niveau entreprise intégrés.",
+        "image": "/arcgisOnline/designed-secure.jpg",
+        "imageAlt": "Visualisation de sécurité"
+      },
+      {
+        "label": "Simple à déployer",
+        "title": "Simple à déployer",
+        "desc": "Démarrez rapidement avec du contenu et des applications prêts à l'emploi.",
+        "image": "/arcgisOnline/designed-simple.jpg",
+        "imageAlt": "Déploiement simple"
+      }
+    ]
+  },
+  "expand": {
+    "title": "Étendez votre travail",
+    "bgImage": "/arcgisOnline/background-expand-your-work.avif",
+    "cards": [
+      {
+        "title": "Outils développeur",
+        "desc": "API et SDK pour créer des applications de cartographie et d'analyse personnalisées.",
+        "linkText": "Explorer ArcGIS pour développeurs",
+        "href": "/arcgis/products/arcgis-for-developers/overview",
+        "image": "/arcgisOnline/image-1-dev-tools.png",
+        "imageAlt": "Outils développeur"
+      },
+      {
+        "title": "Opérations terrain",
+        "desc": "Coordonnez le travail sur le terrain avec des applications mobiles intégrées à vos cartes.",
+        "linkText": "Explorer les opérations terrain",
+        "href": "/products/capabilities/field-operations",
+        "image": "/arcgisOnline/image-2-field-operations.png",
+        "imageAlt": "Opérations terrain"
+      },
+      {
+        "title": "Workflows avancés",
+        "desc": "Faites plus avec l'analyse avancée utilisant ArcGIS Pro et ses extensions.",
+        "linkText": "En savoir plus sur ArcGIS Pro",
+        "href": "/arcgis/products/arcgis-pro/overview",
+        "image": "/arcgisOnline/image-3-arcgis-pro.png",
+        "imageAlt": "Workflows avancés"
+      },
+      {
+        "title": "Données et cartes",
+        "desc": "Cartes prêtes à l'emploi et couches de données officielles pour vos projets.",
+        "linkText": "Explorer Living Atlas",
+        "href": "https://www.esri.com/en-us/arcgis/products/living-atlas",
+        "image": "/arcgisOnline/image-4-data-and-maps.png",
+        "imageAlt": "Données et cartes"
+      }
+    ]
+  },
+  "success": {
+    "background": "/arcgisOnline/success-bg.jpg",
+    "title": "Planification urbaine",
+    "desc": "Le comté de Kenton, Kentucky utilise ArcGIS Online pour favoriser la visualisation, la narration et la collaboration avec les responsables municipaux, les citoyens et les propriétaires d'entreprises.",
+    "ctaText": "Voir l'histoire",
+    "ctaHref": "",
+    "pills": [
+      {
+        "label": "Planification urbaine",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-city-planning-thumbnail.jpg",
+        "title": "Planification urbaine",
+        "desc": "Le comté de Kenton, Kentucky utilise ArcGIS Online pour favoriser la visualisation, la narration et la collaboration avec les responsables municipaux, les citoyens et les propriétaires d'entreprises.",
+        "actionType": "story",
+        "actionText": "Lire l'histoire",
+        "actionUrl": ""
+      },
+      {
+        "label": "Infrastructure",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-city-planning-thumbnail.jpg",
+        "title": "Infrastructure",
+        "desc": "Gestion d'infrastructures critiques avec surveillance en temps réel et analyse spatiale pour une meilleure prise de décision.",
+        "actionType": "video",
+        "actionText": "Regarder la vidéo",
+        "actionUrl": ""
+      },
+      {
+        "label": "Gestion d'urgence",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-emergency-management-thumbnail.jpg",
+        "title": "Gestion d'urgence",
+        "desc": "Coordonnez les efforts de réponse d'urgence avec le partage de données en temps réel et des solutions de cartographie collaborative.",
+        "actionType": "video",
+        "actionText": "Regarder la vidéo",
+        "actionUrl": ""
+      },
+      {
+        "label": "Immobilier",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-real-estate-thumbnail.jpg",
+        "title": "Immobilier",
+        "desc": "Analysez les tendances du marché et les valeurs immobilières avec une intelligence géographique complète et des données démographiques.",
+        "actionType": "video",
+        "actionText": "Regarder la vidéo",
+        "actionUrl": ""
+      }
+    ]
+  }
+}

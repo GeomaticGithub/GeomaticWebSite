@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Gestion des services sur le terrain",
+    "subtitle1": "Coordonnez les opérations depuis n’importe où",
+    "subtitle2": "Travaillez en toute fluidité entre le bureau et le terrain",
+    "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Élaborez une stratégie plus efficace de services sur le terrain",
+    "paragraph": "Les activités sur le terrain impliquent souvent plusieurs projets, de nombreux employés et de multiples actifs. Les agents de terrain peuvent utiliser des applications mobiles, des cartes intelligentes et des tableaux de bord pour visualiser en temps réel l’état et la localisation des projets et du personnel. Cette approche numérique permet d’économiser temps et argent en éliminant les efforts dupliqués, en réduisant le gaspillage de ressources et en maintenant les données à jour."
+  },
+  "band": {
+    "title": "Élaborez une stratégie plus efficace de services sur le terrain",
+    "body": "Donnez aux équipes les moyens d’agir grâce à des flux de travail mobiles connectés et une image opérationnelle commune. Utilisez des données fiables, des applications géospatiales et des tableaux de bord pour coordonner les tâches, surveiller les progrès et maintenir l’alignement entre le bureau et le terrain.",
+    "image": "/Solutions/BusinessNeeds/FieldServiceManagement/band-city.jpg"
+  },
+  "connections": {
+    "title": "Voyez les connexions que d’autres ne peuvent pas",
+    "intro": "Les cartes intelligentes et les tableaux de bord éclairent les opérations critiques sur le terrain, permettent des améliorations en temps réel et révèlent des informations approfondies sur les projets et les ressources.",
+    "bullets": [
+      "Assurez-vous que le personnel de terrain et de bureau utilise les mêmes données fiables.",
+      "Exploitez des tableaux de bord en temps réel pour guider les décisions et évaluer les indicateurs clés de performance (KPI).",
+      "Améliorez la durabilité en réduisant ou remplaçant l’utilisation du papier.",
+      "Ajoutez la puissance des applications mobiles pour des fonctions essentielles telles que la collecte de données et l’optimisation des itinéraires."
+    ],
+    "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-5050-see-the-connections-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Transformez les flux de travail, réduisez les erreurs, augmentez la productivité et réalisez des économies grâce à la technologie d’intelligence géographique du cloud géospatial d’Esri.",
+    "items": [
+      {
+        "title": "Opérations sur le terrain",
+        "body": "Bénéficiez d’une perspective géographique sur les activités en temps réel et utilisez des tableaux de bord riches visuellement pour éclairer les décisions. Voyez ce qui peut être accompli grâce au travail en synergie tout en capturant des données et en naviguant — même hors ligne.",
+        "cta": "Emmenez les opérations partout",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/business-needs-capabilities-field-operatioins.jpg"
+      },
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Sachez où se trouvent les actifs et surveillez les changements en temps réel. Utilisez les big data et l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées basées sur les informations les plus récentes.",
+        "cta": "Surveillez en temps réel",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Cartographie",
+        "body": "Visualisez les personnes, les lieux et les actifs pour obtenir une compréhension claire de toutes les opérations sur le terrain. Voyez ce qui se passe dans l’ensemble de l’organisation, élaborez un plan détaillé et sachez où programmer et déployer efficacement les ressources.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur la gestion des services sur le terrain",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Les applications de terrain aident une entreprise de services publics à rationaliser son travail",
+        "source": "ArcNews",
+        "excerpt": "Le personnel des services publics dispose désormais d’une vue commune du réseau depuis le bureau et le terrain, rationalisant les opérations et augmentant l’efficacité.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/field-apps-help-utility-streamline-work",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-card-field-apps-help-utility-steamline-work.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "La Croix-Rouge libanaise utilise l’intelligence géographique",
+        "source": "Esri Blog",
+        "excerpt": "Les outils de terrain aident les volontaires à gérer la collecte de données complexes et la gestion de projets.",
+        "href": "https://www.esri.com/about/newsroom/blog/lebanese-red-cross-data-driven",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-card-lebanese-red-cross.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Amener le SIG sur le terrain et en retour",
+        "source": "ArcNews",
+        "excerpt": "Découvrez comment les employés du service des travaux publics et un gestionnaire SIG ont coordonné les missions de terrain, collecté des données d’actifs, et plus encore.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/taking-gis-to-the-field-and-back",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-card-taking-gis-to-the-field-and-back.jpg"
+      }
+    ]
+  }
+}

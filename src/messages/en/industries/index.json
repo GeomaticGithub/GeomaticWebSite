@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "kicker": "Solutions",
+    "title": "Solutions by industry and need",
+    "subtitle": "ArcGIS at work in your field",
+    "text": "Find how GIS is used in your industry, the answers to your business needs and the solutions of our partners.",
+    "contact": "Talk to an expert",
+    "anchor": "See the industries",
+    "bgImage": "/Solutions/Industries/naturalResources/access-world-of-content-background-wide.jpg"
+  },
+  "jump": "Go to",
+  "sectors": {
+    "kicker": "Industries",
+    "title": "GIS in your industry",
+    "text": "{count} industries, with their uses and examples of organizations that use ArcGIS."
+  },
+  "needs": {
+    "kicker": "Business needs",
+    "title": "An answer to every business need",
+    "text": "Start from the problem to solve: tracking assets, organizing field work, choosing a location."
+  },
+  "solutions": {
+    "kicker": "Partner solutions",
+    "title": "Specialized solutions for specific needs",
+    "text": "Monitoring, augmented reality, incident management, buildings or telecom networks: solutions offered with our partners."
+  }
+}

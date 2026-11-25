@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Gestion des bâtiments et des installations",
+    "text": "Pour automatiser la gestion de ses installations, une organisation a besoin d’un progiciel spécialisé : il doit connaître les rôles et les responsabilités de l’entreprise, comprendre ses missions et ce que chaque rôle exige pour les accomplir, savoir valider et faire circuler l’information sur les installations, et réunir des technologies diverses en un tout cohérent. ARCHIBUS est ce système.",
+    "bgImage": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/shutterstock691685071-2400.jpg"
+  },
+  "lead": "Les organisations de l’éducation, de l’énergie, des services financiers, du secteur public, de la santé, de l’immobilier, du commerce de détail et des télécommunications utilisent ARCHIBUS pour réduire le coût total d’occupation, atteindre leurs objectifs environnementaux et de durabilité, et créer de la valeur stratégique.",
+  "sections": [
+    {
+      "title": "Présentation de la solution ARCHIBUS",
+      "paragraphs": [
+        "Les applications ARCHIBUS proposent des méthodes guidées, fondées sur les meilleures pratiques, pour traiter l’ensemble des fonctions liées aux installations et aux infrastructures. Elles s’exécutent dans un environnement unique qui réunit base de données, CAO, tableur, Web, gestion documentaire et flux de travail en un tout cohérent.",
+        "La suite applicative est entièrement intégrée, pilotée par un dictionnaire de données, et peut être configurée pour refléter vos propres processus métier et s’intégrer à vos environnements de développement."
+      ],
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597130595747.png",
+      "fit": "contain"
+    },
+    {
+      "title": "Architecture du système ARCHIBUS",
+      "paragraphs": [
+        "ARCHIBUS rend la gestion des installations plus efficace grâce à des applications qui couvrent tous les aspects, toutes les tailles et tous les types d’installations, en environnement Web comme client-serveur. C’est un système modulaire : des applications consacrées à des aspects précis de la gestion des installations s’exécutent au-dessus d’un programme Web central, qui tire parti d’une base de données relationnelle puissante.",
+        "L’architecture du système permet une intégration fluide avec les systèmes d’entreprise existants et offre des solutions évolutives, capables de grandir avec les besoins de votre organisation. Tous les processus de gestion des installations sont ainsi rationalisés et optimisés."
+      ],
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597233630548.png",
+      "fit": "contain"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Suivi de la performance des installations",
+      "text": "Mettez les indicateurs clés sur les besoins et les opportunités à la portée des décideurs : vision claire des besoins, pages d’accueil adaptées à chaque rôle, visibilité complète sur les coûts d’exploitation et rapports détaillés.",
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597130980544.png"
+    },
+    {
+      "title": "Gestion des actifs",
+      "text": "Éclairez la planification des investissements, priorisez la maintenance et gagnez en transparence : une vue centralisée de l’inventaire complet évite les actifs sous-utilisés ou négligés.",
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597140364279.png"
+    }
+  ]
+}

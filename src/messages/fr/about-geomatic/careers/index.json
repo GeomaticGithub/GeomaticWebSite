@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Carrières",
+    "subtitle": "Rejoignez Geomatic",
+    "text": "Grâce à la géographie appliquée, nous aidons les organisations à comprendre le monde et à concevoir un avenir plus intelligent.",
+    "bgImage": "/aboutGeomatic/careers/AdobeStock_60497336.jpeg"
+  },
+  "ui": {
+    "kicker": "À propos",
+    "contact": "Nous contacter",
+    "anchor": "Postuler",
+    "form": "Utiliser le formulaire de contact"
+  },
+  "reasons": {
+    "kicker": "Travailler chez Geomatic",
+    "title": "Pourquoi nous rejoindre",
+    "image": "/aboutGeomatic/careers/life-at-esri-common-mission.jpg",
+    "items": [
+      {
+        "title": "Rejoignez Geomatic",
+        "text": "Chez Geomatic, nous sommes bien plus qu’une simple entreprise technologique. Nous sommes un pionnier de l’innovation géospatiale au Maroc et au-delà. Depuis 1988, nous sommes à l’avant-garde des systèmes d’information géographique (SIG), du cloud computing et du Big Data, aidant les organisations à exploiter la puissance de l’intelligence géographique pour prendre des décisions plus éclairées, basées sur les données."
+      },
+      {
+        "title": "Grandir avec un but",
+        "text": "Nos collaborateurs sont le moteur de notre réussite. Chez Geomatic, vous collaborerez avec une équipe multidisciplinaire d’experts en SIG, télédétection et technologies de géolocalisation, tous unis par une mission commune : transformer la façon dont les entreprises, les gouvernements et les collectivités perçoivent le monde. Nous valorisons la créativité, l’apprentissage continu et le courage d’explorer de nouvelles frontières en matière de technologies géospatiales."
+      },
+      {
+        "title": "Construisez l’avenir avec nous",
+        "text": "Que vous soyez ingénieur, analyste ou innovateur, Geomatic vous offre un espace pour développer votre carrière tout en contribuant à des projets d’envergure au Maroc, en Afrique et dans la région du Golfe. Rejoignez-nous et intégrez une équipe qui façonne l’avenir du développement durable grâce au pouvoir de la géographie."
+      }
+    ]
+  },
+  "apply": {
+    "kicker": "Candidature spontanée",
+    "title": "Rejoignez notre famille",
+    "text": "Geomatic propose un package complet pour garantir le développement continu de chaque employé et de notre organisation.",
+    "cta": "Envoyer votre candidature",
+    "email": "contact@geomatic.ma",
+    "image": "/aboutGeomatic/careers/careersimage2-1280x600.jpg"
+  }
+}

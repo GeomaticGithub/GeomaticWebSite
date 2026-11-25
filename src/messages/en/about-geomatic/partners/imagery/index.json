@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "Imagery Partners",
+    "bgGraphic": "/aboutGeomatic/partners/Imagery/partner-banner.png"
+  },
+  "intro": {
+    "subTitle": "Best-in-class earth observation providers",
+    "paragraph": "We collaborate with leading providers of satellite and aerial imagery to bring accurate, timely, and actionable geospatial content to our customers."
+  },
+  "community": {
+    "cards": [
+      {
+        "title": "Airbus",
+        "desc": "Airbus Intelligence is recognized as a world leader in geospatial data provision.",
+        "image": "/aboutGeomatic/partners/Imagery/partner2.png",
+        "link": "https://www.airbus.com/en"
+      },
+      {
+        "title": "Maxar Technologies",
+        "desc": "Maxar delivers disruptive Earth Intelligence and Space Infrastructure capabilities to help customers better understand our world.",
+        "image": "/aboutGeomatic/partners/Imagery/partner3.png",
+        "link": "https://maxar.com/"
+      },
+      {
+        "title": "Leonardo",
+        "desc": "A global high-technology company and key player in Aerospace, Defence & Security.",
+        "image": "/aboutGeomatic/partners/Imagery/logo1.png",
+        "link": "https://www.leonardo.com/en/home"
+      },
+      {
+        "title": "MDA Space",
+        "desc": "MDA’s Geospatial Services deliver time-sensitive, business-specific geospatial information for essential decision making.",
+        "image": "/aboutGeomatic/partners/Imagery/logo21.png",
+        "link": "https://mda.space/"
+      }
+    ]
+  }
+}

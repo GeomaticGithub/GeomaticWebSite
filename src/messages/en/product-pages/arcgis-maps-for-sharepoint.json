@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "kicker": "product",
+    "icon": "/arcgisMapsForSharePoint/MapsForSharepoint.png",
+    "title": "ArcGIS Maps for SharePoint",
+    "subtitle": "Map and search Microsoft SharePoint content with ArcGIS",
+    "image": "/arcgisMapsForSharePoint/sharepoint-banner-hero-laptop-blue.jpg",
+    "text": "ArcGIS Maps for SharePoint is an app that allows you to map and search content in Microsoft SharePoint. Visualize data on ArcGIS maps. Use ArcGIS tools to manage and analyze for deeper understanding and better decision-making. Enhance your data and maps with ready-to-use geographic content from ArcGIS. Then, share the maps you create."
+  },
+  "blocks": [
+    {
+      "type": "band",
+      "kicker": "overview",
+      "title": "Tag and find documents easily",
+      "text": "Help your team find important documents fast. Drag and drop documents on a map to geotag them. When you need that data, click on the map feature to view tagged data.",
+      "image": "/arcgisMapsForSharePoint/sharepoint-image-tag-and-find-documents-easily.jpg"
+    },
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Add maps to your SharePoint pages",
+          "text": "Turn your SharePoint lists into maps for clarity. Add Esri’s ready-to-use geographic data to your SharePoint pages for a better perspective of your projects.",
+          "image": "/arcgisMapsForSharePoint/sharepoint-image-add-maps-to-your-sharepoint-pages.jpg"
+        },
+        {
+          "title": "Configure web parts to match your brand",
+          "text": "No programming needed to work with ArcGIS Maps for SharePoint components or access site settings. Easily format maps to match company brand and style.",
+          "image": "/arcgisMapsForSharePoint/sharepoint-image-configure-web-parts-to-match-brand.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "capabilities",
+      "title": "A brand new way to look at SharePoint content",
+      "items": [
+        {
+          "title": "Locate it",
+          "text": "Using the ArcGIS Maps Locate workflow, you can enable your SharePoint lists to be used on a map. Lists stay current even as you add data.",
+          "image": "/arcgisMapsForSharePoint/sharepoint-how-it-works-locate-it.jpg",
+          "href": "https://doc.arcgis.com/en/maps-for-sharepoint/foundation-server/prepare-data/about-maps-for-sharepoint.htm",
+          "linkLabel": "How to prep your data"
+        },
+        {
+          "title": "Map it",
+          "text": "Design and use maps to see your business data on SharePoint site pages using ArcGIS Maps web part. Add geographic content from ArcGIS to give context.",
+          "image": "/arcgisMapsForSharePoint/sharepoint-how-it-works-map-it.jpg",
+          "href": "https://doc.arcgis.com/en/maps-for-sharepoint/foundation-server/use-maps/add-data-from-arcgis.htm",
+          "linkLabel": "How to add ArcGIS content"
+        },
+        {
+          "title": "Find documents quickly",
+          "text": "Drag and drop documents onto a map to tag them with location using ArcGIS Map Search app part. Find that data again when you click on the map feature.",
+          "image": "/arcgisMapsForSharePoint/sharepoint-how-it-works-find-documents-quickly.jpg",
+          "href": "https://doc.arcgis.com/en/maps-for-sharepoint/foundation-server/geotag/get-started-with-arcgis-search.htm",
+          "linkLabel": "How to tag and search"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "microsoft",
+      "title": "Delivering location to Microsoft products",
+      "text": "ArcGIS Maps for SharePoint is one of the ways Esri brings quality data and advanced spatial tools to Microsoft products. ArcGIS software helps Microsoft users unlock location intelligence in their business data for a better perspective and decision-making.",
+      "items": [
+        {
+          "title": "ArcGIS Maps for Power BI",
+          "text": "ArcGIS Maps for Power BI provides maps and demographic data inside Microsoft Power BI. Access data to make maps that help you see patterns and trends.",
+          "image": "/arcgisMapsForSharePoint/sharepoint-app-arcgis-maps-for-power-bi.jpg",
+          "href": "/arcgis/products/arcgis-maps-for-power-bi/overview",
+          "linkLabel": "See ArcGIS Maps for Power BI"
+        },
+        {
+          "title": "Office Integration",
+          "text": "ArcGIS Maps for Office gives you the power to ask location-related questions of your data in Microsoft Excel and share your results in PowerPoint.",
+          "image": "/arcgisMapsForSharePoint/sharepoint-overview-new-maps-for-office.png",
+          "href": "/arcgis/products/arcgis-maps-for-office/overview",
+          "linkLabel": "See ArcGIS Maps for Office"
+        }
+      ]
+    }
+  ]
+}

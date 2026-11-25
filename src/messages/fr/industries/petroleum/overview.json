@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "eyebrow": "Pétrole & Pipeline",
+    "title": "Aligner les personnes, les processus et la technologie",
+    "kicker": "En mettant en place une plateforme mondiale de cartographie, de reporting et d’analytique, BP permet à chacun dans son organisation de tirer parti des données spatiales et de partager l’information. Leur guichet unique pour les données géospatiales a conduit à des améliorations significatives de la collaboration, à l’optimisation des workflows de subsurface et à une meilleure analytique et surveillance de l’exploration.",
+    "mediaImage": "/Solutions/Industries/Petroleum/video-esri-BP-case-study.jpg",
+    "videoUrl": "https://www.youtube.com/embed/9qBw9sPkttI?si=42Wvcvb3jcalNUnj"
+  },
+  "strengthen": {
+    "title": "Renforcez chaque département",
+    "paragraph": "La géographie influence tous les aspects du pétrole et du gaz—de la localisation et l’extraction de nouvelles ressources à la gestion des opérations sur le terrain et au respect des normes HSE. La cartographie avancée et l’analytique spatiale révèlent des relations et des schémas plus profonds, répondent à des questions complexes et aident à prendre des décisions mieux éclairées.",
+    "imageSection": {
+      "image": "/Solutions/Industries/Petroleum/device-mapping-analytics-platform.png",
+      "title": "Une plateforme de cartographie et d’analytique pour tous",
+      "description": "Offrez à chacun dans l’organisation un accès à des données précises, cohérentes et sécurisées. Facilitez la recherche, le partage et l’analyse de l’information."
+    }
+  },
+  "features": [
+    {
+      "title": "Des cartes disponibles partout",
+      "paragraph": "Accédez aux cartes dans des environnements familiers—comme Excel, PowerPoint et en ligne—pour donner un contexte spatial aux données, que ce soit au bureau ou sur le terrain.",
+      "image": "/Solutions/Industries/Petroleum/Device_2.png",
+      "backgroundImage": "/Solutions/Industries/Petroleum/background-maps-everywhere.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Des workflows quotidiens transformés",
+      "paragraph": "Standardisez et améliorez les processus quotidiens tels que les relevés, les inspections d’actifs et la surveillance opérationnelle ; partagez les données partout et à tout moment.",
+      "image": "/Solutions/Industries/Petroleum/Device_3.png",
+      "backgroundImage": "/Solutions/Industries/Petroleum/background-workflows.jpg",
+      "layout": "left"
+    },
+    {
+      "title": "Intégration avec les systèmes existants",
+      "paragraph": "Enrichissez vos systèmes d’entreprise avec des informations géolocalisées pour obtenir de nouvelles perspectives qui améliorent l’analyse et la prise de décision.",
+      "image": "/Solutions/Industries/Petroleum/Device_4.png",
+      "backgroundImage": "/Solutions/Industries/Petroleum/background-news-events.jpg",
+      "layout": "right"
+    }
+  ],
+  "empower": {
+    "title": "Donnez du pouvoir à toute votre organisation",
+    "paragraph": "Étendez la cartographie et l’analytique dans toute l’entreprise pour réaliser le plein potentiel du SIG.",
+    "items": [
+      {
+        "title": "Amont (Upstream)",
+        "paragraph": "Accroître la valeur du portefeuille d’exploration et améliorer la performance opérationnelle",
+        "icon": "/Solutions/Industries/Petroleum/upstream.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/petroleum/segments/upstream"
+        }
+      },
+      {
+        "title": "Intermédiaire (Midstream)",
+        "paragraph": "Gérer intelligemment l’infrastructure des pipelines",
+        "icon": "/Solutions/Industries/Petroleum/midstream.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/petroleum/segments/midstream"
+        }
+      },
+      {
+        "title": "Aval (Downstream)",
+        "paragraph": "Planifier, exploiter et maintenir efficacement les installations",
+        "icon": "/Solutions/Industries/Petroleum/downstream.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/petroleum/segments/downstream"
+        }
+      },
+      {
+        "title": "Santé, sécurité et environnement (HSE)",
+        "paragraph": "Protéger les personnes, les actifs, l’environnement et la réputation",
+        "icon": "/Solutions/Industries/Petroleum/hse.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/petroleum/segments/hse"
+        }
+      }
+    ]
+  },
+  "news": {
+    "title": "Actualités & Événements",
+    "backgroundImage": "/Solutions/Industries/Petroleum/background-news-events.jpg",
+    "cards": [
+      {
+        "eyebrow": "Événement",
+        "title": "Conférence SIG Pétrole Esri",
+        "blurb": "9–10 mai 2018 | Houston, Texas, USA",
+        "image": "/Solutions/Industries/Petroleum/event-petroleum-user-conference-pug.jpg",
+        "meta": "1–3 mai, Houston, USA",
+        "href": "https://www.esri.com/en-us/about/events/esri-energy-resources-gis-conference/save-date"
+      },
+      {
+        "eyebrow": "Événement",
+        "title": "Conférence des utilisateurs Esri",
+        "blurb": "9–13 juillet 2018 | San Diego, Californie, USA",
+        "image": "/Solutions/Industries/Petroleum/event-user-conference.jpg",
+        "meta": "15–19 juillet, San Diego, USA",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "eyebrow": "Actualité",
+        "title": "Gulfport Energy économise temps et argent",
+        "blurb": "Dans l’année qui a suivi le déploiement des applications ArcGIS pour les opérations critiques, Gulfport Energy a réduit ses coûts d’au moins 2 millions de dollars.",
+        "image": "/Solutions/Industries/Petroleum/News_Emergency-Ops.jpg",
+        "href": "https://www.esri.com/~/media/files/pdfs/library/fliers/pdfs/gulfport-energy-saves-time.pdf"
+      },
+      {
+        "eyebrow": "Actualité",
+        "title": "Range Resources numérise les données historiques des puits",
+        "blurb": "Des cartes intelligentes en libre-service fournissent aux équipes les données et analyses nécessaires pour accélérer la gestion des terrains et la validation des titres.",
+        "image": "/Solutions/Industries/Petroleum/News_Gulf.jpg",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/media/e-news/petroleum-historic-map-digitizing.pdf"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Découvrez comment Esri peut aider votre organisation.",
+    "ctaLabel": "Commencer",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

@@ -1,0 +1,7 @@
+[
+  { "id": "casablanca", "source": "https://videos.pexels.com/video-files/39731447/16943333_1440_2560_30fps.mp4", "page": "https://www.pexels.com/video/39731447/", "title": "Hassan II Mosque at Dusk by the Sea", "author": "Othmane Ettalbi", "t0": 5.0, "cx": 0.5, "cy": 0.56 },
+  { "id": "rabat", "source": "https://videos.pexels.com/video-files/34659387/14691196_2560_1440_60fps.mp4", "page": "https://www.pexels.com/video/34659387/", "title": "Hassan Tower in Rabat, Morocco under Clear Skies", "author": "Earth Photart", "t0": 0.6, "cx": 0.46, "cy": 0.5 },
+  { "id": "tanger", "source": "https://videos.pexels.com/video-files/20214791/20214791-uhd_2560_1440_30fps.mp4", "page": "https://www.pexels.com/video/20214791/", "title": "tangier drone", "author": "Muhamed Abghour", "t0": 4.6, "cx": 0.5, "cy": 0.5 },
+  { "id": "chefchaouen", "source": "https://videos.pexels.com/video-files/40414394/17267802_1080_1920_60fps.mp4", "page": "https://www.pexels.com/video/40414394/", "title": "Aerial View of Chefchaouen's Blue Buildings", "author": "LUFFY YB Imrani", "t0": 3.0, "cx": 0.5, "cy": 0.68 },
+  { "id": "marrakech", "source": "https://videos.pexels.com/video-files/37601122/15937432_1080_1920_30fps.mp4", "page": "https://www.pexels.com/video/37601122/", "title": "Koutoubia Mosque Tower in Marrakech, Morocco", "author": "Tony Zohari", "t0": 1.5, "cx": 0.5, "cy": 0.3 }
+]

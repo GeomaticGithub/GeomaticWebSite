@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Situational Awareness",
+    "subtitle1": "Monitor event impacts in real time",
+    "subtitle2": "Make informed decisions when they matter most",
+    "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-bg.jpg"
+  },
+  "intro": {
+    "title": "Take quick action backed by data and analysis",
+    "paragraph": "In the complex realm of business operations or large-scale events, it's difficult to know what is happening where. Using location intelligence, business leaders and first responders see a holistic view of the situation—real-time data such as weather and traffic, on-the-ground updates, plus the locations of assets, crews, and other resources. This approach leads to smart decisions in the moment and predictive abilities for the future."
+  },
+  "opportunities": {
+    "title": "See the big picture others can’t",
+    "intro": "Decision-makers gain clarity from location intelligence whether they need to react to supply chain disruptions, repair damage to a utility network, or coordinate first responders in an emergency.",
+    "bullets": [
+      "Monitor resources and operations in real time.",
+      "Integrate data from multiple sources including Internet of Things (IoT) and social media feeds.",
+      "Visualize and share all key information with one map view.",
+      "Perform quick spatial analysis of an impending event.",
+      "Create an informed incident response plan in minutes."
+    ],
+    "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-5050.jpg"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Monitor operations, share data, and create actionable intelligence using location intelligence technology from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Know where dangers exist right now across your community or business and monitor changing situations. Use big data and Internet of Things (IoT) technology to make quick, informed decisions based on the most up-to-date information.",
+        "cta": "Make sense of big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "3D Visualization and Analytics",
+        "body": "Create your vision and extract value from your raw data. See hidden relationships, patterns, and trends. Share your ideas with others.",
+        "cta": "Add dimension to your data",
+        "href": "https://www.esri.com/en-us/capabilities/3d-gis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2F3d-gis%2Foverview",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/business-needs-capabilities-3d-gis.jpg"
+      },
+      {
+        "title": "Mapping",
+        "body": "Visualize people, places, and assets to gain important insights into customers and competitors. See what's happening across a network of store locations, create strong business plans, and know where to allocate resources.",
+        "cta": "Visualize your data",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Related needs",
+    "bgGraphic": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Real-Time Location Tracking",
+        "body": "Gain insights from your data whether you are tracking moving assets or stationary sensors. Make the right decision at the right time.",
+        "href": "/industries/needs/real-time-location-tracking",
+        "icon": "/Solutions/BusinessNeeds/SituationalAwareness/realTimeLocationTracking.svg"
+      },
+      {
+        "title": "Crisis Response",
+        "body": "When an event occurs, quickly address the impacts, maintain operational awareness, conduct damage assessments, and inform stakeholders.",
+        "href": "/industries/needs/crisis-response",
+        "icon": "/Solutions/BusinessNeeds/SituationalAwareness/crisisResponse.svg"
+      },
+      {
+        "title": "Safety and Security",
+        "body": "Get a proactive view of emerging threats and hazards to respond more quickly and help save lives.",
+        "href": "/industries/needs/safety-and-security",
+        "icon": "/Solutions/BusinessNeeds/SituationalAwareness/safetyAndSecurity.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about situational awareness",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Managing a Marathon with Real-time Awareness",
+        "source": "Esri Blog",
+        "excerpt": "Chicago used real-time awareness of the marathon course to help inform and guide public safety response and resources.",
+        "href": "https://www.esri.com/about/newsroom/blog/chicago-adds-real-time-awareness",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-cards-managing-marathon-real-time-awareness.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "San Antonio Prepares for the NCAA Final Four",
+        "source": "Esri Blog",
+        "excerpt": "San Antonio police used real-time GIS for situational awareness to ensure the safety of NCAA players, coaches, facility staff, and attendees.",
+        "href": "https://www.esri.com/about/newsroom/blog/san-antonio-real-time-gis-ncaa-final-four",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/real-time-location-tracking-card-san-antonio-prepares-for-the-ncaa-final-four.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Argentina Guards against Fish Poachers",
+        "source": "Esri Blog",
+        "excerpt": "National security agency uses GIS and real-time tracking to aid anti-poaching efforts in Argentina by integrating sensors and satellite input.",
+        "href": "https://www.esri.com/about/newsroom/blog/argentina-guards-against-fish-poachers",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-cards-agentina-guards-against-fish-poachers.jpg"
+      }
+    ]
+  }
+}

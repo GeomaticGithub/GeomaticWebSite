@@ -1,0 +1,51 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Request a quote",
+    "anchor": "Explore training",
+    "exploreTitle": "Catalog, schedule and quotes",
+    "catalogKicker": "Catalog",
+    "catalogTitle": "{count} ArcGIS courses",
+    "catalogText": "A preview of the courses Geomatic offers.",
+    "catalogMore": "and {count} more courses",
+    "catalogCta": "See the full catalog"
+  },
+  "hero": {
+    "title": "Learning Services",
+    "description": "",
+    "bgGraphic": "/support-services/learning/learning.png"
+  },
+  "intro": {
+    "title": "Build ArcGIS skills for your team",
+    "subTitle": "Geomatic Learning Services",
+    "bgGraphic": "/support-services/learning/learning_secondary.jpg",
+    "paragraph": "Upskill with curated courses, flexible schedules, and private trainings tailored to your organization’s ArcGIS environment."
+  },
+  "community": {
+    "title": "Explore",
+    "cards": [
+      {
+        "title": "Courses",
+        "desc": "Browse the {count} ArcGIS courses in the catalog.",
+        "gradient": "from-amber-600 to-slate-800",
+        "link": "/support-services/learning/courses",
+        "cta": "Browse courses"
+      },
+      {
+        "title": "Schedule",
+        "desc": "Dates of the upcoming training sessions.",
+        "badge": "Coming soon",
+        "gradient": "from-amber-600 to-slate-800",
+        "link": "/support-services/learning/schedule",
+        "cta": "View schedule"
+      },
+      {
+        "title": "Get a Quote",
+        "desc": "Private training or a training plan for your team: ask for our pricing.",
+        "gradient": "from-amber-600 to-slate-800",
+        "link": "/about-geomatic/contact",
+        "cta": "Request pricing"
+      }
+    ]
+  }
+}

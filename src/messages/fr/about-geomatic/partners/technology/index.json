@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Partenaires technologiques",
+    "bgGraphic": "/aboutGeomatic/partners/technology/partner-banner.png"
+  },
+  "intro": {
+    "subTitle": "Des plateformes et outils de premier plan",
+    "paragraph": "Nous collaborons avec des leaders mondiaux pour offrir à nos clients des capacités géospatiales modernes et évolutives."
+  },
+  "community": {
+    "cards": [
+      {
+        "title": "Esri",
+        "desc": "Esri est le leader mondial du marché des SIG et aide ses clients à améliorer leurs résultats depuis 1969.",
+        "image": "/aboutGeomatic/partners/technology/partenr5.png",
+        "link": "https://www.esri.com/en-us/home"
+      }
+    ]
+  }
+}

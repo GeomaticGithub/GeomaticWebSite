@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "title": "Asset Tracking and Analysis",
+    "subtitle1": "Manage key assets, prevent failure",
+    "subtitle2": "Understand asset location, condition, performance, and life cycle",
+    "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Enhance asset performance",
+    "paragraph": "Asset managers must minimize risks and maximize performance while managing cost and resources for both fixed and moving assets. Innovative managers use smart maps and dashboards to achieve a holistic view of their assets. Location intelligence enhances day-to-day operations such as inspections, maintenance, and investment planning."
+  },
+  "enhance": {
+    "title": "Enhance asset performance",
+    "body": "Use maps and dashboards to unify data about asset location, condition, and performance so your teams can act faster and with confidence. Connect information from inspections and work orders to reduce downtime and extend asset life.",
+    "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-5050-see-the-performance-others-cant.jpg"
+  },
+  "performance": {
+    "title": "See the performance others can’t",
+    "intro": "When managers use smart maps and visualizations to perform asset tracking and analysis, they help their organizations reduce errors, save time, and make informed, data-driven decisions.",
+    "bullets": [
+      "Increase inventory accuracy by using modern data-collection apps.",
+      "Track asset condition and performance in real time throughout the life cycle.",
+      "Share status updates quickly and seamlessly with the field and office.",
+      "Forecast maintenance costs and needs to improve reliability.",
+      "Manage customer expectations.",
+      "Integrate fully into existing asset management systems and inventory tracking."
+    ],
+    "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-5050-see-the-performance-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Enhance asset tracking and analysis for improved asset management with location intelligence technology from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Spatial Analysis and Data Science",
+        "body": "Use location as the connective thread to uncover hidden patterns and trends for enhanced asset tracking and analysis. Gain a competitive edge by integrating location into machine learning models and artificial intelligence.",
+        "cta": "Upgrade your analysis",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Know asset location and condition in real time and predict failures before they can happen. Use location intelligence based on the most up-to-date information to make informed decisions about asset tracking and analysis.",
+        "cta": "Monitor assets in real time",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Field Operations",
+        "body": "Improve coordination and operational efficiency in workforce activities. Reduce or even replace paper reliance, modernize workflows for reliable and accessible data, and access the power of location anywhere.",
+        "cta": "Coordinate fieldwork",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/business-needs-capabilities-field-operatioins.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about asset tracking and analysis",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Fort Worth Moves to Apps for Asset Management",
+        "source": "Esri Blog",
+        "excerpt": "The city now uses digital rather than paper processes for inspecting, maintaining, and managing its assets.",
+        "href": "https://www.esri.com/about/newsroom/blog/fort-worth-moves-to-apps-for-real-time-asset-management",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-card-fort-worth.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "A New Data Model Keeps a Solar Field Beaming",
+        "source": "ArcNews",
+        "excerpt": "To manage assets in a new solar facility efficiently, The City of Loveland tracks not only assets but also maintenance schedules and costs.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/a-vibrant-new-data-model-keeps-a-solar-field-beaming",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-card-a-new-data-model.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "GIS and BIM Support University’s Assets",
+        "source": "ArcUser",
+        "excerpt": "Ohio State University implemented a new building information system to improve management of hundreds of facilities and assets on its campuses.",
+        "href": "https://www.esri.com/about/newsroom/arcuser/gis-and-bim-provide-life-cycle-support-for-universitys-assets",
+        "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-card-gis-and-bim.jpg"
+      }
+    ]
+  }
+}

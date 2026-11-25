@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "title": "Ebooks",
+    "subtitle": "Go deeper into GIS",
+    "text": "Books to read online or download, to go deeper into GIS and spatial analysis.",
+    "bgImage": "/news/ebook/adobestock166969650-2400.jpg"
+  },
+  "ui": {
+    "kicker": "Publications",
+    "contact": "Talk to an expert",
+    "anchor": "See the books",
+    "listKicker": "To read",
+    "listTitle": "Available now",
+    "related": "On this site",
+    "othersKicker": "See also",
+    "othersTitle": "Other publications"
+  },
+  "books": [
+    {
+      "title": "The Language of Spatial Analysis",
+      "text": "The definition, the vocabulary and the process of spatial analysis, explained step by step.",
+      "meta": "Esri · PDF",
+      "href": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/books/the-language-of-spatial-analysis.pdf",
+      "cta": "Read the book (PDF)",
+      "relatedLabel": "Spatial analysis and data science",
+      "relatedHref": "/arcgis/products/spatial-analytics-data-science/overview"
+    }
+  ]
+}

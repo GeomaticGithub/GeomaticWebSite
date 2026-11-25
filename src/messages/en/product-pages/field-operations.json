@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "kicker": "capability",
+    "title": "Field Operations",
+    "subtitle": "Take the power of location anywhere",
+    "text": "Optimize efficiency in field activities with the power of location intelligence.",
+    "bgImage": "/fieldOperations/overview-banner-background.jpg"
+  },
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Use the power of location to improve coordination and operational efficiency in field workforce activities. Esri’s solutions for integrated field operations ensure that both fieldworkers and office staff use the same authoritative data to reduce errors, boost productivity and save money."
+    },
+    {
+      "type": "embed",
+      "kicker": "video",
+      "title": "Digitally transform field operations",
+      "text": "Discover how the ArcGIS suite of field apps transforms disparate field activities and processes into a unified workflow.",
+      "url": "https://www.esri.com/videos/iframe?videoid=ThgnRajgDh8"
+    },
+    {
+      "type": "band",
+      "kicker": "benefits",
+      "title": "Location-enabled field activities",
+      "text": "Adopt modern workflows. Eliminate or reduce reliance on paper processes."
+    },
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Plan",
+          "text": "Leverage the power of location to understand where work needs to be done and effectively coordinate and dispatch resources.",
+          "tags": [
+            "Workforce for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-plan.png"
+        },
+        {
+          "title": "Understand",
+          "text": "Take your organization's digital maps with you, anywhere and anytime. Promote your spatial awareness when performing inspections or other activities that benefit from spatial context.",
+          "tags": [
+            "Explorer for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-understand.png"
+        },
+        {
+          "title": "Monitor",
+          "text": "Easy-to-understand dashboards and maps support informed decision-making. Communicate the status of field operations to managers by monitoring, tracking, and reporting real-time data.",
+          "tags": [
+            "Operations Dashboard for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-monitor.png"
+        },
+        {
+          "title": "Capture",
+          "text": "Ditch outdated paper-based workflows. Enable field workers to easily perform accurate data collection and asset inspections in any environment with location-aware apps that workers of all experience levels can use.",
+          "tags": [
+            "Survey123 for ArcGIS",
+            "Collector for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-capture.png"
+        },
+        {
+          "title": "Navigate",
+          "text": "Use the most efficient routes to arrive on time and get the job done. Use voice-guided routing that even considers the type of vehicle being driven and road restrictions along the route.",
+          "tags": [
+            "Navigator for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-apps-navigate.png"
+        },
+        {
+          "title": "Track",
+          "text": "Enable those in the field to share their location tracks so you can know where everyone is and where they have been. Tracking can be accomplished through a mobile app that is controlled entirely by the user.",
+          "tags": [
+            "Tracker for ArcGIS"
+          ],
+          "image": "/fieldOperations/overview-app-track.png"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "users",
+      "title": "User Types",
+      "text": "Supporting field operations requires multiple people in your organization, each with a distinct function. Their unique functions are reflected in the ArcGIS Online user type licenses below.",
+      "items": [
+        {
+          "title": "GIS Professional",
+          "text": "Access, produce and share authoritative data and maps.",
+          "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview",
+          "linkLabel": "Learn more"
+        },
+        {
+          "title": "Creator",
+          "text": "Analyze data to understand trends and share maps with stakeholders.",
+          "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview",
+          "linkLabel": "Learn more"
+        },
+        {
+          "title": "Field Worker",
+          "text": "Use apps for data collection, surveys and inspections. Share updates in real-time.",
+          "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview",
+          "linkLabel": "Learn more"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "products",
+      "title": "Start mapping and understanding your data",
+      "text": "There are many ways to access Esri’s mapping capabilities...",
+      "items": [
+        {
+          "label": "Cloud-based SaaS",
+          "title": "ArcGIS Online",
+          "text": "Get started with ArcGIS Online, Esri's cloud-based, software-as-a-service product. Your maps, apps, and data are hosted and accessible anywhere.",
+          "href": "/arcgis/products/arcgis-online/overview"
+        },
+        {
+          "label": "Self-managed infrastructure",
+          "title": "ArcGIS Enterprise",
+          "text": "Do you manage your own infrastructure behind a firewall or in the cloud? Use ArcGIS Enterprise for your mapping and location enablement needs.",
+          "href": "/arcgis/products/arcgis-enterprise/overview"
+        },
+        {
+          "label": "Developer tools",
+          "title": "ArcGIS Developer Tools",
+          "text": "Use a robust set of developer tools to develop apps or customize maps and apps built in ArcGIS Online or ArcGIS Enterprise.",
+          "href": "/arcgis/products/arcgis-for-developers/overview"
+        },
+        {
+          "label": "Desktop",
+          "title": "ArcGIS Pro",
+          "text": "Complete advanced mapping, analysis, and data management workflows using ArcGIS Pro.",
+          "href": "/arcgis/products/arcgis-pro/overview"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "title": "Événements",
+    "subtitle": "Conférences, sommets, groupes d’utilisateurs",
+    "text": "Découvrez les événements de Geomatic et ceux organisés par Esri et sa communauté. Apprenez, échangez et restez informé des dernières tendances en matière de SIG et d’intelligence géospatiale.",
+    "bgImage": "/aboutGeomatic/events/fed-gis-event.jpg"
+  },
+  "ui": {
+    "kicker": "À propos",
+    "contact": "Nous contacter",
+    "anchor": "Voir les événements",
+    "geomaticKicker": "Geomatic",
+    "geomaticTitle": "Événements Geomatic",
+    "geomaticText": "Journées SIG, hackathon et compétition : chaque lien ouvre la publication de l’événement sur LinkedIn.",
+    "linkedin": "Voir sur LinkedIn",
+    "esriKicker": "Esri",
+    "esriTitle": "Événements Esri",
+    "esriText": "Les conférences et sommets organisés par Esri dans le monde. Les pages sont en anglais, sur esri.com.",
+    "search": "Rechercher tous les événements Esri"
+  },
+  "geomatic": [
+    {
+      "title": "Journée SIG 2024",
+      "year": "2024",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7260643887772315648/"
+    },
+    {
+      "title": "Compétition virtuelle : créez une application avec Experience Builder",
+      "year": "2024",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7259596965770932225/"
+    },
+    {
+      "title": "Journée SIG 2023",
+      "year": "2023",
+      "link": "https://www.linkedin.com/posts/geomati_geomatic-esri-hackathon-activity-7132729791828373504-ixaU/"
+    },
+    {
+      "title": "Hackathon 2023 — Mapping Tomorrow : les SIG au cœur des villes intelligentes",
+      "year": "2023",
+      "link": "https://www.linkedin.com/posts/geomati_hackathon-smartcities-gisday-activity-7128803512276115456-kF7a/"
+    }
+  ],
+  "esri": [
+    {
+      "title": "Sommet des développeurs et des technologies Esri",
+      "link": "https://www.esri.com/en-us/about/events/devtech/overview"
+    },
+    {
+      "title": "Conférence Esri sur la gestion des infrastructures et les SIG",
+      "link": "https://www.esri.com/en-us/about/events/imgis/overview"
+    },
+    {
+      "title": "Sommet Geodesign",
+      "link": "https://www.esri.com/en-us/about/events/geodesign-summit/overview"
+    },
+    {
+      "title": "Conférence Esri sur les ressources énergétiques et les SIG",
+      "link": "https://www.esri.com/en-us/about/events/esri-energy-resources-gis-conference/overview"
+    },
+    {
+      "title": "Conférence européenne Esri sur la gestion des infrastructures et les SIG",
+      "link": "https://www.esri.com/en-us/about/events/euro-imgis/overview"
+    },
+    {
+      "title": "Sommet des directeurs de la planification",
+      "link": "https://www.esri.com/en-us/about/events/planning-directors-summit/overview"
+    },
+    {
+      "title": "Sommet européen des développeurs et des technologies Esri",
+      "link": "https://www.esri.com/en-us/about/events/euro-devtech/overview"
+    },
+    {
+      "title": "Conférence des partenaires Esri",
+      "link": "https://www.esri.com/en-us/about/events/partner-conference/overview"
+    },
+    {
+      "title": "Forum de Redlands",
+      "link": "https://www.esri.com/en-us/about/events/redlands-forum/overview"
+    },
+    {
+      "title": "Conférence européenne Esri sur les ressources énergétiques et les SIG",
+      "link": "https://www.esri.com/en-us/about/events/euro-energy-resources-gis-conference/overview"
+    },
+    {
+      "title": "Conférence européenne des partenaires Esri",
+      "link": "https://www.esri.com/en-us/about/events/euro-partner-conference/overview"
+    },
+    {
+      "title": "Conférence des utilisateurs Esri Sud-Est",
+      "link": "https://www.esri.com/en-us/about/events/esri-southeast-uc/save-date"
+    },
+    {
+      "title": "Sommet de l’éducation @ Esri UC",
+      "link": "https://www.esri.com/en-us/about/events/education-summit/overview"
+    },
+    {
+      "title": "Conférence fédérale SIG Esri",
+      "link": "https://www.esri.com/en-us/about/events/fedgis/overview"
+    },
+    {
+      "title": "Conférence des utilisateurs Esri",
+      "link": "https://www.esri.com/en-us/about/events/uc/overview"
+    },
+    {
+      "title": "Sommet Sécurité et sûreté @ Esri UC",
+      "link": "https://www.esri.com/en-us/about/events/es3/overview"
+    }
+  ],
+  "searchLink": "https://events.esri.com/info/index.cfm#/"
+}

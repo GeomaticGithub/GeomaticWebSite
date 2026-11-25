@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "Share and Collaborate",
+    "subtitle": "Share maps with anyone, anywhere. Collaborate with colleagues to solve problems.",
+    "bgGraphic": "/arcgisOnline/shareCollaborate/arcgis-online-indigo-banner-background-data-topography.jpg",
+    "mediaImage": "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-banner-foreground.png",
+    "mediaAlt": "Professional collaborating on a tablet"
+  },
+  "startConversation": {
+    "title": "Share your maps to start a conversation",
+    "bullets": [
+      "Map-based stories communicate insight. They tell stories, share insights, and inspire people to take action.",
+      "Instantly share maps to a public, restricted, or private audience.",
+      "Present insights in a unified, social media–style feed.",
+      "Embed maps in websites or apps; generate secure links.",
+      "Publish once; update content for a select group of people."
+    ],
+    "ctaText": "Publish an ArcGIS map",
+    "ctaHref": "#",
+    "stackedImages": [
+      "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-share-your-maps-start-conversation.jpg"
+    ]
+  },
+  "chooseAudience": {
+    "title": "Choose who sees your maps",
+    "bullets": [
+      "Let just yourself view maps in draft.",
+      "Share privately with teams using secure groups in ArcGIS Online.",
+      "Make organization-wide sharing available across your company.",
+      "Share publicly to the web when you are ready."
+    ],
+    "collageImages": [
+      "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-choose-who-sees-your-maps.jpg"
+    ]
+  },
+  "collaborate": {
+    "title": "Collaborate to solve more problems",
+    "bullets": [
+      "ArcGIS Online is collaborative at its core. Your maps, ideas, and apps can be used, reworked, and enhanced within your groups.",
+      "Use updates and shared work to bring people into the fold—across your community.",
+      "Connect with teams using secure groups in ArcGIS Online.",
+      "Share knowledge and best practices across your organization.",
+      "Build on each other's work to create better solutions together."
+    ],
+    "ctaText": "Find ArcGIS groups near me",
+    "ctaHref": "#",
+    "stackedImages": [
+      "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-to-solve-more-problems.jpg"
+    ],
+    "bgGraphic": "/arcgisOnline/shareCollaborate/collab-bg.png"
+  },
+  "quote": {
+    "text": "The beauty of ArcGIS Online is how it pulls together people and departments across the organization, provides instant access to information, and creates time savings. ArcGIS Online opens minds, and people ask for more. It is truly transformative.",
+    "author": "Christina Kelso",
+    "role": "GIS Manager, Sonoma County GIS",
+    "bgGraphic": "/arcgisOnline/shareCollaborate/arcgis-online-indigo-banner-background-data-topography.jpg"
+  },
+  "discover": {
+    "heading": "Discover more ArcGIS Online capabilities",
+    "cards": [
+      {
+        "title": "Make maps",
+        "desc": "Quickly create maps; style data visually.",
+        "linkText": "Learn more about making maps",
+        "href": "#",
+        "bgImage": "/arcgisOnline/shareCollaborate/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Make maps"
+      },
+      {
+        "title": "Analyze data",
+        "desc": "Uncover complex patterns; learn more about data.",
+        "linkText": "Discover analysis tools",
+        "href": "#",
+        "bgImage": "/arcgisOnline/shareCollaborate/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Analyze data"
+      },
+      {
+        "title": "Work with Your Data",
+        "desc": "Bring data in; enrich it; transform for insights.",
+        "linkText": "Explore data tools",
+        "href": "#",
+        "bgImage": "/arcgisOnline/shareCollaborate/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Work with data"
+      }
+    ]
+  },
+  "duoCta": {
+    "left": {
+      "title": "Want to try ArcGIS Online?",
+      "button": "Try now",
+      "href": "#"
+    },
+    "right": {
+      "title": "Ready to buy ArcGIS Online?",
+      "button": "Purchase",
+      "href": "#"
+    }
+  },
+  "help": {
+    "heading": "Have any questions?",
+    "subHeading": "Need Help in trying or buying ArcGIS Online? Or Have Questions?",
+    "href": "Contact Us",
+    "link": "#"
+  }
+}
+

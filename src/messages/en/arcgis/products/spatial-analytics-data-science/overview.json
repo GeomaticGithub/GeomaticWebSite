@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "kicker": "Capabilities",
+    "contact": "Talk to an expert",
+    "anchor": "See the strengths",
+    "videoKicker": "Video",
+    "benefitsKicker": "Strengths",
+    "benefitsTitle": "Why ArcGIS for spatial analysis",
+    "productsKicker": "Products",
+    "productLink": "Explore",
+    "resourcesKicker": "Resources",
+    "resourcesTitle": "Go further"
+  },
+  "hero": {
+    "title": "Spatial Analysis and Data Science",
+    "subtitle": "Analysis with The Science of Where",
+    "image": "/spacialAnalysisAndDataScience/overview-banner-layerstack.png",
+    "bgImage": "/spacialAnalysisAndDataScience/overview-banner-background.jpg"
+  },
+  "intro": {
+    "paragraph": "Connect the seemingly disconnected with the most comprehensive set of analytical methods and spatial algorithms available. Use location as the connective thread to uncover hidden patterns, improve predictive modeling, and create a competitive edge. Leverage the power of spatial analysis and data science on demand and at scale with the Esri Geospatial Cloud."
+  },
+  "sections": {
+    "map": {
+      "title": "Use spatial science to transform data into action",
+      "p1": "The Esri Geospatial Cloud provides the toolset you need to expose patterns, relationships, anomalies, and incidents in massive amounts of spatial data, regardless of format and source. Leverage out-of-the-box spatial analytics tools, machine learning algorithms, and artificial intelligence techniques.",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-01.jpg"
+    },
+    "interact": {
+      "title": "Accessible and interoperable",
+      "p1": "Remain agile in your problem-solving abilities. The Esri Geospatial Cloud is open and interoperable, allowing you to integrate and work with the tools and languages you already know, such as Python, Jupyter Notebooks, and R. ",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-02.jpg"
+    },
+    "understand": {
+      "title": "Global geographic data at your fingertips",
+      "p1": "Add context with global ready-to-use content that cannot be matched by other content providers, including maps, apps, and data layers. Use Esri’s unique GeoEnrichment service to enrich your location data with in-depth demographic, psychographic, and socioeconomic data with over 15,000 data variables.",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-03.jpg"
+    },
+    "enrich": {
+      "title": "A leader you can trust",
+      "p1": "ArcGIS, part of the Esri Geospatial Cloud, is the world’s most powerful mapping and spatial analytics software used by more than 75% of Fortune 500 companies. Esri invests heavily in research and development to provide innovative solutions that integrate cutting-edge data science methods.",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-04.jpg"
+    }
+  },
+  "share": {
+    "title": "Share your story",
+    "description": "Create apps that enable your audience to not only view your map but also interact with the data. Choose from a variety of focused app templates and create an app in just a few clicks. Include them on your website using the convenient embed code. Each app has a specific purpose to help tell your story and keep your audience engaged.",
+    "cta": "Learn more",
+    "items": {
+      "configurable": {
+        "label": "ArcGIS Configurable Apps",
+        "title": "ArcGIS Configurable Apps",
+        "desc": "Easily create and share your maps as interactive web apps. Select from a variety of ready-to-use templates.",
+        "avatarImage": "/mapping/share-configurable-thumb.jpg",
+        "mainImage": "/mapping/share-configurable.jpg",
+        "linkText": "View ArcGIS Configurable Apps",
+        "href": "#"
+      },
+      "story": {
+        "label": "ArcGIS StoryMaps",
+        "title": "ArcGIS StoryMaps",
+        "desc": "Bring text, photos, and videos together with maps to create remarkable stories that resonate with your audience.",
+        "avatarImage": "/mapping/share-storymaps-thumb.jpg",
+        "mainImage": "/mapping/share-storymaps.jpg",
+        "linkText": "Explore ArcGIS StoryMaps",
+        "href": "#"
+      },
+      "dashboard": {
+        "label": "ArcGIS Dashboards",
+        "title": "ArcGIS Dashboards",
+        "desc": "Create a dynamic dashboard to gain a real-time operational view of your people, services, assets, and events.",
+        "avatarImage": "/mapping/share-ops-dashboard-thumb.jpg",
+        "mainImage": "/mapping/share-ops-dashboard.jpg",
+        "linkText": "Explore Operations Dashboard",
+        "href": "#"
+      },
+      "appbuilder": {
+        "label": "Web AppBuilder for ArcGIS",
+        "title": "Web AppBuilder for ArcGIS",
+        "desc": "Create custom apps using preconfigured tools that do not require coding.",
+        "avatarImage": "/mapping/share-app-builder-thumb.jpg",
+        "mainImage": "/mapping/share-app-builder.jpg",
+        "linkText": "Explore Web AppBuilder",
+        "href": "#"
+      }
+    }
+  },
+  "products": {
+    "title": "Translate problems into spatial answers",
+    "online": {
+      "category": "Cloud-based SaaS",
+      "title": "ArcGIS Online",
+      "desc": "Get started with ArcGIS Online, Esri's cloud-based, software-as-a-service product. Your maps, apps, and data are hosted and accessible anywhere.",
+      "img": "/mapping/product-arcgis-online.jpg",
+      "href": "/arcgis/products/arcgis-online/overview"
+    },
+    "enterprise": {
+      "category": "Self-managed infrastructure",
+      "title": "ArcGIS Enterprise",
+      "desc": "Do you manage your own infrastructure behind a firewall or in the cloud? Use ArcGIS Enterprise for your mapping and location enablement needs.",
+      "img": "/mapping/product-arcgis-enterprise.jpg",
+      "href": "/arcgis/products/arcgis-enterprise/overview"
+    },
+    "devtools": {
+      "category": "Developer tools",
+      "title": "ArcGIS Developer Tools",
+      "desc": "Use a robust set of developer tools to develop apps or customize maps and apps built in ArcGIS Online or ArcGIS Enterprise.",
+      "img": "/mapping/product-dev-tools.jpg",
+      "href": "/arcgis/products/arcgis-for-developers/overview"
+    },
+    "pro": {
+      "category": "Desktop",
+      "title": "ArcGIS Pro",
+      "desc": "Complete advanced mapping, analysis, and data management workflows using ArcGIS Pro.",
+      "img": "/mapping/product-arcgis-pro.jpg",
+      "href": "/arcgis/products/arcgis-pro/overview"
+    }
+  },
+  "dualPromo": {
+    "SpacialAnalysisTitle": "Discover the power of spatial analysis",
+    "SpacialAnalysisDesc": "Read The Language of Spatial Analysis. Learn the definition, the vocabulary, and the process of spatial analysis.",
+    "SpacialAnalysisCta": "Read the ebook",
+    "SpacialAnalysisHref": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/books/the-language-of-spatial-analysis.pdf",
+    "blogTitle": "Read our blog",
+    "blogDesc": "Get the latest news on spatial analysis and data science.",
+    "blogCta": "Read the ArcGIS Blog",
+    "blogHref": "https://www.esri.com/arcgis-blog/overview/"
+  },
+  "videoBlock": {
+    "title": "Spatial analysis and data science with ArcGIS",
+    "desc": "See how ArcGIS combines spatial analysis, machine learning and data science to reveal patterns and anticipate what comes next.",
+    "url": "https://www.esri.com/videos/iframe?videoid=XrU8GX7manc"
+  },
+  "contact": {
+    "title": "Contact sales",
+    "desc": "Need help choosing the right apps or designing a workflow? Or have questions about spatial analysis and data science?",
+    "cta": "Contact us"
+  }
+}

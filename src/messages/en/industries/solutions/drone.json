@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Drone Surveillance",
+    "text": "Drone surveillance is becoming increasingly complex. Operators must integrate and manage diverse aerial technologies, including long-endurance fixed-wing drones, rotary UAVs, satellite communication links, and AI-powered imaging systems, to meet the growing demand for services such as real-time border monitoring, disaster assessment, infrastructure protection, and crowd management.",
+    "bgImage": "/Solutions/PartnersSolutions/drone/drone-serveillence.jpg"
+  },
+  "lead": "As a result, the need for a unified command, control, and data-processing system that can support any drone, any sensor, and any type of mission down to the individual flight path is critical. It is the key to knowing exactly what is happening on the ground, linking aerial intelligence to decision-makers in real time, and efficiently managing the quality, reliability, and security of surveillance operations.",
+  "brochure": {
+    "title": "Zain Drone",
+    "text": "Utilizing Zain Drone technology with ArcGIS Pro allows clients to analyze, visualize, and share data captured by the Zain Drone fleet of UAVs. ArcGIS Pro is capable of processing images into georeferenced orthomosaics, point clouds, DEM, DSM, and DTM.",
+    "image": "/Solutions/PartnersSolutions/drone/drone5.png",
+    "href": "https://d364xagvl9owmk.cloudfront.net/media-10-4-18/media/filer_public/6d/9d/6d9df62f-2a20-42ed-8145-e00af26c028e/zain_drone_inside_a5_-kuwait2019.pdf"
+  },
+  "examples": [
+    {
+      "title": "Power line inspections",
+      "text": "Georeferenced drone data captured for power line inspections is overlaid in ArcGIS Pro with visual and thermal images, providing the exact locations of the wooden poles.",
+      "image": "/Solutions/PartnersSolutions/drone/1597818066524.png"
+    },
+    {
+      "title": "Aerial survey",
+      "text": "Zain Drone performed an aerial survey of a residential area using a fixed-wing drone. The collected images were processed with ArcGIS Pro to create an orthomosaic and a digital elevation model for flooding analysis.",
+      "image": "/Solutions/PartnersSolutions/drone/1597818233439.png"
+    }
+  ]
+}

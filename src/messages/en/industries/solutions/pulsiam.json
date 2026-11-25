@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "SafetyNet",
+    "subtitle": "Incident management solution",
+    "text": "A key reason why public safety agencies around the globe use Pulsiam’s SafetyNet Suite is that customers play an integral role in the product design process. Users can customize and enhance SafetyNet applications—including the user interface, the business rules, and the back-end database—and Pulsiam also incorporates their ideas into its base products.",
+    "bgImage": "/Solutions/PartnersSolutions/pulsiam/adobestock86119858.jpeg"
+  },
+  "sections": [
+    {
+      "title": "SafetyNet CAD",
+      "paragraphs": [
+        "SafetyNet CAD is a real-time, multi-agency, multi-jurisdictional computer-aided dispatch system for law enforcement, fire, and EMS agencies."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/p1.png",
+      "fit": "contain"
+    },
+    {
+      "title": "SafetyNet Mobile",
+      "paragraphs": [
+        "CAD solution for mobile laptops, providing first responders with direct, real-time access to CAD incident information and records, silent transmission of mission-critical information such as automatic vehicle location (AVL), and support for aerial drones. SafetyNet Mobile can be implemented over private radio and cellular networks."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/mobile-banner3.png"
+    },
+    {
+      "title": "SafetyNet Fire Records Management System",
+      "paragraphs": [
+        "SafetyNet FMS is a comprehensive fire records management system equipped with an easy-to-use browser-based user interface that lets fire departments and EMS agencies streamline fire and EMS administration."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/insightbanner.png"
+    },
+    {
+      "title": "SafetyNet Records Management System",
+      "paragraphs": [
+        "SafetyNet RMS is a law enforcement records management system that helps minimize data entry and simplifies how you manage records."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/p2.png",
+      "fit": "contain"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Careers",
+    "subtitle": "Join Geomatic",
+    "text": "Using applied geography, we help organizations understand the world and design a smarter future.",
+    "bgImage": "/aboutGeomatic/careers/AdobeStock_60497336.jpeg"
+  },
+  "ui": {
+    "kicker": "About",
+    "contact": "Contact us",
+    "anchor": "Apply",
+    "form": "Use the contact form"
+  },
+  "reasons": {
+    "kicker": "Working at Geomatic",
+    "title": "Why join us",
+    "image": "/aboutGeomatic/careers/life-at-esri-common-mission.jpg",
+    "items": [
+      {
+        "title": "Join Geomatic",
+        "text": "At Geomatic, we’re more than just a technology company. We’re a pioneer in geospatial innovation across Morocco and beyond. Since 1988, we’ve been at the forefront of Geographic Information Systems (GIS), cloud computing, and big data, helping organizations harness the power of location intelligence to make smarter, data-driven decisions."
+      },
+      {
+        "title": "Grow with purpose",
+        "text": "Our people are the driving force behind our success. At Geomatic, you’ll collaborate with a multidisciplinary team of experts in GIS, remote sensing, and geolocation technologies, all united by a shared mission to transform how businesses, governments, and communities understand their world. We value creativity, continuous learning, and the courage to explore new frontiers in geospatial technology."
+      },
+      {
+        "title": "Build the future with us",
+        "text": "Whether you’re an engineer, analyst, or innovator, Geomatic offers a space to grow your career while contributing to impactful projects across Morocco, Africa, and the Gulf region. Join us and be part of a team shaping the future of sustainable development through the power of geography."
+      }
+    ]
+  },
+  "apply": {
+    "kicker": "Open application",
+    "title": "Join our family",
+    "text": "Geomatic offers a complete package to ensure the continual development of each employee and our organization.",
+    "cta": "Send your application",
+    "email": "contact@geomatic.ma",
+    "image": "/aboutGeomatic/careers/careersimage2-1280x600.jpg"
+  }
+}

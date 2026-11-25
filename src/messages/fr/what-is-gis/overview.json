@@ -1,0 +1,148 @@
+{
+  "ui": {
+    "kicker": "Comprendre les SIG",
+    "contact": "Parler à un expert",
+    "how": "Comment ça fonctionne",
+    "whatKicker": "Usages",
+    "examplesLabel": "Exemples d’usage du SIG",
+    "worksKicker": "Fonctionnement",
+    "moreKicker": "Aller plus loin",
+    "moreTitle": "Explorer le SIG",
+    "whatTitle": "À quoi sert le SIG"
+  },
+  "hero": {
+    "title": "Qu’est-ce que le SIG ?",
+    "subtitle": "Un cadre pour organiser, communiquer et comprendre la science de notre monde",
+    "image": "/whatIsGis/overview-banner-layerstack.png"
+  },
+  "intro": {
+    "paragraph": "Un système d’information géographique (SIG) est un cadre permettant de collecter, gérer et analyser des données. Ancré dans la science de la géographie, le SIG intègre de nombreux types de données. Il analyse la localisation spatiale et organise les couches d’information en visualisations à l’aide de cartes et de scènes 3D. Grâce à cette capacité unique, le SIG révèle des insights plus profonds dans les données — tels que des modèles, des relations et des situations — aidant les utilisateurs à prendre de meilleures décisions."
+  },
+  "split": {
+    "imageLeft": "/whatIsGis/bubble-map.jpg",
+    "title": "Qu’est-ce que le SIG",
+    "description": "Des centaines de milliers d’organisations dans pratiquement tous les domaines utilisent le SIG pour créer des cartes qui communiquent, analysent, partagent des informations et résolvent des problèmes complexes à travers le monde. Cela change la façon dont le monde fonctionne.",
+    "items": [
+      {
+        "label": "Identifier les problèmes",
+        "avatarImage": "/whatIsGis/overview-what-identify-problems-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-identify-problems-narrow.jpg",
+        "description": "Utilisez le SIG pour mettre en lumière des problématiques influencées par la géographie. Cette carte des prescriptions d’opioïdes révèle les schémas géographiques qui apparaissent lorsque les données sont bien cartographiées.",
+        "href": "https://urbanobservatory.maps.arcgis.com/apps/Cascade/index.html?appid=f86499d99e4340b68229eaccfb02b29f",
+        "linkText": "Voir une carte de l’épidémie d’opioïdes"
+      },
+      {
+        "label": "Suivre les changements",
+        "avatarImage": "/whatIsGis/overview-what-monitor-change-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-monitor-change-narrow.jpg",
+        "description": "Si une image vaut mille mots, une carte en vaut mille images. Cette carte révèle clairement l’ampleur du recul des glaciers dans l’hémisphère sud.",
+        "href": "https://www.patagonjournal.com/index.php?option=com_content&view=article&id=3690:climate-change-series-memories-of-ice&catid=192:geojournalism&Itemid=279&lang=en",
+        "linkText": "Consulter la carte *Memories of Ice* du Patagon Journal"
+      },
+      {
+        "label": "Gérer et répondre aux événements",
+        "avatarImage": "/whatIsGis/overview-what-manage-events-thumbs.jpg",
+        "mainImage": "/whatIsGis/overview-what-manage-events-narrow.jpg",
+        "description": "Le SIG offre une connaissance situationnelle en temps réel. Cette carte des ouragans et cyclones montre l’impact potentiel sur les populations et les entreprises, la trajectoire probable des tempêtes et la hauteur des marées de tempête.",
+        "href": "https://www.arcgis.com/apps/MapSeries/index.html?appid=db6238df958148108cceb3b05619a7f6",
+        "linkText": "Essayer la carte des ouragans et cyclones tropicaux"
+      },
+      {
+        "label": "Réaliser des prévisions",
+        "avatarImage": "/whatIsGis/overview-what-perform-forecasting-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-perform-forecasting-narrow.jpg",
+        "description": "Utilisez le SIG pour prévoir le trafic. Cette carte met en évidence les défis d’un carrefour à Fort Mitchell, Kentucky, où les prévisions montrent une aggravation du trafic liée aux changements d’occupation des sols.",
+        "href": "http://pdskc.maps.arcgis.com/apps/MapJournal/index.html?appid=e4a8944dc8914c7d9a26b1b263ece038",
+        "linkText": "Ouvrir la carte interactive NKYmapLAB"
+      },
+      {
+        "label": "Définir des priorités",
+        "avatarImage": "/whatIsGis/overview-what-set-priorities-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-set-priorities-narrow.jpg",
+        "description": "Le SIG aide à définir des priorités basées sur l’analyse spatiale. En analysant les schémas criminels, les responsables de la sécurité publique peuvent identifier les zones ciblées et affecter des agents en conséquence.",
+        "href": "https://modelpd.maps.arcgis.com/apps/MapJournal/index.html?appid=3fa8f73b99e047d093447cbf9f7af1e3&webmap=f56a5720743c4297949371f9534bbdd4",
+        "linkText": "Consulter une carte de réponse à la criminalité"
+      },
+      {
+        "label": "Comprendre les tendances",
+        "avatarImage": "/whatIsGis/overview-what-understanding-trends-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-understanding-trends-narrow.jpg",
+        "description": "Le SIG permet de tirer parti d’informations qui pourraient passer inaperçues dans un tableur. Cette carte mesure la croissance ou la perte d’emplois dans différents secteurs et met en évidence l’avantage concurrentiel local.",
+        "href": "https://www.esri.com/en-us/industries/real-estate/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Findustries%2Freal-estate%2Fshift-share",
+        "linkText": "Essayer la carte d’analyse shift-share"
+      }
+    ],
+    "callout": {
+      "title": "Identifier les problèmes",
+      "text": "Utilisez le SIG pour éclairer des problématiques influencées par la géographie. Les schémas apparaissent lorsque les données sont bien cartographiées.",
+      "href": "#",
+      "linkText": "Voir une carte de l’épidémie d’opioïdes"
+    }
+  },
+  "works": {
+    "title": "Comment fonctionne le SIG",
+    "intro": "La technologie SIG applique la science géographique avec des outils de compréhension et de collaboration. Elle aide les personnes à atteindre un objectif commun : obtenir une intelligence exploitable à partir de tous types de données.",
+    "cards": [
+      {
+        "title": "Cartes",
+        "body": "Les cartes sont le conteneur géographique des couches de données et des analyses que vous souhaitez utiliser. Les cartes SIG sont facilement partagées, intégrées dans des applications et accessibles pratiquement partout, par tous.",
+        "ctaText": "Lire à propos des cartes dans *The ArcGIS Book*",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-maps.png"
+      },
+      {
+        "title": "Données",
+        "body": "Le SIG intègre de nombreux types de couches de données à l’aide de la localisation spatiale. La plupart des données ont une composante géographique. Les données SIG incluent des images, des entités et des fonds de carte reliés à des tableurs et des bases de données.",
+        "ctaText": "Lire à propos des données dans *The ArcGIS Book*",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-data.png"
+      },
+      {
+        "title": "Analyse",
+        "body": "L’analyse spatiale permet d’évaluer la pertinence et les capacités, d’estimer et de prévoir, d’interpréter et de comprendre, et bien plus encore, offrant de nouvelles perspectives à vos analyses et à votre prise de décision.",
+        "ctaText": "Lire à propos de l’analyse dans *The ArcGIS Book*",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-analysis.png"
+      },
+      {
+        "title": "Applications",
+        "body": "Les applications offrent des expériences utilisateur ciblées pour accomplir des tâches et donner vie au SIG pour tous. Les applications SIG fonctionnent quasiment partout : sur téléphones mobiles, tablettes, navigateurs web et ordinateurs de bureau.",
+        "ctaText": "Lire à propos des applications SIG dans *The ArcGIS Book*",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-apps.png"
+      }
+    ]
+  },
+  "bottomCtas": {
+    "items": [
+      {
+        "title": "Exemples SIG",
+        "body": "Découvrez des cartes interactives et des visualisations créées avec le SIG qui informent, engagent et inspirent.",
+        "href": "#exemples",
+        "linkText": "En savoir plus",
+        "icon": "/whatIsGis/gisShowcase.svg"
+      },
+      {
+        "title": "Histoire du SIG",
+        "body": "Explorez l’évolution du SIG, d’un outil rudimentaire à une plateforme complète pour concevoir un monde plus intelligent.",
+        "href": "https://www.esri.com/en-us/what-is-gis/history-of-gis",
+        "linkText": "En savoir plus",
+        "icon": "/whatIsGis/historyOfGis.svg"
+      },
+      {
+        "title": "Carrières en SIG",
+        "body": "Découvrez comment les professionnels du SIG accèdent à des opportunités dans d’innombrables secteurs.",
+        "href": "https://www.esri.com/en-us/what-is-gis/careers",
+        "linkText": "En savoir plus",
+        "icon": "/whatIsGis/gisCarrers.svg"
+      },
+      {
+        "title": "Ressources SIG",
+        "body": "Trouvez des ressources pour approfondir vos connaissances du SIG.",
+        "href": "https://www.esri.com/en-us/what-is-gis/get-started",
+        "linkText": "En savoir plus",
+        "icon": "/whatIsGis/gisResources.svg"
+      }
+    ]
+  }
+}

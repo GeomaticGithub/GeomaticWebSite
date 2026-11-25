@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "kicker": "Contact",
+    "title": "Contact us",
+    "description": "Sales, support, training or consulting: the Geomatic team answers by phone or email.",
+    "callCta": "Call {phone}",
+    "formCta": "Send a message",
+    "image": "/aboutGeomatic/contact/contact-us-page-banner-small-2400.jpg"
+  },
+  "form": {
+    "kicker": "Write to us",
+    "title": "Send us a message",
+    "subtitle": "Tell us what you need: the right team will answer by email or phone.",
+    "requiredNote": "All fields are required unless marked optional.",
+    "optional": "optional",
+    "trapLabel": "Leave this field empty",
+    "name": "Full name",
+    "organization": "Organization",
+    "email": "Email address",
+    "phone": "Phone",
+    "topic": "Topic",
+    "topicPlaceholder": "Choose a topic",
+    "message": "Message",
+    "messageHint": "{count} / {max} characters",
+    "topics": {
+      "sales": "Sales and licensing",
+      "support": "Support and customer service",
+      "training": "Training",
+      "consulting": "Consulting",
+      "other": "Other request"
+    },
+    "consent": "I agree that Geomatic may use this information to answer my request.",
+    "privacy": "Read the privacy policy",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "errors": {
+      "name": "Enter your name.",
+      "email": "Enter a valid email address, for example name@example.com.",
+      "phone": "Enter a valid phone number, or leave this field empty.",
+      "topic": "Choose a topic.",
+      "message": "Write your message (at least 10 characters).",
+      "consent": "Tick this box to send your message.",
+      "summary": "The message was not sent. Fix the fields marked above, then try again.",
+      "failed": "Your message could not be sent. Try again in a few minutes or write to us at {email}.",
+      "rateLimited": "You have sent several messages in a row. Try again in a few minutes."
+    },
+    "success": {
+      "title": "Message sent",
+      "text": "Thank you. Our team will get back to you as soon as possible.",
+      "again": "Send another message"
+    }
+  },
+  "details": {
+    "title": "Our details",
+    "text": "Official Esri distributor in Morocco. Our offices are in the Gauthier district."
+  },
+  "topics": {
+    "kicker": "Your requests",
+    "title": "How can we help?",
+    "subtitle": "Pick a topic to reach the right team directly.",
+    "cards": [
+      {
+        "icon": "sales",
+        "title": "Sales and licensing",
+        "desc": "ArcGIS products, licensing and pricing.",
+        "link": "mailto:sales@geomatic.ma",
+        "cta": "sales@geomatic.ma"
+      },
+      {
+        "icon": "support",
+        "title": "Customer service",
+        "desc": "Account help and general assistance.",
+        "link": "mailto:support@geomatic.ma",
+        "cta": "support@geomatic.ma"
+      },
+      {
+        "icon": "phone",
+        "title": "General questions",
+        "desc": "We answer your questions during business hours.",
+        "link": "tel:+212667116710",
+        "cta": "+212 6 67 11 67 10"
+      },
+      {
+        "icon": "consulting",
+        "title": "Consulting",
+        "desc": "Experts to scope and deliver your GIS projects.",
+        "link": "/support-services/consulting",
+        "cta": "Learn more"
+      },
+      {
+        "icon": "training",
+        "title": "Training",
+        "desc": "Courses, schedules and tailored training.",
+        "link": "/support-services/learning",
+        "cta": "View training"
+      },
+      {
+        "icon": "careers",
+        "title": "Careers",
+        "desc": "Join the Geomatic team.",
+        "link": "/about-geomatic/careers",
+        "cta": "Find out more"
+      }
+    ]
+  }
+}

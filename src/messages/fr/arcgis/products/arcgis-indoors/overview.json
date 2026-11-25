@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "title": "ArcGIS Indoors",
+    "subtitle": "Gestion intelligente des bâtiments",
+    "image": "/arcgisIndoors/arcgis-indoors-banner-fg-3.png",
+    "ctaText": "Demander une démo",
+    "ctaLink": "#",
+    "bgGraphic": "/arcgisIndoors/arcgis-indoors-banner-bg.jpg",
+    "icon": "/arcgisIndoors/arcgis-indoors-product-icon.png"
+  },
+  "intro": {
+    "paragraph": "ArcGIS Indoors est un système complet de cartographie intérieure utilisé pour créer un lieu de travail connecté. Il fournit une vision opérationnelle commune aux dirigeants, aux équipes de services généraux et à l’ensemble des employés et visiteurs pour comprendre, gérer et utiliser leur environnement de travail. Grâce à une version étendue d’ArcGIS Pro, à des applications web et mobiles natives (dont iOS) et à un modèle d’information intérieur, ArcGIS Indoors vous aide à créer, personnaliser, partager et appliquer des cartes et données de localisation afin de gérer les opérations et d’offrir un environnement confortable et engageant pour vos équipes."
+  },
+  "workplace": {
+    "heading": "Activer, engager et autonomiser votre lieu de travail",
+    "subheading": "Évaluez vos activités métier dans l’environnement de travail afin de favoriser une équipe plus confortable, confiante et collaborative.",
+    "image": "/arcgisIndoors/arcgis-indoors-lcs-enable-engage-empower-3.jpg",
+    "pillars": [
+      {
+        "title": "Améliorer la collaboration et la productivité",
+        "desc": "Les occupants passeront moins de temps à chercher où ils doivent aller. Avec le guidage et la navigation intérieurs, ils sauront toujours où se rendre, où se trouvent leurs collègues et quels espaces sont disponibles pour répondre à leurs besoins."
+      },
+      {
+        "title": "Opérationnaliser vos données du lieu de travail",
+        "desc": "Connectez vos données d’exploitation — comme l’allocation et l’utilisation des types d’espaces — aux formats BIM (Building Information Modeling) basés sur les projets afin de créer une carte complète du lieu de travail. Utilisez ces informations pour soutenir les opérations et la prise de décision."
+      },
+      {
+        "title": "Créer un environnement plus sûr et plus sécurisé",
+        "desc": "La sécurité et la continuité des activités sont constamment menacées par des catastrophes naturelles ou humaines de plus en plus fréquentes. Une carte du lieu de travail sert d’inventaire des actifs et d’outil idéal pour planifier et suivre les détails opérationnels, les personnes ou les zones."
+      },
+      {
+        "title": "Passer moins de temps à « relier les points »",
+        "desc": "Assurez le bon fonctionnement du site en permettant aux équipes d’exploitation et de maintenance de disposer de tous les détails essentiels sur les incidents signalés (où, quoi, par qui) afin qu’ils soient rapidement résolus."
+      }
+    ]
+  },
+  "how": {
+    "steps": [
+      {
+        "title": "Cartographie intérieure",
+        "desc": "Un accès illimité pour les utilisateurs et des autorisations basées sur l’identité permettent à chacun d’accéder à des cartes intérieures spécifiquement préparées."
+      },
+      {
+        "title": "Guidage intérieur",
+        "desc": "Améliorez la mobilité sur site en fournissant l’exploration des ressources et la navigation intérieures aux employés, prestataires et même aux visiteurs."
+      },
+      {
+        "title": "Suivi de position intérieure",
+        "desc": "Capturez les positions intérieures en temps réel pour faciliter la navigation ainsi que le suivi, l’allocation et la gestion des ressources."
+      }
+    ],
+    "illustration": "/arcgisIndoors/arcgis-indoors-fss-fg-3.png",
+    "illustrationAlt": "Illustration du workflow ArcGIS Indoors"
+  },
+  "build": {
+    "heading": "Créer un SIG intérieur",
+    "desc": "ArcGIS Indoors est conçu pour fonctionner avec les autres composants de la plateforme ArcGIS, afin d’exploiter nativement les autres capacités d’ArcGIS, la plateforme de cartographie et d’analyse spatiale de référence. Propulsé par ArcGIS Enterprise et Portal, ArcGIS Indoors peut être utilisé pour la visualisation et l’analyse avec des applications telles que :",
+    "image": "/arcgisIndoors/50-50-arcgis-indoors-os.jpg",
+    "items": [
+      "ArcGIS Operations Dashboard : visualisation et suivi du lieu de travail en temps réel",
+      "ArcGIS GeoEvent Server : flux en temps réel et analyses des données du lieu de travail",
+      "Applications d’opérations terrain ArcGIS, y compris Survey123 pour les demandes 311 du lieu de travail"
+    ]
+  },
+  "ips": {
+    "heading": "Système de positionnement intérieur (IPS)",
+    "desc1": "Bénéficiez d’un positionnement intérieur avec le même niveau de confort que celui auquel vous êtes habitué à l’extérieur.",
+    "desc2": "ArcGIS Indoors rend disponibles, à l’intérieur des bâtiments, le guidage en temps réel, les données analytiques de localisation et les services de suivi. Il propose des cartes 3D par étage et des applications ciblées pour divers utilisateurs du site et des installations : propriétaires/opérateurs, maintenance et services, sécurité, employés et visiteurs. Le système est conçu pour prendre en charge plusieurs fournisseurs d’IPS existants.",
+    "leftImage": "/arcgisIndoors/arcgis-indoors-ips-5050.jpg",
+    "rightImage": "/arcgisIndoors/ips-right.jpg",
+    "learnMore": { "label": "En savoir plus", "href": "#" }
+  },
+  "docs": {
+    "heading": "Documentation",
+    "desc": "Trouvez des réponses et des informations sur Indoors.",
+    "cards": [
+      {
+        "title": "ArcGIS Indoors Web",
+        "linkLabel": "Quoi de neuf",
+        "link": "https://doc.arcgis.com/en/indoors/latest/viewer/introduction-to-indoor-viewer.htm"
+      },
+      {
+        "title": "ArcGIS Indoors pour iOS",
+        "linkLabel": "Aperçu",
+        "link": "https://doc.arcgis.com/en/indoors/mobile/ios/introduction-to-the-deployment-of-indoors.htm"
+      },
+      {
+        "title": "ArcGIS Indoors pour Android",
+        "linkLabel": "Aperçu",
+        "link": "https://doc.arcgis.com/en/indoors/mobile/android/introduction-to-the-deployment-of-indoors.htm"
+      },
+      {
+        "title": "Exigences",
+        "linkLabel": "Exigences",
+        "link": "https://doc.arcgis.com/en/collector/faq/requirements.htm"
+      },
+      {
+        "title": "Quoi de neuf",
+        "linkLabel": "Quoi de neuf",
+        "link": "https://doc.arcgis.com/en/collector/faq/whats-new.htm"
+      },
+      {
+        "title": "Aperçu",
+        "linkLabel": "Aperçu",
+        "link": "https://doc.arcgis.com/en/collector/faq/faq.htm#GUID-F3CAB304-A75D-42D1-8239-99CD7D7772E8"
+      },
+      {
+        "title": "ArcGIS Indoors pour Pro",
+        "linkLabel": "ArcGIS Indoors pour Pro",
+        "link": "https://pro.arcgis.com/en/pro-app/latest/help/data/indoors/get-started-with-arcgis-indoors.htm"
+      },
+      {
+        "title": "Quoi de neuf",
+        "linkLabel": "Quoi de neuf",
+        "link": "https://doc.arcgis.com/en/arcgis-online/reference/whats-new.htm"
+      }
+    ]
+  },
+  "community": {
+    "leftImage": "/arcgisIndoors/getNet.svg",
+    "leftTitle": "GeoNet",
+    "leftDesc": "Échangez des idées, résolvez des problèmes et tissez des liens avec la communauté Esri.",
+    "leftLink": "https://community.esri.com/t5/arcgis-indoors/ct-p/arcgis-indoors",
+    "leftCta": "Explorer GeoNet",
+    "centerImage": "/arcgisIndoors/bulb.svg",
+    "centerTitle": "S’inscrire à un webinaire",
+    "centerDesc": "Participez à l’un de nos webinaires dans le cadre de la série Indoors.",
+    "centerLink": "https://www.esri.com/en-us/lg/product/arcgis-indoors-2021-webinar-series?rsource=%2Fen-us%2Flanding-page%2Fproduct%2F2019%2Farcgis-indoors-webinar-series",
+    "centerCta": "S’inscrire ici",
+    "rightImage": "/arcgisIndoors/blog.svg",
+    "rightTitle": "Lire le blog",
+    "rightDesc": "Découvrez les dernières actualités sur ArcGIS Indoors : nouveautés et à venir.",
+    "rightLink": "https://www.esri.com/arcgis-blog/?s=#&products=arcgis-indoors",
+    "rightCta": "Lire le blog ArcGIS"
+  },
+  "contact": {
+    "heading": "Contacter l’équipe commerciale",
+    "desc": "Besoin d’aide pour choisir les bonnes applications ou concevoir un workflow ? Des questions sur l’analyse spatiale et la science des données ?",
+    "link": "#",
+    "linkText": "Nous contacter"
+  }
+}

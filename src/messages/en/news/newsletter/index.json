@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Geomatic Newsletters",
+    "subtitle": "Coming soon",
+    "text": "This page will hold Geomatic’s newsletters: ArcGIS news, customer experience and practical tips for your GIS practice.",
+    "bgImage": "/news/newsletters/shutterstock448468954-2400.jpg"
+  },
+  "ui": {
+    "kicker": "Publications",
+    "contact": "Be told when it is out",
+    "anchor": "In the meantime",
+    "othersKicker": "In the meantime",
+    "othersTitle": "Other publications to read"
+  }
+}

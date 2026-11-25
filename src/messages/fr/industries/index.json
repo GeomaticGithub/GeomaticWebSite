@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "kicker": "Solutions",
+    "title": "Solutions par secteur et par besoin",
+    "subtitle": "ArcGIS au service de votre métier",
+    "text": "Retrouvez les usages du SIG dans votre secteur, les réponses à vos besoins métiers et les solutions de nos partenaires.",
+    "contact": "Parler à un expert",
+    "anchor": "Voir les secteurs",
+    "bgImage": "/Solutions/Industries/naturalResources/access-world-of-content-background-wide.jpg"
+  },
+  "jump": "Aller à",
+  "sectors": {
+    "kicker": "Secteurs",
+    "title": "Le SIG dans votre secteur",
+    "text": "{count} secteurs, avec leurs usages et des exemples d’organisations qui utilisent ArcGIS."
+  },
+  "needs": {
+    "kicker": "Besoins métiers",
+    "title": "Une réponse à chaque besoin métier",
+    "text": "Partez du problème à résoudre : suivre des actifs, organiser le terrain, choisir un emplacement."
+  },
+  "solutions": {
+    "kicker": "Solutions partenaires",
+    "title": "Des solutions spécialisées pour des besoins précis",
+    "text": "Surveillance, réalité augmentée, gestion d’incidents, bâtiments ou réseaux télécoms : des solutions proposées avec nos partenaires."
+  }
+}

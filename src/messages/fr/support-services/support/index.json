@@ -1,0 +1,72 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Contacter le support",
+    "anchor": "Ressources par produit",
+    "reachKicker": "Nous joindre",
+    "emailLabel": "Par e-mail",
+    "phoneLabel": "Par téléphone",
+    "formLabel": "Par le formulaire de contact",
+    "formCta": "Écrire à l’équipe",
+    "prepareTitle": "Pour une réponse plus rapide, indiquez :",
+    "productsKicker": "Ressources Esri",
+    "productsText": "Documentation, articles techniques et téléchargements, classés par famille de produits sur le site de support d’Esri (en anglais)."
+  },
+  "hero": {
+    "title": "Support",
+    "description": "La Science du Où",
+    "bgGraphic": "/support-services/support/support_overview_banner.jpg"
+  },
+  "intro": {
+    "title": "Obtenez l’aide d’experts pour votre logiciel Esri",
+    "subTitle": "Services de support Geomatic",
+    "bgGraphic": "/support-services/support/support_services_secondary_banner.jpg",
+    "paragraph": "Nos services de support de pointe sont assurés par une équipe dédiée de professionnels prêts à répondre à toute question ou problème lié à la plateforme ArcGIS."
+  },
+  "prepare": [
+    "Le produit ArcGIS concerné et sa version",
+    "Le message d’erreur ou une capture d’écran",
+    "Les étapes qui mènent au problème"
+  ],
+  "community": {
+    "title": "Produits Esri",
+    "cards": [
+      {
+        "title": "Bureau",
+        "image": "/support-services/support/desktop.svg",
+        "gradient": "from-purple-600 to-purple-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Entreprise",
+        "image": "/support-services/support/entreprise.svg",
+        "gradient": "from-green-600 to-green-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "En ligne",
+        "image": "/support-services/support/online.svg",
+        "gradient": "from-purple-600 to-purple-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Développeurs",
+        "image": "/support-services/support/developers.svg",
+        "gradient": "from-green-600 to-green-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Applications",
+        "image": "/support-services/support/apps.svg",
+        "gradient": "from-purple-600 to-purple-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Plus de produits Esri",
+        "image": "/support-services/support/moreEsriProducts.svg",
+        "gradient": "from-green-600 to-green-800",
+        "link": "https://support.esri.com/en-us/products"
+      }
+    ]
+  }
+}

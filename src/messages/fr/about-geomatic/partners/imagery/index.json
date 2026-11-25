@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "Partenaires Imagerie",
+    "bgGraphic": "/aboutGeomatic/partners/Imagery/partner-banner.png"
+  },
+  "intro": {
+    "subTitle": "Fournisseurs d’observation de la Terre de premier plan",
+    "paragraph": "Nous collaborons avec les principaux fournisseurs d’imagerie satellite et aérienne afin d’apporter à nos clients un contenu géospatial précis, actualisé et exploitable."
+  },
+  "community": {
+    "cards": [
+      {
+        "title": "Airbus",
+        "desc": "Airbus Intelligence est reconnu comme un leader mondial dans la fourniture de données géospatiales.",
+        "image": "/aboutGeomatic/partners/Imagery/partner2.png",
+        "link": "https://www.airbus.com/en"
+      },
+      {
+        "title": "Maxar Technologies",
+        "desc": "Maxar fournit des capacités innovantes d’intelligence terrestre et d’infrastructure spatiale pour aider ses clients à mieux comprendre notre monde.",
+        "image": "/aboutGeomatic/partners/Imagery/partner3.png",
+        "link": "https://maxar.com/"
+      },
+      {
+        "title": "Leonardo",
+        "desc": "Une entreprise mondiale de haute technologie et un acteur clé dans les secteurs de l’aérospatiale, de la défense et de la sécurité.",
+        "image": "/aboutGeomatic/partners/Imagery/logo1.png",
+        "link": "https://www.leonardo.com/en/home"
+      },
+      {
+        "title": "MDA Space",
+        "desc": "Les services géospatiaux de MDA fournissent des informations géospatiales critiques et adaptées aux besoins pour une prise de décision essentielle.",
+        "image": "/aboutGeomatic/partners/Imagery/logo21.png",
+        "link": "https://mda.space/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "kicker": "Contact",
+    "title": "Contactez-nous",
+    "description": "Vente, support, formation ou conseil : l’équipe de Geomatic vous répond par téléphone ou par e-mail.",
+    "callCta": "Appeler le {phone}",
+    "formCta": "Envoyer un message",
+    "image": "/aboutGeomatic/contact/contact-us-page-banner-small-2400.jpg"
+  },
+  "form": {
+    "kicker": "Écrivez-nous",
+    "title": "Envoyez-nous un message",
+    "subtitle": "Décrivez votre besoin : la bonne équipe vous répond par e-mail ou par téléphone.",
+    "requiredNote": "Tous les champs sont obligatoires, sauf mention contraire.",
+    "optional": "facultatif",
+    "trapLabel": "Laissez ce champ vide",
+    "name": "Nom complet",
+    "organization": "Organisme",
+    "email": "Adresse e-mail",
+    "phone": "Téléphone",
+    "topic": "Sujet",
+    "topicPlaceholder": "Choisissez un sujet",
+    "message": "Message",
+    "messageHint": "{count} / {max} caractères",
+    "topics": {
+      "sales": "Ventes et licences",
+      "support": "Support et service client",
+      "training": "Formation",
+      "consulting": "Conseil",
+      "other": "Autre demande"
+    },
+    "consent": "J’accepte que Geomatic utilise ces informations pour répondre à ma demande.",
+    "privacy": "Lire la politique de confidentialité",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours…",
+    "errors": {
+      "name": "Indiquez votre nom.",
+      "email": "Indiquez une adresse e-mail valide, par exemple nom@exemple.ma.",
+      "phone": "Indiquez un numéro de téléphone valide, ou laissez ce champ vide.",
+      "topic": "Choisissez un sujet.",
+      "message": "Écrivez votre message (10 caractères au minimum).",
+      "consent": "Cochez cette case pour envoyer votre message.",
+      "summary": "Le message n’a pas été envoyé. Corrigez les champs signalés, puis réessayez.",
+      "failed": "Votre message n’a pas pu être envoyé. Réessayez dans quelques minutes ou écrivez-nous à {email}.",
+      "rateLimited": "Vous avez envoyé plusieurs messages à la suite. Réessayez dans quelques minutes."
+    },
+    "success": {
+      "title": "Message envoyé",
+      "text": "Merci. Notre équipe vous répondra dans les meilleurs délais.",
+      "again": "Envoyer un autre message"
+    }
+  },
+  "details": {
+    "title": "Nos coordonnées",
+    "text": "Distributeur officiel d’Esri au Maroc. Nos bureaux se trouvent dans le quartier Gauthier."
+  },
+  "topics": {
+    "kicker": "Vos demandes",
+    "title": "Comment pouvons-nous vous aider ?",
+    "subtitle": "Choisissez un sujet pour joindre directement la bonne équipe.",
+    "cards": [
+      {
+        "icon": "sales",
+        "title": "Ventes et licences",
+        "desc": "Produits ArcGIS, licences et tarifs.",
+        "link": "mailto:sales@geomatic.ma",
+        "cta": "sales@geomatic.ma"
+      },
+      {
+        "icon": "support",
+        "title": "Service client",
+        "desc": "Aide sur votre compte et assistance générale.",
+        "link": "mailto:support@geomatic.ma",
+        "cta": "support@geomatic.ma"
+      },
+      {
+        "icon": "phone",
+        "title": "Questions générales",
+        "desc": "Nous répondons à vos questions pendant les heures de bureau.",
+        "link": "tel:+212667116710",
+        "cta": "+212 6 67 11 67 10"
+      },
+      {
+        "icon": "consulting",
+        "title": "Conseil",
+        "desc": "Des experts pour cadrer et réaliser vos projets SIG.",
+        "link": "/support-services/consulting",
+        "cta": "En savoir plus"
+      },
+      {
+        "icon": "training",
+        "title": "Formation",
+        "desc": "Cours, calendrier et formations sur mesure.",
+        "link": "/support-services/learning",
+        "cta": "Voir les formations"
+      },
+      {
+        "icon": "careers",
+        "title": "Carrières",
+        "desc": "Rejoignez l’équipe Geomatic.",
+        "link": "/about-geomatic/careers",
+        "cta": "Découvrir"
+      }
+    ]
+  }
+}

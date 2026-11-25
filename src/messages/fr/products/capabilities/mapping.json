@@ -1,0 +1,117 @@
+{
+  "hero": {
+    "title": "Cartographie",
+    "subtitle": "Logiciel pour visualiser et comprendre vos données spatialement"
+  },
+  "intro": {
+    "paragraph": "Créez des cartes interactives pour visualiser et explorer vos données en utilisant le logiciel de cartographie dynamique d'Esri. Des outils d'analyse puissants et des styles de cartes vous aident à découvrir et affiner l'histoire de vos données. Enrichissez vos cartes en incorporant du contenu de la riche bibliothèque de données d'Esri. Utilisez des symboles personnalisés et cartes de base pour personnaliser vos cartes. Partagez des cartes engageantes qui racontent l'histoire de vos données et influencent le changement."
+  },
+  "sections": {
+    "map": {
+      "title": "Cartographier vos données",
+      "p1": "Apportez vos données dans une carte et découvrez les relations spatiales pour la première fois. De nombreux types de fichiers sont supportés par le logiciel de cartographie d'Esri, incluant les feuilles de calcul, KML, GeoJSON et fichiers géospatiaux communs. Esri fournit un hébergement de données complet, ou vous pouvez l'héberger sur votre infrastructure.",
+      "p2": "Utilisez le géocodage pour transformer vos adresses en points sur une carte et configurer des itinéraires multimodaux. Créez des cartes qui affichent les données dynamiquement dès qu'elles sont mises à jour et améliorez la qualité de vos décisions en référençant les données les plus récentes.",
+      "link1": "Expérience de géocodage complète",
+      "link2": "Voir les façons de travailler avec les données",
+      "image": "/mapping/map-your-data.gif"
+    },
+    "interact": {
+      "title": "Interagir avec votre carte",
+      "p1": "Les cartes web interactives vous donnent à vous et votre équipe l'opportunité d'explorer et mettre à jour les données. Quand vous zoomez, des données et insights additionnels deviennent disponibles. Cliquez sur la carte pour découvrir des données spécifiques à l'emplacement affichées dans des graphiques ou infographies. Filtrez les données et changez la symbologie pour obtenir des perspectives additionnelles et révéler de nouveaux motifs.",
+      "p2": "Utilisez vos cartes même sans connexion réseau ou cellulaire. Téléchargez vos cartes avant de partir, et accédez-y commodément sur votre smartphone ou tablette. Une fois reconnecté, toute donnée que vous ou votre équipe avez ajoutée est automatiquement synchronisée.",
+      "link1": "Explorer cette carte interactive",
+      "link2": "Emporter des cartes hors ligne",
+      "image": "/mapping/interact-with-map.gif"
+    },
+    "understand": {
+      "title": "Comprendre vos données",
+      "p1": "Découvrez et affinez l'histoire de vos données en utilisant un ensemble d'outils d'analyse intuitifs, comme les temps de trajet et tampons. La cartographie intelligente, pionnière par Esri, utilise un style, des couleurs et symboles pilotés par les données pour guider votre exploration et transformer vos données brutes en information utile. Vous pouvez aussi mieux comprendre vos données en les visualisant avec différents styles de cartes.",
+      "link1": "En savoir plus sur la cartographie intelligente",
+      "link2": "Explorer les styles de cartes",
+      "image": "/mapping/undertand-data.jpg"
+    },
+    "enrich": {
+      "title": "Améliorer vos données",
+      "p1": "Approfondissez votre compréhension et exposez les relations en ajoutant des données autoritatives, comme la démographie, imagerie, frontières et flux en direct, à votre carte. ArcGIS Living Atlas du Monde, la collection la plus complète d'informations géographiques mondiales, est inclus avec chaque produit de cartographie ArcGIS.",
+      "link1": "Explorer ArcGIS Living Atlas",
+      "image": "/mapping/enrich-data.jpg"
+    },
+    "personalize": {
+      "title": "Personnaliser vos cartes",
+      "p1": "Marquez et personnalisez vos cartes en utilisant des symboles, couleurs et cartes de base personnalisés. Faites ressortir vos données en les plaçant sur une carte de base historique, créative ou actuelle. Vous pouvez aussi personnaliser les cartes de base ou construire les vôtres.",
+      "link1": "Explorer la galerie de cartes de base",
+      "image": "/mapping/personalize-map.gif"
+    }
+  },
+  "share": {
+    "title": "Partagez votre histoire",
+    "description": "Créez des applications qui permettent à votre public non seulement de voir votre carte mais aussi d'interagir avec les données. Choisissez parmi une variété de modèles d'applications ciblées et créez une application en quelques clics. Incluez-les sur votre site web en utilisant le code d'intégration pratique. Chaque application a un but spécifique pour aider à raconter votre histoire et garder votre public engagé.",
+    "cta": "En savoir plus",
+    "items": {
+      "configurable": {
+        "label": "Applications Configurables ArcGIS",
+        "title": "Applications Configurables ArcGIS",
+        "desc": "Créez et partagez facilement vos cartes comme applications web interactives. Sélectionnez parmi une variété de modèles prêts à utiliser.",
+        "avatarImage": "/mapping/share-configurable-thumb.jpg",
+        "mainImage": "/mapping/share-configurable.jpg",
+        "linkText": "Voir les Applications Configurables ArcGIS",
+        "href": "#"
+      },
+      "story": {
+        "label": "ArcGIS StoryMaps",
+        "title": "ArcGIS StoryMaps",
+        "desc": "Rassemblez texte, photos et vidéos avec des cartes pour créer des histoires remarquables qui résonnent avec votre public.",
+        "avatarImage": "/mapping/share-storymaps-thumb.jpg",
+        "mainImage": "/mapping/share-storymaps.jpg",
+        "linkText": "Explorer ArcGIS StoryMaps",
+        "href": "#"
+      },
+      "dashboard": {
+        "label": "Tableaux de Bord ArcGIS",
+        "title": "Tableaux de Bord ArcGIS",
+        "desc": "Créez un tableau de bord dynamique pour obtenir une vue opérationnelle temps réel de vos personnes, services, actifs et événements.",
+        "avatarImage": "/mapping/share-ops-dashboard-thumb.jpg",
+        "mainImage": "/mapping/share-ops-dashboard.jpg",
+        "linkText": "Explorer Operations Dashboard",
+        "href": "#"
+      },
+      "appbuilder": {
+        "label": "Web AppBuilder for ArcGIS",
+        "title": "Web AppBuilder for ArcGIS",
+        "desc": "Créez des applications personnalisées en utilisant des outils préconfigurés qui ne nécessitent pas de codage.",
+        "avatarImage": "/mapping/share-app-builder-thumb.jpg",
+        "mainImage": "/mapping/share-app-builder.jpg",
+        "linkText": "Explorer Web AppBuilder",
+        "href": "#"
+      }
+    }
+  },
+  "products": {
+    "title": "Commencez à cartographier et comprendre vos données",
+    "subtitle": "Il y a de nombreuses façons d'accéder aux capacités de cartographie d'Esri incluant SaaS basé nuage, infrastructure auto-gérée, outils développeur et logiciel desktop. Identifiez comment vous aimeriez accéder aux capacités et en apprendre plus sur le produit correspondant.",
+    "online": {
+      "category": "SaaS basé nuage",
+      "title": "ArcGIS Online",
+      "desc": "Commencez avec ArcGIS Online, le produit logiciel-en-tant-que-service basé nuage d'Esri. Vos cartes, applications et données sont hébergées et accessibles partout.",
+      "img": "/mapping/product-arcgis-online.jpg"
+    },
+    "enterprise": {
+      "category": "Infrastructure auto-gérée",
+      "title": "ArcGIS Enterprise",
+      "desc": "Gérez-vous votre propre infrastructure derrière un pare-feu ou dans le nuage ? Utilisez ArcGIS Enterprise pour vos besoins de cartographie et d'activation de localisation.",
+      "img": "/mapping/product-arcgis-enterprise.jpg"
+    },
+    "devtools": {
+      "category": "Outils développeur",
+      "title": "Outils Développeur ArcGIS",
+      "desc": "Utilisez un ensemble robuste d'outils développeur pour développer des applications ou personnaliser des cartes et applications construites dans ArcGIS Online ou ArcGIS Enterprise.",
+      "img": "/mapping/product-dev-tools.jpg"
+    },
+    "pro": {
+      "category": "Desktop",
+      "title": "ArcGIS Pro",
+      "desc": "Complétez des flux de travail avancés de cartographie, analyse et gestion de données en utilisant ArcGIS Pro.",
+      "img": "/mapping/product-arcgis-pro.jpg"
+    }
+  }
+}

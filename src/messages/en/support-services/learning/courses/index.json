@@ -1,0 +1,269 @@
+{
+  "ui": {
+    "kicker": "Course catalog",
+    "heroText": "{count} ArcGIS courses grouped by theme, for beginners and specialists alike.",
+    "contact": "Request a quote",
+    "anchor": "Browse the catalog",
+    "catalogKicker": "Catalog",
+    "filterLabel": "Search for a course",
+    "filterPlaceholder": "E.g. ArcGIS Pro, Python, geodatabase",
+    "clear": "Clear",
+    "themes": "Filter by theme",
+    "all": "All",
+    "count": "{count} courses",
+    "countOne": "1 course",
+    "noResult": "No course matches “{query}”.",
+    "reset": "Show all courses",
+    "planKicker": "Training plan",
+    "categories": {
+      "basics": "Fundamentals",
+      "mapping": "Mapping and visualization",
+      "analysis": "Spatial analysis and imagery",
+      "sharing": "Sharing and web GIS",
+      "data": "Data management",
+      "enterprise": "ArcGIS Enterprise and administration",
+      "dev": "Development and scripting",
+      "industry": "Utilities and industries"
+    }
+  },
+  "hero": {
+    "title": "Esri Authorized Training Center in Morocco",
+    "description": "",
+    "bgGraphic": "/support-services/learning/courses/learning.png"
+  },
+  "intro": {
+    "title": "Do you need to enhance your GIS skills?",
+    "subTitle": "We can help you schedule a training plan that fits your needs.",
+    "bgGraphic": "/1x1.png",
+    "paragraph": "Talk to our team to build a learning path for ArcGIS that matches your projects and timelines.",
+    "emailText": "Email us",
+    "phoneText": "Call",
+    "email": "training@geomatic.com.ma",
+    "phone": "+212 522 26 00 20"
+  },
+  "community": {
+    "title": "Courses",
+    "cards": [
+      {
+        "title": "ArcGIS I: Introduction to GIS",
+        "category": "basics",
+        "link": "/training-courses/arcgis-i-introduction-to-gis"
+      },
+      {
+        "title": "Introduction to GIS Using ArcGIS",
+        "category": "basics",
+        "link": "/training-courses/introduction-to-gis-using-arcgis"
+      },
+      {
+        "title": "ArcGIS Pro: Essential Workflows",
+        "category": "basics",
+        "link": "/training-courses/arcgis-pro-essential-workflows"
+      },
+      {
+        "title": "Putting ArcGIS to Use Across Your Organization",
+        "category": "basics",
+        "link": "/training-courses/putting-arcgis-to-use-across-your-org"
+      },
+      {
+        "title": "Migrating from ArcMap to ArcGIS Pro",
+        "category": "basics",
+        "link": "/training-courses/migrating-from-arcmap-to-arcgis-pro"
+      },
+      {
+        "title": "ArcGIS 2: Essential Workflows",
+        "category": "basics",
+        "link": "/training-courses/arcgis-2-essential-workflows"
+      },
+      {
+        "title": "Creating Maps and Visualizations with ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/creating-maps-and-visualizations-with-arcgis"
+      },
+      {
+        "title": "Creating Story Maps with ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/creating-story-maps-with-arcgis"
+      },
+      {
+        "title": "Designing Maps with ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/designing-maps-with-arcgis"
+      },
+      {
+        "title": "Get Started with Insights for ArcGIS",
+        "category": "mapping",
+        "link": "/training-courses/get-started-with-insights-for-arcgis"
+      },
+      {
+        "title": "Spatial Analysis with ArcGIS Pro",
+        "category": "analysis",
+        "link": "/training-courses/spatial-analysis-with-arcgis-pro"
+      },
+      {
+        "title": "ArcGIS 3: Performing Analysis",
+        "category": "analysis",
+        "link": "/training-courses/arcgis-3-performing-analysis"
+      },
+      {
+        "title": "Geoprocessing Raster Data Using ArcGIS Spatial Analyst",
+        "category": "analysis",
+        "link": "/training-courses/geoprocessing-raster-data-using-arcgis-spatial"
+      },
+      {
+        "title": "Creating and Analyzing Surfaces Using ArcGIS",
+        "category": "analysis",
+        "link": "/training-courses/creating-and-analyzing-surfaces-using-arcgis"
+      },
+      {
+        "title": "Image Analysis with ArcGIS",
+        "category": "analysis",
+        "link": "/training-courses/image-analysis-with-arcgis"
+      },
+      {
+        "title": "Working with 3D GIS Using ArcGIS",
+        "category": "analysis",
+        "link": "/training-courses/working-with-3d-gis-using-arcgis"
+      },
+      {
+        "title": "Working with ArcGIS Network Analyst",
+        "category": "analysis",
+        "link": "/training-courses/working-with-arcgis-network-analyst"
+      },
+      {
+        "title": "Sharing GIS Content Using ArcGIS",
+        "category": "sharing",
+        "link": "/training-courses/sharing-gis-content-using-arcgis"
+      },
+      {
+        "title": "User Workflows for ArcGIS Online Organization",
+        "category": "sharing",
+        "link": "/training-courses/user-workflows-for-arcgis-online-organization"
+      },
+      {
+        "title": "ArcGIS 4: Sharing Content on the Web",
+        "category": "sharing",
+        "link": "/training-courses/arcgis-4-sharing-content-on-the-web"
+      },
+      {
+        "title": "Managing Geospatial Data in ArcGIS",
+        "category": "data",
+        "link": "/training-courses/managing-geospatial-data-in-arcgis"
+      },
+      {
+        "title": "Building Geodatabases",
+        "category": "data",
+        "link": "/training-courses/building-geodatabases"
+      },
+      {
+        "title": "Field Data Collection and Management—ArcGIS",
+        "category": "data",
+        "link": "/training-courses/field-data-collection-and-management-arcgis"
+      },
+      {
+        "title": "Creating and Editing Data with ArcGIS Pro",
+        "category": "data",
+        "link": "/training-courses/creating-and-editing-data-with-arcgis-pro"
+      },
+      {
+        "title": "Editing Data with ArcGIS for Desktop",
+        "category": "data",
+        "link": "/training-courses/editing-data-with-arcgis-for-desktop"
+      },
+      {
+        "title": "Get Started with ArcGIS Data Reviewer for Desktop",
+        "category": "data",
+        "link": "/training-courses/get-started-with-arcgis-data-reviewer-for-des"
+      },
+      {
+        "title": "Introduction to ArcGIS Workflow Manager",
+        "category": "data",
+        "link": "/training-courses/introduction-to-arcgis-workflow-manager"
+      },
+      {
+        "title": "Working with CAD Data in ArcGIS Desktop",
+        "category": "data",
+        "link": "/training-courses/working-with-cad-data-in-arcgis-desktop"
+      },
+      {
+        "title": "Deploying and Maintaining a Multiuser Geodatabase",
+        "category": "data",
+        "link": "/training-courses/deploying-and-maintaining-multiuser-geodatabase"
+      },
+      {
+        "title": "Implementing Versioned Workflows in a Multiuser Geodatabase",
+        "category": "data",
+        "link": "/training-courses/implementing-versioned-workflows-in-multiuser"
+      },
+      {
+        "title": "Distributing Data Using Geodatabase Replicas",
+        "category": "data",
+        "link": "/training-courses/distributing-data-using-geodatabase-replicas"
+      },
+      {
+        "title": "ArcGIS Enterprise: Configuring a Base Deployment",
+        "category": "enterprise",
+        "link": "/training-courses/arcgis-enterprise-configuring-base-deployment"
+      },
+      {
+        "title": "ArcGIS Enterprise: Administration Workflows",
+        "category": "enterprise",
+        "link": "/training-courses/arcgis-enterprise-administration-workflows"
+      },
+      {
+        "title": "ArcGIS for Server: Site Configuration and Administration",
+        "category": "enterprise",
+        "link": "/training-courses/arcgis-for-server-site-config-and-admin"
+      },
+      {
+        "title": "System Architecture Design Strategies",
+        "category": "enterprise",
+        "link": "/training-courses/system-architecture-design-strategies"
+      },
+      {
+        "title": "Deploying Portal for ArcGIS",
+        "category": "enterprise",
+        "link": "/training-courses/deploying-portal-for-arcgis"
+      },
+      {
+        "title": "Creating Python Scripts for ArcGIS",
+        "category": "dev",
+        "link": "/training-courses/creating-python-scripts-for-arcgis"
+      },
+      {
+        "title": "Introduction to Geoprocessing Scripts Using Python",
+        "category": "dev",
+        "link": "/training-courses/intro-to-geoprocessing-scripts-using-python"
+      },
+      {
+        "title": "Configuring Web Apps Using Web AppBuilder for ArcGIS",
+        "category": "dev",
+        "link": "/training-courses/config-web-apps-using-web-appbuilder-for-arc"
+      },
+      {
+        "title": "Introduction to Web Development Using ArcGIS",
+        "category": "dev",
+        "link": "/training-courses/introduction-to-web-development-using-arcgis"
+      },
+      {
+        "title": "Using ArcGIS for Water Utility Workflows",
+        "category": "industry",
+        "link": "/training-courses/using-arcgis-for-water-utility-workflows"
+      },
+      {
+        "title": "Creating and Managing Utility Networks with ArcGIS",
+        "category": "industry",
+        "link": "/training-courses/creating-and-managing-utility-network-with-arc"
+      },
+      {
+        "title": "Using ArcGIS for Mining Geoscience Workflows",
+        "category": "industry",
+        "link": "/training-courses/using-arcgis-for-mining-geoscience-workflows"
+      },
+      {
+        "title": "Working with Geometric Networks for Utilities",
+        "category": "industry",
+        "link": "/training-courses/working-with-geometric-networks-for-utilities"
+      }
+    ]
+  }
+}

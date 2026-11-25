@@ -1,0 +1,9 @@
+export { default as Hero } from "./Hero";
+export { default as IntroBand } from "./IntroBand";
+export { default as WorkplacePillars } from "./WorkplacePillars";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as BuildIndoorGIS } from "./BuildIndoorGIS";
+export { default as IPS } from "./IPS";
+export { default as Documentation } from "./Documentation";
+export { default as Community } from "./Community";
+export { default as ContactCta } from "./ContactCta";

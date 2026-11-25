@@ -1,0 +1,350 @@
+{
+  "nav": {
+    "search": "Search",
+    "chooseLanguage": "Choose language",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "home": "Geomatic — home",
+    "searchPlaceholder": "Search a page…",
+    "searchHint": "Type to filter the site pages. Use the up and down arrows to move through the list, Enter to open the page, Esc to close.",
+    "searchSuggestions": "Quick links",
+    "searchResults": "Results",
+    "searchCount": "{count} result(s)",
+    "searchClear": "Clear",
+    "noResultsHint": "Try a product name, an industry or a service.",
+    "kbdNavigate": "navigate",
+    "kbdOpen": "open",
+    "kbdClose": "close",
+    "kbdEsc": "Esc",
+    "noResults": "No page matches “{query}”.",
+    "escHint": "Press Esc to close.",
+    "products": "Products",
+    "solutions": "Solutions",
+    "support": "Support & Services",
+    "news": "News",
+    "about": "About Us",
+    "headings": {
+      "capabilities": "Capabilities",
+      "gisAndMappingProducts": "Gis And Mapping Products",
+      "locationEnabledProducts": "Location-Enabled Products",
+      "locationAnalytics": "Location Analytics",
+      "exploreMore": "Explore More",
+      "data": "Data",
+      "publications": "Publications",
+
+      "businessNeeds": "Business Needs",
+      "industries": "Industries",
+      "partnersSolutions": "Partner Solutions"
+    },
+    "links": {
+      "mapping": "Mapping",
+      "fieldOperations": "Field Operations",
+      "spatialAnalytics": "Spatial Analysis & Data Science",
+      "imageryRemoteSensing": "Imagery & Remote Sensing",
+      "realTime": "Real-Time Visualization & Analytics",
+      "threeD": "3D Visualization & Analytics",
+
+      "arcgisOnline": "ArcGIS Online",
+      "arcgisPro": "ArcGIS Pro",
+      "arcgisEnterprise": "ArcGIS Enterprise",
+      "arcgisForDevelopers": "ArcGIS for Developers",
+
+      "arcgisUrban": "ArcGIS Urban",
+      "arcgisBusinessAnalyst": "ArcGIS Business Analyst",
+      "arcgisHub": "ArcGIS Hub",
+      "arcgisExcalibur": "ArcGIS Excalibur",
+      "arcgisMission": "ArcGIS Mission",
+      "arcgisIndoors": "ArcGIS Indoors",
+
+      "arcgisInsights": "ArcGIS Insights",
+      "arcgisMapsForOffice": "ArcGIS Maps for Office",
+      "arcgisMapsForMicrosoftPowerBI": "ArcGIS Maps for Microsoft Power BI",
+      "arcgisMapsForSharePoint": "ArcGIS Maps for SharePoint",
+
+      "allProducts": "All Products",
+      "whatIsGis": "What is GIS ?",
+
+      "AssetTrackingAndAnalysis": "Asset Tracking and Analysis",
+      "economicDevelopment": "Economic Development",
+      "facilityManagement": "Facility Management",
+      "fieldServiceManagement": "Field Service Management",
+      "logisticsAndFulfillment": "Logistics and Fulfillment",
+      "marketAndCustomerAnalysis": "Market and Customer Analysis",
+      "operationalEfficiency": "Operational Efficiency",
+      "performanceMonitoring": "Performance Monitoring",
+      "realTimeLocationTracking": "Real-Time Location Tracking",
+      "siteAnalysisAndTerritoryPlanning": "Site Analysis and Territory Planning",
+      "situationalAwareness": "Situational Awareness",
+
+      "petroleum": "Petroleum",
+      "banking": "Banking",
+      "education": "Education",
+      "electricAndGasUtilities": "Electric & Gas Utilities",
+      "municipalities": "Municipalities",
+      "health": "Health",
+      "insurance": "Insurance",
+      "telecommunications": "Telecommunications",
+      "transportation": "Transportation",
+      "retailAndCPG": "Retail & CPG",
+      "naturalResources": "Natural Resources",
+
+      "oilSpillMonitoring": "Oil Spill Monitoring",
+      "geoAttendance": "Geo Attendance",
+      "pulsiam": "SafetyNet Incident Management Solution",
+      "vgis": "Augmented Reality and Virtual Reality",
+      "buildingAndFacilitiesManagement": "Building and Facilities Management",
+      "telecominfrastructureManagement": "Telecom Infrastructure Management",
+      "droneSurveillance": "Drone Surveillance",
+
+      "logisticsFulfillment": "Logistics and Fulfillment",
+      "marketCustomerAnalysis": "Market and Customer Analysis",
+      "realTimeLocation": "Real-Time Location Tracking",
+      "siteAnalysisTerritory": "Site Analysis and Territory Planning",
+
+      "overview": "Overview",
+      "consultancyServices": "Consultancy Services",
+      "supportServices": "Support Services",
+      "learningServices": "Learning Services",
+
+      "newsletters": "Geomatic Newsletters",
+      "ebooks": "Ebooks",
+      "customerStories": "Customers Stories",
+
+      "aboutUs": "About Us",
+      "companyProfile": "Company Profile",
+      "events": "Events",
+      "partners": "Partners",
+      "careers": "Careers",
+      "contactUs": "Contact Us"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "Sorry, we couldn’t find the page you were looking for.",
+    "backHome": "Back to home"
+  },
+  "home": {
+    "dualPromo": {
+      "aboutTitle": "About Geomatic",
+      "aboutAria": "About Geomatic",
+      "gisTitle": "What is GIS",
+      "gisAria": "What is GIS"
+    },
+    "industryPromo": {
+      "imgAlt": "People and places",
+      "title": "See the world's interconnected systems clearly.",
+      "body": "Make decisions with context and clarity. By rooting our thinking in geography, we can visualize the complex relationships between society and nature, identify critical leverage points, and ultimately reshape how we engage with our planet to create a more sustainable future.",
+      "cta": "Read More",
+      "link": "https://www.esri.com/en-us/about/about-esri/overview"
+    },
+    "splitFeature": {
+      "kicker1": "ArcGIS platform",
+      "body1": "Mapping, spatial analysis, field data collection and dashboards: one platform, deployed and supported in Morocco by Geomatic.",
+      "points1": ["Map and visualize your data","Analyze to decide faster","Collect in the field and track in real time"],
+      "kicker2": "Industries",
+      "row1Href": "/en-ma/arcgis/products/index",
+      "heading1": "Deploying the unparalleled power of ArcGIS, the world's leading geographic information system.",
+      "row1Cta": "Explore ArcGIS products",
+      "heading2": "Empowering every industry with the strategic advantage of its data.",
+      "body2": "Municipalities, banking, energy, telecoms: we tailor ArcGIS to the challenges of each industry, from data collection to decision-making.",
+      "cta2": "See the industries",
+      "newsHref": "/en-ma/arcgis/products/arcgis-online/overview",
+      "newsTitle": "New on ArcGIS Online:",
+      "newsCta": "Learn more",
+      "row2ImgAlt": "Wind farm on green hills",
+      "tag": "Expand Your Geospatial Horizons | Spring 2025 | ArcUser",
+      "iotCaption": "Equally important as asking what GIS can do is asking what GIS can do for you ↗"
+    },
+    "useCases": {
+      "eyebrow": "Use cases",
+      "title": "What GIS changes in practice",
+      "subtitle": "Six situations where geography saves time, money or risk.",
+      "more": "Learn more",
+      "items": [
+        {
+          "tag": "Logistics",
+          "title": "Optimize routes and delivery times",
+          "desc": "Compute service areas and the best routes on the real road network.",
+          "href": "/industries/needs/logistics-fulfillment",
+          "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-5050-see-the-smartest-routes-others-cant.png",
+          "focus": "center"
+        },
+        {
+          "tag": "Site selection",
+          "title": "Choose the right location",
+          "desc": "Combine density, accessibility and competition to compare candidate sites.",
+          "href": "/industries/needs/site-analysis-territory-planning",
+          "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-5050.jpg",
+          "focus": "70% center"
+        },
+        {
+          "tag": "Telecoms",
+          "title": "Plan network coverage",
+          "desc": "Simulate the area covered by an antenna, accounting for terrain and buildings.",
+          "href": "/industries/telecommunications/overview",
+          "image": "/Solutions/Industries/telecommunications/Telecom- Overview-Analytics.png",
+          "focus": "center 40%"
+        },
+        {
+          "tag": "Urban planning",
+          "title": "Measure a project’s impact in 3D",
+          "desc": "See what a new building hides or reveals before it is built.",
+          "href": "/arcgis/3d-gis/overview",
+          "image": "/3d-gis/main-banner-wide.jpg",
+          "focus": "60% center"
+        },
+        {
+          "tag": "Operations",
+          "title": "Track your teams in real time",
+          "desc": "Locate vehicles and field crews on a continuously updated map.",
+          "href": "/industries/needs/real-time-location-tracking",
+          "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-5050-see-movement-patterns-others-cant.jpg",
+          "focus": "60% center"
+        },
+        {
+          "tag": "Assets",
+          "title": "Manage your assets nationwide",
+          "desc": "Inventory, locate and analyze your infrastructure, from Tangier to Dakhla.",
+          "href": "/industries/needs/asset-tracking-analysis",
+          "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-5050-see-the-performance-others-cant.jpg",
+          "focus": "55% center"
+        }
+      ]
+    },
+    "contactCta": {
+      "title": "Have a geospatial project? Let’s talk.",
+      "subtitle": "Our experts help you choose the right ArcGIS solution and deploy it.",
+      "primary": "Contact us",
+      "secondary": "What is GIS?"
+    },
+    "whoUses": {
+      "title": "Who uses our technology?",
+      "subtitle": "Leading public institutions, banks, utilities and industrial groups rely on Geomatic and ArcGIS for their geospatial projects.",
+      "clientsTitle": "Our references"
+    },
+    "hero": {
+      "title": "Geomatic",
+      "tagline": "Morocco’s leader in geographic information systems since 1988",
+      "subtitle": "As Esri’s official distributor, Geomatic helps organizations across Morocco, West Africa and the Gulf turn their data into decisions with ArcGIS, satellite imagery and expert consulting.",
+      "cta": "About Geomatic",
+      "ctaHref": "/en-ma/about-geomatic/overview",
+      "video": "/videos/sig-maroc-casablanca-en.mp4",
+      "poster": "/videos/sig-maroc-casablanca-en-poster.jpg",
+      "videoAlt": "Film: Earth from space, then Morocco and Mauritania, where their cities light up. Four GIS analyses follow, computed on real data for Casablanca: drive-time service areas on the road network, line of sight from the Twin Center on a 3D model, coverage area of an antenna, and building density as 3D bars. The film ends on the map of Morocco and Mauritania with their cities and the Geomatic signature.",
+      "play": "Play video",
+      "pause": "Pause video"
+    }
+  },
+  "footer": {
+    "nav": "Footer links",
+    "follow": "Follow us",
+    "tagline": "Official Esri distributor in Morocco",
+    "contact": {
+      "title": "Contact",
+      "addressLabel": "Address",
+      "address": [
+        "7, Rue Franche Comté, Gauthier",
+        "20000 Casablanca, Morocco"
+      ],
+      "mapLabel": "View on the map",
+      "phoneLabel": "Phone",
+      "phones": [
+        "+212 5 22 22 16 69",
+        "+212 5 22 27 47 74",
+        "+212 5 22 20 27 31"
+      ],
+      "faxLabel": "Fax",
+      "fax": "+212 5 22 22 38 67",
+      "emailLabel": "Email",
+      "email": "sales@geomatic.ma"
+    },
+    "headings": {
+      "arcgis": "ARCGIS",
+      "community": "COMMUNITY",
+      "understanding": "UNDERSTANDING GIS",
+      "about": "ABOUT US"
+    },
+    "links": {
+      "arcgisPro": {
+        "text": "ArcGIS Pro",
+        "href": "/arcgis/products/arcgis-pro/overview"
+      },
+      "arcgisEnterprise": {
+        "text": "ArcGIS Enterprise",
+        "href": "/arcgis/products/arcgis-enterprise/overview"
+      },
+      "arcgisOnline": {
+        "text": "ArcGIS Online",
+        "href": "/arcgis/products/arcgis-online/overview"
+      },
+      "arcgisDevelopers": {
+        "text": "ArcGIS for Developers",
+        "href": "/arcgis/products/arcgis-for-developers/overview"
+      },
+      "events": {
+        "text": "Events",
+        "href": "/about-geomatic/events"
+      },
+      "whatIsGis": {
+        "text": "What is GIS ?",
+        "href": "/what-is-gis/overview"
+      },
+      "aboutGeomatic": {
+        "text": "About Geomatic",
+        "href": "/about-geomatic/overview"
+      },
+      "contactUs": {
+        "text": "Contact Us",
+        "href": "/about-geomatic/contact"
+      },
+      "careers": {
+        "text": "Careers",
+        "href": "/about-geomatic/careers"
+      },
+      "partners": {
+        "text": "Partners",
+        "href": "/about-geomatic/partners"
+      }
+    },
+    "social": {
+      "facebook": {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/GeomaticESRI/"
+      },
+      "twitter": {
+        "text": "Twitter",
+        "href": "https://twitter.com"
+      },
+      "instagram": {
+        "text": "Instagram",
+        "href": "https://instagram.com"
+      },
+      "linkedin": {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/company/geomati/"
+      },
+      "youtube": {
+        "text": "YouTube",
+        "href": "https://youtube.com"
+      },
+      "esriCommunity": {
+        "text": "Esri Community",
+        "href": "https://community.esri.com/"
+      }
+    },
+    "lang": {
+      "current": "{language} (Global)",
+      "english": "English",
+      "french": "Français"
+    },
+    "legalNav": "Legal information",
+    "legal": [
+      { "text": "Privacy", "href": "/legal/privacy" },
+      { "text": "Accessibility", "href": "/legal/accessibility" },
+      { "text": "Legal notice", "href": "/legal/legal-notice" }
+    ],
+    "copyright": "© {year} Geomatic. All rights reserved."
+  }
+}

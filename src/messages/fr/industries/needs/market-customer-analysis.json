@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "title": "Analyse du marché et des clients",
+    "subtitle1": "Trouvez vos meilleurs clients",
+    "subtitle2": "Renforcez la segmentation et l’engagement client",
+    "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Mettez les données clients en contexte",
+    "paragraph": "Les entreprises disposent de plus de données clients que jamais, mais peinent à leur donner un sens. Les données enrichies par la localisation révèlent ce que les clients achètent, où et pourquoi. Les dirigeants et les marketeurs peuvent aller au-delà de l’instinct ou des suppositions pour trouver de nouveaux clients potentiels, identifier des marchés cibles, communiquer stratégiquement et planifier les assortiments de produits."
+  },
+  "opportunities": {
+    "title": "Voyez les opportunités que d’autres ne voient pas",
+    "intro": "La localisation est la clé pour exploiter la richesse des données clients afin d’effectuer des analyses précises du marché et de prendre des décisions stratégiques.",
+    "bullets": [
+      "Réduisez l’ambiguïté lors de l’entrée sur de nouveaux marchés et optimisez la planification stratégique.",
+      "Obtenez des informations sur les valeurs et habitudes qui façonnent le comportement client.",
+      "Créez des expériences d’achat personnalisées basées sur les données pour renforcer la fidélité des clients.",
+      "Exploitez des cartes intelligentes et des visualisations qui révèlent des schémas dans des données clés telles que les temps de trajet, la densité de population, les données démographiques et psychographiques."
+    ],
+    "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-5050-see-opportunities-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Renforcez votre relation avec les clients et éclairez vos décisions commerciales grâce à l’intelligence géographique du cloud géospatial d’Esri.",
+    "items": [
+      {
+        "title": "Analyse spatiale et science des données",
+        "body": "Découvrez des schémas et tendances cachés pour améliorer l’analyse du marché et des clients, en utilisant la puissance de la localisation comme fil conducteur. Créez un avantage concurrentiel en intégrant la localisation dans vos modèles de machine learning et d’intelligence artificielle.",
+        "cta": "Améliorez vos analyses",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Identifiez en temps réel où se trouvent vos actifs et opportunités et surveillez l’évolution des situations. Utilisez le big data et l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées basées sur les données les plus récentes.",
+        "cta": "Accédez aux données en temps réel",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Cartographie",
+        "body": "Obtenez une compréhension claire des clients et des concurrents en visualisant les personnes, les lieux et les actifs. Visualisez ce qui se passe dans un réseau de points de vente, élaborez des plans commerciaux solides et sachez où allouer vos ressources.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Besoins associés",
+    "bgGraphic": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-simple-cards-bg_1.jpg",
+    "items": [
+      {
+        "title": "Analyse de site et planification de territoire",
+        "body": "Choisissez les meilleurs emplacements grâce à l’intelligence géographique et à des données et analyses sophistiquées.",
+        "href": "/industries/needs/site-analysis-territory-planning",
+        "icon": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/siteAnalysisAndTerritoryPlanning.svg"
+      },
+      {
+        "title": "Digitalisation de la chaîne d’approvisionnement",
+        "body": "Gérez votre chaîne d’approvisionnement de manière numérique afin d’améliorer l’efficacité, la fiabilité et la satisfaction client.",
+        "href": "/industries/needs/supply-chain-digitization",
+        "icon": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/supplyChainDigitization.svg"
+      },
+      {
+        "title": "Logistique et exécution",
+        "body": "Organisez des opérations de livraison complexes pour que vos produits et fournitures arrivent à destination dans les délais.",
+        "href": "/industries/needs/logistics-fulfillment",
+        "icon": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/logisticsAndFulfillment.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur l’analyse du marché et des clients",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Trouver la confiance pour développer une entreprise",
+        "source": "WhereNext Magazine",
+        "excerpt": "Le détaillant OXXO utilise les données pour révéler la démographie et les habitudes d’achat des consommateurs locaux.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/confidence-in-new-markets",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-card-finding-confidence-to-grow-a-business.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Les grandes entreprises voient leurs clients différemment",
+        "source": "WhereNext Magazine",
+        "excerpt": "Les entreprises obtiennent un avantage concurrentiel lorsqu’elles comprennent mieux leurs clients que la plupart des autres.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/customers-drive-strategy",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-card-leading-companies-are-seeing-cusotmers-in-a-new-way.jpg"
+      },
+      {
+        "tag": "Podcast",
+        "title": "Ce que savent les détaillants gagnants",
+        "source": "Esri & The Science of Where Podcast",
+        "excerpt": "Brian Kilcourse, associé directeur chez RSR Research, explique comment les détaillants s’adaptent aux réalités du commerce à l’ère du client.",
+        "href": "https://www.esri.com/about/newsroom/podcast/competitive-advantage-via-location-intelligence-what-winning-retailers-know",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-card-what-winning-retailers-know.jpg"
+      }
+    ]
+  }
+}

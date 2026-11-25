@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Gestion des infrastructures télécoms",
+    "text": "Les réseaux deviennent extrêmement complexes. Les opérateurs doivent combiner et gérer de plus en plus de technologies — fibre jusqu’à l’abonné (FTTx), réseaux IP et réseaux optiques passifs — pour accompagner l’essor de nouveaux services tels que le Triple Play, la voix sur IP (VoIP), la télévision sur IP et le Metro Ethernet.",
+    "bgImage": "/Solutions/PartnersSolutions/gdi/archibus-background.png"
+  },
+  "lead": "Il devient donc essentiel de disposer d’un système de planification et d’ingénierie capable de prendre en charge tout réseau, toute technologie et tout type d’équipement, jusqu’à la fibre optique individuelle. C’est la clé pour savoir où se trouvent les clients, les relier au réseau et gérer efficacement la qualité des services convergents.",
+  "brochure": {
+    "title": "GDi VIZION",
+    "text": "GDi VIZION Network Inventory est une solution conçue pour stocker et exploiter des informations détaillées sur les câbles et les infrastructures associées des réseaux HFC (hybride fibre-coaxial). Elle offre les fonctions propres aux réseaux HFC, attendues par les opérateurs.",
+    "image": "/Solutions/PartnersSolutions/gdi/gdi-logo.png",
+    "fit": "contain"
+  },
+  "examples": [
+    {
+      "title": "Présentation de la solution GDi VIZION",
+      "text": "La solution fournit des outils dédiés à la migration automatique des données depuis des sources externes : bases de données, fichiers et cartes numériques. Bâtie sur la plateforme ArcGIS, elle prend en charge de nombreux formats pour stocker et gérer la géométrie dans la géodatabase et s’intègre aux modèles d’adresses requis.",
+      "image": "/Solutions/PartnersSolutions/gdi/1597818696240.png"
+    },
+    {
+      "title": "Fonctionnalités du système",
+      "text": "Le système est livré avec un ensemble de services Web intégrés, et il est facile d’en définir d’autres pour des opérations spécifiques. Ses fonctions sont proposées sous forme de modules spécialisés, accessibles comme applications de bureau.",
+      "image": "/Solutions/PartnersSolutions/gdi/1597818984926.png"
+    }
+  ]
+}

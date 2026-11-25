@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "Opérations de Terrain",
+    "subtitle1": "Emportez la puissance de la localisation partout",
+    "subtitle2": "Optimisez l'efficacité des activités de terrain avec la puissance de l'intelligence de localisation."
+  },
+  "intro": {
+    "paragraph": "Utilisez la puissance de la localisation pour améliorer la coordination et l'efficacité opérationnelle dans les activités de main-d'œuvre de terrain. Les solutions d'Esri pour les opérations de terrain intégrées assurent que les travailleurs de terrain et le personnel de bureau utilisent les mêmes données autoritatives pour réduire les erreurs, augmenter la productivité et économiser de l'argent."
+  },
+  "sections": {
+    "field": {
+      "title": "Planifier",
+      "p1": "Exploitez la puissance de la localisation pour comprendre où le travail doit être fait et coordonner et dispatcher efficacement les ressources.",
+      "link1": "Workforce for ArcGIS",
+      "image": "/fieldOperations/overview-apps-plan.png"
+    },
+    "map": {
+      "title": "Comprendre",
+      "p1": "Emportez les cartes numériques de votre organisation avec vous, n'importe où et n'importe quand. Promouvez votre conscience spatiale lors de l'exécution d'inspections ou autres activités qui bénéficient du contexte spatial.",
+      "link1": "Explorer for ArcGIS",
+      "image": "/fieldOperations/overview-apps-understand.png"
+    },
+    "interact": {
+      "title": "Surveiller",
+      "p1": "Des tableaux de bord et cartes faciles à comprendre soutiennent la prise de décision éclairée. Communiquez le statut des opérations de terrain aux gestionnaires en surveillant, suivant et rapportant des données temps réel.",
+      "link1": "Operations Dashboard for ArcGIS",
+      "image": "/fieldOperations/overview-apps-monitor.png"
+    },
+    "understand": {
+      "title": "Capturer",
+      "p1": "Abandonnez les flux de travail obsolètes basés sur papier. Permettez aux travailleurs de terrain d'effectuer facilement une collecte de données précise et des inspections d'actifs dans tout environnement avec des applications conscientes de la localisation que les travailleurs de tous niveaux d'expérience peuvent utiliser.",
+      "link1": "Survey123 for ArcGIS",
+      "link2": "Collector for ArcGIS",
+      "image": "/fieldOperations/overview-apps-capture.png"
+    },
+    "enrich": {
+      "title": "Naviguer",
+      "p1": "Utilisez les itinéraires les plus efficaces pour arriver à temps et faire le travail. Utilisez le routage guidé par la voix qui considère même le type de véhicule conduit et les restrictions routières le long de l'itinéraire.",
+      "link1": "Navigator for ArcGIS",
+      "image": "/fieldOperations/overview-apps-navigate.png"
+    },
+    "personalize": {
+      "title": "Suivre",
+      "p1": "Permettez à ceux sur le terrain de partager leurs traces de localisation pour que vous puissiez savoir où tout le monde est et où ils ont été. Le suivi peut être accompli à travers une application mobile qui est entièrement contrôlée par l'utilisateur.",
+      "link1": "Tracker for ArcGIS",
+      "image": "/fieldOperations/overview-app-track.png"
+    }
+  },
+  "share": {
+    "title": "Partagez votre histoire",
+    "description": "Créez des applications qui permettent à votre public non seulement de voir votre carte mais aussi d'interagir avec les données. Choisissez parmi une variété de modèles d'applications ciblées et créez une application en quelques clics. Incluez-les sur votre site web en utilisant le code d'intégration pratique. Chaque application a un but spécifique pour aider à raconter votre histoire et garder votre public engagé.",
+    "cta": "En savoir plus",
+    "items": {
+      "configurable": {
+        "label": "Applications Configurables ArcGIS",
+        "title": "Applications Configurables ArcGIS",
+        "desc": "Créez et partagez facilement vos cartes comme applications web interactives. Sélectionnez parmi une variété de modèles prêts à utiliser."
+      },
+      "story": {
+        "label": "ArcGIS StoryMaps",
+        "title": "ArcGIS StoryMaps",
+        "desc": "Rassemblez texte, photos et vidéos avec des cartes pour créer des histoires remarquables qui résonnent avec votre public."
+      },
+      "dashboard": {
+        "label": "Tableaux de Bord ArcGIS",
+        "title": "Tableaux de Bord ArcGIS",
+        "desc": "Créez un tableau de bord dynamique pour obtenir une vue opérationnelle temps réel de vos personnes, services, actifs et événements."
+      },
+      "appbuilder": {
+        "label": "Web AppBuilder for ArcGIS",
+        "title": "Web AppBuilder for ArcGIS",
+        "desc": "Créez des applications personnalisées en utilisant des outils préconfigurés qui ne nécessitent pas de codage."
+      }
+    }
+  },
+  "userTypes": {
+    "title": "Types d’utilisateurs",
+    "subtitle": "Soutenir les opérations de terrain nécessite plusieurs personnes dans votre organisation, chacune avec une fonction distincte. Leurs fonctions uniques se reflètent dans les licences de types d'utilisateurs ArcGIS Online ci-dessous.",
+    "gisProfessional": {
+      "title": "Professionnel SIG",
+      "desc": "Accédez, produisez et partagez des données et cartes de référence.",
+      "link": "En savoir plus",
+      "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview"
+    },
+    "creator": {
+      "title": "Créateur",
+      "desc": "Analysez les données pour comprendre les tendances et partager des cartes avec les parties prenantes.",
+      "link": "En savoir plus",
+      "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview"
+    },
+    "fieldWorker": {
+      "title": "Agent de terrain",
+      "desc": "Utilisez des applications pour la collecte de données, enquêtes et inspections. Partagez des mises à jour en temps réel.",
+      "link": "En savoir plus",
+      "href": "https://www.esri.com/en-us/arcgis/products/user-types/overview"
+    }
+  },
+  "products": {
+    "title": "Commencez à cartographier et comprendre vos données",
+    "subtitle": "Il y a de nombreuses façons d'accéder aux capacités de cartographie d'Esri...",
+    "online": {
+      "category": "SaaS basé nuage",
+      "title": "ArcGIS Online",
+      "desc": "Commencez avec ArcGIS Online, le produit logiciel-en-tant-que-service basé nuage d'Esri. Vos cartes, applications et données sont hébergées et accessibles partout."
+    },
+    "enterprise": {
+      "category": "Infrastructure auto-gérée",
+      "title": "ArcGIS Enterprise",
+      "desc": "Gérez-vous votre propre infrastructure derrière un pare-feu ou dans le nuage ? Utilisez ArcGIS Enterprise pour vos besoins de cartographie et d'activation de localisation."
+    },
+    "devtools": {
+      "category": "Outils développeur",
+      "title": "Outils Développeur ArcGIS",
+      "desc": "Utilisez un ensemble robuste d'outils développeur pour développer des applications ou personnaliser des cartes et applications construites dans ArcGIS Online ou ArcGIS Enterprise."
+    },
+    "pro": {
+      "category": "Desktop",
+      "title": "ArcGIS Pro",
+      "desc": "Complétez des flux de travail avancés de cartographie, analyse et gestion de données en utilisant ArcGIS Pro."
+    }
+  },
+  "videoBlock": {
+    "title": "Transformez numériquement vos opérations de terrain",
+    "desc": "Découvrez comment la suite d’applications de terrain ArcGIS réunit des activités et des processus dispersés en un flux de travail unifié."
+  },
+  "activities": {
+    "title": "Des activités de terrain enrichies par la localisation",
+    "cards": [
+      {
+        "title": "Adoptez des flux de travail modernes",
+        "desc": "Supprimez ou réduisez le recours aux processus papier."
+      },
+      {
+        "title": "Adoptez des flux de travail modernes",
+        "desc": "Supprimez ou réduisez le recours aux processus papier."
+      },
+      {
+        "title": "Adoptez des flux de travail modernes",
+        "desc": "Supprimez ou réduisez le recours aux processus papier."
+      },
+      {
+        "title": "Adoptez des flux de travail modernes",
+        "desc": "Supprimez ou réduisez le recours aux processus papier."
+      }
+    ]
+  },
+  "betterTogether": {
+    "title": "Mieux ensemble"
+  },
+  "contact": {
+    "title": "Contacter l’équipe commerciale",
+    "desc": "Besoin d’aide pour choisir les bonnes applications ou concevoir un flux de travail ? Des questions sur les types d’utilisateurs ?",
+    "cta": "Nous contacter"
+  }
+}

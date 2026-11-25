@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "title": "Solution Partners",
+    "bgGraphic": "/aboutGeomatic/partners/solutions/partner-banner.png"
+  },
+  "intro": {
+    "subTitle": "Trusted solutions across industries",
+    "paragraph": "We team up with specialized vendors to deliver complete, best-practice solutions built on ArcGIS."
+  },
+  "community": {
+    "cards": [
+      {
+        "title": "Archibus",
+        "desc": "The world’s #1 solution for total Infrastructure and Facilities Management.",
+        "image": "/aboutGeomatic/partners/solutions/logo31.png",
+        "link": "https://archibus.com/",
+        "solution": "/industries/solutions/building-and-facilities-management"
+      },
+      {
+        "title": "Pulsiam",
+        "desc": "Integrated, customizable and cost-effective public safety software including CAD, RMS, and mobile solutions.",
+        "image": "/aboutGeomatic/partners/solutions/plusiam.jpg",
+        "link": "https://pulsiam.com/",
+        "solution": "/industries/solutions/pulsiam"
+      },
+      {
+        "title": "vGIS",
+        "desc": "Expand the use of your BIM and GIS data with AR/MR/VR to achieve higher productivity and safety.",
+        "image": "/aboutGeomatic/partners/solutions/vgis.jpg",
+        "link": "https://vgis.io/",
+        "solution": "/industries/solutions/vgis"
+      },
+      {
+        "title": "GDi",
+        "desc": "Operations Support and Decision Support Systems for any industry, business, or organization.",
+        "image": "/aboutGeomatic/partners/solutions/gdi-logo.png",
+        "link": "https://gdi.net/",
+        "solution": "/industries/solutions/gdi"
+      },
+      {
+        "title": "Alpine Software",
+        "desc": "Custom public safety management software for Fire Departments and Ambulance Services.",
+        "image": "/aboutGeomatic/partners/solutions/logo4.png",
+        "link": "https://alpinesoftware.com/"
+      }
+    ]
+  }
+}

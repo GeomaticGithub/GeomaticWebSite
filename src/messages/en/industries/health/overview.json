@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "eyebrow": "SUCCESS STORIES",
+    "title": "Responding to Homelessness in Crisis Mode",
+    "kicker": "The search for solutions and approaches to end homelessness is at the forefront of the dialog in many local communities. The issues has become complex as the need for support spans diverse groups. Read this industry perspective to explore a location-based framework to enable organizations to monitor and combat homelessness across communities as well as explore case studies from cities and counties.",
+    "mediaImage": "/Solutions/Industries/health/homeless-govloop.jpg",
+    "documentUrl": "https://www.esri.com/content/dam/esrisites/en-us/media/pdf/responding-to-homelessness-in-crisis-mode-173103.pdf?adumkts=industry_solutions&aduse=human_health_services&aduc=landing_page&adum=organic_visits&utm_Source=landing_page&aduca=gis_for_health_equity&aduco=homeless&adut=industry_page&adulb=multiple&adusn=multiple&adupt=awareness&sf_id=70139000001NPeMAAW"
+  },
+  "strengthen": {
+    "title": "Create a healthier community.",
+    "paragraph": "With ArcGIS software, you can visualize vulnerable populations, identify community resources, enable disease surveillance, and connect community stakeholders. The result? A healthier community. Map your way to better health with Esri.",
+    "imageSection": {
+      "image": "/Solutions/Industries/health/device-mapping-analytics-platform.png",
+      "title": "A mapping and analytics platform for all",
+      "description": "Give everyone in the organization access to the most accurate, consistent, and secure data. Make it easy to find, share, and analyze information."
+    }
+  },
+  "features": [
+    {
+      "title": "Maps available everywhere",
+      "paragraph": "Access maps in familiar environments—such as Excel, PowerPoint, and online—to give data spatial context from the office or the field.",
+      "image": "/Solutions/Industries/health/device-maps-available-everywhere.png",
+      "backgroundImage": "/Solutions/Industries/health/maps-available-everywhere-wide.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Data-driven decisions",
+      "paragraph": "Make decisions that are beneficial to your population's health. Being able to truly understand your community while staying within budget is paramount to resource allocation.",
+      "image": "/Solutions/Industries/health/device-data-driven-decisions.png",
+      "backgroundImage": "/Solutions/Industries/health/data-driven-decisions-background-wide.jpg",
+      "layout": "left"
+    }
+  ],
+  "empower": {
+    "title": "Improve your population's health.",
+    "paragraph": "Understand your community with mapping and spatial analytics.",
+    "items": [
+      {
+        "title": "Hospitals and Health Systems",
+        "paragraph": "Make informed decisions that lead to better performance and outcomes.",
+        "icon": "/Solutions/Industries/health/hospitalsAndHealthSystems.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/health/segments/hospitals-health-systems"
+        }
+      },
+      {
+        "title": "Public Health",
+        "paragraph": "Prevent and monitor the spread of disease to protect your population.",
+        "icon": "/Solutions/Industries/health/publicHealth.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/health/segments/public-health"
+        }
+      },
+      {
+        "title": "Human Services",
+        "paragraph": "Enhance current service programs and identify areas of greatest need.",
+        "icon": "/Solutions/Industries/health/humanServices.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/health/segments/human-services"
+        }
+      }
+    ]
+  },
+  "news": {
+    "title": "News & Events",
+    "backgroundImage": "/Solutions/Industries/health/background-news-events.jpg",
+    "cards": [
+      {
+        "eyebrow": "Event",
+        "title": "Esri Petroleum GIS Conference",
+        "blurb": "May 9-10, 2018 | Houston, Texas, USA",
+        "image": "/Solutions/Industries/health/event-petroleum-user-conference-pug.jpg",
+        "meta": "May 1–3, Houston, USA",
+        "href": "https://www.esri.com/en-us/about/events/esri-energy-resources-gis-conference/save-date"
+      },
+      {
+        "eyebrow": "Event",
+        "title": "Esri User Conference",
+        "blurb": "July 9–13, 2018 | San Diego, California, USA",
+        "image": "/Solutions/Industries/health/event-user-conference.jpg",
+        "meta": "July 15–19, San Diego, USA",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Gulfport Energy saves time and money",
+        "blurb": "Within one year of deploying ArcGIS apps for critical operations, Gulfport Energy cut costs by at least $2 million.",
+        "image": "/Solutions/Industries/health/News_Emergency-Ops.jpg",
+        "href": "https://www.esri.com/~/media/files/pdfs/library/fliers/pdfs/gulfport-energy-saves-time.pdf"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Range Resources digitizes historic well data",
+        "blurb": "Intelligent, self-service maps give staff the data and insight necessary to speed up land management and title clearance.",
+        "image": "/Solutions/Industries/health/News_Gulf.jpg",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/media/e-news/petroleum-historic-map-digitizing.pdf"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Find out how Geomatic can help your organization.",
+    "ctaLabel": "Get started",
+    "ctaHref": "#"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Histoires clients",
+    "subtitle": "ArcGIS à l’œuvre dans le monde",
+    "text": "Énergie, banque, télécoms, santé, commerce : des organisations racontent ce qu’ArcGIS a changé pour elles. Ces histoires sont publiées par Esri.",
+    "bgImage": "/news/customerStories/245545558-2400.jpg"
+  },
+  "ui": {
+    "kicker": "Publications",
+    "contact": "Parler de votre projet",
+    "anchor": "Voir les histoires",
+    "listKicker": "Histoires de réussite",
+    "listTitle": "Ce qu’ArcGIS a changé pour elles",
+    "listText": "Chaque histoire est rattachée à son secteur : la page du secteur détaille les usages d’ArcGIS correspondants.",
+    "read": "Lire sur esri.com",
+    "sector": "Voir le secteur",
+    "othersKicker": "À voir aussi",
+    "othersTitle": "Autres publications"
+  }
+}

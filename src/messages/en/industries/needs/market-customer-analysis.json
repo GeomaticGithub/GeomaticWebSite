@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "title": "Market and Customer Analysis",
+    "subtitle1": "Find your best customers",
+    "subtitle2": "Strengthen customer segmentation and engagement",
+    "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Put customer data in context",
+    "paragraph": "Businesses have more customer data than ever but struggle to make sense of it. Location-enriched data shows what, where, and why customers buy. Business leaders and marketers can go beyond gut instinct or guesswork to find potential customers, identify target markets, advertise strategically, and plan product mixes."
+  },
+  "opportunities": {
+    "title": "See opportunities others can’t",
+    "intro": "Location is the key to unlocking rich customer data for precise market analysis and strategic business decisions.",
+    "bullets": [
+      "Reduce ambiguity when entering new markets and optimize market planning decision-making.",
+      "Gain insight into the values and habits that shape customer behavior.",
+      "Create data-driven, personalized shopping experiences that increase customer loyalty.",
+      "Leverage smart maps and visualizations that uncover patterns in key data such as drive times, population densities, demographics, and psychographics."
+    ],
+    "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-5050-see-opportunities-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Deepen your connection with customers and inform business decisions with location intelligence from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Spatial Analysis and Data Science",
+        "body": "Discover hidden patterns and trends for enhanced market and customer analysis, using the power of location as the connective thread. Create a competitive edge by integrating location into machine learning models and artificial intelligence.",
+        "cta": "Upgrade your analysis",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Know where assets and opportunities exist right now across your business and monitor changing situations. Use big data and Internet of Things (IoT) technology to make quick, informed decisions based on the most up-to-date information.",
+        "cta": "Access real-time data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Mapping",
+        "body": "Gain a clear understanding of customers and competitors by visualizing people, places, and assets. See what's happening throughout a network of store locations, create robust business plans, and know where to allocate resources.",
+        "cta": "Visualize your data",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Related needs",
+    "bgGraphic": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-simple-cards-bg_1.jpg",
+    "items": [
+      {
+        "title": "Site Analysis and Territory Planning",
+        "body": "Choose the best locations based on location intelligence and sophisticated data and analytics.",
+        "href": "/industries/needs/site-analysis-territory-planning",
+        "icon": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/siteAnalysisAndTerritoryPlanning.svg"
+      },
+      {
+        "title": "Supply Chain Digitization",
+        "body": "Manage your supply chain digitally to find ways to increase efficiency, reliability, and customer satisfaction.",
+        "href": "/industries/needs/supply-chain-digitization",
+        "icon": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/supplyChainDigitization.svg"
+      },
+      {
+        "title": "Logistics and Fulfillment",
+        "body": "Organize complex delivery operations to ensure your supplies and products get to where they need to be in a timely manner.",
+        "href": "/industries/needs/logistics-fulfillment",
+        "icon": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/logisticsAndFulfillment.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about market and customer analysis",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Finding the Confidence to Grow a Business",
+        "source": "WhereNext Magazine",
+        "excerpt": "Retailer OXXO uses data to reveal the demographics and buying habits of local consumers.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/confidence-in-new-markets",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-card-finding-confidence-to-grow-a-business.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Leading Companies See Customers in New Ways",
+        "source": "WhereNext Magazine",
+        "excerpt": "Companies realize competitive advantage when they see their customers better than most others do.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/customers-drive-strategy",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-card-leading-companies-are-seeing-cusotmers-in-a-new-way.jpg"
+      },
+      {
+        "tag": "Podcast",
+        "title": "What Winning Retailers Know",
+        "source": "Esri & The Science of Where Podcast",
+        "excerpt": "Brian Kilcourse, managing partner at RSR Research, explains how retailers are responding to the realities of commerce in the age of the customer.",
+        "href": "https://www.esri.com/about/newsroom/podcast/competitive-advantage-via-location-intelligence-what-winning-retailers-know",
+        "image": "/Solutions/BusinessNeeds/MarketAndCustomerAnalysis/market-customer-analysis-card-what-winning-retailers-know.jpg"
+      }
+    ]
+  }
+}

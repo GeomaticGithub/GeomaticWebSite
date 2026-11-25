@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Real-Time Location Tracking",
+    "subtitle1": "Know where assets are at all times",
+    "subtitle2": "Get a real-time view of people, vehicles, and sensor feeds",
+    "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Keep track of what happens",
+    "paragraph": "With so many people and things in motion, business and government leaders don't have time to manually track each movement. With location intelligence, they can create live maps and apps for monitoring. By seeing what's happening now and analyzing what has already happened, decision-makers can identify opportunities for growth, safety, and efficiency."
+  },
+  "opportunities": {
+    "title": "See movement patterns others can't",
+    "intro": "Monitor operations, resources, and assets—from field crews to vehicle fleets—using live maps, apps, and dashboards.",
+    "bullets": [
+      "Analyze and display real-time data from sensors, devices, and social media feeds.",
+      "Put live tracking data in context of road or utility networks, hazards, weather, and demographics.",
+      "Send commands to sensors when patterns of interest are detected.",
+      "Get real-time alerts and visualization on maps and dashboards.",
+      "Integrate location history data with infrastructure data to discover trends and outliers."
+    ],
+    "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-5050-see-movement-patterns-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Track assets and visualize, analyze, and understand huge volumes of data in real time with location intelligence technology from the Esri Geospatial Cloud. ",
+    "items": [
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Know where vulnerabilities exist right now across your business and monitor changing situations. Use big data and Internet of Things (IoT) technology to make quick, informed decisions based on the most up-to-date information.",
+        "cta": "See in real time",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Spatial Analysis and Data Science",
+        "body": "Use location as the connective thread to uncover hidden patterns and trends. Create a competitive edge by integrating location into machine learning models and artificial intelligence.",
+        "cta": "Upgrade your analysis",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Field Operations",
+        "body": "Gain perspective on real-time field activities and use visually rich dashboards to inform decisions. See what can be accomplished through capturing accurate data and working in unison, easily navigating data and roads—even while offline.",
+        "cta": "Take operations anywhere",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/business-needs-capabilities-field-operatioins.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Related needs",
+    "bgGraphic": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Asset Tracking and Analysis",
+        "body": "Visualize moving and fixed assets dynamically. Implement problem-solving tools to accurately record the locations and health of your assets. ",
+        "href": "/industries/needs/asset-tracking-analysis",
+        "icon": "/Solutions/BusinessNeeds/realTimeLocationTracking/assetTrackingAndAnalysis.svg"
+      },
+      {
+        "title": "Situational Awareness",
+        "body": "The moment something happens, make better decisions by integrating, analyzing, and displaying data from many sensors, devices, and social media feeds.",
+        "href": "/industries/needs/situational-awareness",
+        "icon": "/Solutions/BusinessNeeds/realTimeLocationTracking/situationalAwareness.svg"
+      },
+      {
+        "title": "Field Service Management",
+        "body": "Digitally transform the approach to field operations. Gain efficiency from real-time data updates and integrate mobile field apps into workflows.",
+        "href": "/industries/needs/field-service-management",
+        "icon": "/Solutions/BusinessNeeds/realTimeLocationTracking/fieldServiceManagement.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about real-time location tracking",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Real-time Dashboard Tracks Rose Parade",
+        "source": "Esri Blog",
+        "excerpt": "The Pasadena Fire Department added real-time GIS capabilities to monitor the safety and progress of the Rose Parade.",
+        "href": "https://www.esri.com/about/newsroom/blog/real-time-feeds-ensures-rose-parade-safety",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-card-real-time-dashbpard.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Managing a Marathon with Real-time Awareness",
+        "source": "Esri Blog",
+        "excerpt": "Chicago used real-time awareness of the marathon course to help inform and guide public safety response and resources.",
+        "href": "https://www.esri.com/about/newsroom/blog/chicago-adds-real-time-awareness",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-card-managing-a-marathon.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "San Antonio Prepares for the NCAA Final Four",
+        "source": "Esri Blog",
+        "excerpt": "San Antonio police used real-time GIS for situational awareness to ensure the safety of NCAA players, coaches, facility staff, and attendees.",
+        "href": "https://www.esri.com/about/newsroom/blog/san-antonio-real-time-gis-ncaa-final-four",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-card-san-antonio-prepares-for-the-ncaa-final-four.jpg"
+      }
+    ]
+  }
+}

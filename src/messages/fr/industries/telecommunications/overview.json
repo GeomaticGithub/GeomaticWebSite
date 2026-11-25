@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "title": "HTC accélère ses opérations et ses délais de réponse.",
+    "kicker": "La plus grande coopérative téléphonique d’Amérique du Nord s’appuie sur le SIG pour le marketing, l’ingénierie et la prestation de services. Les décideurs découvrent des relations critiques dans d’énormes ensembles de données qui orientent leur stratégie. Les rapports et analyses s’exécutent en quelques minutes, pas en plusieurs mois. Les cartes disponibles sur n’importe quel appareil améliorent la communication avec les clients.",
+    "mediaImage": "/Solutions/Industries/telecommunications/video-hooray-telephone-cooperative.jpg",
+    "videoUrl": "https://www.youtube.com/embed/D53NsjG4SEw?si=0N3WoaWT-P7E2lkP"
+  },
+  "strengthen": {
+    "title": "Le SIG donne un avantage aux télécoms.",
+    "paragraph": "L’intelligence géographique est essentielle à tous les services de télécommunications—câble, sans fil et filaire. ArcGIS d’Esri est un SIG complet pour les télécommunications qui renforce tous les aspects d’une organisation grâce à une infrastructure géospatiale alimentée par le Cloud géospatial d’Esri. ArcGIS offre un système d’enregistrement, un système d’engagement et un système d’analyse qui utilisent la puissance de la localisation pour impacter directement vos leviers commerciaux. Il soutient la transformation de votre réseau, l’optimisation des ressources, la croissance des revenus et l’amélioration de l’expérience client."
+  },
+  "features": [
+    {
+      "title": "Cartographie & Visualisation",
+      "paragraph": "Avec un système SIG leader sur le marché pour l’engagement et des capacités de cartographie intelligente, votre organisation peut facilement visualiser et cartographier les actifs réseau avec des données métier. Gérez et partagez des cartes d’entreprise afin de créer une meilleure conscience opérationnelle à travers l’organisation.",
+      "image": "/Solutions/Industries/telecommunications/telecom-overview-mapping.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-monetize.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "En savoir plus",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fmapping-visualization"
+      }
+    },
+    {
+      "title": "Analyse Spatiale",
+      "paragraph": "Un système SIG robuste d’analyse permettant de traiter des millions de points de données. Modélisez et prévoyez le comportement des abonnés dans l’espace et le temps, ou anticipez les besoins de maintenance du réseau. Sélectionnez les emplacements d’investissement optimaux pour les ressources réseau et opérationnelles tout en garantissant un retour sur investissement (ROI) maximal.",
+      "image": "/Solutions/Industries/telecommunications/Telecom- Overview-Analytics.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-analyze.jpg",
+      "layout": "left",
+      "cta": {
+        "label": "En savoir plus",
+        "href": "https://www.arcgis.com/apps/Cascade/index.html?appid=7dc16f2ac82441bc89f03bc0e4bbcc65"
+      }
+    },
+    {
+      "title": "Collecte & Gestion des Données",
+      "paragraph": "Le système SIG le plus avancé pour collecter, maintenir, accéder et partager vos données de manière efficace et sécurisée. Concevez et gérez des réseaux télécom complexes grâce à un cadre extensible qui soutient vos ambitions en matière de fibre, 5G et réseaux définis par logiciel (SDN).",
+      "image": "/Solutions/Industries/telecommunications/telecom-overview-data-management.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-monetize.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "En savoir plus",
+        "href": "https://www.esri.com/en-us/capabilities/data-management?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fdata-management&rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/data-management"
+      }
+    },
+    {
+      "title": "Ouvert & Interopérable",
+      "paragraph": "Le seul SIG complet avec une infrastructure géospatiale ouverte, flexible et interopérable qui soutient l’innovation et le développement agile d’applications géospatiales. Développez des applications deux fois plus vite grâce à un riche ensemble d’API et de SDK.",
+      "image": "/Solutions/Industries/telecommunications/telecom-overview-open.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-analyze.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "En savoir plus",
+        "href": "https://developers.arcgis.com/"
+      }
+    }
+  ],
+  "empower": {
+    "backgroundImage": "/Solutions/Industries/telecommunications/background-events-news.jpg",
+    "items": [
+      {
+        "title": "Optimisation des Ressources",
+        "paragraph": "Le SIG optimise les ressources réseau et opérationnelles. Il unifie OSS/BSS grâce à une compréhension commune de la localisation. Il améliore les opérations sur le terrain et la mobilité.",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/industries/telecommunications/business-areas/network-operations-maintenance?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fc%2Findustry%2Ftelecommunications%2Fresource-optimization-landing-page&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Fresource-optimization-landing-page"
+        }
+      },
+      {
+        "title": "Croissance des Revenus",
+        "paragraph": "Le SIG assure un meilleur retour sur investissement (ROI) et une croissance des revenus. Localisez de nouvelles opportunités et identifiez le potentiel de ventes additionnelles grâce à l’analyse spatiale.",
+        "icon": "/Solutions/Industries/telecommunications/midstream.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/c/industry/telecommunications/revenue-growth-landing-page?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Frevenue-growth-landing-page"
+        }
+      },
+      {
+        "title": "Expérience Client",
+        "paragraph": "Le SIG améliore l’expérience client. Rapports de satisfaction localisés. Impliquez vos clients avec des cartes et des visualisations.",
+        "icon": "/Solutions/Industries/telecommunications/downstream.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/industries/telecommunications/business-areas/customer-service?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Fcustomer-experience-landing-page"
+        }
+      },
+      {
+        "title": "Transformation du Réseau",
+        "paragraph": "Le SIG soutient les déploiements 5G, fibre et réseaux définis par logiciel (SDN). Soutenez l’ingénierie à distance grâce aux outils de planification géospatiale et aux données géographiques. Un système complet pour gérer la planification, l’exécution et l’assurance du réseau.",
+        "icon": "/Solutions/Industries/telecommunications/hse.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/c/industry/telecommunications/network-transformation-landing-page?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Fnetwork-transformation-landing-page"
+        }
+      },
+      {
+        "title": "Services Numériques",
+        "paragraph": "Le SIG permet des produits et services innovants. Les services basés sur la localisation et la cartographie donnent vie à l’IoT.",
+        "icon": "/Solutions/Industries/telecommunications/hse.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/industries/telecommunications/overview"
+        }
+      }
+    ]
+  },
+  "resources": {
+    "title": "Ressources",
+    "description": "Activer la transformation numérique à travers toute l’organisation.",
+    "cards": [
+      {
+        "title": "Vidéos",
+        "blurb": "Regardez les dernières vidéos d’Esri Telecom pour découvrir la puissance de la localisation.",
+        "image": "/Solutions/Industries/telecommunications/get-involved-call-for-lightning-talk.jpg",
+        "href": "https://www.youtube.com/playlist?list=PLdVnJnpRENTkXQGcoQBpA-QwJHN6uKbDd"
+      },
+      {
+        "title": "Communauté",
+        "blurb": "Découvrez notre communauté Telecom GeoNet - posez vos questions, lisez et publiez des blogs et trouvez du contenu sur les télécommunications.",
+        "image": "/Solutions/Industries/telecommunications/geonet-thumbnail.png",
+        "href": "https://community.esri.com/t5/telecommunications/ct-p/telecommunications"
+      },
+      {
+        "title": "LinkedIn",
+        "blurb": "Découvrez comment Esri peut aider à moderniser la gestion des actifs télécoms.",
+        "image": "/Solutions/Industries/telecommunications/news-jack-interview.jpg",
+        "href": "https://www.linkedin.com/groups/3702226/"
+      },
+      {
+        "title": "X (Twitter)",
+        "blurb": "Accédez aux dernières nouvelles d’Esri Telecom via notre fil Twitter @EsriTelecom.",
+        "image": "/Solutions/Industries/telecommunications/twitter-icon-thumbnail.png",
+        "href": "https://x.com/EsriTelecom"
+      }
+    ]
+  },
+  "news": {
+    "title": "Événements Télécommunications",
+    "backgroundImage": "/Solutions/Industries/telecommunications/background-events-news.jpg",
+    "cards": [
+      {
+        "title": "Conférence des utilisateurs Esri",
+        "blurb": "8-11 juillet | San Diego, CA, USA",
+        "image": "/Solutions/Industries/telecommunications/event-user-conference-generic.jpg",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "title": "CableLabs Summer Conference 2019",
+        "blurb": "5-7 août 2019 | Keystone, CO, USA",
+        "image": "/Solutions/Industries/telecommunications/card-cablelabs-summer-conf-2019.jpg",
+        "href": "https://www.cablelabs.com/event/summer-conference-2019"
+      },
+      {
+        "title": "ISE Expo 2019",
+        "blurb": "25-26 septembre 2019 | Dallas, Texas, USA",
+        "image": "/Solutions/Industries/telecommunications/card-ise-expo.jpg",
+        "href": "https://www.iseexpo.com/"
+      },
+      {
+        "title": "SCTE Cable-Tec 2019",
+        "blurb": "30 septembre - 3 octobre 2019 | La Nouvelle-Orléans, LA, USA",
+        "image": "/Solutions/Industries/telecommunications/card-scte-expo.jpg",
+        "href": "https://techexpo.scte.org/"
+      },
+      {
+        "title": "GeoConX",
+        "blurb": "27-30 octobre 2019 | Atlanta, GA, USA",
+        "image": "/Solutions/Industries/telecommunications/event-geocon-x.jpg",
+        "href": "https://www.esri.com/en-us/about/events/imgis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fabout%2Fevents%2Fgeoconx%2Foverview"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Découvrez comment Esri peut aider votre organisation.",
+    "ctaLabel": "Commencer",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

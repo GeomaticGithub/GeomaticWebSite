@@ -1,0 +1,302 @@
+{
+  "ui": {
+    "kicker": "Informations légales",
+    "updated": "Dernière mise à jour : {date}",
+    "toc": "Sur cette page",
+    "fields": {
+      "name": "Dénomination",
+      "legalForm": "Forme juridique",
+      "capital": "Capital social",
+      "address": "Siège social",
+      "rc": "Registre du commerce",
+      "ice": "ICE",
+      "taxId": "Identifiant fiscal",
+      "publisher": "Directeur de la publication",
+      "phone": "Téléphone",
+      "fax": "Fax",
+      "email": "E-mail",
+      "website": "Site web",
+      "hostName": "Hébergeur",
+      "hostAddress": "Adresse"
+    }
+  },
+  "updated": "23 novembre 2026",
+  "pages": {
+    "legal-notice": {
+      "nav": "Mentions légales",
+      "title": "Mentions légales",
+      "intro": "Qui édite ce site, à qui appartiennent ses contenus et dans quelles conditions vous pouvez l’utiliser.",
+      "sections": [
+        {
+          "id": "editeur",
+          "title": "Éditeur du site",
+          "blocks": [
+            {
+              "p": "Le site {website} est édité par :"
+            },
+            {
+              "dl": [
+                "name",
+                "legalForm",
+                "capital",
+                "address",
+                "rc",
+                "ice",
+                "taxId",
+                "phone",
+                "fax",
+                "email",
+                "publisher"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hebergement",
+          "title": "Hébergement",
+          "requires": "hostName",
+          "blocks": [
+            {
+              "dl": [
+                "hostName",
+                "hostAddress"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "propriete-intellectuelle",
+          "title": "Propriété intellectuelle",
+          "blocks": [
+            {
+              "p": "Les éléments de ce site (textes, images, vidéos, logos, mise en page) sont protégés par la législation en vigueur sur le droit d’auteur et la propriété industrielle. Sauf mention contraire, ils appartiennent à Geomatic ou à ses partenaires."
+            },
+            {
+              "p": "Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite. Pour une demande d’autorisation, écrivez à {email}."
+            }
+          ]
+        },
+        {
+          "id": "marques",
+          "title": "Marques",
+          "blocks": [
+            {
+              "p": "Esri, ArcGIS, le logo Esri et « The Science of Where » sont des marques d’Esri, déposées ou utilisées aux États-Unis et dans d’autres pays. Geomatic les utilise en tant que distributeur officiel d’Esri au Maroc."
+            },
+            {
+              "p": "Les autres noms de sociétés et de produits cités sur ce site peuvent être des marques de leurs propriétaires respectifs."
+            }
+          ]
+        },
+        {
+          "id": "credits",
+          "title": "Crédits",
+          "blocks": [
+            {
+              "ul": [
+                "Données cartographiques de la vidéo d’accueil (rues et bâtiments de Casablanca, villes du Maroc) : © les contributeurs d’[OpenStreetMap](https://www.openstreetmap.org/copyright), licence ODbL.",
+                "Image de la Terre vue de l’espace : NASA, Blue Marble Next Generation.",
+                "Contours des pays : Natural Earth, domaine public.",
+                "Contenus de présentation des produits ArcGIS (textes, images, vidéos) : Esri."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "liens-externes",
+          "title": "Liens vers d’autres sites",
+          "blocks": [
+            {
+              "p": "Ce site contient des liens vers des sites tiers, notamment ceux d’Esri. Geomatic ne contrôle pas ces sites et n’est pas responsable de leur contenu ni de leurs pratiques."
+            }
+          ]
+        },
+        {
+          "id": "responsabilite",
+          "title": "Responsabilité",
+          "blocks": [
+            {
+              "p": "Geomatic s’efforce de publier des informations exactes et à jour. Elles sont toutefois fournies à titre indicatif et ne constituent pas un engagement contractuel. Les caractéristiques des produits et des services peuvent évoluer sans préavis."
+            },
+            {
+              "p": "Pour une information précise sur un produit, une licence ou un tarif, [contactez-nous](/about-geomatic/contact)."
+            }
+          ]
+        },
+        {
+          "id": "droit-applicable",
+          "title": "Droit applicable",
+          "blocks": [
+            {
+              "p": "Ce site et les présentes mentions sont soumis au droit marocain. Tout litige relève des tribunaux compétents de Casablanca."
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "nav": "Confidentialité",
+      "title": "Politique de confidentialité",
+      "intro": "Quelles données personnelles Geomatic reçoit par ce site, ce que nous en faisons et comment exercer vos droits.",
+      "sections": [
+        {
+          "id": "en-bref",
+          "title": "En bref",
+          "blocks": [
+            {
+              "ul": [
+                "Vous pouvez consulter ce site sans rien nous communiquer : il n’y a pas de compte utilisateur.",
+                "Le site ne dépose aucun cookie et n’utilise aucun outil de mesure d’audience ni de publicité.",
+                "Nous ne recevons vos données que si vous remplissez le formulaire de contact, nous écrivez ou nous appelez."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "responsable",
+          "title": "Responsable du traitement",
+          "blocks": [
+            {
+              "dl": [
+                "name",
+                "address",
+                "email"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "donnees",
+          "title": "Données que nous recevons",
+          "blocks": [
+            {
+              "p": "Lorsque vous utilisez le formulaire de contact, nous recevons les informations que vous y saisissez : votre nom, votre organisme, votre adresse e-mail, votre téléphone, le sujet et votre message. Elles nous sont transmises par e-mail ; le site ne les enregistre pas dans une base de données."
+            },
+            {
+              "p": "Pour limiter les envois abusifs, l’adresse IP d’où part le formulaire est gardée en mémoire quelques minutes, sans être enregistrée."
+            },
+            {
+              "p": "Lorsque vous nous contactez directement par e-mail ou par téléphone, nous recevons de la même façon les informations que vous nous donnez."
+            },
+            {
+              "p": "Comme pour tout site web, le serveur qui héberge le site peut enregistrer des données techniques de connexion (adresse IP, date et heure, page consultée, type de navigateur) pour assurer la sécurité et le bon fonctionnement du service."
+            }
+          ]
+        },
+        {
+          "id": "finalites",
+          "title": "Ce que nous en faisons",
+          "blocks": [
+            {
+              "p": "Nous utilisons ces informations pour répondre à votre demande, préparer une offre et assurer le suivi de notre relation commerciale."
+            },
+            {
+              "p": "Elles sont réservées aux équipes de Geomatic concernées. Nous ne les vendons pas et ne les louons pas. Elles sont conservées le temps nécessaire au traitement de votre demande et au suivi de la relation commerciale, dans le respect des obligations légales."
+            }
+          ]
+        },
+        {
+          "id": "services-tiers",
+          "title": "Cookies et services tiers",
+          "blocks": [
+            {
+              "p": "Le site lui-même ne dépose aucun cookie. Certaines pages intègrent en revanche des vidéos hébergées par YouTube (Google) et par Esri. Lorsque vous ouvrez ces pages, votre navigateur se connecte à ces services, qui peuvent déposer leurs propres cookies et collecter des données selon leurs propres règles :"
+            },
+            {
+              "ul": [
+                "[Règles de confidentialité de Google](https://policies.google.com/privacy)",
+                "[Déclaration de confidentialité d’Esri](https://www.esri.com/en-us/privacy/overview)"
+              ]
+            },
+            {
+              "p": "Les liens vers Google Maps, les réseaux sociaux et les sites d’Esri sont de simples liens : aucune donnée n’est transmise à ces services tant que vous ne cliquez pas dessus."
+            }
+          ]
+        },
+        {
+          "id": "vos-droits",
+          "title": "Vos droits",
+          "blocks": [
+            {
+              "p": "Conformément à la loi n° 09-08 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel, vous disposez d’un droit d’accès, de rectification et d’opposition sur les données qui vous concernent."
+            },
+            {
+              "p": "Pour exercer ces droits, écrivez à {email} ou par courrier à l’adresse indiquée ci-dessus."
+            },
+            {
+              "p": "Ce traitement a été déclaré auprès de la CNDP sous le numéro {cndp}.",
+              "requires": "cndp"
+            },
+            {
+              "p": "Vous pouvez également vous adresser à la Commission nationale de contrôle de la protection des données à caractère personnel : [www.cndp.ma](https://www.cndp.ma)."
+            }
+          ]
+        },
+        {
+          "id": "modifications",
+          "title": "Modification de cette politique",
+          "blocks": [
+            {
+              "p": "Cette politique peut évoluer, par exemple si un nouvel outil est ajouté au site. La date de dernière mise à jour figure en haut de la page."
+            }
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "nav": "Accessibilité",
+      "title": "Accessibilité",
+      "intro": "Ce que nous avons mis en place pour que ce site soit utilisable par le plus grand nombre, et ce qui reste à améliorer.",
+      "sections": [
+        {
+          "id": "engagement",
+          "title": "Notre engagement",
+          "blocks": [
+            {
+              "p": "Geomatic souhaite que ce site soit utilisable par tous, quels que soient l’appareil et la façon de naviguer. Nous nous appuyons pour cela sur les recommandations internationales WCAG 2.1, niveau AA."
+            }
+          ]
+        },
+        {
+          "id": "en-place",
+          "title": "Ce qui est en place",
+          "blocks": [
+            {
+              "ul": [
+                "Les menus, la recherche et les fenêtres s’utilisent au clavier. La touche Échap ferme la fenêtre ouverte.",
+                "L’élément qui a le focus au clavier est toujours signalé par un contour visible.",
+                "La langue de chaque page (français ou anglais) est déclarée pour les lecteurs d’écran.",
+                "Les animations sont réduites si vous avez activé ce réglage sur votre appareil.",
+                "La vidéo de la page d’accueil est muette et peut être mise en pause.",
+                "La mise en page s’adapte aux petits écrans et au zoom du navigateur."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "limites",
+          "title": "Limites connues",
+          "blocks": [
+            {
+              "ul": [
+                "Ce site n’a pas encore fait l’objet d’un audit d’accessibilité formel.",
+                "Les vidéos intégrées depuis YouTube et Esri n’ont pas toujours de sous-titres en français.",
+                "Certaines images n’ont pas encore de description textuelle.",
+                "Certains liens mènent vers des sites externes, en anglais, que nous ne contrôlons pas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "signaler",
+          "title": "Signaler un problème",
+          "blocks": [
+            {
+              "p": "Si vous rencontrez une difficulté pour accéder à un contenu, écrivez à {email} en indiquant l’adresse de la page et le problème rencontré. Nous vous transmettrons l’information demandée sous une autre forme et corrigerons la page."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

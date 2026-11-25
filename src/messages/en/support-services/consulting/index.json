@@ -1,0 +1,66 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Talk to a consultant",
+    "anchor": "See the levels of engagement",
+    "whyKicker": "Your benefits",
+    "whyTitle": "What our consultants bring you",
+    "engagementKicker": "Engagement"
+  },
+  "hero": {
+    "title": "Consulting Services",
+    "subtitle": "Hands-on help from GIS experts, specialists, developers, and designers",
+    "bgGraphic": "/support-services/consulting/consulting-banner.jpg"
+  },
+  "features": {
+    "items": [
+      {
+        "title": "Team up with subject matter experts",
+        "desc": "Engage with thought leaders who are experienced in implementing innovative systems and applications in your industry."
+      },
+      {
+        "title": "Access cutting-edge capabilities",
+        "desc": "Geomatic consultants and partners apply the latest GIS capabilities that give your organization a competitive edge."
+      },
+      {
+        "title": "Realize value sooner",
+        "desc": "Our team helps you demonstrate the value of your GIS investment through improved workflows, operations, and more."
+      }
+    ]
+  },
+  "engagement": {
+    "title": "Choose your level of engagement",
+    "blurb": "No matter the scope of your work, Esri professional GIS consultants can help at the level that meets your needs."
+  },
+  "projects": {
+    "title": "Projects",
+    "paragraphs": [
+      "Our project work provides comprehensive industry, domain, and technical expertise to address real-world needs. Our experts manage a project's scope, schedule, and budget and use proven methodologies to deliver turnkey systems and applications.",
+      "We can consult with you to define the approach to delivering transformational GIS capabilities for your organization."
+    ],
+    "illustration": "/support-services/consulting/1550797171049.png"
+  },
+  "services": {
+    "title": "Business and Technical Consulting Services",
+    "illustration": "/support-services/consulting/1550797171126.png",
+    "description": "We offer consulting across multiple business and technical domains depending on what you need and at what level of your organization. Our consultants work directly with you to provide organizational or technical enablement, technical or business strategy.",
+    "cards": [
+      {
+        "title": "Business consulting",
+        "desc": "Industry subject-matter expertise that can help incorporate GIS into your overall business strategy, or provide advice on project planning."
+      },
+      {
+        "title": "Enterprise consulting",
+        "desc": "Experienced consultants who can advise and guide your enterprise GIS strategy and implementation approach."
+      },
+      {
+        "title": "Configuration consulting",
+        "desc": "ArcGIS installation and configuration specialists providing focused services to enable your teams to get it right the first time."
+      },
+      {
+        "title": "Rent-a-Tech consulting",
+        "desc": "Highly skilled technical specialists—app developers, geodata engineers, geospatial analysts, and more—working alongside your team to help you succeed."
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Building and Facilities Management",
+    "text": "To implement facilities management automation, an organization needs a specialized package that understands the corporate roles and responsibilities, understands the business missions and what each role requires to achieve them, knows how to validate and flow facility information through an organization, and can integrate diverse technologies into a unified whole. ARCHIBUS is such a system.",
+    "bgImage": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/shutterstock691685071-2400.jpg"
+  },
+  "lead": "Education, energy, financial services, government, healthcare, real estate, retail, and telecommunication organizations all use ARCHIBUS to reduce total cost of occupancy, achieve environmental and sustainability goals, and create strategic value.",
+  "sections": [
+    {
+      "title": "ARCHIBUS solution overview",
+      "paragraphs": [
+        "The ARCHIBUS application activities provide directed, best-practice methods for handling the complete range of facilities and infrastructure functions. These applications run within a unique environment that fuses database, CAD, spreadsheet, Web, document management, and workflow features into a cohesive whole.",
+        "The entire application suite is wholly integrated, driven from a data dictionary, and can be completely configured to reflect your own business processes and to embed ARCHIBUS within your corporate development environments."
+      ],
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597130595747.png",
+      "fit": "contain"
+    },
+    {
+      "title": "ARCHIBUS system architecture",
+      "paragraphs": [
+        "ARCHIBUS creates efficiencies in facilities management by providing applications for managing all aspects, sizes, and types of facilities in both Web and client-server environments. It is a modular system: application activities focusing on specific aspects of facilities management run on top of a core Web program that takes advantage of a powerful relational database.",
+        "The system architecture enables seamless integration with existing enterprise systems while providing scalable solutions that can grow with your organization’s needs. This comprehensive approach ensures that all facility management processes are streamlined and optimized."
+      ],
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597233630548.png",
+      "fit": "contain"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Insight into facility performance",
+      "text": "Bring critical metrics on needs and opportunities to the fingertips of decision-makers: foster consensus with a clear view of needs, personalize homepages for different roles, gain full visibility into operational costs and generate robust reports.",
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597130980544.png"
+    },
+    {
+      "title": "Asset management",
+      "text": "Inform capital planning, prioritize maintenance and enhance transparency: centralized visibility into your complete asset inventory helps avoid underused or neglected assets.",
+      "image": "/Solutions/PartnersSolutions/buildingAndFacilitiesManagement/1597140364279.png"
+    }
+  ]
+}

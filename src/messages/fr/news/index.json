@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "kicker": "Actualités",
+    "title": "Publications",
+    "text": "Des réflexions inspirantes sur la façon dont la technologie géospatiale alimente une vaste gamme de projets de transformation numérique pour offrir une meilleure compréhension de notre monde, favoriser la collaboration et améliorer la vie quotidienne.",
+    "bgImage": "/news/publications-banner2.png",
+    "contact": "Parler à un expert",
+    "anchor": "Voir les publications"
+  },
+  "list": {
+    "kicker": "Explorer",
+    "title": "Trois façons de s’informer"
+  },
+  "cards": [
+    {
+      "key": "stories",
+      "desc": "{count} organisations racontent ce qu’ArcGIS a changé pour elles, en vidéo ou en étude de cas.",
+      "link": "/news/customer-stories",
+      "cta": "Lire les histoires"
+    },
+    {
+      "key": "ebook",
+      "desc": "Des ouvrages à lire en ligne ou à télécharger pour approfondir le SIG et l’analyse spatiale.",
+      "link": "/news/ebook",
+      "cta": "Voir les livres"
+    },
+    {
+      "key": "newsletter",
+      "desc": "Nouveautés ArcGIS, retours d’expérience et conseils pratiques.",
+      "badge": "Bientôt disponible",
+      "link": "/news/newsletter",
+      "cta": "En savoir plus"
+    }
+  ]
+}

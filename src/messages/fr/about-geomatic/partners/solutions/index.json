@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "title": "Partenaires de solutions",
+    "bgGraphic": "/aboutGeomatic/partners/solutions/partner-banner.png"
+  },
+  "intro": {
+    "subTitle": "Des solutions fiables dans tous les secteurs",
+    "paragraph": "Nous collaborons avec des fournisseurs spécialisés pour proposer des solutions complètes et éprouvées, basées sur ArcGIS."
+  },
+  "community": {
+    "cards": [
+      {
+        "title": "Archibus",
+        "desc": "La solution n°1 mondiale pour la gestion complète des infrastructures et des installations.",
+        "image": "/aboutGeomatic/partners/solutions/logo31.png",
+        "link": "https://archibus.com/",
+        "solution": "/industries/solutions/building-and-facilities-management"
+      },
+      {
+        "title": "Pulsiam",
+        "desc": "Logiciel de sécurité publique intégré, personnalisable et rentable, incluant des solutions CAD, RMS et mobiles.",
+        "image": "/aboutGeomatic/partners/solutions/plusiam.jpg",
+        "link": "https://pulsiam.com/",
+        "solution": "/industries/solutions/pulsiam"
+      },
+      {
+        "title": "vGIS",
+        "desc": "Exploitez pleinement vos données BIM et SIG avec l’AR/MR/VR pour atteindre une productivité et une sécurité accrues.",
+        "image": "/aboutGeomatic/partners/solutions/vgis.jpg",
+        "link": "https://vgis.io/",
+        "solution": "/industries/solutions/vgis"
+      },
+      {
+        "title": "GDi",
+        "desc": "Systèmes de support opérationnel et décisionnel pour tous les secteurs, entreprises ou organisations.",
+        "image": "/aboutGeomatic/partners/solutions/gdi-logo.png",
+        "link": "https://gdi.net/",
+        "solution": "/industries/solutions/gdi"
+      },
+      {
+        "title": "Alpine Software",
+        "desc": "Logiciels personnalisés de gestion de la sécurité publique pour les services d’incendie et d’ambulance.",
+        "image": "/aboutGeomatic/partners/solutions/logo4.png",
+        "link": "https://alpinesoftware.com/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "eyebrow": "HISTOIRES DE RÉUSSITE",
+    "title": "Suivi de chaque huître, de la marée à l’assiette",
+    "kicker": "Premier producteur de coquillages des États-Unis, Taylor Shellfish Farms utilise le logiciel ArcGIS dans l’ensemble de ses opérations. Les cartes intelligentes et l’analyse spatiale aident l’entreprise à relever les défis liés à l’acidification des océans, à accroître les rendements, à suivre le contenu des bancs, à collecter et partager des données avec des applications de terrain faciles à utiliser, et à accéder en temps réel aux conditions des exploitations.",
+    "mediaImage": "/Solutions/Industries/naturalResources/video-tracing-each-oyster.jpg",
+    "documentUrl": "https://www.esri.com/about/newsroom/blog/tracing-each-oyster-from-tide-to-table"
+  },
+  "strengthen": {
+    "title": "Améliorez l’efficacité de votre production",
+    "paragraph": "Que vous gériez les ressources naturelles de la planète ou les ressources humaines et matérielles de vos équipes, ArcGIS vous permet de rationaliser vos workflows et de maximiser la productivité. Les analyses spatiales révèlent de nouveaux schémas et tendances pour vous aider à prendre des décisions éclairées et à renforcer la réussite de votre organisation.",
+    "imageSection": {
+      "image": "/Solutions/Industries/naturalResources/device-create-central-repository-all-spatial-date.png",
+      "title": "Créez un référentiel central pour toutes vos données spatiales",
+      "description": "Offrez une plateforme complète qui permet à chacun dans l’organisation de facilement trouver, partager et analyser l’information."
+    }
+  },
+  "features": [
+    {
+      "title": "Accédez à un monde de contenu",
+      "paragraph": "Accédez à la plus vaste collection d’informations géographiques mondiales, y compris des images, limites, paysages et couches de données démographiques.",
+      "image": "/Solutions/Industries/naturalResources/device-access-world-content.png",
+      "backgroundImage": "/Solutions/Industries/naturalResources/access-world-of-content-background-wide.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Rationalisez vos workflows quotidiens",
+      "paragraph": "Transformez vos opérations quotidiennes : collectez des données sur le terrain et partagez des informations en temps réel avec vos collègues au bureau.",
+      "image": "/Solutions/Industries/naturalResources/device-streamline-daily-workflows.png",
+      "backgroundImage": "/Solutions/Industries/naturalResources/news-and-events-background-wide.jpg",
+      "layout": "left"
+    },
+    {
+      "title": "Obtenez un avantage concurrentiel",
+      "paragraph": "Les analyses géospatiales avancées permettent de révéler les relations présentes dans vos données, vous donnant les moyens d’agir de manière proactive plutôt que réactive.",
+      "image": "/Solutions/Industries/naturalResources/device-gain-competitive-insight.png",
+      "backgroundImage": "/Solutions/Industries/naturalResources/gain-competitive-insight-background-wide.jpg",
+      "layout": "right"
+    }
+  ],
+  "empower": {
+    "title": "Donnez du pouvoir à votre organisation grâce au SIG",
+    "paragraph": "Améliorez l’efficacité opérationnelle avec la cartographie et l’analyse spatiale. Utilisez ArcGIS pour atteindre vos objectifs, respecter les réglementations et réduire l’impact environnemental.",
+    "items": [
+      {
+        "title": "Agriculture",
+        "paragraph": "Intégrez la télédétection et les données en temps réel pour maximiser vos bénéfices.",
+        "icon": "/Solutions/Industries/naturalResources/agriculture.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/natural-resources/segments/agriculture"
+        }
+      },
+      {
+        "title": "Foresterie",
+        "paragraph": "Améliorez les rapports réglementaires et atteignez vos objectifs commerciaux.",
+        "icon": "/Solutions/Industries/naturalResources/forestry.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/natural-resources/segments/forestry"
+        }
+      },
+      {
+        "title": "Mines",
+        "paragraph": "De l’exploration à la réhabilitation, soutenez l’ensemble du cycle de vie du projet.",
+        "icon": "/Solutions/Industries/naturalResources/mining.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/natural-resources/segments/mining"
+        }
+      },
+      {
+        "title": "Énergies renouvelables",
+        "paragraph": "Évaluez la viabilité des projets éoliens, solaires et géothermiques.",
+        "icon": "/Solutions/Industries/naturalResources/renewables.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/natural-resources/segments/renewables"
+        }
+      }
+    ]
+  },
+  "news": {
+    "title": "Actualités & Événements",
+    "backgroundImage": "/Solutions/Industries/naturalResources/news-and-events-background-wide.jpg",
+    "cards": [
+      {
+        "eyebrow": "Événement",
+        "title": "Conférence des utilisateurs Esri (UC)",
+        "blurb": "8-12 juillet 2019 | San Diego, Californie, USA",
+        "image": "/Solutions/Industries/naturalResources/event-card-esriuc-2019.jpg",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "eyebrow": "Événement",
+        "title": "Conférence Esri FedGIS",
+        "blurb": "11-12 février 2020 | Washington, D.C., USA",
+        "image": "/Solutions/Industries/naturalResources/event-federal-gis.jpg",
+        "href": "https://www.esri.com/en-us/about/events/fedgis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fabout%2Fevents%2Ffederal-gis-conference%2Foverview"
+      },
+      {
+        "eyebrow": "Actualité",
+        "title": "Mettre l’analyse agronomique à la portée des agriculteurs",
+        "blurb": "Les agriculteurs peuvent facilement analyser leurs terres pour déterminer les pratiques de conservation tout en optimisant la production.",
+        "image": "/Solutions/Industries/naturalResources/news-agronomic-analysis.jpg",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/media/fliers/usda-nrcs-stone-environmental.pdf"
+      },
+      {
+        "eyebrow": "Actualité",
+        "title": "À la recherche de l’or : assurer une donnée mondiale sûre et fiable",
+        "blurb": "Les décideurs de Barrick Gold ont désormais un meilleur accès aux données de l’entreprise pour trouver des solutions plus efficaces.",
+        "image": "/Solutions/Industries/naturalResources/news-striking-gold.jpg",
+        "href": "https://www.esri.ca/sites/default/files/resources/cr/ANN_Spring2013_StrikingGold_Linked.pdf"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Découvrez comment Esri peut aider votre organisation",
+    "ctaLabel": "Commencer",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

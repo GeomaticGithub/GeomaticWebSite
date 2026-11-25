@@ -1,0 +1,83 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Parler à un expert",
+    "anchor": "Voir les services",
+    "servicesKicker": "Nos services",
+    "servicesTitle": "Trois services pour réussir avec ArcGIS",
+    "servicesText": "Du premier dépannage au projet d’entreprise, la même équipe vous accompagne au Maroc.",
+    "needsKicker": "Votre besoin",
+    "needsTitle": "Quel service pour quelle situation ?",
+    "needsText": "Partez de votre situation : nous vous indiquons le service qui y répond."
+  },
+  "hero": {
+    "title": "Services",
+    "subtitle": "Support, formation et conseil autour d’ArcGIS",
+    "text": "Geomatic, distributeur officiel d’Esri au Maroc, vous aide à résoudre vos problèmes techniques, à former vos équipes et à mener vos projets SIG.",
+    "image": "/support-services/services-banner-foreground-decoration.png",
+    "bgGraphic": "/support-services/services-banner-background.jpg"
+  },
+  "services": [
+    {
+      "key": "support",
+      "title": "Services de support",
+      "desc": "Obtenez des réponses à vos questions et résolvez vos problèmes techniques. Accédez à des ressources utiles ou contactez notre équipe.",
+      "image": "/support-services/adobestock-204954211.jpeg",
+      "link": "/support-services/support",
+      "cta": "Découvrir le support",
+      "points": [
+        "Une équipe dédiée à la plateforme ArcGIS",
+        "Pour tous les produits Esri : bureau, serveur, en ligne et développement",
+        "Accès aux ressources du support Esri"
+      ]
+    },
+    {
+      "key": "learning",
+      "title": "Services de formation",
+      "desc": "Des certifications techniques individuelles aux formations dirigées par des instructeurs pour votre personnel, nous soutenons toutes les étapes de l’apprentissage.",
+      "image": "/support-services/AdobeStock_141375321.jpg",
+      "link": "/support-services/learning",
+      "cta": "Découvrir les formations",
+      "points": [
+        "Centre de formation agréé Esri au Maroc",
+        "{count} formations au catalogue",
+        "Formations privées adaptées à votre organisation"
+      ]
+    },
+    {
+      "key": "consulting",
+      "title": "Services de conseil",
+      "desc": "Nos consultants peuvent vous aider à mettre en œuvre avec succès la technologie Esri, qu’il s’agisse de projets à court terme ou de transformations à grande échelle.",
+      "image": "/support-services/AdobeStock_184180246.jpeg",
+      "link": "/support-services/consulting",
+      "cta": "Découvrir le conseil",
+      "points": [
+        "Conseil métier et conseil d’entreprise",
+        "Installation et configuration d’ArcGIS",
+        "Des spécialistes techniques aux côtés de votre équipe"
+      ]
+    }
+  ],
+  "needs": [
+    {
+      "need": "Un outil ArcGIS ne fonctionne pas comme prévu",
+      "answer": "Services de support",
+      "link": "/support-services/support"
+    },
+    {
+      "need": "Votre équipe débute sur ArcGIS ou change de version",
+      "answer": "Services de formation",
+      "link": "/support-services/learning"
+    },
+    {
+      "need": "Vous lancez ou faites évoluer un SIG d’entreprise",
+      "answer": "Services de conseil",
+      "link": "/support-services/consulting"
+    },
+    {
+      "need": "Vous ne savez pas encore par où commencer",
+      "answer": "Nous contacter",
+      "link": "/about-geomatic/contact"
+    }
+  ]
+}

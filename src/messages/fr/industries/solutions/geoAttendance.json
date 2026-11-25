@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "GeoAttendance",
+    "subtitle": "Présence géolocalisée",
+    "text": "L’application GeoAttendance permet aux employés de pointer leurs entrées et sorties quotidiennes à l’intérieur d’une géo-clôture spécifique définie autour des zones de travail de l’organisation, directement depuis leur téléphone mobile. Elle est conçue pour améliorer l’expérience globale des employés, ce qui entraîne une meilleure gestion du temps et une productivité accrue.",
+    "bgImage": "/Solutions/PartnersSolutions/geoAttendance/shutterstock762793465-2400.jpg"
+  },
+  "sections": [
+    {
+      "title": "Pourquoi choisir GeoAttendance ?",
+      "bullets": [
+        "Conviviale et simple d’utilisation",
+        "Fiable et précise",
+        "Basée sur la localisation",
+        "Technologie sécurisée et moderne"
+      ],
+      "image": "/Solutions/PartnersSolutions/geoAttendance/geo24.png"
+    },
+    {
+      "title": "Fonctionnalités de la solution",
+      "bullets": [
+        "Enregistrer la présence des employés depuis n’importe quel lieu, à tout moment",
+        "Réduire les coûts pour les petites organisations",
+        "Optimisée et efficace pour les grandes entreprises",
+        "Intégration facile avec les modules internes tels que RH et Paie"
+      ],
+      "image": "/Solutions/PartnersSolutions/geoAttendance/geo20.png"
+    },
+    {
+      "title": "Comment ça marche ?",
+      "paragraphs": [
+        "L’application permet aux employés de pointer leur présence et leur sortie à l’intérieur d’une géo-clôture très précise autour des zones de travail de l’organisation, le tout directement depuis leur téléphone."
+      ],
+      "image": "/Solutions/PartnersSolutions/geoAttendance/geo6.png",
+      "fit": "contain"
+    }
+  ]
+}

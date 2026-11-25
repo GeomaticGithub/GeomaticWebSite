@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "title": "Responding to disasters in hours, not days",
+    "kicker": "When disasters strike, and losses occur, insurance companies understand that there’s nothing more important to their customers than recovering from losses. In these crucial moments, families rely on their insurers to respond as quickly and efficiently as possible. The challenge is identifying, and prioritizing response efforts. Discover an innovative approach to disaster response and claims management that was forged during the costliest storms in recent years. Using Esri technology as a foundation, the National Insurance Crime Bureau (NICB) and Vexcel Imaging teamed up to provide the deploy one of the largest imagery collection applications in recent years.",
+    "mediaImage": "/Solutions/Industries/insurance/g141012-uc18-e360-nicb-thumb-644x352.jpg",
+    "videoUrl": "https://www.youtube.com/embed/XdGdnXjWJzA?si=GRsVO09aho2LRyfW"
+  },
+  "strengthen": {
+    "title": "Make the most of every location",
+    "paragraph": "Location influences every decision in insruance risk assessment. From underwriting decisions and that first policy quote, to catastrophe (CAT) response and claims, successful insurance companies leverage location intelligence to go beyond static figures and spreadsheets, and derive actionable insights for decision making. Discover how location intelligence can transoform your enterprise. ",
+    "imageSection": {
+      "image": "/Solutions/Industries/insurance/device-mapping-analytics-platform.png",
+      "title": "A mapping and analytics platform for everyone",
+      "description": "Give everyone in the organization access to the most accurate, consistent, and secure data. Make it easy to find, share, and analyze information."
+    }
+  },
+  "features": [
+    {
+      "title": "Maps available everywhere",
+      "paragraph": "Access maps in familiar environments—such as Excel, PowerPoint, and online—to give data spatial context from the office or the field.",
+      "image": "/Solutions/Industries/insurance/Device_2.png",
+      "backgroundImage": "/Solutions/Industries/insurance/background-maps-everywhere.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Everyday workflows transformed",
+      "paragraph": "Standardize and improve daily processes such as surveys, asset inspections, and operational surveillance; share the data anywhere, anytime.",
+      "image": "/Solutions/Industries/insurance/Device_3.png",
+      "backgroundImage": "/Solutions/Industries/insurance/background-workflows.jpg",
+      "layout": "left"
+    },
+    {
+      "title": "Integration with existing systems",
+      "paragraph": "Enrich enterprise systems with location-based information to gain new business insight that improves analysis and decision-making.",
+      "image": "/Solutions/Industries/insurance/Device_4.png",
+      "backgroundImage": "/Solutions/Industries/insurance/background-news-events.jpg",
+      "layout": "right"
+    }
+  ],
+  "empower": {
+    "title": "Strengthen all aspects of the insurance business.",
+    "paragraph": "Empower everyone to use smart maps and spatial analysis in ArcGIS software to understand opportunities and risks.",
+    "items": [
+      {
+        "title": "Exposure Management",
+        "icon": "/Solutions/Industries/insurance/exposureManagement.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "/industries/insurance/segments/exposure-management"
+        }
+      },
+      {
+        "title": "Market Development",
+        "icon": "/Solutions/Industries/insurance/marketDevelopment.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/market-development"
+        }
+      },
+      {
+        "title": "Corporate Security",
+        "icon": "/Solutions/Industries/insurance/corporateSecurity.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/security-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Findustries%2Fcorporate-security"
+        }
+      }
+    ]
+  },
+  "news": {
+    "title": "News & Events",
+    "backgroundImage": "/Solutions/Industries/insurance/background-news-events.jpg",
+    "cards": [
+      {
+        "eyebrow": "Event",
+        "title": "Esri Petroleum GIS Conference",
+        "blurb": "May 9-10, 2018 | Houston, Texas, USA",
+        "image": "/Solutions/Industries/insurance/event-petroleum-user-conference-pug.jpg",
+        "meta": "May 1–3, Houston, USA",
+        "href": "https://www.esri.com/en-us/about/events/esri-energy-resources-gis-conference/save-date"
+      },
+      {
+        "eyebrow": "Event",
+        "title": "Esri User Conference",
+        "blurb": "July 9–13, 2018 | San Diego, California, USA",
+        "image": "/Solutions/Industries/insurance/event-user-conference.jpg",
+        "meta": "July 15–19, San Diego, USA",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Gulfport Energy saves time and money",
+        "blurb": "Within one year of deploying ArcGIS apps for critical operations, Gulfport Energy cut costs by at least $2 million.",
+        "image": "/Solutions/Industries/insurance/News_Emergency-Ops.jpg",
+        "href": "https://www.esri.com/~/media/files/pdfs/library/fliers/pdfs/gulfport-energy-saves-time.pdf"
+      },
+      {
+        "eyebrow": "News",
+        "title": "Range Resources digitizes historic well data",
+        "blurb": "Intelligent, self-service maps give staff the data and insight necessary to speed up land management and title clearance.",
+        "image": "/Solutions/Industries/insurance/News_Gulf.jpg",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/media/e-news/petroleum-historic-map-digitizing.pdf"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Find out how Esri can help your organization.",
+    "ctaLabel": "Get started",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

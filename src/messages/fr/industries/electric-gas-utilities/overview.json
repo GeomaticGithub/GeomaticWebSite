@@ -1,0 +1,49 @@
+{
+  "empower": {
+    "title": "Renforcer toutes les compagnies d’électricité et de gaz",
+    "paragraph": "Les solutions de cartographie et d’analyse d’Esri améliorent les performances des services publics de toutes tailles — des grandes multinationales aux compagnies locales de proximité.",
+    "items": [
+      {
+        "title": "Compagnies d’électricité",
+        "icon": "/Solutions/Industries/electricGasUtilities/electricUtilities.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/electric-gas-utilities/segments/electric"
+        }
+      },
+      {
+        "title": "Compagnies de gaz",
+        "icon": "/Solutions/Industries/electricGasUtilities/gasUtilities.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/electric-gas-utilities/segments/gas"
+        }
+      }
+    ]
+  },
+  "strengthen": {
+    "title": "Le SIG donne un avantage aux services publics",
+    "paragraph": "La localisation est essentielle pour toutes les compagnies d’électricité et de gaz. Donnez aux équipes les moyens d’exploiter des données géographiques cruciales grâce à la technologie ArcGIS. La cartographie avancée et l’analyse spatiale en temps réel renforcent les opérations et la prise de décision — du terrain au bureau.",
+    "imageSection": {
+      "image": "/Solutions/Industries/electricGasUtilities/Device_1_Access.png",
+      "title": "Accès",
+      "description": "Connectez tout le monde aux cartes et aux données. Visualisez les actifs, les plans, les problèmes de conformité et les zones à forte demande en un seul endroit pour améliorer les opérations."
+    }
+  },
+  "features": [
+    {
+      "title": "Conscience situationnelle",
+      "paragraph": "Suivez en temps réel la météo, le trafic, les actifs et les informations liées aux catastrophes pour accélérer les temps de réponse.",
+      "image": "/Solutions/Industries/electricGasUtilities/Device_2_Awareness.png",
+      "backgroundImage": "/Solutions/Industries/electricGasUtilities/Background_Awareness.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Analytique",
+      "paragraph": "Révélez les relations dans vos données, comme les zones de forte consommation vulnérables aux catastrophes. Détectez les problèmes avant qu’ils ne surviennent.",
+      "image": "/Solutions/Industries/electricGasUtilities/Device_3_Analytics.png",
+      "backgroundImage": "/Solutions/Industries/electricGasUtilities/Background_Analytics.jpg",
+      "layout": "left"
+    }
+  ]
+}

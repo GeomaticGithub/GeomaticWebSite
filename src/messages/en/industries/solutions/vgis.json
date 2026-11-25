@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "title": "Augmented Reality and Virtual Reality",
+    "text": "vGIS is the most advanced augmented reality (AR) system for utilities. vGIS combines GIS data with third-party information from multiple sources to create stable and accurate holographic and augmented-reality projections.",
+    "bgImage": "/Solutions/PartnersSolutions/vgis/AdobeStock_157462783-2400.jpg"
+  },
+  "sections": [
+    {
+      "title": "Solution details",
+      "paragraphs": [
+        "vGIS Utilities transforms your asset information from a traditional GIS format into stunning holograms. Water pipes, sewage systems, gas lines and electrical cables appear in your field of view as natural extensions of the real world. You can use your phone, tablet or holographic headset to “see” your underground utility infrastructure."
+      ],
+      "image": "/Solutions/PartnersSolutions/vgis/vgis.png"
+    }
+  ],
+  "video": {
+    "title": "vGIS overview",
+    "text": "BIM and GIS visualisation platform",
+    "youtubeId": "0rK_GRbYFmg"
+  },
+  "brochure": {
+    "title": "vGIS",
+    "text": "vGIS was recognized as a finalist for the 2018 Microsoft CityNext Award. The company was honored among a global field of top Microsoft partners for demonstrating excellence in innovation. Winners were chosen from a set of more than 2,600 entrants from 115 countries worldwide.",
+    "image": "/Solutions/PartnersSolutions/vgis/AdobeStock_159799664-2400.jpg",
+    "href": "https://www.vgis.io/wp-content/uploads/2019/01/Brochure-vGIS-Utilities-v3.pdf"
+  }
+}

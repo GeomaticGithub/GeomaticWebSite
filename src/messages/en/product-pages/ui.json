@@ -1,0 +1,28 @@
+{
+  "contact": "Talk to an expert",
+  "anchor": "Explore",
+  "learnMore": "Learn more",
+  "howTitle": "How it works",
+  "tabsLabel": "Capabilities",
+  "kickers": {
+    "product": "Product",
+    "capability": "Capabilities",
+    "online": "ArcGIS Online",
+    "overview": "Overview",
+    "benefits": "Benefits",
+    "capabilities": "Capabilities",
+    "how": "How it works",
+    "stories": "Case studies",
+    "examples": "Examples",
+    "resources": "Resources",
+    "platform": "Platform",
+    "microsoft": "Microsoft",
+    "deploy": "Deployment",
+    "docs": "Documentation",
+    "demo": "Demo",
+    "video": "Video",
+    "products": "Products",
+    "users": "Users",
+    "share": "Sharing"
+  }
+}

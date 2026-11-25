@@ -1,0 +1,66 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Parler à un consultant",
+    "anchor": "Voir les niveaux d’engagement",
+    "whyKicker": "Vos avantages",
+    "whyTitle": "Ce que nos consultants vous apportent",
+    "engagementKicker": "Engagement"
+  },
+  "hero": {
+    "title": "Services de conseil",
+    "subtitle": "Accompagnement pratique par des experts SIG, des spécialistes, des développeurs et des concepteurs",
+    "bgGraphic": "/support-services/consulting/consulting-banner.jpg"
+  },
+  "features": {
+    "items": [
+      {
+        "title": "Collaborez avec des experts de domaine",
+        "desc": "Travaillez avec des leaders d’opinion expérimentés dans la mise en œuvre de systèmes et d’applications innovants dans votre secteur."
+      },
+      {
+        "title": "Accédez à des capacités de pointe",
+        "desc": "Les consultants et partenaires de Geomatic appliquent les dernières avancées en matière de SIG pour donner à votre organisation un avantage concurrentiel."
+      },
+      {
+        "title": "Générez de la valeur plus rapidement",
+        "desc": "Notre équipe vous aide à démontrer la valeur de votre investissement SIG grâce à l’amélioration des flux de travail, des opérations, et plus encore."
+      }
+    ]
+  },
+  "engagement": {
+    "title": "Choisissez votre niveau d’engagement",
+    "blurb": "Quelle que soit la portée de votre projet, les consultants professionnels en SIG d’Esri peuvent intervenir au niveau qui répond à vos besoins."
+  },
+  "projects": {
+    "title": "Projets",
+    "paragraphs": [
+      "Nos projets offrent une expertise complète en matière d’industrie, de domaine et de technologie pour répondre à des besoins concrets. Nos experts gèrent la portée, le calendrier et le budget d’un projet et utilisent des méthodologies éprouvées pour livrer des systèmes et des applications clés en main.",
+      "Nous pouvons collaborer avec vous pour définir l’approche visant à fournir des capacités SIG transformationnelles pour votre organisation."
+    ],
+    "illustration": "/support-services/consulting/1550797171049.png"
+  },
+  "services": {
+    "title": "Services de conseil métier et technique",
+    "illustration": "/support-services/consulting/1550797171126.png",
+    "description": "Nous proposons des services de conseil dans plusieurs domaines métiers et techniques, selon vos besoins et le niveau de votre organisation. Nos consultants travaillent directement avec vous pour fournir un accompagnement organisationnel ou technique, ainsi qu’une stratégie métier ou technologique.",
+    "cards": [
+      {
+        "title": "Conseil métier",
+        "desc": "Une expertise sectorielle pointue pour intégrer le SIG dans votre stratégie globale d’entreprise ou pour vous conseiller sur la planification de projets."
+      },
+      {
+        "title": "Conseil d’entreprise",
+        "desc": "Des consultants expérimentés pour vous conseiller et vous guider dans la stratégie et la mise en œuvre de votre SIG d’entreprise."
+      },
+      {
+        "title": "Conseil en configuration",
+        "desc": "Des spécialistes de l’installation et de la configuration d’ArcGIS fournissant des services ciblés pour permettre à vos équipes de bien faire les choses dès la première fois."
+      },
+      {
+        "title": "Conseil Rent-a-Tech",
+        "desc": "Des spécialistes techniques hautement qualifiés — développeurs d’applications, ingénieurs de géodonnées, analystes géospatiaux et plus — travaillant aux côtés de votre équipe pour vous aider à réussir."
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Economic Development",
+    "subtitle1": "Create sustainable business growth",
+    "subtitle2": "Discover where to invest in your community for greatest impact",
+    "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-banner-bg.png"
+  },
+  "intro": {
+    "title": "Build a strong community",
+    "paragraph": "To be successful, economic developers need to understand their community's strengths—whether it's an educated and diverse workforce, affordable housing, lower cost of living, great transportation, or a thriving local economy. Leaders can use location intelligence to visualize and analyze business and community growth potential, combining data about demographics, lifestyle, and spending. This strategic approach helps communities create jobs, identify opportunities for economic gardening, and attract new business."
+  },
+  "community": {
+    "title": "Build a strong community",
+    "body": "See what’s happening across the community, design a strategy, and know where to invest. Smart maps help you visualize people, places, and assets to understand potential for economic development.",
+    "image": "/Solutions/BusinessNeeds/EconomicDevelopment/community-city.jpg"
+  },
+  "growth": {
+    "title": "See your economy grow",
+    "intro": "Smart maps provide community leaders, businesses, and investors with key data and iterative development plans in real time.",
+    "bullets": [
+      "Attract new residents and businesses with destination branding powered by analytics, reports, and maps.",
+      "Identify gaps in goods, services, and infrastructure to improve quality of life.",
+      "Support site selection, planning, territory analysis, retail comparison, merchandise mix evaluations, and customer segmentation and targeting.",
+      "Identify opportunity zones and empower sustainable growth using data-driven maps."
+    ],
+    "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-5050-see-the-potential-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Create economic strategies, access real-time information, and see business data in context using location intelligence technology from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Mapping",
+        "body": "Visualize people, places, and assets to gain clear understanding of a potential economic development. See what's happening throughout the community, design a strategy, and know where to invest.",
+        "cta": "Visualize your data",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/business-needs-capabilities-mapping-visualization.jpg"
+      },
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Understand customer demographics and development plans across a community and monitor changing situations. Use big data and Internet of Things (IoT) technology to make quick, informed decisions based on the most up-to-date information.",
+        "cta": "Make sense of big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "3D Visualization and Analytics",
+        "body": "Extract value from your data to solve problems and see patterns, trends, and hidden relationships. Create models that make it easy to share your vision and ideas.",
+        "cta": "Interact with your data",
+        "href": "https://www.esri.com/en-us/capabilities/3d-gis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2F3d-gis%2Foverview",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/business-needs-capabilities-3d-gis.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about economic development",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "3D Model Provides the Vision to Combat Blight",
+        "source": "Esri Blog",
+        "excerpt": "A 3D visualization captures a community’s imagination to spur a revitalization effort, and the shared vision speeds renewal plans.",
+        "href": "https://www.esri.com/about/newsroom/blog/procedural-modeling-provides-vision",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-3d-model.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "A City Fights for the Millennial Workforce",
+        "source": "WhereNext Magazine",
+        "excerpt": "The small city of Bentonville, Arkansas devised a comprehensive plan using location intelligence to grow and thrive their community.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/bentonville-fights-millennial-brain-drain",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-city-fights-for-the-millenial-workforce.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "A Little-Known Alternative to Wooing Amazon",
+        "source": "WhereNext Magazine",
+        "excerpt": "For cities that can’t—or don’t want to—compete for market giants, there’s another proven option: economic gardening.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/growing-companies-with-economic-gardening",
+        "image": "/Solutions/BusinessNeeds/EconomicDevelopment/economic-development-little-known-alternative.jpg"
+      }
+    ]
+  }
+}

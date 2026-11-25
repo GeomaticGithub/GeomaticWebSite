@@ -1,0 +1,516 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=block">
+<script src="https://cdn.jsdelivr.net/npm/mp4-muxer@5.1.3/build/mp4-muxer.min.js"></script>
+<style>html,body{margin:0;background:#000}canvas{display:block}</style>
+</head>
+<body>
+<canvas id="c" width="720" height="720"></canvas>
+<script>
+// Version 3 of the hero film — "space → country → city → analyses", computed on real data:
+//   1. Earth from space (NASA Blue Marble), Morocco then Mauritania outlined, their cities and towns lit up
+//      (Morocco: OpenStreetMap places; Mauritania: Natural Earth, see extract-mauritanie.mjs)
+//   2. Casablanca by night: real road network (OpenStreetMap) + network analysis (drive-time service areas)
+//   3. 3D model of a district (real OSM buildings): line of sight from the Twin Center
+//   4. Same model: coverage area (viewshed) around an antenna
+//   5. Built-up density of the whole city as 3D bars
+//   6. Pull back to the 3D map of Morocco and Mauritania with their cities + Geomatic signature
+const W = 720, H = 720, FPS = 30, T = 24; // seconds, loops (cross-fades back to the first frame)
+window.POSTER_T = 3.7;
+const lang = new URLSearchParams(location.search).get("lang") === "en" ? "en" : "fr";
+const CLEAN = new URLSearchParams(location.search).has("clean"); // stills without captions or signature (used for the site illustrations)
+const TXT = {
+  fr: { tag: "Systèmes d’information géographique · depuis 1988", osm: "© les contributeurs d’OpenStreetMap",
+        net: "Analyse de réseau · zones de desserte", los: "Ligne de visée", dome: "Zone de couverture", dens: "Densité du bâti" },
+  en: { tag: "Geographic information systems · since 1988", osm: "© OpenStreetMap contributors",
+        net: "Network analysis · service areas", los: "Line of sight", dome: "Coverage area", dens: "Building density" },
+}[lang];
+const CASA = [-7.59, 33.57];
+// timeline: globe rotation / dive, then [fade-in start, fade-in end] of each following shot
+const G_ROT = 3.4, G_ZOOM = [4.0, 5.05];
+const S_CITY = [4.55, 5.05], S_LOS = [9.0, 9.6], S_DOME = [13.1, 13.7], S_DENS = [17.1, 17.7], S_MAP = [20.3, 21.0], S_LOOP = [23.0, 23.9];
+
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = (x) => { x = clamp(x); return x * x * (3 - 2 * x); };
+const easeOut = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const lerp = (a, b, f) => a + (b - a) * f;
+const RAD = Math.PI / 180;
+let seed = 11; const rnd = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+function font(ctx, w, s) { ctx.font = `${w} ${s}px Figtree, "Segoe UI", sans-serif`; }
+const layer = (w = W, h = H) => { const c = document.createElement("canvas"); c.width = w; c.height = h; return c; };
+
+let DATA, CITY, MODEL, PLACES = [], MAUR = [], MPLACES = [], logoWhite, stats = {};
+const shotA = layer(), shotB = layer(), shotC = layer(), shotD = layer(), shotE = layer(), shotF = layer();
+
+/* ===================== 1. GLOBE ===================== */
+const TW = 4096, TH = 2048, CW = 2048, CH = 1024;
+let earth, clouds, stars = [], globeImg;
+// 3D value noise (seeded) for the procedural cloud layer
+const perm = new Uint8Array(512), nval = new Float32Array(256);
+function initNoise() { const p = [...Array(256).keys()]; for (let i = 255; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [p[i], p[j]] = [p[j], p[i]]; } for (let i = 0; i < 512; i++) perm[i] = p[i & 255]; for (let i = 0; i < 256; i++) nval[i] = rnd(); }
+function vnoise(x, y, z) { const xi = Math.floor(x), yi = Math.floor(y), zi = Math.floor(z); let xf = x - xi, yf = y - yi, zf = z - zi; xf = xf * xf * (3 - 2 * xf); yf = yf * yf * (3 - 2 * yf); zf = zf * zf * (3 - 2 * zf);
+  const X = xi & 255, Y = yi & 255, Z = zi & 255, A = perm[X] + Y, B = perm[X + 1] + Y;
+  const h = (a, dz) => nval[perm[perm[a] + Z + dz]];
+  const x00 = lerp(h(A, 0), h(B, 0), xf), x10 = lerp(h(A + 1, 0), h(B + 1, 0), xf), x01 = lerp(h(A, 1), h(B, 1), xf), x11 = lerp(h(A + 1, 1), h(B + 1, 1), xf);
+  return lerp(lerp(x00, x10, yf), lerp(x01, x11, yf), zf); }
+const fbm = (x, y, z, oct) => { let s = 0, a = 0.5, f = 1, n = 0; for (let i = 0; i < oct; i++) { s += a * vnoise(x * f, y * f, z * f); n += a; a *= 0.5; f *= 2.03; } return s / n; };
+function bakeClouds() { // equirectangular alpha map; fewer clouds over the desert belts, more at mid latitudes
+  clouds = new Uint8Array(CW * CH);
+  for (let j = 0; j < CH; j++) { const lat = (0.5 - (j + 0.5) / CH) * Math.PI, cl = Math.cos(lat), sl = Math.sin(lat), deg = Math.abs(lat / RAD);
+    const cov = 0.535 + 0.10 * Math.exp(-(((deg - 24) / 10) ** 2)) - 0.045 * Math.exp(-((deg / 9) ** 2)) - 0.06 * ease((deg - 38) / 20);
+    for (let i = 0; i < CW; i++) { const lon = ((i + 0.5) / CW - 0.5) * 2 * Math.PI, x = cl * Math.sin(lon), y = sl, z = cl * Math.cos(lon);
+      const wx = fbm(x * 2 + 5.2, y * 2 + 1.3, z * 2 + 9.1, 3) - 0.5, wy = fbm(x * 2 + 1.7, y * 2 + 9.2, z * 2 + 3.3, 3) - 0.5;
+      const d = fbm(x * 5.2 + wx * 2.6, y * 8.4 + wy * 2.6, z * 5.2 + wx * 2.0, 6) * 0.82 + fbm(x * 21 + wy * 3, y * 30 + wx * 3, z * 21, 3) * 0.18;
+      const a = clamp((d - cov) / 0.13); clouds[j * CW + i] = Math.round(a * a * (3 - 2 * a) * 255); } } }
+
+const LX = 0.62, LY = 0.47, LZ = 0.63; // sun direction in view space (upper right, towards the viewer)
+function globeParams(tg) {
+  const e = ease(tg / G_ROT), zk = Math.pow(clamp((tg - G_ZOOM[0]) / (G_ZOOM[1] - G_ZOOM[0])), 2.2), ze = ease((tg - G_ZOOM[0]) / 0.7);
+  return { lam0: lerp(lerp(-46, -9, e), CASA[0], ze) * RAD, phi0: lerp(lerp(10, 23, e), CASA[1], ze) * RAD, R: lerp(300, 455, ease(tg / 4.2)) * Math.exp(3.3 * zk),
+           cx: lerp(lerp(392, 446, ease(tg / 4.2)), 360, ze), cy: lerp(lerp(366, 402, ease(tg / 4.2)), 360, ze), zk, drift: tg * 0.5 * RAD,
+           aMorocco: ease((tg - 1.9) / 0.8) * (1 - 0.8 * zk), aMaur: ease((tg - 2.45) / 0.8) * (1 - 0.8 * zk), aRegion: ease((tg - 2.9) / 0.6) * (1 - 0.5 * zk) };
+}
+function renderGlobe(p) {
+  const d = globeImg.data; d.fill(0);
+  const { R, cx, cy, lam0, phi0 } = p, sinP = Math.sin(phi0), cosP = Math.cos(phi0), TWO = Math.PI * 2, HALO = 0.075;
+  const x0 = Math.max(0, Math.floor(cx - R * 1.08)), x1 = Math.min(W - 1, Math.ceil(cx + R * 1.08)), y0 = Math.max(0, Math.floor(cy - R * 1.08)), y1 = Math.min(H - 1, Math.ceil(cy + R * 1.08));
+  const E = earth, C = clouds, cloudFade = 1 - clamp(p.zk * 4); // clouds dissolve as we dive (their texture would pixelate)
+  for (let py = y0; py <= y1; py++) { const y = -(py + 0.5 - cy) / R;
+    for (let px = x0; px <= x1; px++) { const x = (px + 0.5 - cx) / R, r2 = x * x + y * y; if (r2 > 1.16) continue;
+      const o = (py * W + px) * 4;
+      if (r2 >= 1) { // atmosphere halo, brighter on the sunlit side
+        const rho = Math.sqrt(r2), g = 1 - (rho - 1) / HALO; if (g <= 0) continue;
+        const lf = clamp(((x * LX + y * LY) / rho) * 0.9 + 0.42); d[o] = 80; d[o + 1] = 160; d[o + 2] = 255; d[o + 3] = g * g * lf * 190; continue; }
+      const z = Math.sqrt(1 - r2), Y = y * cosP + z * sinP, Z = -y * sinP + z * cosP;
+      const lat = Math.asin(Y), lon = lam0 + Math.atan2(x, Z);
+      let u = lon / TWO + 0.5; u -= Math.floor(u); const v = 0.5 - lat / Math.PI;
+      // bilinear sample of the Blue Marble texture
+      const fx = u * TW - 0.5, fy = clamp(v * TH - 0.5, 0, TH - 1.001), ix = Math.floor(fx), iy = Math.floor(fy), ax = fx - ix, ay = fy - iy;
+      const i0 = ((ix + TW) % TW), i1 = (i0 + 1) % TW, a = (iy * TW + i0) * 4, b = (iy * TW + i1) * 4, c = ((iy + 1) * TW + i0) * 4, e2 = ((iy + 1) * TW + i1) * 4;
+      const w00 = (1 - ax) * (1 - ay), w10 = ax * (1 - ay), w01 = (1 - ax) * ay, w11 = ax * ay;
+      let r = E[a] * w00 + E[b] * w10 + E[c] * w01 + E[e2] * w11, g = E[a + 1] * w00 + E[b + 1] * w10 + E[c + 1] * w01 + E[e2 + 1] * w11, bl = E[a + 2] * w00 + E[b + 2] * w10 + E[c + 2] * w01 + E[e2 + 2] * w11;
+      // grade: slightly desaturated, cooler
+      const lum = 0.3 * r + 0.59 * g + 0.11 * bl; r = lerp(lum, r, 0.7) * 0.74; g = lerp(lum, g, 0.72) * 0.79; bl = lerp(lum, bl, 0.8) * 0.93;
+      // clouds
+      let cu = (lon + p.drift) / TWO + 0.5; cu -= Math.floor(cu); const ca = C[Math.min(CH - 1, Math.floor(v * CH)) * CW + Math.floor(cu * CW)] / 255 * 0.72 * cloudFade;
+      r = lerp(r, 214, ca); g = lerp(g, 222, ca); bl = lerp(bl, 236, ca);
+      // light: day side, soft terminator, deep-blue night side
+      const nl = x * LX + y * LY + z * LZ, day = clamp(nl * 1.35 + 0.12), dd = day * day * (3 - 2 * day);
+      r = r * (0.03 + 1.05 * dd); g = g * (0.045 + 1.05 * dd); bl = bl * (0.08 + 1.08 * dd) + 9 * (1 - dd);
+      // atmosphere on the limb
+      const rim = Math.pow(1 - z, 2.2) * (0.18 + 0.82 * dd); r += 60 * rim; g += 135 * rim; bl += 240 * rim;
+      d[o] = r; d[o + 1] = g; d[o + 2] = bl; d[o + 3] = r2 > 0.985 ? clamp((1 - Math.sqrt(r2)) * R) * 255 : 255;
+    } }
+}
+function globeXY(p, lon, lat) { const l = lon * RAD - p.lam0, f = lat * RAD, X = Math.cos(f) * Math.sin(l), Y = Math.sin(f), Z = Math.cos(f) * Math.cos(l);
+  const y = Y * Math.cos(p.phi0) - Z * Math.sin(p.phi0), z = Y * Math.sin(p.phi0) + Z * Math.cos(p.phi0); return [p.cx + X * p.R, p.cy - y * p.R, z]; }
+function globePath(ctx, p, ring) { ctx.beginPath(); let pen = false; for (const [lon, lat] of ring) { const [x, y, z] = globeXY(p, lon, lat); if (z <= 0.02) { pen = false; continue; } pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } ctx.closePath(); }
+const tmpGlobe = layer();
+function drawGlobe(ctx, tg) {
+  reset(ctx);
+  const p = globeParams(tg);
+  const bg = ctx.createRadialGradient(p.cx, p.cy, 100, p.cx, p.cy, 760); bg.addColorStop(0, "#050b16"); bg.addColorStop(1, "#010205"); ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  for (const [x, y, r, a] of stars) { ctx.fillStyle = `rgba(200,220,255,${a * (1 - p.zk)})`; ctx.fillRect(x, y, r, r); }
+  renderGlobe(p); tmpGlobe.getContext("2d").putImageData(globeImg, 0, 0); ctx.drawImage(tmpGlobe, 0, 0);
+  if (p.aMaur > 0.01 && MAUR.length) { // Mauritania, a moment after Morocco
+    ctx.save(); ctx.lineJoin = "round"; globePath(ctx, p, MAUR); ctx.fillStyle = `rgba(56,189,248,${0.2 * p.aMaur})`; ctx.fill();
+    ctx.shadowColor = "rgba(56,189,248,0.95)"; ctx.shadowBlur = 14; ctx.strokeStyle = `rgba(125,225,255,${0.95 * p.aMaur})`; ctx.lineWidth = 1.8; ctx.stroke(); ctx.restore(); }
+  if (p.aMorocco > 0.01) { const ring = DATA.morocco[0];
+    ctx.save(); ctx.lineJoin = "round"; globePath(ctx, p, ring); ctx.fillStyle = `rgba(56,189,248,${0.2 * p.aMorocco})`; ctx.fill();
+    ctx.shadowColor = "rgba(56,189,248,0.95)"; ctx.shadowBlur = 14; ctx.strokeStyle = `rgba(125,225,255,${0.95 * p.aMorocco})`; ctx.lineWidth = 1.8; ctx.stroke(); ctx.restore(); }
+  if (p.aMorocco > 0.01) { // all the cities and towns of Morocco light up, largest first
+    ctx.save(); ctx.globalCompositeOperation = "lighter"; const k = Math.min(2.4, Math.sqrt(p.R / 455));
+    PLACES.forEach((c, i) => { const a = ease((tg - 2.3 - (i / PLACES.length) * 1.0) / 0.35) * (1 - 0.55 * p.zk); if (a <= 0) return;
+      const [x, y, z] = globeXY(p, c.lon, c.lat); if (z <= 0.05 || x < -20 || y < -20 || x > W + 20 || y > H + 20) return;
+      ctx.shadowColor = "rgba(255,190,100,0.95)"; ctx.shadowBlur = c.city ? 7 : 3; ctx.fillStyle = c.city ? `rgba(255,232,180,${0.98 * a})` : `rgba(255,206,130,${0.75 * a})`;
+      ctx.beginPath(); ctx.arc(x, y, c.r * 0.72 * k, 0, 6.283); ctx.fill(); });
+    MPLACES.forEach((c, i) => { const a = ease((tg - 2.9 - (i / MPLACES.length) * 0.7) / 0.35) * (1 - 0.55 * p.zk); if (a <= 0) return;
+      const [x, y, z] = globeXY(p, c.lon, c.lat); if (z <= 0.05 || x < -20 || y < -20 || x > W + 20 || y > H + 20) return;
+      ctx.shadowColor = "rgba(255,190,100,0.95)"; ctx.shadowBlur = c.city ? 7 : 3; ctx.fillStyle = c.city ? `rgba(255,232,180,${0.98 * a})` : `rgba(255,206,130,${0.75 * a})`;
+      ctx.beginPath(); ctx.arc(x, y, c.r * 0.72 * k, 0, 6.283); ctx.fill(); });
+    ctx.restore(); }
+}
+
+/* ===================== 2. CASABLANCA BY NIGHT ===================== */
+const S = 0.1; // layer pixels per metre
+let cityL = {}, motorways = [], cityFocus = [0, 0], cityW = 0, cityH = 0;
+function buildCity() {
+  const bb = CITY.bbox, kx = Math.cos(((bb.s + bb.n) / 2) * RAD) * 111320 * S / CITY.scale, ky = 110540 * S / CITY.scale;
+  const X = (lonI) => (lonI - bb.w * CITY.scale) * kx, Y = (latI) => (bb.n * CITY.scale - latI) * ky;
+  cityW = Math.ceil(X(bb.e * CITY.scale)); cityH = Math.ceil(Y(bb.s * CITY.scale));
+  const toPts = (a) => { const o = new Float32Array(a.length); for (let i = 0; i < a.length; i += 2) { o[i] = X(a[i]); o[i + 1] = Y(a[i + 1]); } return o; };
+  const L = CITY.lines.map((cls) => cls.map(toPts)), coast = CITY.coast.map(toPts);
+  const stroke = (ctx, pts) => { ctx.beginPath(); ctx.moveTo(pts[0], pts[1]); for (let i = 2; i < pts.length; i += 2) ctx.lineTo(pts[i], pts[i + 1]); ctx.stroke(); };
+  // district polygon and membership test
+  let dist = null, inside = () => false;
+  if (CITY.district) { dist = toPts(CITY.district.ring);
+    inside = (x, y) => { let c = false; for (let i = 0, j = dist.length - 2; i < dist.length; j = i, i += 2) { const xi = dist[i], yi = dist[i + 1], xj = dist[j], yj = dist[j + 1]; if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) c = !c; } return c; };
+    let sx = 0, sy = 0; for (let i = 0; i < dist.length; i += 2) { sx += dist[i]; sy += dist[i + 1]; } cityFocus = [sx / (dist.length / 2), sy / (dist.length / 2)]; }
+  else cityFocus = [cityW / 2, cityH / 2];
+  const mid = (pts) => { const m = Math.floor(pts.length / 4) * 2; return inside(pts[m], pts[m + 1]); };
+
+  // base layer: local streets (texture), coastline, secondary and primary roads, city lights
+  const base = layer(cityW, cityH), b = base.getContext("2d"); b.lineCap = "round"; b.lineJoin = "round";
+  b.strokeStyle = "rgba(64,118,150,0.42)"; b.lineWidth = 0.7; for (const pts of L[3]) stroke(b, pts);
+  b.strokeStyle = "rgba(120,200,255,0.5)"; b.lineWidth = 1.2; for (const pts of coast) stroke(b, pts);
+  b.globalCompositeOperation = "lighter";
+  b.strokeStyle = "rgba(255,138,48,0.42)"; b.lineWidth = 1.1; for (const pts of L[2]) stroke(b, pts);
+  b.shadowColor = "rgba(255,130,40,0.9)"; b.shadowBlur = 5; b.strokeStyle = "rgba(255,160,70,0.72)"; b.lineWidth = 1.6; for (const pts of L[1]) stroke(b, pts);
+  b.shadowBlur = 0;
+  for (const cls of [1, 2]) for (const pts of L[cls]) for (let i = 0; i < pts.length; i += 6) { if (rnd() > 0.55) continue; const r = 0.7 + rnd() * 1.5;
+    b.fillStyle = `rgba(255,${190 + Math.floor(rnd() * 50)},${110 + Math.floor(rnd() * 60)},${0.35 + rnd() * 0.55})`; b.beginPath(); b.arc(pts[i], pts[i + 1], r, 0, 6.283); b.fill(); }
+  // motorways and trunk roads: wide glow + bright core
+  b.shadowColor = "rgba(255,120,30,1)"; b.shadowBlur = 12; b.strokeStyle = "rgba(255,150,60,0.85)"; b.lineWidth = 3.2; for (const pts of L[0]) stroke(b, pts);
+  b.shadowBlur = 0; b.strokeStyle = "rgba(255,226,178,0.95)"; b.lineWidth = 1.1; for (const pts of L[0]) stroke(b, pts);
+  motorways = L[0];
+
+  // highlighted district: its streets in cyan-white, plus its boundary
+  const hi = layer(cityW, cityH), h = hi.getContext("2d"); h.lineCap = "round"; h.lineJoin = "round"; h.globalCompositeOperation = "lighter";
+  if (dist) { h.shadowColor = "rgba(34,211,238,1)"; h.shadowBlur = 8;
+    h.strokeStyle = "rgba(120,235,255,0.75)"; h.lineWidth = 1.2; for (const pts of L[3]) if (mid(pts)) stroke(h, pts);
+    h.strokeStyle = "rgba(190,248,255,0.95)"; h.lineWidth = 2; for (const cls of [0, 1, 2]) for (const pts of L[cls]) if (mid(pts)) stroke(h, pts);
+    h.shadowBlur = 14; h.strokeStyle = "rgba(170,245,255,0.95)"; h.lineWidth = 2.4; h.beginPath(); h.moveTo(dist[0], dist[1]); for (let i = 2; i < dist.length; i += 2) h.lineTo(dist[i], dist[i + 1]); h.closePath(); h.stroke();
+    h.shadowBlur = 0; h.fillStyle = "rgba(34,211,238,0.07)"; h.fill(); }
+  cityL = { base, hi };
+  stats.service = buildService(L); buildDensity(); stats.bars = bars.length;
+}
+const reset = (ctx) => { ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over"; ctx.shadowBlur = 0; ctx.setLineDash([]); ctx.lineCap = "butt"; ctx.lineJoin = "round"; };
+const rgba = (c, a) => `rgba(${Math.round(c[0])},${Math.round(c[1])},${Math.round(c[2])},${a})`;
+const mix = (a, b, f) => [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f, a[2] + (b[2] - a[2]) * f];
+const dim = (c, f) => [c[0] * f, c[1] * f, c[2] * f];
+// discreet caption naming the analysis (bottom-left) + data credit (bottom-right)
+function caption(ctx, text, a = 1) { if (a <= 0 || CLEAN) return; ctx.textBaseline = "alphabetic";
+  const g = ctx.createLinearGradient(0, H - 110, 0, H); g.addColorStop(0, "rgba(2,6,12,0)"); g.addColorStop(1, `rgba(2,6,12,${0.72 * a})`); ctx.fillStyle = g; ctx.fillRect(0, H - 110, W, 110);
+  ctx.fillStyle = `rgba(0,160,227,${a})`; ctx.fillRect(28, H - 37, 22, 3);
+  font(ctx, 600, 15); ctx.fillStyle = `rgba(226,236,246,${0.95 * a})`; ctx.fillText(text, 60, H - 28);
+  font(ctx, 500, 10); ctx.fillStyle = `rgba(203,213,225,${0.55 * a})`; const w = ctx.measureText(TXT.osm).width; ctx.fillText(TXT.osm, W - w - 16, H - 12); }
+
+/* ---- network analysis: drive-time service areas from the district centre (Dijkstra on the real road graph) ---- */
+const SPEED = [80, 50, 40, 25], TMAX = 720, NB = 60; // km/h per road class; 12-minute horizon; time buckets
+let svc = null, svcDrawn = -1, svcBuckets = [];
+function buildService(L) {
+  const id = new Map(), nx = [], ny = [], adj = [];
+  const nid = (x, y) => { const k = Math.round(x * 10) * 100000 + Math.round(y * 10); let i = id.get(k); if (i === undefined) { i = nx.length; id.set(k, i); nx.push(x); ny.push(y); adj.push([]); } return i; };
+  const polys = [];
+  L.forEach((cls, c) => cls.forEach((pts) => { const ids = []; for (let i = 0; i < pts.length; i += 2) ids.push(nid(pts[i], pts[i + 1]));
+    for (let i = 1; i < ids.length; i++) { const a = ids[i - 1], b = ids[i], w = Math.hypot(nx[a] - nx[b], ny[a] - ny[b]) / S / (SPEED[c] / 3.6); adj[a].push(b, w); adj[b].push(a, w); }
+    polys.push({ pts, ids, c }); }));
+  let src = 0, bd = 1e18; for (let i = 0; i < nx.length; i++) { const d = (nx[i] - cityFocus[0]) ** 2 + (ny[i] - cityFocus[1]) ** 2; if (d < bd && adj[i].length > 2) { bd = d; src = i; } }
+  const dist = new Float64Array(nx.length).fill(1e9); dist[src] = 0; // 64-bit: heap keys must compare equal to stored distances
+  const hk = [0], hv = [src]; // binary heap (keys, values)
+  const push = (k, v) => { let i = hk.length; hk.push(k); hv.push(v); while (i > 0) { const p = (i - 1) >> 1; if (hk[p] <= k) break; hk[i] = hk[p]; hv[i] = hv[p]; i = p; } hk[i] = k; hv[i] = v; };
+  const pop = () => { const k0 = hk[0], v0 = hv[0], k = hk.pop(), v = hv.pop(), n = hk.length; if (n) { let i = 0; for (;;) { let c = 2 * i + 1; if (c >= n) break; if (c + 1 < n && hk[c + 1] < hk[c]) c++; if (hk[c] >= k) break; hk[i] = hk[c]; hv[i] = hv[c]; i = c; } hk[i] = k; hv[i] = v; } return [k0, v0]; };
+  while (hk.length) { const [d, u] = pop(); if (d > dist[u]) continue; if (d > TMAX) break; const a = adj[u]; for (let i = 0; i < a.length; i += 2) { const nd = d + a[i + 1]; if (nd < dist[a[i]]) { dist[a[i]] = nd; push(nd, a[i]); } } }
+  svcBuckets = Array.from({ length: NB }, () => []);
+  let reached = 0; for (const p of polys) { let t = 1e9; for (const i of p.ids) if (dist[i] < t) t = dist[i]; if (t < TMAX) { svcBuckets[Math.min(NB - 1, Math.floor((t / TMAX) * NB))].push(p); reached++; } }
+  svc = layer(cityW, cityH); cityFocus = [nx[src], ny[src]];
+  return { nodes: nx.length, reached };
+}
+function updateService(upTo) { // draws newly reached time buckets onto the accumulation layer
+  const c = svc.getContext("2d"); if (upTo < svcDrawn) { c.clearRect(0, 0, cityW, cityH); svcDrawn = -1; }
+  c.globalCompositeOperation = "lighter"; c.lineCap = "round"; c.lineJoin = "round";
+  for (let b = svcDrawn + 1; b <= Math.min(NB - 1, upTo); b++) { const f = b / NB; // three bands: 0–4, 4–8, 8–12 minutes
+    const col = f < 1 / 3 ? [205, 250, 255] : f < 2 / 3 ? [45, 212, 250] : [70, 130, 255];
+    c.shadowColor = rgba(col, 0.9); c.shadowBlur = 5; c.strokeStyle = rgba(col, 0.9);
+    for (const p of svcBuckets[b]) { c.lineWidth = p.c === 3 ? 1.1 : p.c === 2 ? 1.7 : 2.4; c.beginPath(); c.moveTo(p.pts[0], p.pts[1]); for (let i = 2; i < p.pts.length; i += 2) c.lineTo(p.pts[i], p.pts[i + 1]); c.stroke(); } }
+  svcDrawn = Math.max(svcDrawn, Math.min(NB - 1, upTo));
+}
+
+function drawCity(ctx, t) {
+  reset(ctx);
+  const k = clamp((t - S_CITY[0]) / (S_LOS[1] - S_CITY[0])); // 0..1 over the shot
+  const bg = ctx.createRadialGradient(360, 400, 60, 360, 400, 640); bg.addColorStop(0, "#071726"); bg.addColorStop(1, "#02060c"); ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  const zoom = lerp(0.62, 0.5, ease(k)), rot = lerp(-24, -14, k) * RAD, tilt = 0.6;
+  ctx.save(); ctx.translate(372, 410); ctx.scale(1, tilt); ctx.rotate(rot); ctx.scale(zoom, zoom); ctx.translate(-cityFocus[0] + lerp(200, 40, ease(k)), -cityFocus[1] - lerp(190, 120, ease(k)));
+  ctx.drawImage(cityL.base, 0, 0);
+  // traffic: light pulses running along the motorways
+  ctx.globalCompositeOperation = "lighter"; ctx.lineCap = "round"; ctx.setLineDash([9, 95]); ctx.lineDashOffset = -t * 85; ctx.strokeStyle = "rgba(255,244,214,0.95)"; ctx.lineWidth = 2.6;
+  for (const pts of motorways) { ctx.beginPath(); ctx.moveTo(pts[0], pts[1]); for (let i = 2; i < pts.length; i += 2) ctx.lineTo(pts[i], pts[i + 1]); ctx.stroke(); }
+  ctx.setLineDash([]);
+  // service areas spreading from the centre
+  const reach = easeOut((t - 6.0) / 2.9);
+  if (reach > 0) { updateService(Math.floor(reach * NB) - 1); ctx.globalAlpha = 0.95; ctx.drawImage(svc, 0, 0); ctx.globalAlpha = 1; }
+  const aHi = ease((t - 5.5) / 0.6) * (1 - 0.6 * ease((t - 6.6) / 1)); if (aHi > 0) { ctx.globalAlpha = aHi; ctx.drawImage(cityL.hi, 0, 0); ctx.globalAlpha = 1; }
+  // origin point
+  const ph = (t * 1.1) % 1, ao = ease((t - 5.6) / 0.4);
+  ctx.strokeStyle = `rgba(255,255,255,${(1 - ph) * ao})`; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(cityFocus[0], cityFocus[1], 10 + ph * 46, 0, 6.283); ctx.stroke();
+  ctx.fillStyle = `rgba(255,255,255,${ao})`; ctx.beginPath(); ctx.arc(cityFocus[0], cityFocus[1], 9, 0, 6.283); ctx.fill();
+  ctx.restore(); reset(ctx);
+  // depth: far side fades into the dark, soft vignette
+  let g = ctx.createLinearGradient(0, 0, 0, 230); g.addColorStop(0, "rgba(2,6,12,0.92)"); g.addColorStop(1, "rgba(2,6,12,0)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, 230);
+  g = ctx.createRadialGradient(360, 380, 260, 360, 380, 560); g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, "rgba(0,0,0,0.6)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  caption(ctx, TXT.net, ease((t - 6.0) / 0.6));
+}
+
+/* ---- spatial statistics: built-up density, as 3D bars over the whole city ---- */
+let bars = [];
+const barColor = (f) => { const stops = [[24, 52, 128], [52, 168, 138], [196, 181, 255]]; const x = clamp(f) * 2, i = Math.min(1, Math.floor(x)), g = x - i; return mix(stops[i], stops[i + 1], g); };
+function buildDensity() { const d = CITY.density, cp = d.cell * S; // share of each 250 m cell covered by building footprints
+  for (let gy = 0; gy < d.gy; gy++) for (let gx = 0; gx < d.gx; gx++) { const r = d.areaM2[gy * d.gx + gx] / (d.cell * d.cell); if (r < 0.03) continue;
+    const x = (gx + 0.5) * cp, y = (gy + 0.5) * cp; bars.push({ x, y, v: clamp(r / 0.55), dc: Math.hypot(x - cityFocus[0], y - cityFocus[1]), j: rnd() }); } }
+const NORMALS = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+function prism(ctx, x, y, half, h, cBot, cTop, alpha) {
+  if (h <= 0.4 || alpha <= 0.01) return;
+  const cs = [[x - half, y - half], [x + half, y - half], [x + half, y + half], [x - half, y + half]];
+  for (let i = 0; i < 4; i++) { const d = NORMALS[i][0] * cam.s + NORMALS[i][1] * cam.c; if (d <= 0.001) continue;
+    const a = cs[i], b = cs[(i + 1) % 4], a0 = P(a[0], a[1], 0), b0 = P(b[0], b[1], 0), a1 = P(a[0], a[1], h), b1 = P(b[0], b[1], h), shade = 0.42 + 0.5 * d;
+    const g = ctx.createLinearGradient(0, a0[1], 0, a1[1] - 0.01); g.addColorStop(0, rgba(dim(cBot, shade), alpha)); g.addColorStop(1, rgba(dim(cTop, shade), alpha));
+    ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(a0[0], a0[1]); ctx.lineTo(b0[0], b0[1]); ctx.lineTo(b1[0], b1[1]); ctx.lineTo(a1[0], a1[1]); ctx.closePath(); ctx.fill(); }
+  ctx.beginPath(); cs.forEach((c, i) => { const p = P(c[0], c[1], h); i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); }); ctx.closePath();
+  ctx.fillStyle = rgba(mix(cTop, [255, 255, 255], 0.35), alpha); ctx.fill();
+}
+function drawDensity(ctx, t) {
+  reset(ctx);
+  const k = clamp((t - S_DENS[0]) / (S_MAP[1] - S_DENS[0])), rz = lerp(-26, -16, k) * RAD, tilt = 54 * RAD, zoom = lerp(0.34, 0.29, ease(k));
+  const fx = cityFocus[0] + 120, fy = cityFocus[1] + 420;
+  const bg = ctx.createRadialGradient(360, 400, 60, 360, 400, 640); bg.addColorStop(0, "#071726"); bg.addColorStop(1, "#02060c"); ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  ctx.save(); ctx.translate(360, 420); ctx.scale(1, Math.cos(tilt)); ctx.rotate(rz); ctx.scale(zoom, zoom); ctx.translate(-fx, -fy); ctx.globalAlpha = 0.6; ctx.drawImage(cityL.base, 0, 0); ctx.restore(); reset(ctx);
+  cam = { c: Math.cos(rz), s: Math.sin(rz), ct: Math.cos(tilt), st: Math.sin(tilt), sc: zoom, cx: 360, cy: 420 };
+  const objs = [];
+  for (const b of bars) { const g = easeOut((t - S_DENS[0] - 0.5 - b.dc * 0.0011 - b.j * 0.2) / 0.8); if (g <= 0) continue;
+    const x = b.x - fx, y = b.y - fy, h = (14 + 520 * Math.pow(b.v, 1.25)) * g * (1 + 0.05 * Math.sin(t * 4 + b.j * 6.28));
+    objs.push({ z: x * cam.s + y * cam.c, x, y, h, v: b.v }); }
+  objs.sort((a, b) => a.z - b.z);
+  for (const o of objs) prism(ctx, o.x, o.y, 8.6, o.h, barColor(0), barColor(0.2 + o.v * 0.9), 0.62 + 0.38 * o.v);
+  let g = ctx.createLinearGradient(0, 0, 0, 200); g.addColorStop(0, "rgba(2,6,12,0.9)"); g.addColorStop(1, "rgba(2,6,12,0)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, 200);
+  g = ctx.createRadialGradient(360, 380, 270, 360, 380, 560); g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, "rgba(0,0,0,0.55)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  caption(ctx, TXT.dens, ease((t - S_DENS[1]) / 0.5));
+}
+
+/* ===================== 3D MODEL OF A DISTRICT (Maârif / Gauthier) ===================== */
+// Real OSM building footprints. Heights come from the OSM tags when present (about half of the buildings);
+// the others take the median height of their tagged neighbours. Both analyses below are computed on this model.
+const CELL_R = 2; // metres per raster cell
+let M = null, cam3 = null;
+function buildModel() {
+  const bb = MODEL.bbox, latC = (bb.s + bb.n) / 2, kx = Math.cos(latC * RAD) * 111320 / MODEL.scale, ky = 110540 / MODEL.scale, lon0 = ((bb.w + bb.e) / 2) * MODEL.scale, lat0 = latC * MODEL.scale;
+  const halfW = ((bb.e - bb.w) / 2) * MODEL.scale * kx, halfH = ((bb.n - bb.s) / 2) * MODEL.scale * ky;
+  const B = [];
+  for (const b of MODEL.buildings) { let n = b.p.length / 2; if (b.p[0] === b.p[n * 2 - 2] && b.p[1] === b.p[n * 2 - 1]) n--; if (n < 3) continue;
+    const p = new Float32Array(n * 2); let cx = 0, cy = 0, a = 0;
+    for (let i = 0; i < n; i++) { p[i * 2] = (b.p[i * 2] - lon0) * kx; p[i * 2 + 1] = (b.p[i * 2 + 1] - lat0) * ky; cx += p[i * 2]; cy += p[i * 2 + 1]; }
+    for (let i = 0; i < n; i++) { const j = (i + 1) % n; a += p[i * 2] * p[j * 2 + 1] - p[j * 2] * p[i * 2 + 1]; }
+    if (a < 0) { for (let i = 0, j = n - 1; i < j; i++, j--) { const tx = p[i * 2], ty = p[i * 2 + 1]; p[i * 2] = p[j * 2]; p[i * 2 + 1] = p[j * 2 + 1]; p[j * 2] = tx; p[j * 2 + 1] = ty; } } // counter-clockwise
+    B.push({ p, n, h: b.h, tagged: b.h > 0, cx: cx / n, cy: cy / n, area: Math.abs(a) / 2 }); }
+  // missing heights: median of tagged neighbours within ~150 m, else the overall median
+  const med = (arr) => { const s = [...arr].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; };
+  const tagged = B.filter((b) => b.tagged), global = med(tagged.map((b) => b.h)), G = 150, bins = new Map();
+  for (const b of tagged) { const k = Math.floor(b.cx / G) + "," + Math.floor(b.cy / G); (bins.get(k) ?? bins.set(k, []).get(k)).push(b.h); }
+  for (const b of B) if (!b.tagged) { const gx = Math.floor(b.cx / G), gy = Math.floor(b.cy / G), near = []; for (let i = -1; i <= 1; i++) for (let j = -1; j <= 1; j++) near.push(...(bins.get(gx + i + "," + (gy + j)) ?? [])); b.h = near.length >= 3 ? Math.min(med(near), 40) : global; }
+  // height raster for the analyses
+  const rw = Math.ceil((halfW * 2) / CELL_R), rh = Math.ceil((halfH * 2) / CELL_R), Hgt = new Float32Array(rw * rh), Bid = new Int32Array(rw * rh).fill(-1);
+  const inPoly = (x, y, p, n) => { let c = false; for (let i = 0, j = n - 1; i < n; j = i++) { const xi = p[i * 2], yi = p[i * 2 + 1], xj = p[j * 2], yj = p[j * 2 + 1]; if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) c = !c; } return c; };
+  B.forEach((b, bi) => { let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9; for (let i = 0; i < b.n; i++) { x0 = Math.min(x0, b.p[i * 2]); x1 = Math.max(x1, b.p[i * 2]); y0 = Math.min(y0, b.p[i * 2 + 1]); y1 = Math.max(y1, b.p[i * 2 + 1]); }
+    for (let gy = Math.max(0, Math.floor((y0 + halfH) / CELL_R)); gy <= Math.min(rh - 1, Math.floor((y1 + halfH) / CELL_R)); gy++) for (let gx = Math.max(0, Math.floor((x0 + halfW) / CELL_R)); gx <= Math.min(rw - 1, Math.floor((x1 + halfW) / CELL_R)); gx++) {
+      const x = (gx + 0.5) * CELL_R - halfW, y = (gy + 0.5) * CELL_R - halfH; if (inPoly(x, y, b.p, b.n) && b.h > Hgt[gy * rw + gx]) { Hgt[gy * rw + gx] = b.h; Bid[gy * rw + gx] = bi; } } });
+  const cell = (x, y) => { const gx = Math.floor((x + halfW) / CELL_R), gy = Math.floor((y + halfH) / CELL_R); return gx < 0 || gy < 0 || gx >= rw || gy >= rh ? -1 : gy * rw + gx; };
+  // local roads in model coordinates (ground texture)
+  const cs = CITY.scale, roads = [[], [], [], []];
+  CITY.lines.forEach((cls, c) => cls.forEach((a) => { let cur = []; for (let i = 0; i < a.length; i += 2) { const x = (a[i] / cs * MODEL.scale - lon0) * kx, y = (a[i + 1] / cs * MODEL.scale - lat0) * ky;
+    if (Math.abs(x) < halfW * 1.25 && Math.abs(y) < halfH * 1.25) cur.push(x, y); else { if (cur.length >= 4) roads[c].push(cur); cur = []; } } if (cur.length >= 4) roads[c].push(cur); }));
+  M = { B, halfW, halfH, Hgt, Bid, cell, roads, tint: new Float32Array(B.length) };
+
+  /* --- analysis 1: line of sight from the top of the tallest tower (Twin Center) --- */
+  const tower = B.reduce((m, b, i) => (b.h > B[m].h ? i : m), 0), tw = B[tower], O = [tw.cx, tw.cy, tw.h + 2];
+  const towers = new Set(B.map((b, i) => (b.h >= tw.h - 1 && Math.hypot(b.cx - tw.cx, b.cy - tw.cy) < 120 ? i : -1)).filter((i) => i >= 0));
+  const rays = [];
+  for (let i = 0; i < 30; i++) { const brg = lerp(-78, 22, i / 29) * RAD, dist = 640 + 300 * (((i * 7) % 5) / 4); let tx = O[0] + Math.sin(brg) * dist, ty = O[1] + Math.cos(brg) * dist;
+    const f = Math.min(1, (halfW - 20) / Math.abs(tx || 1), (halfH - 20) / Math.abs(ty || 1)); if (f < 1) { tx = O[0] + (tx - O[0]) * f; ty = O[1] + (ty - O[1]) * f; }
+    const T2 = [tx, ty, 1.6], len = Math.hypot(tx - O[0], ty - O[1]); let hit = 1;
+    for (let d = 2; d < len; d += 1) { const s = d / len, x = O[0] + (tx - O[0]) * s, y = O[1] + (ty - O[1]) * s, z = O[2] + (T2[2] - O[2]) * s, c = cell(x, y); if (c >= 0 && Hgt[c] > z + 0.2 && !towers.has(Bid[c])) { hit = s; break; } }
+    rays.push({ T: T2, hit }); }
+  M.los = { O, rays, towers, tower };
+
+  /* --- analysis 2: coverage (viewshed) around an antenna on a rooftop, radius 400 m --- */
+  let ant = 0, best = 1e9; B.forEach((b, i) => { if (b.h >= 22 && b.h <= 45) { const d = Math.hypot(b.cx + 150, b.cy - 120); if (d < best) { best = d; ant = i; } } });
+  const A = [B[ant].cx, B[ant].cy, B[ant].h + 10], R = 400, STEP = 0.5, wedges = [], seen = new Float32Array(B.length).fill(-1);
+  let visCells = 0, allCells = 0;
+  for (let az = 0; az < 360; az += STEP) { const dx = Math.sin(az * RAD), dy = Math.cos(az * RAD); let maxS = -1e9, run = -1; const runs = [];
+    for (let d = 4; d <= R; d += 2) { const c = cell(A[0] + dx * d, A[1] + dy * d); const h = c >= 0 && Bid[c] !== ant ? Hgt[c] : 0; allCells++;
+      if (h > 0) { if (run >= 0) { runs.push(run, d); run = -1; } const s = (h - A[2]) / d; if (s >= maxS - 1e-6 && seen[Bid[c]] < 0) seen[Bid[c]] = az; if (s > maxS) maxS = s; }
+      else { const vis = (0 - A[2]) / d >= maxS; if (vis) { visCells++; if (run < 0) run = d; } else if (run >= 0) { runs.push(run, d); run = -1; } } }
+    if (run >= 0) runs.push(run, R); wedges.push(runs); }
+  M.dome = { A, R, STEP, wedges, seen, ant, share: visCells / allCells };
+  return { buildings: B.length, tagged: tagged.length, medianH: global, tower: Math.round(tw.h), blocked: rays.filter((r) => r.hit < 1).length, antennaH: Math.round(A[2]), visibleShare: +(visCells / allCells).toFixed(2) };
+}
+function setCam3(tx, ty, az, el, D, f, cy = 380) { const ca = Math.cos(az), sa = Math.sin(az), ce = Math.cos(el), se = Math.sin(el);
+  cam3 = { tx, ty, ca, sa, ce, se, D, f, cy, px: tx + sa * D * ce, py: ty - ca * D * ce, pz: D * se }; }
+// perspective projection: returns [screenX, screenY, depth]
+function Q(x, y, z = 0) { const dx = x - cam3.tx, dy = y - cam3.ty, xr = dx * cam3.ca + dy * cam3.sa, yr = -dx * cam3.sa + dy * cam3.ca;
+  const zv = Math.max(40, yr * cam3.ce - z * cam3.se + cam3.D); return [360 + (cam3.f * xr) / zv, cam3.cy - (cam3.f * (yr * cam3.se + z * cam3.ce)) / zv, zv]; }
+function drawModel(ctx, groundOverlay, opts = {}) {
+  const bg = ctx.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, "#02060c"); bg.addColorStop(0.45, "#061423"); bg.addColorStop(1, "#081b2c"); ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  // ground plate
+  const e = 1.25, gp = [[-M.halfW * e, -M.halfH * e], [M.halfW * e, -M.halfH * e], [M.halfW * e, M.halfH * e], [-M.halfW * e, M.halfH * e]].map(([x, y]) => Q(x, y));
+  ctx.beginPath(); gp.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); ctx.closePath(); ctx.fillStyle = "#071828"; ctx.fill();
+  // roads
+  const road = (a) => { ctx.beginPath(); for (let i = 0; i < a.length; i += 2) { const p = Q(a[i], a[i + 1]); i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); } ctx.stroke(); };
+  ctx.lineCap = "round"; ctx.strokeStyle = "rgba(70,125,160,0.5)"; ctx.lineWidth = 1; for (const a of M.roads[3]) road(a);
+  ctx.globalCompositeOperation = "lighter"; ctx.strokeStyle = "rgba(255,140,50,0.4)"; ctx.lineWidth = 1.6; for (const a of M.roads[2]) road(a);
+  ctx.strokeStyle = "rgba(255,160,70,0.6)"; ctx.lineWidth = 2.2; for (const c of [0, 1]) for (const a of M.roads[c]) road(a);
+  ctx.globalCompositeOperation = "source-over";
+  if (groundOverlay) groundOverlay();
+  // buildings, far to near
+  const order = M.B.map((b, i) => [Q(b.cx, b.cy, 0)[2], i]).sort((a, b) => b[0] - a[0]);
+  const lx = -0.5, ly = -0.62; // light from the south-west
+  for (const [, i] of order) { const b = M.B[i], hl = opts.highlight?.has(i), tint = M.tint[i];
+    const wall = hl ? [150, 200, 230] : [17, 40, 62], roof = hl ? [235, 248, 255] : mix([30, 66, 98], [255, 150, 60], tint * 0.85);
+    for (let k = 0; k < b.n; k++) { const j = (k + 1) % b.n, x1 = b.p[k * 2], y1 = b.p[k * 2 + 1], x2 = b.p[j * 2], y2 = b.p[j * 2 + 1], nx = y2 - y1, ny = -(x2 - x1);
+      if (nx * (cam3.px - x1) + ny * (cam3.py - y1) <= 0) continue; const nl = Math.hypot(nx, ny) || 1, sh = 0.62 + 0.55 * Math.max(0, (nx * lx + ny * ly) / nl);
+      const a0 = Q(x1, y1, 0), b0 = Q(x2, y2, 0), a1 = Q(x1, y1, b.h), b1 = Q(x2, y2, b.h);
+      ctx.fillStyle = rgba(dim(mix(wall, [255, 140, 50], tint * 0.35), sh), 1); ctx.beginPath(); ctx.moveTo(a0[0], a0[1]); ctx.lineTo(b0[0], b0[1]); ctx.lineTo(b1[0], b1[1]); ctx.lineTo(a1[0], a1[1]); ctx.closePath(); ctx.fill(); }
+    ctx.beginPath(); for (let k = 0; k < b.n; k++) { const p = Q(b.p[k * 2], b.p[k * 2 + 1], b.h); k ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); } ctx.closePath();
+    if (hl) { ctx.save(); ctx.shadowColor = "#7dd3fc"; ctx.shadowBlur = 16; ctx.fillStyle = rgba(roof, 1); ctx.fill(); ctx.restore(); } else { ctx.fillStyle = rgba(roof, 1); ctx.fill(); }
+    ctx.strokeStyle = hl ? "rgba(255,255,255,0.9)" : `rgba(125,211,252,${0.22 + 0.4 * tint})`; ctx.lineWidth = 0.8; ctx.stroke(); }
+}
+const finishModel = (ctx) => { let g = ctx.createLinearGradient(0, 0, 0, 210); g.addColorStop(0, "rgba(2,6,12,0.95)"); g.addColorStop(1, "rgba(2,6,12,0)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, 210);
+  g = ctx.createRadialGradient(360, 390, 280, 360, 390, 570); g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, "rgba(0,0,0,0.55)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); };
+
+function drawLOS(ctx, t) {
+  reset(ctx); const k = clamp((t - S_LOS[0]) / (S_DOME[1] - S_LOS[0])), { O, rays, towers } = M.los;
+  const az = lerp(24, 38, ease(k)) * RAD, fw = [-Math.sin(az), Math.cos(az)];
+  setCam3(O[0] + fw[0] * 300, O[1] + fw[1] * 300, az, lerp(31, 35, k) * RAD, lerp(930, 860, ease(k)), 1000, 400);
+  M.tint.fill(0); drawModel(ctx, null, { highlight: towers });
+  // sight lines: visible part green, obstructed part red (computed against the building heights)
+  ctx.globalCompositeOperation = "lighter"; ctx.lineCap = "round";
+  const o2 = Q(O[0], O[1], O[2]);
+  rays.forEach((r, i) => { const g = easeOut((t - S_LOS[1] - 0.5 - i * 0.05) / 0.55); if (g <= 0) return;
+    const at = (s) => Q(O[0] + (r.T[0] - O[0]) * s, O[1] + (r.T[1] - O[1]) * s, O[2] + (r.T[2] - O[2]) * s);
+    const v = Math.min(g, r.hit), p1 = at(v);
+    ctx.shadowColor = "rgba(52,211,153,0.9)"; ctx.shadowBlur = 8; ctx.strokeStyle = "rgba(52,230,160,0.85)"; ctx.lineWidth = 1.8; ctx.beginPath(); ctx.moveTo(o2[0], o2[1]); ctx.lineTo(p1[0], p1[1]); ctx.stroke();
+    if (g > r.hit) { const p2 = at(g); ctx.shadowColor = "rgba(248,80,80,0.9)"; ctx.strokeStyle = "rgba(255,95,95,0.9)"; ctx.beginPath(); ctx.moveTo(p1[0], p1[1]); ctx.lineTo(p2[0], p2[1]); ctx.stroke();
+      ctx.fillStyle = "rgba(255,120,120,0.95)"; ctx.beginPath(); ctx.arc(p1[0], p1[1], 2.6, 0, 6.283); ctx.fill(); }
+    if (g >= 1) { const pe = at(1); ctx.fillStyle = r.hit < 1 ? "rgba(255,110,110,0.95)" : "rgba(110,240,180,0.95)"; ctx.beginPath(); ctx.arc(pe[0], pe[1], 2.4, 0, 6.283); ctx.fill(); } });
+  ctx.shadowBlur = 14; ctx.shadowColor = "#fff"; ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(o2[0], o2[1], 4.5, 0, 6.283); ctx.fill();
+  reset(ctx); finishModel(ctx); caption(ctx, TXT.los, ease((t - S_LOS[1]) / 0.5));
+}
+function drawDome(ctx, t) {
+  reset(ctx); const k = clamp((t - S_DOME[0]) / (S_DENS[1] - S_DOME[0])), { A, R, STEP, wedges, seen } = M.dome;
+  setCam3(A[0], A[1] + 40, lerp(-38, -18, ease(k)) * RAD, lerp(40, 36, k) * RAD, lerp(1040, 960, ease(k)), 1000, 410);
+  const grow = easeOut((t - S_DOME[1] - 0.2) / 0.9), sweep = clamp((t - S_DOME[1] - 0.8) / 2.0) * 360, r = R * grow;
+  for (let i = 0; i < M.tint.length; i++) M.tint[i] = seen[i] >= 0 && seen[i] <= sweep ? 1 : 0;
+  drawModel(ctx, () => { // covered ground, revealed by a rotating sweep
+    ctx.globalCompositeOperation = "lighter"; ctx.fillStyle = "rgba(255,132,40,0.5)";
+    const h = (STEP / 2) * RAD;
+    for (let i = 0; i < wedges.length; i++) { const az = i * STEP; if (az > sweep) break; const a = az * RAD, s1 = Math.sin(a - h), c1 = Math.cos(a - h), s2 = Math.sin(a + h), c2 = Math.cos(a + h), runs = wedges[i];
+      for (let j = 0; j < runs.length; j += 2) { const d0 = runs[j], d1 = runs[j + 1], p = [Q(A[0] + s1 * d0, A[1] + c1 * d0, 0.3), Q(A[0] + s2 * d0, A[1] + c2 * d0, 0.3), Q(A[0] + s2 * d1, A[1] + c2 * d1, 0.3), Q(A[0] + s1 * d1, A[1] + c1 * d1, 0.3)];
+        ctx.beginPath(); ctx.moveTo(p[0][0], p[0][1]); ctx.lineTo(p[1][0], p[1][1]); ctx.lineTo(p[2][0], p[2][1]); ctx.lineTo(p[3][0], p[3][1]); ctx.closePath(); ctx.fill(); } }
+    ctx.globalCompositeOperation = "source-over"; });
+  // dome: translucent volume + wireframe
+  if (grow > 0) { ctx.globalCompositeOperation = "lighter"; const ring = (el, fill) => { const rr = r * Math.cos(el), z = r * Math.sin(el); ctx.beginPath(); for (let a = 0; a <= 48; a++) { const an = (a / 48) * 6.283, p = Q(A[0] + Math.sin(an) * rr, A[1] + Math.cos(an) * rr, z); a ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); } if (fill) ctx.fill(); ctx.stroke(); };
+    ctx.strokeStyle = "rgba(255,170,95,0.5)"; ctx.fillStyle = "rgba(255,125,35,0.055)"; ctx.lineWidth = 1;
+    for (let e = 0; e < 90; e += 12) ring(e * RAD, true);
+    ctx.strokeStyle = "rgba(255,170,95,0.28)"; for (let m = 0; m < 12; m++) { const an = (m / 12) * 6.283; ctx.beginPath(); for (let e = 0; e <= 90; e += 6) { const rr = r * Math.cos(e * RAD), p = Q(A[0] + Math.sin(an) * rr, A[1] + Math.cos(an) * rr, r * Math.sin(e * RAD)); e ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); } ctx.stroke(); }
+    // sweep beam
+    if (sweep > 0 && sweep < 360) { const a = sweep * RAD, p0 = Q(A[0], A[1], A[2]), p1 = Q(A[0] + Math.sin(a) * R, A[1] + Math.cos(a) * R, 0.3); ctx.shadowColor = "#ffb066"; ctx.shadowBlur = 10; ctx.strokeStyle = "rgba(255,225,190,0.95)"; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(p0[0], p0[1]); ctx.lineTo(p1[0], p1[1]); ctx.stroke(); ctx.shadowBlur = 0; }
+    // antenna mast and point
+    const b0 = Q(A[0], A[1], A[2] - 10), b1 = Q(A[0], A[1], A[2]); ctx.strokeStyle = "rgba(255,255,255,0.9)"; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(b0[0], b0[1]); ctx.lineTo(b1[0], b1[1]); ctx.stroke();
+    ctx.shadowColor = "#fff"; ctx.shadowBlur = 14; ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(b1[0], b1[1], 4.5, 0, 6.283); ctx.fill(); }
+  reset(ctx); finishModel(ctx); caption(ctx, TXT.dome, ease((t - S_DOME[1]) / 0.5));
+}
+
+/* ===================== 3. MAP OF MOROCCO AND MAURITANIA + SIGNATURE ===================== */
+const MAP_CENTRE = [-9.4, 24.9], MAP_AT = [366, 446], MAP_SCALE = 1.1; // final framing: the point of the map placed at these pixels, and the zoom
+const LON0 = -8.9, LAT0 = 28.55, K = 32, COS = Math.cos(LAT0 * RAD);
+const flat = (lon, lat) => [(lon - LON0) * COS * K, -(lat - LAT0) * K];
+let cam;
+const P = (x, y, z = 0) => [cam.cx + (x * cam.c - y * cam.s) * cam.sc, cam.cy + ((x * cam.s + y * cam.c) * cam.ct - z * cam.st) * cam.sc];
+const proj = ([lon, lat], z = 0) => { const [x, y] = flat(lon, lat); return P(x, y, z); };
+function pathRing(ctx, ring, dy = 0) { ctx.beginPath(); ring.forEach((p, i) => { const [x, y] = proj(p); i ? ctx.lineTo(x, y + dy) : ctx.moveTo(x, y + dy); }); ctx.closePath(); }
+function drawMap(ctx, t) {
+  reset(ctx);
+  const e = easeOut((t - S_MAP[0]) / 2.2), rz = (-17 + (t - S_MAP[0]) * 1.2) * RAD, tilt = 57 * RAD, sc = lerp(3.4, MAP_SCALE, e);
+  cam = { c: Math.cos(rz), s: Math.sin(rz), ct: Math.cos(tilt), st: Math.sin(tilt), sc, cx: 0, cy: 0 };
+  const [cxp, cyp] = flat(...CASA), ox = (cxp * cam.c - cyp * cam.s) * sc, oy = (cxp * cam.s + cyp * cam.c) * cam.ct * sc;
+  const [mxp, myp] = flat(...MAP_CENTRE); // the camera leaves Casablanca and settles on the two countries
+  cam.cx = lerp(360 - ox, MAP_AT[0] - (mxp * cam.c - myp * cam.s) * sc, e); cam.cy = lerp(390 - oy, MAP_AT[1] - (mxp * cam.s + myp * cam.c) * cam.ct * sc, e);
+  const bg = ctx.createRadialGradient(400, 380, 60, 400, 380, 640); bg.addColorStop(0, "#0c2136"); bg.addColorStop(0.55, "#07131f"); bg.addColorStop(1, "#03080e"); ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  ctx.strokeStyle = "rgba(125,170,220,0.08)"; ctx.lineWidth = 1; ctx.beginPath();
+  for (let lon = -70; lon <= 50; lon += 5) { const a = proj([lon, -10]), b = proj([lon, 65]); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); }
+  for (let lat = -10; lat <= 65; lat += 5) { const a = proj([-70, lat]), b = proj([50, lat]); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); }
+  ctx.stroke();
+  ctx.fillStyle = "#0e1c2c"; for (const r of DATA.land) { pathRing(ctx, r); ctx.fill(); }
+  ctx.strokeStyle = "rgba(125,170,220,0.10)"; for (const r of DATA.land) { pathRing(ctx, r); ctx.stroke(); }
+  // the two countries as raised blocks: walls first, then the tops (Morocco last, so its outline stays on top along the border)
+  const ring = DATA.morocco[0], wall = 12 * cam.st * cam.sc, blocks = MAUR.length ? [MAUR, ring] : [ring];
+  ctx.save(); ctx.shadowColor = "rgba(0,160,227,0.55)"; ctx.shadowBlur = 26; for (const r of blocks) { pathRing(ctx, r, wall); ctx.fillStyle = "#081a2b"; ctx.fill(); } ctx.restore();
+  for (let d = wall; d > 0; d -= 1.5) for (const r of blocks) { pathRing(ctx, r, d); ctx.fillStyle = "#0a2238"; ctx.fill(); }
+  for (const r of blocks) { pathRing(ctx, r, wall); ctx.strokeStyle = "rgba(56,189,248,0.35)"; ctx.lineWidth = 1; ctx.stroke(); }
+  const mg = ctx.createLinearGradient(250, 80, 480, 620); mg.addColorStop(0, "#15405f"); mg.addColorStop(1, "#0d2740");
+  ctx.lineJoin = "round";
+  for (const r of blocks) { pathRing(ctx, r); ctx.fillStyle = mg; ctx.fill(); ctx.strokeStyle = "rgba(56,189,248,0.85)"; ctx.lineWidth = 1.6; ctx.stroke(); }
+  // all the cities and towns of Morocco, and the towns of Mauritania
+  ctx.save(); ctx.globalCompositeOperation = "lighter"; const ks = Math.sqrt(cam.sc / 1.3);
+  [...PLACES, ...MPLACES].forEach((c, i) => { const [x, y] = proj([c.lon, c.lat]); if (x < -30 || y < -30 || x > W + 30 || y > H + 30) return;
+    if (c.city) { const ph = (t * 0.7 + i * 0.137) % 1, rr = (c.r * 1.4 + ph * 5 * c.r) * ks; ctx.shadowBlur = 0; ctx.strokeStyle = `rgba(255,214,150,${(1 - ph) * 0.6})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.ellipse(x, y, rr, rr * cam.ct, 0, 0, 6.283); ctx.stroke(); }
+    ctx.shadowColor = "rgba(255,190,100,0.95)"; ctx.shadowBlur = c.city ? 8 : 3; ctx.fillStyle = c.city ? "rgba(255,232,180,0.98)" : "rgba(255,206,130,0.72)";
+    ctx.beginPath(); ctx.arc(x, y, c.r * 0.95 * ks, 0, 6.283); ctx.fill(); });
+  ctx.restore();
+  // signature
+  const a = CLEAN ? 0 : ease((t - S_MAP[1] - 0.2) / 0.7); if (a > 0) { const X = 44;
+    const sh = ctx.createLinearGradient(0, 0, 0, 240); sh.addColorStop(0, `rgba(3,8,14,${0.75 * a})`); sh.addColorStop(1, "rgba(3,8,14,0)"); ctx.fillStyle = sh; ctx.fillRect(0, 0, W, 240);
+    ctx.globalAlpha = a; ctx.drawImage(logoWhite, X - 4, 40 + (1 - a) * 8, 232, 104); ctx.globalAlpha = 1;
+    ctx.fillStyle = `rgba(0,160,227,${a})`; ctx.fillRect(X, 152, 44, 3);
+    font(ctx, 500, 18); ctx.textBaseline = "alphabetic"; ctx.fillStyle = `rgba(214,228,240,${a})`; ctx.fillText(TXT.tag, X, 184); }
+  const v = ctx.createRadialGradient(W / 2, H / 2, 300, W / 2, H / 2, 560); v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,0.42)"); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+}
+
+/* ===================== timeline ===================== */
+// Each shot fades in over the previous one and stays until the next one has fully faded in.
+const SHOTS = [
+  { c: shotB, in: S_CITY, draw: drawCity }, { c: shotD, in: S_LOS, draw: drawLOS }, { c: shotE, in: S_DOME, draw: drawDome },
+  { c: shotF, in: S_DENS, draw: drawDensity }, { c: shotC, in: S_MAP, draw: drawMap },
+];
+function draw(ctx, t) {
+  reset(ctx); ctx.fillStyle = "#000"; ctx.fillRect(0, 0, W, H);
+  if (t < S_CITY[1]) { drawGlobe(shotA.getContext("2d"), t); ctx.drawImage(shotA, 0, 0); }
+  SHOTS.forEach((s, i) => { const until = SHOTS[i + 1]?.in[1] ?? S_LOOP[1]; if (t < s.in[0] || t >= until) return;
+    s.draw(s.c.getContext("2d"), t); ctx.globalAlpha = ease((t - s.in[0]) / (s.in[1] - s.in[0])); ctx.drawImage(s.c, 0, 0); ctx.globalAlpha = 1; });
+  if (t >= S_LOOP[0]) { drawGlobe(shotA.getContext("2d"), 0); ctx.globalAlpha = ease((t - S_LOOP[0]) / (S_LOOP[1] - S_LOOP[0])); ctx.drawImage(shotA, 0, 0); ctx.globalAlpha = 1; }
+}
+
+const loadImg = (src) => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => rej(new Error("cannot load " + src)); i.src = src; });
+const b64 = (buf) => { let s = ""; const u = new Uint8Array(buf); for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); };
+window.init = async () => {
+  let placesRaw, maur; [DATA, CITY, MODEL, placesRaw, maur] = await Promise.all(["data.json", "casablanca.json", "centre3d.json", "cities.json", "mauritanie.json"].map(async (f) => (await fetch(f)).json()));
+  // Mauritania (Natural Earth): outline and towns; the capital and the towns of 40 000 inhabitants or more are drawn as cities
+  MAUR = maur.outline;
+  MPLACES = maur.places.map((c) => { const city = c.capital || c.pop >= 40000; return { lon: c.lon, lat: c.lat, city, r: city ? 1.5 + 2.7 * Math.sqrt(Math.min(1, c.pop / 3.2e6)) : 1.05 }; });
+  stats.mauritania = { outline: MAUR.length, cities: MPLACES.filter((c) => c.city).length, towns: MPLACES.filter((c) => !c.city).length };
+  // every OSM city/town located inside the outline drawn on screen; dot size follows the population
+  { const ring = DATA.morocco[0], inside = (x, y) => { let c = false; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) c = !c; } return c; };
+    PLACES = placesRaw.cities.filter((c) => inside(c.lon, c.lat)).map((c) => ({ lon: c.lon, lat: c.lat, city: c.place === "city", r: c.place === "city" ? 1.5 + 2.7 * Math.sqrt(Math.min(1, c.pop / 3.2e6)) : 1.05 }));
+    stats.places = { cities: PLACES.filter((c) => c.city).length, towns: PLACES.filter((c) => !c.city).length }; }
+  await Promise.all([400, 500, 600, 700, 800].map((w) => document.fonts.load(`${w} 20px Figtree`, "Aéà")));
+  const [eimg, logo] = await Promise.all([loadImg("assets/earth.jpg"), loadImg("assets/logo.png")]);
+  const tc = layer(TW, TH), tx = tc.getContext("2d", { willReadFrequently: true }); tx.drawImage(eimg, 0, 0, TW, TH); earth = tx.getImageData(0, 0, TW, TH).data;
+  initNoise(); bakeClouds(); globeImg = new ImageData(W, H);
+  for (let i = 0; i < 170; i++) stars.push([rnd() * W, rnd() * H, 0.5 + rnd() * 1.1, 0.15 + rnd() * 0.55]);
+  logoWhite = layer(logo.width, logo.height); const lc = logoWhite.getContext("2d"); lc.drawImage(logo, 0, 0); lc.globalCompositeOperation = "source-in"; lc.fillStyle = "#fff"; lc.fillRect(0, 0, logo.width, logo.height);
+  buildCity(); stats.model = buildModel();
+  return { fonts: document.fonts.check("700 20px Figtree"), roads: CITY.lines.map((l) => l.length), ...stats, seconds: T };
+};
+window.still = (t) => { const c = document.getElementById("c"); draw(c.getContext("2d"), t); return c.toDataURL("image/jpeg", 0.88).split(",")[1]; };
+window.render = async (bitrate) => {
+  const c = document.getElementById("c"), ctx = c.getContext("2d");
+  const muxer = new Mp4Muxer.Muxer({ target: new Mp4Muxer.ArrayBufferTarget(), video: { codec: "avc", width: W, height: H, frameRate: FPS }, fastStart: "in-memory" });
+  let error = null;
+  const enc = new VideoEncoder({ output: (chunk, meta) => muxer.addVideoChunk(chunk, meta), error: (e) => (error = String(e)) });
+  enc.configure({ codec: "avc1.640028", width: W, height: H, bitrate, framerate: FPS, latencyMode: "quality" });
+  const N = T * FPS;
+  for (let i = 0; i < N; i++) {
+    draw(ctx, i / FPS);
+    const frame = new VideoFrame(c, { timestamp: Math.round((i * 1e6) / FPS), duration: Math.round(1e6 / FPS) });
+    enc.encode(frame, { keyFrame: i % 60 === 0 }); frame.close();
+    while (enc.encodeQueueSize > 8) await new Promise((r) => setTimeout(r, 2));
+    if (i % 20 === 0) await new Promise((r) => setTimeout(r, 0));
+    if (error) throw new Error(error);
+  }
+  await enc.flush(); muxer.finalize();
+  return JSON.stringify({ frames: N, video: b64(muxer.target.buffer) });
+};
+</script>
+</body>
+</html>

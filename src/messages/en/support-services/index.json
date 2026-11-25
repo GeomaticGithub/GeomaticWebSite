@@ -1,0 +1,83 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Talk to an expert",
+    "anchor": "See the services",
+    "servicesKicker": "Our services",
+    "servicesTitle": "Three services to succeed with ArcGIS",
+    "servicesText": "From a first technical issue to an enterprise project, the same team works with you in Morocco.",
+    "needsKicker": "Your need",
+    "needsTitle": "Which service for which situation?",
+    "needsText": "Start from your situation: we point you to the service that answers it."
+  },
+  "hero": {
+    "title": "Services",
+    "subtitle": "Support, training and consulting for ArcGIS",
+    "text": "Geomatic, the official Esri distributor in Morocco, helps you resolve technical issues, train your teams and deliver your GIS projects.",
+    "image": "/support-services/services-banner-foreground-decoration.png",
+    "bgGraphic": "/support-services/services-banner-background.jpg"
+  },
+  "services": [
+    {
+      "key": "support",
+      "title": "Support Services",
+      "desc": "Get answers to your questions and resolve your technical issues. Access helpful resources or talk with our team.",
+      "image": "/support-services/adobestock-204954211.jpeg",
+      "link": "/support-services/support",
+      "cta": "Explore support",
+      "points": [
+        "A team dedicated to the ArcGIS platform",
+        "For all Esri products: desktop, enterprise, online and developer tools",
+        "Access to Esri support resources"
+      ]
+    },
+    {
+      "key": "learning",
+      "title": "Learning Services",
+      "desc": "From individual technical certifications to instructor-led training for your staff, we support all stages of learning.",
+      "image": "/support-services/AdobeStock_141375321.jpg",
+      "link": "/support-services/learning",
+      "cta": "Explore training",
+      "points": [
+        "Esri-authorized training center in Morocco",
+        "{count} courses in the catalog",
+        "Private training tailored to your organization"
+      ]
+    },
+    {
+      "key": "consulting",
+      "title": "Consulting Services",
+      "desc": "Our consultants can help you successfully implement Esri technology, from short-term to transformational projects.",
+      "image": "/support-services/AdobeStock_184180246.jpeg",
+      "link": "/support-services/consulting",
+      "cta": "Explore consulting",
+      "points": [
+        "Business and enterprise consulting",
+        "ArcGIS installation and configuration",
+        "Technical specialists working alongside your team"
+      ]
+    }
+  ],
+  "needs": [
+    {
+      "need": "An ArcGIS tool does not work as expected",
+      "answer": "Support Services",
+      "link": "/support-services/support"
+    },
+    {
+      "need": "Your team is new to ArcGIS or moving to a new version",
+      "answer": "Learning Services",
+      "link": "/support-services/learning"
+    },
+    {
+      "need": "You are starting or growing an enterprise GIS",
+      "answer": "Consulting Services",
+      "link": "/support-services/consulting"
+    },
+    {
+      "need": "You are not sure where to start yet",
+      "answer": "Contact us",
+      "link": "/about-geomatic/contact"
+    }
+  ]
+}

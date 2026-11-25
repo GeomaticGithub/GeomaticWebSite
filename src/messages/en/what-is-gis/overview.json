@@ -1,0 +1,148 @@
+{
+  "ui": {
+    "kicker": "Understanding GIS",
+    "contact": "Talk to an expert",
+    "how": "How it works",
+    "whatKicker": "Uses",
+    "examplesLabel": "Examples of GIS use",
+    "worksKicker": "How it works",
+    "moreKicker": "Go further",
+    "moreTitle": "Explore GIS",
+    "whatTitle": "What GIS is used for"
+  },
+  "hero": {
+    "title": "What is GIS?",
+    "subtitle": "A framework to organize, communicate, and understand the science of our world",
+    "image": "/whatIsGis/overview-banner-layerstack.png"
+  },
+  "intro": {
+    "paragraph": "A geographic information system (GIS) is a framework for gathering, managing, and analyzing data. Rooted in the science of geography, GIS integrates many types of data. It analyzes spatial location and organizes layers of information into visualizations using maps and 3D scenes. With this unique capability, GIS reveals deeper insights into data—such as patterns, relationships, and situations—helping users make smarter decisions."
+  },
+  "split": {
+    "imageLeft": "/whatIsGis/bubble-map.jpg",
+    "title": "What is GIS",
+    "description": "Hundreds of thousands of organizations in virtually every field are using GIS to make maps that communicate, perform analysis, share information, and solve complex problems around the world. This is changing the way the world works.",
+    "items": [
+      {
+        "label": "Identify problems",
+        "avatarImage": "/whatIsGis/overview-what-identify-problems-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-identify-problems-narrow.jpg",
+        "description": "Use GIS to illuminate issues that are driven by geography. This map of opioid prescription claims reveals the geographic patterns that emerge when data is well-mapped.",
+        "href": "https://urbanobservatory.maps.arcgis.com/apps/Cascade/index.html?appid=f86499d99e4340b68229eaccfb02b29f",
+        "linkText": "View an opioid epidemic map"
+      },
+      {
+        "label": "Monitor change",
+        "avatarImage": "/whatIsGis/overview-what-monitor-change-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-monitor-change-narrow.jpg",
+        "description": "If a picture tells a thousand words, a map tells a thousand pictures. This map starkly reveals the extent of glacier retreat in the Southern Hemisphere.",
+        "href": "https://www.patagonjournal.com/index.php?option=com_content&view=article&id=3690:climate-change-series-memories-of-ice&catid=192:geojournalism&Itemid=279&lang=en",
+        "linkText": "Look at the Patagon Journal Memories of Ice map"
+      },
+      {
+        "label": "Manage & respond to events",
+        "avatarImage": "/whatIsGis/overview-what-manage-events-thumbs.jpg",
+        "mainImage": "/whatIsGis/overview-what-manage-events-narrow.jpg",
+        "description": "GIS delivers real-time situational awareness. This hurricane and cyclone map shows potential impact to people and businesses, probable track of storms, and storm surge.",
+        "href": "https://www.arcgis.com/apps/MapSeries/index.html?appid=db6238df958148108cceb3b05619a7f6",
+        "linkText": "Try the Hurricane and Tropical Cyclones map"
+      },
+      {
+        "label": "Perform forecasting",
+        "avatarImage": "/whatIsGis/overview-what-perform-forecasting-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-perform-forecasting-narrow.jpg",
+        "description": "Use GIS to forecast traffic. This map highlights challenges at an intersection in Fort Mitchell, Kentucky, where forecasting shows traffic is expected to worsen based on land use changes.",
+        "href": "http://pdskc.maps.arcgis.com/apps/MapJournal/index.html?appid=e4a8944dc8914c7d9a26b1b263ece038",
+        "linkText": "Open the NKYmapLAB interactive map"
+      },
+      {
+        "label": "Set priorities",
+        "avatarImage": "/whatIsGis/overview-what-set-priorities-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-set-priorities-narrow.jpg",
+        "description": "GIS helps to set priorities based on spatial analysis. By analyzing crime patterns, public safety officials can identify target areas and assign officers in those areas.",
+        "href": "https://modelpd.maps.arcgis.com/apps/MapJournal/index.html?appid=3fa8f73b99e047d093447cbf9f7af1e3&webmap=f56a5720743c4297949371f9534bbdd4",
+        "linkText": "Take a look at a crime response map"
+      },
+      {
+        "label": "Understand trends",
+        "avatarImage": "/whatIsGis/overview-what-understanding-trends-thumb.jpg",
+        "mainImage": "/whatIsGis/overview-what-understanding-trends-narrow.jpg",
+        "description": "GIS helps you gain insight into data that might be missed in a spreadsheet. This map measures job growth or losses in different industries and quantifies local competitive advantage.",
+        "href": "https://www.esri.com/en-us/industries/real-estate/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Findustries%2Freal-estate%2Fshift-share",
+        "linkText": "Try the shift-share analysis map"
+      }
+    ],
+    "callout": {
+      "title": "Identify problems",
+      "text": "Use GIS to illuminate issues that are driven by geography. Patterns emerge when data is well mapped.",
+      "href": "#",
+      "linkText": "View an opioid epidemic map"
+    }
+  },
+  "works": {
+    "title": "How GIS Works",
+    "intro": "GIS technology applies geographic science with tools for understanding and collaboration. It helps people reach a common goal: to gain actionable intelligence from all types of data.",
+    "cards": [
+      {
+        "title": "Maps",
+        "body": "Maps are the geographic container for the data layers and analytics you want to work with. GIS maps are easily shared and embedded in apps, and accessible by virtually everyone, everywhere.",
+        "ctaText": "Read about maps in The ArcGIS Book",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-maps.png"
+      },
+      {
+        "title": "Data",
+        "body": "GIS integrates many different kinds of data layers using spatial location. Most data has a geographic component. GIS data includes imagery, features, and basemaps linked to spreadsheets and tables.",
+        "ctaText": "Read about data in The ArcGIS Book",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-data.png"
+      },
+      {
+        "title": "Analysis",
+        "body": "Spatial analysis lets you evaluate suitability and capability, estimate and predict, interpret and understand, and much more, lending new perspectives to your insight and decision-making.",
+        "ctaText": "Read about Analysis in The ArcGIS Book",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-analysis.png"
+      },
+      {
+        "title": "Apps",
+        "body": "Apps provide focused user experiences for getting work done and bringing GIS to life for everyone. GIS apps work virtually everywhere: on your mobile phones, tablets, in web browsers, and on desktops.",
+        "ctaText": "Read about GIS Apps in The ArcGIS Book",
+        "href": "https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-book-second-edition-companion-resource.pdf",
+        "image": "/whatIsGis/overview-how-apps.png"
+      }
+    ]
+  },
+  "bottomCtas": {
+    "items": [
+      {
+        "title": "GIS Showcase",
+        "body": "Discover interactive maps and visualizations created with GIS that inform, engage, and inspire.",
+        "href": "#exemples",
+        "linkText": "Learn more",
+        "icon": "/whatIsGis/gisShowcase.svg"
+      },
+      {
+        "title": "History of GIS",
+        "body": "Explore the evolution of GIS from a rudimentary tool to a comprehensive platform for designing a smarter world.",
+        "href": "https://www.esri.com/en-us/what-is-gis/history-of-gis",
+        "linkText": "Learn more",
+        "icon": "/whatIsGis/historyOfGis.svg"
+      },
+      {
+        "title": "GIS Careers",
+        "body": "Learn how GIS professionals qualify for occupations in countless fields.",
+        "href": "https://www.esri.com/en-us/what-is-gis/careers",
+        "linkText": "Learn more",
+        "icon": "/whatIsGis/gisCarrers.svg"
+      },
+      {
+        "title": "GIS Resources",
+        "body": "Find resources for expanding your knowledge about GIS.",
+        "href": "https://www.esri.com/en-us/what-is-gis/get-started",
+        "linkText": "Learn more",
+        "icon": "/whatIsGis/gisResources.svg"
+      }
+    ]
+  }
+}

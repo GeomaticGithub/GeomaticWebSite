@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "Efficacité opérationnelle",
+    "subtitle1": "Améliorez continuellement vos opérations",
+    "subtitle2": "Rationalisez vos processus et satisfaites vos clients grâce à l’intelligence géographique",
+    "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-bg.jpg"
+  },
+  "intro": {
+    "title": "Créez des workflows plus intelligents",
+    "paragraph": "De nombreuses organisations peinent à développer des plans stratégiques et pratiques pour améliorer leur efficacité opérationnelle. Les dirigeants peuvent utiliser l’intelligence géographique pour gérer et rationaliser rapidement des centaines de projets. Les cartes intelligentes, les analyses et les tableaux de bord offrent une vue en temps réel de plusieurs sites et aident à identifier les processus nécessitant une amélioration. Exploiter des données fiables réduit les erreurs tout en augmentant la productivité et en diminuant les coûts."
+  },
+  "opportunities": {
+    "title": "Voyez vos opérations optimisées",
+    "intro": "Une vue opérationnelle en temps réel des personnes, actifs et événements révèle la vision d’ensemble ainsi que les priorités critiques. Cela permet une meilleure gestion des tâches, une synergie accrue, une satisfaction client améliorée et un avantage concurrentiel.",
+    "bullets": [
+      "Collaborez et partagez des informations en temps réel en toute sécurité via des cartes, applications, tableaux de bord et rapports.",
+      "Adoptez des workflows modernes qui éliminent le gaspillage de temps et de ressources.",
+      "Combinez plusieurs flux d’activité et processus en un workflow unifié."
+    ],
+    "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-5050.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Optimisez vos opérations et améliorez votre efficacité grâce aux insights basés sur la localisation du cloud géospatial Esri.",
+    "items": [
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Identifiez immédiatement où se trouvent les menaces dans votre communauté ou entreprise et surveillez l’évolution des situations. Utilisez le big data et l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées basées sur les données les plus récentes.",
+        "cta": "Donnez du sens au big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Opérations sur le terrain",
+        "body": "Améliorez la coordination et l’efficacité opérationnelle des activités terrain. Réduisez ou remplacez l’utilisation du papier, modernisez vos workflows, adoptez la prise de décision basée sur les données et exploitez la puissance de l’intelligence géographique.",
+        "cta": "Coordonnez le travail sur le terrain",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/business-needs-capabilities-field-operatioins.jpg"
+      },
+      {
+        "title": "Cartographie",
+        "body": "Visualisez les personnes, lieux et actifs afin de mieux comprendre les menaces. Voyez ce qui se passe dans toute l’organisation, créez des plans robustes et sachez où allouer vos ressources.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Besoins associés",
+    "bgGraphic": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Suivi et analyse des actifs",
+        "body": "Visualisez vos actifs mobiles et fixes de manière dynamique. Mettez en œuvre des outils de résolution de problèmes pour enregistrer avec précision l’emplacement et l’état de vos actifs.",
+        "href": "industries/needs/asset-tracking-analysis",
+        "icon": "/Solutions/BusinessNeeds/OperationalEfficiency/assetTrackingAndAnalysis.svg"
+      },
+      {
+        "title": "Suivi de localisation en temps réel",
+        "body": "Obtenez des informations à partir de vos données que vous suiviez des actifs mobiles ou des capteurs fixes. Prenez la bonne décision au bon moment.",
+        "href": "/industries/needs/real-time-location-tracking",
+        "icon": "/Solutions/BusinessNeeds/OperationalEfficiency/realTimeLocationTracking.svg"
+      },
+      {
+        "title": "Gestion des services sur le terrain",
+        "body": "Transformez numériquement l’approche des opérations terrain. Gagnez en efficacité grâce aux mises à jour en temps réel et intégrez des applications mobiles dans vos workflows.",
+        "href": "/industries/needs/field-service-management",
+        "icon": "/Solutions/BusinessNeeds/OperationalEfficiency/fieldServiceManagement.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur l’efficacité opérationnelle",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Le Big Data maintient l’alimentation électrique",
+        "source": "ArcNews",
+        "excerpt": "Le réseau nord-américain doit collaborer pour garantir l’approvisionnement électrique aux États-Unis ainsi qu’au Canada et au Mexique.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/big-data-keeps-the-lights-on",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-cards-big-data-keeps-lights-on.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "L’intelligence géographique fait économiser des millions à l’aéroport de Genève",
+        "source": "WhereNext Magazine",
+        "excerpt": "Un petit aéroport avec de grandes opérations a dû améliorer son efficacité opérationnelle pour répondre à la forte demande.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/location-intelligence-saves-geneva-airport-millions",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-cards-li-saves-geneva-airport-millions.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "De la marée à l’assiette : le suivi des huîtres",
+        "source": "Esri Blog",
+        "excerpt": "Taylor Shellfish Farms a amélioré la résilience de ses coquillages grâce à une transformation numérique complète et une grande adaptabilité.",
+        "href": "https://www.esri.com/about/newsroom/blog/tracing-each-oyster-from-tide-to-table",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-cards-tracing-each-oyster-tide-table .jpg"
+      }
+    ]
+  }
+}

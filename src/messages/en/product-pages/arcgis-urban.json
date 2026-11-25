@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "kicker": "product",
+    "title": "ArcGIS Urban",
+    "subtitle": "Smart city planning",
+    "bgImage": "/arcgisUrban/urban-banner-bg.jpg",
+    "image": "/arcgisUrban/urban-banner-fg.png",
+    "text": "ArcGIS Urban is an immersive 3D experience designed to improve urban planning and decision-making. Quickly visualize projects in your local context and leverage location intelligence to drive better decisions. Be more proactive and less reactive in your planning process. Simplify project collaboration across internal agencies and public stakeholders. "
+  },
+  "blocks": [
+    {
+      "type": "band",
+      "kicker": "overview",
+      "title": "Shaping future cities",
+      "text": "ArcGIS Urban is an immersive 3D experience designed to drive smart urban planning and development.",
+      "image": "/arcgisUrban/urban-lcs-shaping-future-cities.jpg"
+    },
+    {
+      "type": "cards",
+      "kicker": "benefits",
+      "items": [
+        {
+          "title": "Improve planning productivity",
+          "text": "Streamline workflows and improve efficiency by focusing effort where it matters most.",
+          "image": "/arcgisUrban/urban-tls-planning.jpg"
+        },
+        {
+          "title": "Visualize projects citywide",
+          "text": "Visualize plans and projects in an immersive 3D view to understand change at the city scale.",
+          "image": "/arcgisUrban/urban-tls-visualize.jpg"
+        },
+        {
+          "title": "Communicate trends",
+          "text": "Reveal insights about policies and initiatives to evaluate performance and support decisions.",
+          "image": "/arcgisUrban/urban-tls-transparency.jpg"
+        },
+        {
+          "title": "Increase community engagement",
+          "text": "Bring transparency to planning programs by sharing interactive content with the community.",
+          "image": "/arcgisUrban/urban-tls-community.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "image": "/arcgisUrban/urban-fss-planning-future-smart-cities.png",
+      "items": [
+        {
+          "title": "3D city model as context for change",
+          "text": "Design a 3D representation of the city and gain contextual information to assess performance and support decision-making.",
+          "icon": "/arcgisUrban/3d.svg"
+        },
+        {
+          "title": "Zoning and land-use planning",
+          "text": "Produce 3D visual and analytical representations of your legal zoning code and measure the immediate impact of your proposed design.",
+          "icon": "/arcgisUrban/zoning.svg"
+        },
+        {
+          "title": "Urban design and project sharing",
+          "text": "Quickly create detailed planning scenarios and share your work with stakeholders.",
+          "icon": "/arcgisUrban/share.svg"
+        }
+      ]
+    },
+    {
+      "type": "stories",
+      "kicker": "stories",
+      "title": "Urban Planning Excellence",
+      "text": "Discover how cities worldwide are leveraging ArcGIS Urban to transform their planning processes and drive smart development decisions.",
+      "items": [
+        {
+          "label": "City and County of Honolulu",
+          "title": "City and County of Honolulu",
+          "desc": "Our planners' eyes got really wide when they realized that they could quickly and easily change values in the zoning code and see what the difference in development would be. — Ken Schmidt, GIS Administrator",
+          "image": "/arcgisUrban/urban-ccs-honolulu-thumb.jpg",
+          "actionText": "Read the case study",
+          "actionUrl": "https://www.esri.com/about/newsroom/blog/honolulu-planners-visualize-urban-development-patterns"
+        },
+        {
+          "label": "San Francisco Planning Department",
+          "title": "San Francisco Planning Department",
+          "desc": "The core long-range planning challenge is how to design the city of tomorrow to provide a rich urban experience within the limits of infrastructural capacity. — Sr. Strategic Sustainability Planner-Economist, City of San Francisco",
+          "image": "/arcgisUrban/urban-ccs-san-francisco-thumb.jpg",
+          "actionText": "Read the case study",
+          "actionUrl": "https://www.esri.com/about/newsroom/publications/wherenext/space-premium-san-francisco-gets-creative"
+        },
+        {
+          "label": "Boston Planning & Development Agency",
+          "title": "Boston Planning & Development Agency",
+          "desc": "We wanted to develop workflows that used metrics and a standardized process and procedure to evaluate projects moving forward. — Sr. Architect & Urban Designer, Boston Planning & Development Agency",
+          "image": "/arcgisUrban/urban-ccs-boston-thumb.jpg",
+          "actionText": "Read the case study",
+          "actionUrl": "https://www.esri.com/about/newsroom/blog/3d-gis-boston-digital-twin"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "resources",
+      "title": "Resources",
+      "items": [
+        {
+          "title": "Prepare",
+          "text": "Organize prerequisite datasets for ArcGIS Urban.",
+          "href": "https://doc.arcgis.com/en/urban/latest/data/preparing-your-data.htm"
+        },
+        {
+          "title": "Setup",
+          "text": "Spin up your project and connect data.",
+          "href": "https://doc.arcgis.com/en/urban/latest/get-started/get-started-what-is-urban.htm"
+        },
+        {
+          "title": "Create",
+          "text": "Design and review scenarios with ArcGIS Urban tools.",
+          "href": "https://doc.arcgis.com/en/urban/latest/help/help-intro.htm"
+        },
+        {
+          "title": "Technical Support",
+          "text": "Get help from our technical support specialists.",
+          "href": "https://support.esri.com/en-us/contact#us"
+        },
+        {
+          "title": "Training",
+          "text": "Find courses and resources for everyone on the team.",
+          "href": "https://www.esri.com/training/catalog/5cf6d5c82845f65b2cca2ef3/get-started-with-arcgis-urban/"
+        },
+        {
+          "title": "ArcNews",
+          "text": "Read about ArcGIS Urban in the Summer 2019 version of ArcNews.",
+          "href": "https://www.esri.com/about/newsroom/arcnews/arcgis-urban-transforms-city-planning"
+        },
+        {
+          "title": "Webinars",
+          "text": "Sign up to learn more about smart city planning with ArcGIS Urban",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/webinars"
+        }
+      ]
+    }
+  ]
+}

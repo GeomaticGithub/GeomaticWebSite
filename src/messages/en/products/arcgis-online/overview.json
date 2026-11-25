@@ -1,0 +1,170 @@
+{
+  "ui": {
+    "kicker": "ArcGIS product",
+    "contact": "Talk to an expert",
+    "features": "See the capabilities",
+    "powerKicker": "Capabilities",
+    "designedKicker": "Strengths",
+    "expandKicker": "Go further",
+    "storiesKicker": "Customer stories",
+    "storiesTitle": "ArcGIS Online in practice",
+    "onEsri": "on esri.com"
+  },
+  "hero": {
+    "title": "ArcGIS Online",
+    "subtitle": "Mapping and spatial location intelligence for everyone",
+    "bgImage": "/arcgisOnline/arcgis-online-overview-banner-background-data-topography.jpg",
+    "mediaImage": "/arcgisOnline/arcgis-online-overview-banner-foreground-people-presenting.png",
+    "mediaAlt": "People collaborating around ArcGIS solutions",
+    "icon": "/arcgisOnline/ArcGISOnline.png"
+  },
+  "intro": {
+    "text": "Part of the Esri Geospatial Cloud, ArcGIS Online enables you to connect people, locations, and data using interactive maps. Work with smart, data-driven styles and intuitive analysis tools to gain location-based insights. Deliver location intelligence. Share your insights with the world or specific groups."
+  },
+  "power": {
+    "title": "The power of ArcGIS Online",
+    "image": "/arcgisOnline/arcgis-online-overview-the-power-of-arcgis-online.jpg",
+    "imageAlt": "ArcGIS Online capabilities collage"
+  },
+  "features": {
+    "items": [
+      {
+        "icon": "map",
+        "title": "Make maps",
+        "desc": "Quickly create maps of insights in your ArcGIS Online account using drag-and-drop workflows.",
+        "linkText": "Learn more about making maps",
+        "href": "/products/capabilities/mapping"
+      },
+      {
+        "icon": "share",
+        "title": "Share & collaborate",
+        "desc": "Instantly share your maps with groups, partners, or the public. Work securely with your organization through roles and privileges.",
+        "linkText": "See how to share & collaborate",
+        "href": "/arcgis/products/arcgis-online/capabilities/share-collaborate"
+      },
+      {
+        "icon": "analyze",
+        "title": "Analyze data",
+        "desc": "Intuitive analysis tools help you uncover patterns, perform site, network, and suitability analysis.",
+        "linkText": "Discover analysis tools",
+        "href": "/arcgis/products/arcgis-online/capabilities/analyze-data"
+      },
+      {
+        "icon": "data",
+        "title": "Work with your data",
+        "desc": "Bring in data from spreadsheets, apps, and services. Enrich, style, and transform it.",
+        "linkText": "Explore data tools",
+        "href": ""
+      }
+    ]
+  },
+  "designed": {
+    "title": "Designed for your success",
+    "tabs": [
+      {
+        "label": "Cloud-based",
+        "title": "Cloud-based",
+        "desc": "Because it’s hosted as a service, ArcGIS Online can be used anytime, anywhere. Your maps scale to millions of users without server upkeep.",
+        "image": "/arcgisOnline/arcgis-online-overview-cloud-based.jpg",
+        "imageAlt": "Cloud-based ArcGIS Online"
+      },
+      {
+        "label": "Secure & private",
+        "title": "Secure & private",
+        "desc": "Enterprise-grade security and privacy controls built in.",
+        "image": "/arcgisOnline/designed-secure.jpg",
+        "imageAlt": "Security visualization"
+      },
+      {
+        "label": "Simple to deploy",
+        "title": "Simple to deploy",
+        "desc": "Get started quickly with ready-to-use content and apps.",
+        "image": "/arcgisOnline/designed-simple.jpg",
+        "imageAlt": "Simple deployment"
+      }
+    ]
+  },
+  "expand": {
+    "title": "Expand your work",
+    "bgImage": "/arcgisOnline/background-expand-your-work.avif",
+    "cards": [
+      {
+        "title": "Developer tools",
+        "desc": "APIs and SDKs for building custom mapping and analysis apps.",
+        "linkText": "Explore ArcGIS for Developers",
+        "href": "/arcgis/products/arcgis-for-developers/overview",
+        "image": "/arcgisOnline/image-1-dev-tools.png",
+        "imageAlt": "Developer tooling"
+      },
+      {
+        "title": "Field operations",
+        "desc": "Coordinate field work with mobile apps integrated with your maps.",
+        "linkText": "Explore field operations",
+        "href": "/products/capabilities/field-operations",
+        "image": "/arcgisOnline/image-2-field-operations.png",
+        "imageAlt": "Field operations"
+      },
+      {
+        "title": "Advanced workflows",
+        "desc": "Do more with advanced analysis using ArcGIS Pro and extensions.",
+        "linkText": "Learn more about ArcGIS Pro",
+        "href": "/arcgis/products/arcgis-pro/overview",
+        "image": "/arcgisOnline/image-3-arcgis-pro.png",
+        "imageAlt": "Advanced workflows"
+      },
+      {
+        "title": "Data & maps",
+        "desc": "Ready-to-use maps and authoritative data layers for your projects.",
+        "linkText": "Explore Living Atlas",
+        "href": "https://www.esri.com/en-us/arcgis/products/living-atlas",
+        "image": "/arcgisOnline/image-4-data-and-maps.png",
+        "imageAlt": "Data and maps"
+      }
+    ]
+  },
+  "success": {
+    "background": "/arcgisOnline/success-bg.jpg",
+    "title": "City Planning",
+    "desc": "Kenton County, Kentucky uses ArcGIS Online to drive visualization, storytelling, and collaboration with city officials, citizens, and business owners.",
+    "ctaText": "See the story",
+    "ctaHref": "",
+    "pills": [
+      {
+        "label": "City Planning",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-city-planning-thumbnail.jpg",
+        "title": "City Planning",
+        "desc": "Kenton County, Kentucky uses ArcGIS Online to drive visualization, storytelling, and collaboration with city officials, citizens, and business owners.",
+        "actionType": "story",
+        "actionText": "Read the story",
+        "actionUrl": ""
+      },
+      {
+        "label": "Infrastructure",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-city-planning-thumbnail.jpg",
+        "title": "Infrastructure",
+        "desc": "Managing critical infrastructure with real-time monitoring and spatial analysis for better decision making.",
+        "actionType": "video",
+        "actionText": "Watch the video",
+        "actionUrl": ""
+      },
+      {
+        "label": "Emergency Management",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-emergency-management-thumbnail.jpg",
+        "title": "Emergency Management",
+        "desc": "Coordinate emergency response efforts with real-time data sharing and collaborative mapping solutions.",
+        "actionType": "video",
+        "actionText": "Watch the video",
+        "actionUrl": ""
+      },
+      {
+        "label": "Real Estate",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-real-estate-thumbnail.jpg",
+        "title": "Real Estate",
+        "desc": "Analyze market trends and property values with comprehensive location intelligence and demographic data.",
+        "actionType": "video",
+        "actionText": "Watch the video",
+        "actionUrl": ""
+      }
+    ]
+  }
+}

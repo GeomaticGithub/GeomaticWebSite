@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Analyse de sites et planification territoriale",
+    "subtitle1": "Choisissez les meilleurs emplacements",
+    "subtitle2": "Adoptez une stratégie de croissance axée sur les données",
+    "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-bg.jpg"
+  },
+  "intro": {
+    "title": "Soutenir le succès à long terme",
+    "paragraph": "Face à la concurrence des commerces de proximité et des détaillants en ligne, les entreprises ne peuvent pas se permettre de choisir un mauvais emplacement. Les dirigeants innovants utilisent l’intelligence géographique pour prévoir les profits des sites potentiels et de leurs réseaux, et prendre de solides décisions en matière de sélection de sites et de planification de marché."
+  },
+  "opportunities": {
+    "title": "Identifiez des opportunités de croissance invisibles pour les autres",
+    "intro": "Les cartes intelligentes montrent la performance actuelle des magasins ou la clientèle en tenant compte de la localisation et du potentiel de marché. L’analyse spatiale permet de sélectionner les sites les plus rentables selon la concurrence, la démographie et la chaîne logistique.",
+    "bullets": [
+      "Identifier et cibler les emplacements les plus rentables.",
+      "Prendre des décisions de croissance reproductibles à grande échelle.",
+      "Éviter de cannibaliser les ventes et de mettre en péril l’activité actuelle.",
+      "Optimiser l’expérience client en ligne et en magasin.",
+      "Maximiser la valeur des mélanges de magasins, marchés et produits."
+    ],
+    "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-5050.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Renforcez la sélection de sites et la planification territoriale grâce à l’intelligence géographique du cloud géospatial Esri.",
+    "items": [
+      {
+        "title": "Analyse spatiale et science des données",
+        "body": "Utilisez la localisation comme fil conducteur pour révéler des schémas et tendances cachés. Créez un avantage concurrentiel en intégrant la localisation dans les modèles de machine learning et d’intelligence artificielle.",
+        "cta": "Améliorez vos analyses",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Opérations sur le terrain",
+        "body": "Obtenez une vision claire des activités terrain en temps réel et utilisez des tableaux de bord visuellement riches pour éclairer vos décisions. Découvrez ce qui peut être accompli grâce à la collecte de données précises et au travail collaboratif, même hors ligne.",
+        "cta": "Emmenez vos opérations partout",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/business-needs-capabilities-field-operatioins.jpg"
+      },
+      {
+        "title": "Cartographie",
+        "body": "Visualisez les personnes, lieux et actifs pour obtenir des informations clés sur les clients et les concurrents. Observez ce qui se passe dans un réseau de magasins, créez des plans d’affaires solides et sachez où allouer vos ressources.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Besoins associés",
+    "bgGraphic": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Analyse de marché et des clients",
+        "body": "Fondez-vous sur les données plutôt que sur l’intuition pour trouver vos meilleurs clients, identifier vos marchés cibles, cibler vos publicités et stimuler votre croissance.",
+        "href": "/industries/needs/market-customer-analysis",
+        "icon": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/marketAndCustomerAnalysis.svg"
+      },
+      {
+        "title": "Numérisation de la chaîne d’approvisionnement",
+        "body": "Gérez votre chaîne logistique de manière numérique afin d’accroître efficacité, fiabilité et satisfaction client.",
+        "href": "/industries/needs/supply-chain-digitization",
+        "icon": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/supplyChainDigitization.svg"
+      },
+      {
+        "title": "Logistique et exécution",
+        "body": "Organisez des opérations de livraison complexes pour garantir que vos produits et fournitures arrivent à destination dans les délais.",
+        "href": "/industries/needs/logistics-fulfillment",
+        "icon": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/logisticsFulfillment.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur l’analyse de sites",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Planifier les meilleurs marchés — l’intuition rencontre les données",
+        "source": "WhereNext Magazine",
+        "excerpt": "Les données et l’intuition sont les alliées des dirigeants, guidant des décisions capables de stimuler la croissance de l’entreprise sur les marchés les plus adaptés.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/business-growth-and-market-planning",
+        "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-card-plan-best-markets-intuition-meets-data.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Entreprise axée sur les données : éviter les pièges",
+        "source": "WhereNext Magazine",
+        "excerpt": "Découvrez comment les dirigeants peuvent utiliser de nouveaux outils pour prendre des décisions pertinentes tout en évitant les pièges d’une analyse unidimensionnelle.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/data-analysis-pitfalls",
+        "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-card-data-driven-business-avoiding-pitfalls.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Trouver la confiance pour développer une entreprise",
+        "source": "WhereNext Magazine",
+        "excerpt": "Le distributeur OXXO utilise les données pour révéler les caractéristiques démographiques et les habitudes d’achat des consommateurs locaux.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/confidence-in-new-markets",
+        "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-card-finding-confidence-grow-business .jpg"
+      }
+    ]
+  }
+}

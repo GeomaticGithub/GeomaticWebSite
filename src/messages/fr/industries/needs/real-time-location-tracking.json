@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Suivi de localisation en temps réel",
+    "subtitle1": "Sachez où se trouvent vos actifs à tout moment",
+    "subtitle2": "Obtenez une vue en temps réel des personnes, véhicules et flux de capteurs",
+    "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Gardez le contrôle de ce qui se passe",
+    "paragraph": "Avec autant de personnes et d’objets en mouvement, les dirigeants d’entreprises et d’administrations n’ont pas le temps de suivre manuellement chaque déplacement. Grâce à l’intelligence géographique, ils peuvent créer des cartes et applications dynamiques pour la surveillance. En observant ce qui se passe en temps réel et en analysant ce qui s’est déjà produit, les décideurs peuvent identifier des opportunités de croissance, de sécurité et d’efficacité."
+  },
+  "opportunities": {
+    "title": "Voyez les schémas de mouvement que d’autres ne voient pas",
+    "intro": "Surveillez opérations, ressources et actifs — des équipes terrain aux flottes de véhicules — à l’aide de cartes, applications et tableaux de bord en direct.",
+    "bullets": [
+      "Analysez et affichez en temps réel les données issues de capteurs, appareils et flux des réseaux sociaux.",
+      "Mettez en contexte les données de suivi en direct avec les réseaux routiers ou d’utilité publique, les risques, la météo et la démographie.",
+      "Envoyez des commandes aux capteurs lorsqu’un schéma d’intérêt est détecté.",
+      "Recevez des alertes et visualisations en temps réel sur des cartes et tableaux de bord.",
+      "Intégrez l’historique de localisation aux données d’infrastructure pour détecter tendances et anomalies."
+    ],
+    "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-5050-see-movement-patterns-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Suivez vos actifs et visualisez, analysez et comprenez d’énormes volumes de données en temps réel grâce à l’intelligence géographique du cloud géospatial Esri.",
+    "items": [
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Identifiez dès maintenant les vulnérabilités dans votre entreprise et surveillez l’évolution des situations. Utilisez le big data et l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées sur la base des informations les plus récentes.",
+        "cta": "Voir en temps réel",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Analyse spatiale et science des données",
+        "body": "Utilisez la localisation comme fil conducteur pour révéler des schémas et tendances cachés. Créez un avantage concurrentiel en intégrant la localisation dans les modèles de machine learning et d’intelligence artificielle.",
+        "cta": "Améliorez vos analyses",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Opérations sur le terrain",
+        "body": "Obtenez une vision claire des activités terrain en temps réel et utilisez des tableaux de bord riches en visuels pour éclairer vos décisions. Découvrez ce qui peut être accompli grâce à la collecte de données précises et au travail collaboratif, tout en naviguant facilement, même hors ligne.",
+        "cta": "Emmenez vos opérations partout",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/business-needs-capabilities-field-operatioins.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Besoins associés",
+    "bgGraphic": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Suivi et analyse des actifs",
+        "body": "Visualisez vos actifs mobiles et fixes de manière dynamique. Utilisez des outils d’analyse pour enregistrer avec précision l’emplacement et l’état de vos actifs.",
+        "href": "/industries/needs/asset-tracking-analysis",
+        "icon": "/Solutions/BusinessNeeds/realTimeLocationTracking/assetTrackingAndAnalysis.svg"
+      },
+      {
+        "title": "Conscience situationnelle",
+        "body": "Dès qu’un événement survient, prenez de meilleures décisions en intégrant, analysant et affichant les données issues de multiples capteurs, appareils et flux sociaux.",
+        "href": "/industries/needs/situational-awareness",
+        "icon": "/Solutions/BusinessNeeds/realTimeLocationTracking/situationalAwareness.svg"
+      },
+      {
+        "title": "Gestion des services sur le terrain",
+        "body": "Transformez numériquement l’approche des opérations terrain. Gagnez en efficacité grâce aux mises à jour en temps réel et à l’intégration des applications mobiles dans les workflows.",
+        "href": "/industries/needs/field-service-management",
+        "icon": "/Solutions/BusinessNeeds/realTimeLocationTracking/fieldServiceManagement.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur le suivi de localisation en temps réel",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Un tableau de bord en temps réel suit la parade des Roses",
+        "source": "Esri Blog",
+        "excerpt": "Le service d’incendie de Pasadena a ajouté des capacités SIG en temps réel pour surveiller la sécurité et le déroulement de la parade des Roses.",
+        "href": "https://www.esri.com/about/newsroom/blog/real-time-feeds-ensures-rose-parade-safety",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-card-real-time-dashbpard.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Gérer un marathon avec une conscience en temps réel",
+        "source": "Esri Blog",
+        "excerpt": "Chicago a utilisé une surveillance en temps réel du parcours du marathon pour informer et guider les interventions et ressources de sécurité publique.",
+        "href": "https://www.esri.com/about/newsroom/blog/chicago-adds-real-time-awareness",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-card-managing-a-marathon.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "San Antonio se prépare pour la NCAA Final Four",
+        "source": "Esri Blog",
+        "excerpt": "La police de San Antonio a utilisé un SIG en temps réel pour assurer la sécurité des joueurs, entraîneurs, employés et spectateurs de la NCAA.",
+        "href": "https://www.esri.com/about/newsroom/blog/san-antonio-real-time-gis-ncaa-final-four",
+        "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-card-san-antonio-prepares-for-the-ncaa-final-four.jpg"
+      }
+    ]
+  }
+}

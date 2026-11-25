@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Field Service Management",
+    "subtitle1": "Coordinate operations from anywhere",
+    "subtitle2": "Work seamlessly between office and field",
+    "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Build a more effective field service strategy",
+    "paragraph": "Field activities often involve multiple projects, many staff members, and numerous assets. Fieldworkers can use mobile apps, smart maps, and dashboards to see the real-time status and location of projects and staff. This digitally transformed approach saves money and time by eliminating duplicated efforts and wasted resources and keeping data current."
+  },
+  "band": {
+    "title": "Build a more effective field service strategy",
+    "body": "Empower crews with connected mobile workflows and a common operating picture. Use authoritative data, location-aware apps, and dashboards to coordinate tasks, monitor progress, and keep everyone aligned across office and field.",
+    "image": "/Solutions/BusinessNeeds/FieldServiceManagement/band-city.jpg"
+  },
+  "connections": {
+    "title": "See the connections others can’t",
+    "intro": "Smart maps and dashboards illuminate critical field operations, empower on-the-fly improvements, and reveal deeper insights about projects and resources.",
+    "bullets": [
+      "Ensure field and office staff are using the same authoritative data.",
+      "Use real-time dashboards to inform decisions and evaluate key performance indicator (KPI) metrics.",
+      "Improve sustainability by reducing or replacing reliance on paper.",
+      "Add the power of mobile apps for critical functions such as data collection and route optimization."
+    ],
+    "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-5050-see-the-connections-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Transform workflows, reduce errors, boost productivity, and save money with location intelligence technology from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Field Operations",
+        "body": "Gain a location-based perspective on real-time field activities and use visually rich dashboards to inform decisions. See what can be accomplished through working in unison while capturing data and navigating roads—even when offline.",
+        "cta": "Take operations anywhere",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/business-needs-capabilities-field-operatioins.jpg"
+      },
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Know where assets are and monitor changes in real time. Use big data and Internet of Things (IoT) technology to make quick, informed decisions based on the most up-to-date information.",
+        "cta": "Monitor in real time",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Mapping",
+        "body": "Visualize people, places, and assets to gain a clear understanding of all operations in the field. See what's happening across the organization, create a detailed plan, and know where to effectively schedule and dispatch resources.",
+        "cta": "Visualize your data",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about field service management",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Field Apps Help Utility Streamline Work",
+        "source": "ArcNews",
+        "excerpt": "Utility staff now have a common view of the network from the office and the field, streamlining operations and increasing efficiency.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/field-apps-help-utility-streamline-work",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-card-field-apps-help-utility-steamline-work.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Lebanese Red Cross Use Location Intelligence",
+        "source": "Esri Blog",
+        "excerpt": "Field tools help volunteers tackle complex data collection and project management.",
+        "href": "https://www.esri.com/about/newsroom/blog/lebanese-red-cross-data-driven",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-card-lebanese-red-cross.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Taking GIS to the Field and Back",
+        "source": "ArcNews",
+        "excerpt": "Discover how public works department employees and a GIS manager coordinated field assignments, collected asset data, and more.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/taking-gis-to-the-field-and-back",
+        "image": "/Solutions/BusinessNeeds/FieldServiceManagement/field-service-management-card-taking-gis-to-the-field-and-back.jpg"
+      }
+    ]
+  }
+}

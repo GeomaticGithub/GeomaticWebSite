@@ -1,0 +1,762 @@
+{
+  "ui": {
+    "kicker": "ArcGIS",
+    "contact": "Talk to an expert",
+    "catalogue": "Browse the catalogue",
+    "flagshipKicker": "Core platforms",
+    "flagshipTitle": "The heart of ArcGIS",
+    "featuredKicker": "Worth a look",
+    "matrixKicker": "Catalogue",
+    "filterLabel": "Filter products",
+    "filterPlaceholder": "Search a product…",
+    "count": "{count} products",
+    "noResult": "No product matches “{query}”.",
+    "clear": "Clear",
+    "ctasKicker": "Go further",
+    "discover": "Learn more",
+    "onEsri": "on esri.com"
+  },
+  "hero": {
+    "title": "Esri Products",
+    "subtitle": "Esri builds the leading mapping and spatial analytics software for desktop, SaaS, mobile and enterprise. Explore core platforms, apps, content solutions, and developer tools.",
+    "image": "/allEsriProducts/product-gateway-foreground-2019.png",
+    "bgImage": "/allEsriProducts/banner-background-product-gateway.jpg"
+  },
+  "intro": {
+    "paragraph": "Esri builds the leading mapping and spatial analytics software for desktop, software as a service (SaaS), and enterprise applications. Esri ArcGIS products are designed to deliver location intelligence and meet digital transformation needs for organizations of all sizes. Here you can explore Esri software, apps, content, solutions, and developer tools."
+  },
+  "tiles": {
+    "items": [
+      {
+        "title": "ArcGIS Online",
+        "subtitle": "Complete SaaS mapping platform",
+        "image": "/allEsriProducts/ecs-flagship-arcgis-online.jpg",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-online/overview",
+        "accent": "blue",
+        "icon": "/allEsriProducts/ArcGISOnline.png"
+      },
+      {
+        "title": "ArcGIS Pro",
+        "subtitle": "Next-generation desktop GIS",
+        "image": "/allEsriProducts/ecs-flagship-arcgis-pro.jpg",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview",
+        "accent": "indigo",
+        "icon": "/allEsriProducts/ArcGIS-Pro.png"
+      },
+      {
+        "title": "ArcGIS Enterprise",
+        "subtitle": "Flexible mapping server software",
+        "image": "/allEsriProducts/ecs-flagship-arcgis-enterprise.jpg",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview",
+        "accent": "purple",
+        "icon": "/allEsriProducts/ArcGIS-Enterprise.png"
+      },
+      {
+        "title": "ArcGIS Living Atlas",
+        "subtitle": "Data for the planet",
+        "image": "/allEsriProducts/ecs-flagship-living-atlas.jpg",
+        "href": "https://www.esri.com/en-us/arcgis/products/living-atlas",
+        "accent": "teal",
+        "icon": "/allEsriProducts/Living-Atlas.png"
+      },
+      {
+        "title": "ArcGIS Apps",
+        "subtitle": "Focused GIS applications",
+        "image": "/allEsriProducts/ecs-flagship-arcgis-apps.jpg",
+        "href": "https://www.esri.com/en-us/arcgis/products/index?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fapps-for-everyone%2Foverview",
+        "accent": "emerald",
+        "icon": "/allEsriProducts/ArcGIS-Apps.svg"
+      },
+      {
+        "title": "ArcGIS for Developers",
+        "subtitle": "Build with ArcGIS APIs & SDKs",
+        "image": "/allEsriProducts/ecs-flagship-arcgis-developer-program.jpg",
+        "href": "https://www.esri.com/en-us/arcgis/products/develop-with-arcgis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-developers%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-developers%2Foverview",
+        "accent": "cyan",
+        "icon": "/allEsriProducts/Developers.png"
+      }
+    ]
+  },
+  "featured": {
+    "title": "Featured Products",
+    "cards": [
+      {
+        "title": "Tracker for ArcGIS",
+        "subtitle": "Know what happens in the field",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-tracker%2Foverview&rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ftracker-for-arcgis%2Foverview",
+        "icon": "/allEsriProducts/Tracker_for_ArcGIS_220.png"
+      },
+      {
+        "title": "ArcGIS Urban",
+        "subtitle": "Smart city planning",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/overview",
+        "icon": "/allEsriProducts/ArcGIS_Urban_220.png"
+      },
+      {
+        "title": "ArcGIS StoryMaps",
+        "subtitle": "Transform your digital storytelling with custom maps",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/overview",
+        "icon": "/allEsriProducts/StoryMaps.png"
+      },
+      {
+        "title": "ArcGIS Notebook Server",
+        "subtitle": "Spatial analytics with data science",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-notebooks/overview?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/arcgis-notebook-server",
+        "icon": "/allEsriProducts/ArcGIS-Enterprise.png"
+      },
+      {
+        "title": "ArcGIS Excalibur",
+        "subtitle": "Web-based imagery exploitation workflow for timely geospatial intelligence",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-excalibur/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-excalibur",
+        "icon": "/allEsriProducts/ArcGIS_Excalibur_220.png"
+      },
+      {
+        "title": "ArcGIS QuickCapture",
+        "subtitle": "The app for rapid data collection",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-quickcapture/overview",
+        "icon": "/allEsriProducts/QuickCapture_220.png"
+      }
+    ]
+  },
+  "matrix": {
+    "title": "All Esri Products",
+    "groups": [
+      {
+        "title": "Core Products",
+        "columns": [
+          [
+            {
+              "label": "ArcGIS Apps",
+              "href": "https://www.esri.com/en-us/arcgis/products/index?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fapps-for-everyone%2Foverview"
+            },
+            {
+              "label": "ArcGIS Enterprise",
+              "href": "/LATER"
+            },
+            {
+              "label": "ArcGIS Desktop",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-desktop/overview"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Hub",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-hub/overview"
+            },
+            {
+              "label": "ArcGIS Living Atlas of the World",
+              "href": "https://www.esri.com/en-us/arcgis/products/living-atlas"
+            },
+            {
+              "label": "ArcGIS Online",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-online/overview"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Pro",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview"
+            },
+            {
+              "label": "ArcGIS for Personal Use",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-personal-use/overview?rsource=%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-personal-use"
+            },
+            {
+              "label": "ArcGIS for Student Use",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-student-use/overview"
+            }
+          ]
+        ]
+      },
+      {
+        "title": "Apps",
+        "columns": [
+          [
+            {
+              "label": "AppStudio for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-appstudio/resources?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-appstudio%2Foverview&rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/appstudio-for-arcgis"
+            },
+            {
+              "label": "Configurable Apps",
+              "href": "https://www.esri.com/en-us/arcgis/products/configurable-apps"
+            },
+            {
+              "label": "Web AppBuilder for ArcGIS",
+              "href": "/LATER"
+            },
+            {
+              "label": "Collector for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fcollector-for-arcgis%2Foverview"
+            },
+            {
+              "label": "Drone2Map for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-reality/products/arcgis-drone2map?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-drone2map%2Foverview&rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fdrone2map%2Foverview"
+            },
+            {
+              "label": "Explorer for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-explorer%2Foverview&rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fexplorer-for-arcgis"
+            },
+            {
+              "label": "Operations Dashboard for ArcGIS",
+              "href": "/LATER"
+            },
+            {
+              "label": "Navigator for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-navigator/overview?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/navigator-for-arcgis/overview"
+            },
+            {
+              "label": "Survey123 for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-survey123/overview?rsource=%2Fen-us%2Farcgis%2Fproducts%2Fsurvey123%2Foverview"
+            },
+            {
+              "label": "Tracker for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-tracker%2Foverview&rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ftracker-for-arcgis%2Foverview"
+            },
+            {
+              "label": "Workforce for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-workforce/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fworkforce%2Foverview"
+            },
+            {
+              "label": "ArcGIS QuickCapture",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-quickcapture/overview?rsource=%2Fen-us%2Flanding-page%2Fproduct%2F2019%2Farcgis-quickcapture"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Business Analyst Desktop",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-business-analyst/applications/pro?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-business-analyst%2Fapplications%2Fdesktop"
+            },
+            {
+              "label": "ArcGIS Business Analyst Mobile App",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-business-analyst/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-business-analyst%2Fapplications%2Fweb-mobile-apps"
+            },
+            {
+              "label": "ArcGIS Business Analyst Web App",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-business-analyst/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-business-analyst%2Fapplications%2Fweb-mobile-apps"
+            },
+            {
+              "label": "ArcGIS Community Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-community-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Earth",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-earth/overview"
+            },
+            {
+              "label": "ArcGIS Excalibur",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-excalibur/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-excalibur"
+            },
+            {
+              "label": "ArcGIS Maps for Adobe Creative Cloud",
+              "href": "https://www.esri.com/en-us/arcgis/products/maps-for-adobecc/overview"
+            },
+            {
+              "label": "ArcGIS Maps for Office",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-microsoft-365%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-office%2Foverview%20arcgis-for-excel&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-maps-for-office%2Foverview"
+            },
+            {
+              "label": "ArcGIS Maps for Power BI",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-microsoft-365%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-power-bi%2Foverview%20arcgis-for-power-bi&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-maps-for-power-bi%2Foverview"
+            },
+            {
+              "label": "ArcGIS Maps for SharePoint",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-microsoft-365%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-sharepoint%2Foverview%20arcgis-for-sharepoint&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-maps-for-sharepoint%2Foverview"
+            },
+            {
+              "label": "Esri CityEngine",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-cityengine/overview?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/esri-cityengine/overview"
+            },
+            {
+              "label": "Esri Redistricting",
+              "href": "https://www.esri.com/en-us/arcgis/products/esri-redistricting/overview"
+            },
+            {
+              "label": "GeoPlanner for ArcGIS",
+              "href": "/LATER"
+            },
+            {
+              "label": "Insights for ArcGIS",
+              "href": "/LATER"
+            },
+            {
+              "label": "Map Viewer",
+              "href": "https://www.arcgis.com/home/webmap/viewer.html?useExisting=1"
+            },
+            {
+              "label": "Scene Viewer",
+              "href": "https://www.arcgis.com/home/webscene/viewer.html"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Open Data",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-open-data"
+            },
+            {
+              "label": "Crowdsource Manager",
+              "href": "https://solutions.arcgis.com/local-government/help/crowdsource-manager/"
+            },
+            {
+              "label": "Crowdsource Polling",
+              "href": "https://solutions.arcgis.com/local-government/help/crowdsource-polling/"
+            },
+            {
+              "label": "Crowdsource Reporter",
+              "href": "https://solutions.arcgis.com/local-government/help/crowdsource-reporter/"
+            },
+            {
+              "label": "ArcGIS StoryMaps",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/overview"
+            },
+            {
+              "label": "Photo Survey",
+              "href": "https://solutions.arcgis.com/local-government/help/photo-surveys/"
+            },
+            {
+              "label": "Quick Report Template",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-appstudio/resources?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-appstudio%2Foverview&rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/appstudio-for-arcgis/overview"
+            }
+          ]
+        ]
+      },
+      {
+        "title": "Content",
+        "columns": [
+          [
+            {
+              "label": "Data and Location Services",
+              "href": "/LATER"
+            },
+            {
+              "label": "ArcGIS Living Atlas of the World",
+              "href": "https://www.esri.com/en-us/arcgis/products/living-atlas"
+            },
+            {
+              "label": "World Geocoder for ArcGIS ",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-world-geocoder?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fworld-geocoder-for-arcgis"
+            }
+          ],
+          [
+            {
+              "label": "Esri Demographics",
+              "href": "https://www.esri.com/en-us/arcgis/products/data/overview?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/esri-demographics/overview"
+            },
+            {
+              "label": "Esri Reports",
+              "href": "https://www.esri.com/en-us/arcgis/products/data/reports?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fbuy-reports%2Foverview"
+            }
+          ],
+          [
+            {
+              "label": "StreetMap Premium for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-streetmap-premium/overview?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/streetmap-premium-for-arcgis/overview"
+            },
+            {
+              "label": "Tapestry Segmentation",
+              "href": "https://www.esri.com/en-us/arcgis/products/data/data-portfolio/tapestry-segmentation"
+            }
+          ]
+        ]
+      },
+      {
+        "title": "Developer Tools",
+        "columns": [
+          [
+            {
+              "label": "ArcGIS API for JavaScript",
+              "href": "https://developers.arcgis.com/documentation/mapping-and-location-services/"
+            },
+            {
+              "label": "ArcGIS API for Python",
+              "href": "https://developers.arcgis.com/python/latest/"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Runtime SDKs",
+              "href": "https://developers.arcgis.com/documentation/mapping-and-location-services/"
+            }
+          ],
+          [
+            {
+              "label": "Web AppBuilder for ArcGIS (Developer Edition)",
+              "href": "https://developers.arcgis.com/web-appbuilder/"
+            }
+          ]
+        ]
+      },
+      {
+        "title": "ArcGIS Pro Extensions",
+        "columns": [
+          [
+            {
+              "label": "ArcGIS 3D Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-3d-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Business Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-business-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Data Interoperability",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-data-interoperability/overview"
+            },
+            {
+              "label": "ArcGIS Data Reviewer",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-data-reviewer/overview"
+            },
+            {
+              "label": "ArcGIS for Aviation: Airports",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-aviation-airports/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-aviation-airports%2Foverview"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Geostatistical Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/geostatistical-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Image Analyst",
+              "href": "/LATER"
+            },
+            {
+              "label": "ArcGIS LocateXT",
+              "href": "https://www.esri.com/en-us/arcgis/products/locatext/overview"
+            },
+            {
+              "label": "ArcGIS Network Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-network-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Pipeline Referencing",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-pipeline-referencing/overview"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Publisher",
+              "href": "/LATER"
+            },
+            {
+              "label": "ArcGIS Spatial Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-spatial-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Workflow Manager",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-workflow-manager/overview"
+            },
+            {
+              "label": "Esri Defense Mapping",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-defense-mapping/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-defense-mapping%2Foverview"
+            },
+            {
+              "label": "Esri Production Mapping",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-production-mapping/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-production-mapping%2Foverview"
+            }
+          ]
+        ]
+      },
+      {
+        "title": "ArcMap Extensions",
+        "columns": [
+          [
+            {
+              "label": "ArcGIS 3D Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-3d-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Data Interoperability",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-data-interoperability/overview"
+            },
+            {
+              "label": "ArcGIS Data Reviewer",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-data-reviewer/overview"
+            },
+            {
+              "label": "ArcGIS Editor for OpenStreetMap",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-editor-for-openstreetmap"
+            },
+            {
+              "label": "ArcGIS for Aviation: Airports",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-aviation-airports/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-aviation-airports%2Foverview"
+            },
+            {
+              "label": "ArcGIS for Aviation: Charting ",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-aviation-charting/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-aviation-charting%2Foverview"
+            },
+            {
+              "label": "ArcGIS for Maritime: Bathymetry",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-bathymetry/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-maritime-bathymetry%2Foverview"
+            },
+            {
+              "label": "ArcGIS for Maritime: Charting",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-maritime/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-maritime-charting%2Foverview"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Geostatistical Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/geostatistical-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Infographics Add-In",
+              "href": "https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/infographics.htm?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-infographics-add-in"
+            },
+            {
+              "label": "ArcGIS Network Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-network-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Pipeline Referencing",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-pipeline-referencing/overview"
+            },
+            {
+              "label": "ArcGIS Publisher",
+              "href": "/LATER"
+            },
+            {
+              "label": "ArcGIS Schematics",
+              "href": "https://pro.arcgis.com/en/pro-app/latest/tool-reference/appendices/unavailable-tools.htm?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-schematics%2Foverview%20ESRI_SECTION1_E6917C94164C4172B302BFA71998BCEB"
+            },
+            {
+              "label": "ArcGIS Spatial Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-spatial-analyst/overview"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Tracking Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-tracking-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Workflow Manager",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-workflow-manager/overview"
+            },
+            {
+              "label": "ArcReader",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-publisher/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcreader"
+            },
+            {
+              "label": "Esri Defense Mapping",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-defense-mapping/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-defense-mapping%2Foverview"
+            },
+            {
+              "label": "Esri Production Mapping",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-production-mapping/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-production-mapping%2Foverview"
+            },
+            {
+              "label": "Esri Roads and Highways",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-roads-highways/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-roads-and-highways%2Foverview"
+            },
+            {
+              "label": "WMC Client for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/wmc-client-for-arcgis"
+            }
+          ]
+        ]
+      },
+      {
+        "title": "ArcGIS Enterprise Servers and Extensions",
+        "columns": [
+          [
+            {
+              "label": "ArcGIS 3D Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-3d-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Business Analyst Server",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-business-analyst/applications/enterprise?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/arcgis-business-analyst/applications/server"
+            },
+            {
+              "label": "ArcGIS Data Interoperability",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-data-interoperability/overview"
+            },
+            {
+              "label": "ArcGIS Data Reviewer",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-data-reviewer/overview"
+            },
+            {
+              "label": "ArcGIS for INSPIRE",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-inspire/classic?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-inspire"
+            },
+            {
+              "label": "ArcGIS for Maritime: Server",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-maritime/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-maritime-server"
+            },
+            {
+              "label": "ArcGIS GeoAnalytics Server",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-geoanalytics-server/overview"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS GeoEvent Server",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-geoevent-server"
+            },
+            {
+              "label": "ArcGIS Geostatistical Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/geostatistical-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Image Server",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-image/options/arcgis-image-server?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-image-server"
+            },
+            {
+              "label": "ArcGIS Monitor",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-monitor/overview"
+            },
+            {
+              "label": "ArcGIS Network Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-network-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Notebook Server",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-notebooks/overview?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/arcgis-notebook-server"
+            },
+            {
+              "label": "ArcGIS Pipeline Referencing",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-pipeline-referencing/overview"
+            },
+            {
+              "label": "ArcGIS Schematics",
+              "href": "https://pro.arcgis.com/en/pro-app/latest/tool-reference/appendices/unavailable-tools.htm?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-schematics%2Foverview%20ESRI_SECTION1_E6917C94164C4172B302BFA71998BCEB"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS Spatial Analyst",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-spatial-analyst/overview"
+            },
+            {
+              "label": "ArcGIS Utility Network Management",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-utility-network/overview?rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/products/arcgis-utility-network-management/overview"
+            },
+            {
+              "label": "ArcGIS Workflow Manager",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-workflow-manager/overview"
+            },
+            {
+              "label": "Esri Defense Mapping",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-defense-mapping/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-defense-mapping%2Foverview"
+            },
+            {
+              "label": "Esri Production Mapping",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-production-mapping/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-production-mapping%2Foverview"
+            },
+            {
+              "label": "Esri Roads and Highways",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-roads-highways/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fesri-roads-and-highways%2Foverview"
+            }
+          ]
+        ]
+      },
+      {
+        "title": "Solutions",
+        "columns": [
+          [
+            {
+              "label": "ArcGIS for AutoCAD",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-autocad/overview"
+            },
+            {
+              "label": "ArcGIS for Defense",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-defense"
+            },
+            {
+              "label": "ArcGIS Editor for OpenStreetMap",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-editor-for-openstreetmap"
+            },
+            {
+              "label": "ArcGIS for Electric Utilities",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-electric-utilities"
+            },
+            {
+              "label": "ArcGIS for Emergency Management",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-emergency-management"
+            },
+            {
+              "label": "ArcGIS Full Motion Video",
+              "href": "https://www.esri.com/en-us/capabilities/imagery-remote-sensing/capabilities/visualization-interpretation?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fcapabilities%2Fimagery-remote-sensing%2Fcapabilities%2Fvisualization-exploitation&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fimagery-remote-sensing%2Fcapabilities%2Fvisualization-exploitation&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Farcgis-full-motion-video"
+            },
+            {
+              "label": "ArcGIS for Gas Utilities",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-gas-utilities"
+            }
+          ],
+          [
+            {
+              "label": "ArcGIS for Local Government",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-local-government"
+            },
+            {
+              "label": "ArcGIS for State Government",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-state-government"
+            },
+            {
+              "label": "ArcGIS for Telecommunications",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-telecommunications"
+            },
+            {
+              "label": "ArcGIS for Water Utilities",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-solutions/overview?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-water-utilities"
+            },
+            {
+              "label": "ArcGIS Indoors",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-indoors/overview"
+            },
+            {
+              "label": "ArcPad",
+              "href": "https://resources.arcgis.com/en/help/arcpad/10.2/app/index.html?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcpad%2Foverview"
+            }
+          ],
+          [
+            {
+              "label": "Data Appliance for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-data-appliance/overview"
+            },
+            {
+              "label": "Districting for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/districting-for-arcgis/overview"
+            },
+            {
+              "label": "Esri Geoportal Server",
+              "href": "https://www.esri.com/en-us/arcgis/products/esri-geoportal-server/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fgeoportal-server%2Foverview"
+            },
+            {
+              "label": "Esri S-57 Viewer",
+              "href": "https://www.esri.com/en-us/arcgis/products/s57-viewer"
+            },
+            {
+              "label": "GeoCollector for ArcPad",
+              "href": "https://www.esri.com/en-us/about/partners/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fabout%2Fpartners%2Four-partners%2Ftechnology%2Foffers"
+            },
+            {
+              "label": "World Geocoder for ArcGIS",
+              "href": "https://www.esri.com/en-us/arcgis/products/arcgis-world-geocoder?rmedium=www_esri_com_EtoF&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fworld-geocoder-for-arcgis"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "ctas": {
+    "title": "Learn more about Esri",
+    "items": [
+      {
+        "title": "About ArcGIS",
+        "desc": "Discover the ArcGIS platform and how it fits together.",
+        "href": "https://www.esri.com/en-us/arcgis/geospatial-platform/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fabout-arcgis%2Foverview"
+      },
+      {
+        "title": "Services",
+        "desc": "Implementation, training, support, and success offerings.",
+        "href": "/support-services"
+      },
+      {
+        "title": "Industries",
+        "desc": "See how organizations across industries use ArcGIS.",
+        "href": "/industries"
+      }
+    ]
+  }
+}

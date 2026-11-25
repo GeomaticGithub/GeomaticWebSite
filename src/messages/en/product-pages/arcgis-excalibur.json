@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "kicker": "product",
+    "icon": "/arcgisExcalibur/ArcGIS_Excalibur_220.png",
+    "title": "ArcGIS Excalibur",
+    "subtitle": "Integrating Image Exploitation",
+    "text": "Web-based image exploitation workflow for timely geospatial intelligence.",
+    "bgImage": "/arcgisExcalibur/excalibur-banner-background-map.png",
+    "image": "/arcgisExcalibur/excalibur-hero-banner-illustration-b.png"
+  },
+  "blocks": [
+    {
+      "type": "band",
+      "kicker": "overview",
+      "title": "Image exploitation made simple",
+      "text": "Part of the Esri Geospatial Cloud, ArcGIS Excalibur is a project-based imagery application that modernizes and enhances image-based workflows through intuitive experiences. View drone, aircraft, or satellite imagery as collected along with authoritative geospatial contextual and operational layers. Assign and manage imagery exploitation tasks across the organization. Compile, publish, share, and disseminate dynamic information products to consumers and devices in multiple formats."
+    },
+    {
+      "type": "band",
+      "title": "Dynamic web-based imagery workflows",
+      "text": "A new way for analysts, imagery specialists, and managers to collaborate and deliver timely geospatial intelligence to decision makers.",
+      "image": "/arcgisExcalibur/introducing-arcgis-excalibur-map-b.jpg"
+    },
+    {
+      "type": "cards",
+      "kicker": "capabilities",
+      "title": "Image exploitation made simple",
+      "items": [
+        {
+          "title": "Search and discover",
+          "text": "Query, locate, and find images in seconds.",
+          "icon": "/arcgisExcalibur/search.svg"
+        },
+        {
+          "title": "View",
+          "text": "Ortho/Oblique images and GIS data together.",
+          "icon": "/arcgisExcalibur/layers.svg"
+        },
+        {
+          "title": "Perform analysis",
+          "text": "Use tools and models to solve spatial problems.",
+          "icon": "/arcgisExcalibur/analysis.svg"
+        },
+        {
+          "title": "Create imagery projects",
+          "text": "Access all resources in one location.",
+          "icon": "/arcgisExcalibur/bulb.svg"
+        },
+        {
+          "title": "Customize",
+          "text": "Personalize your experience.",
+          "icon": "/arcgisExcalibur/customize.svg"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "how",
+      "title": "How ArcGIS Excalibur works",
+      "steps": [
+        {
+          "title": "Search and discover",
+          "desc": "An interactive experience to search and discover imagery within your organization."
+        },
+        {
+          "title": "Analyze your data",
+          "desc": "Use focused tools to analyze full-resolution oblique and orthorectified images."
+        },
+        {
+          "title": "Disseminate your findings",
+          "desc": "Share your analysis as interactive data stories that inform internal or external stakeholders."
+        },
+        {
+          "title": "Executive officer",
+          "desc": "Gain greater ROI through trustworthy processes that increase your productivity."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "title": "SIG 3D",
+    "subtitle": "Fonctionnalités ArcGIS",
+    "bgImage": "/3d-gis/main-banner-wide.jpg"
+  },
+  "intro": {
+    "title": "Notre monde est en 3D",
+    "description": "La scène web 3D interactive ci-dessous a été construite avec ArcGIS et l’API JavaScript d’ArcGIS.",
+    "linkText": "Cliquer pour voir sur arcgis.com",
+    "linkHref": "https://developers.arcgis.com/javascript/latest/",
+    "embedUrl": "https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayer-edges/live/index.html"
+  },
+  "strip": {
+    "title": "ArcGIS est en 3D",
+    "bgImage": "/3d-gis/icon-text-link-stack-analyze-banner.jpg",
+    "items": [
+      {
+        "icon": "cube",
+        "title": "Créer",
+        "desc": "Construisez du contenu 3D précis à partir de BIM, lidar et imagerie."
+      },
+      {
+        "icon": "analyze",
+        "title": "Analyser",
+        "desc": "Effectuez des analyses spatiales avancées et évaluez les alternatives."
+      },
+      {
+        "icon": "visualize",
+        "title": "Visualiser",
+        "desc": "Explorez des jumeaux numériques à l’échelle de la ville et des terrains mondiaux dans leur contexte."
+      },
+      {
+        "icon": "share",
+        "title": "Communiquer",
+        "desc": "Partagez des expériences 3D interactives sur le web et les appareils."
+      }
+    ]
+  },
+  "building": {
+    "title": "Construire avec le SIG 3D",
+    "subtitle": "Créez des visualisations 3D immersives qui transforment votre compréhension et votre communication des données spatiales à différentes échelles.",
+    "image": "/3d-gis/building-bim.jpg",
+    "imageAlt": "Modèle de bâtiment 3D",
+    "captionTitle": "Informations sur le bâtiment",
+    "captionText": "Prenez de meilleures décisions avec un contexte réel et prêt à concevoir.",
+    "useCasesTitle": "Comment utiliser la 3D ?",
+    "useCases": [
+      { "label": "Modélisation des informations du bâtiment (BIM)" },
+      { "label": "Gestion des corridors" },
+      { "label": "Aménagement urbain" },
+      { "label": "Analyse topographique / géologique" },
+      { "label": "Vues globales" }
+    ],
+    "images": {
+      "building": {
+        "alt": "Visualisation 3D de bâtiment",
+        "title": "Informations sur le bâtiment",
+        "description": "Modélisez l’intérieur des bâtiments pour la planification, l’analyse et la visualisation.",
+        "href": "Voir comment →",
+        "link": "https://www.esri.com/about/newsroom/arcnews/using-the-arcgis-platform-to-visualize-facility-information?rmedium=arcnews&rsource=https://www.esri.com/esri-news/arcnews/winter16articles/using-the-arcgis-platform-to-visualize-facility-information"
+      },
+      "campus": {
+        "alt": "Visualisation 3D de campus",
+        "title": "Gestion de campus",
+        "description": "Visualisez des conceptions existantes ou nouvelles dans l’espace réel qu’elles occupent.",
+        "href": "Voir comment →",
+        "link": "https://www.esri.com/about/newsroom/arcuser/creating-a-3d-campus-scene-using-esri-cityengine?rmedium=arcuser&rsource=https://www.esri.com/esri-news/arcuser/winter-2016/creating-a-3d-campus-scene-using-esri-cityengine"
+      },
+      "city": {
+        "alt": "Visualisation 3D de ville",
+        "title": "Aménagement urbain",
+        "description": "Modélisez une ville entière pour la planification urbaine, le développement économique et l’efficacité opérationnelle.",
+        "href": "Voir comment →",
+        "link": "https://www.esri.com/about/newsroom/arcuser/planning-the-city-of-tomorrow-in-3d?rmedium=arcuser&rsource=https://www.esri.com/esri-news/arcuser/winter-2017/planning-the-city-of-tomorrow-in-3d"
+      },
+      "region": {
+        "alt": "Visualisation 3D régionale",
+        "title": "Analyse régionale",
+        "description": "Observez une grande région en 3D pour une compréhension globale.",
+        "href": "Voir comment →",
+        "link": "https://www.esri.com/about/newsroom/announcements/fire-globe-delivers-esri-3d-visualization-to-us-firefighters?rmedium=newsrelease&rsource=https://www.esri.com/esri-news/releases/16-1qtr/fire-globe-delivers-esri-3d-visualization-to-us-firefighters"
+      },
+      "globe": {
+        "alt": "Visualisation 3D mondiale",
+        "title": "Vues globales",
+        "description": "Utilisez le globe entier pour obtenir une véritable perception de vos données.",
+        "href": "Voir comment →",
+        "link": "https://www.esri.com/arcgis-blog/products/arcgis-online/3d-gis/3d-web-scenes-take-flight?rmedium=redirect&rsource=blogs.esri.com/esri/arcgis/2014/12/16/3d-web-scenes-take-flight"
+      }
+    }
+  },
+  "closerLook": {
+    "title": "Regardez de plus près Esri",
+    "image": "/3d-gis/closer-look.jpg",
+    "imageAlt": "Vue aérienne 3D"
+  },
+  "crossPlatform": {
+    "title": "Compatibilité multiplateforme",
+    "categories": ["Applications 3D", "Constructeurs d’applications 3D"]
+  }
+}

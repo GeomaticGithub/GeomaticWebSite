@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "kicker": "Ecosystem",
+    "title": "Partners",
+    "lead": "Our Partner Ecosystem",
+    "description": "We work with technology, solution and imagery partners to bring the best geographic intelligence capabilities to our customers in Morocco and the region.",
+    "bgGraphic": "/aboutGeomatic/partners/partner-banner.png"
+  },
+  "ui": {
+    "all": "View the page",
+    "site": "Partner website",
+    "count": "{count} partners",
+    "countOne": "1 partner",
+    "kicker": "Partners",
+    "solution": "See the solution",
+    "others": "Other partner families",
+    "allPartners": "All partners"
+  },
+  "categories": [
+    {
+      "key": "technology",
+      "title": "Technology Partners",
+      "link": "/about-geomatic/partners/technology"
+    },
+    {
+      "key": "solutions",
+      "title": "Solution Partners",
+      "link": "/about-geomatic/partners/solutions"
+    },
+    {
+      "key": "imagery",
+      "title": "Imagery Partners",
+      "link": "/about-geomatic/partners/imagery"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Partager et Collaborer",
+    "subtitle": "Partagez des cartes avec n'importe qui, n'importe où. Collaborez avec des collègues pour résoudre des problèmes.",
+    "bgGraphic": "/arcgisOnline/shareCollaborate/arcgis-online-indigo-banner-background-data-topography.jpg",
+    "mediaImage": "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-banner-foreground.png",
+    "mediaAlt": "Professionnel collaborant sur une tablette"
+  },
+  "startConversation": {
+    "title": "Partagez vos cartes pour commencer une conversation",
+    "bullets": [
+      "Les histoires basées sur les cartes communiquent des insights. Elles racontent des histoires, partagent des insights et inspirent les gens à agir.",
+      "Partagez instantanément des cartes à un public public, restreint ou privé.",
+      "Présentez des insights dans un flux unifié, de style médias sociaux.",
+      "Intégrez des cartes dans des sites web ou applications ; générez des liens sécurisés.",
+      "Publiez une fois ; mettez à jour le contenu pour un groupe sélectionné de personnes."
+    ],
+    "ctaText": "Publier une carte ArcGIS",
+    "ctaHref": "#",
+    "stackedImages": [
+      "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-share-your-maps-start-conversation.jpg"
+    ]
+  },
+  "chooseAudience": {
+    "title": "Choisissez qui voit vos cartes",
+    "bullets": [
+      "Laissez seulement vous-même voir les cartes en brouillon.",
+      "Partagez privément avec les équipes en utilisant des groupes sécurisés dans ArcGIS Online.",
+      "Rendez le partage à l'échelle de l'organisation disponible à travers votre entreprise.",
+      "Partagez publiquement sur le web quand vous êtes prêt."
+    ],
+    "collageImages": [
+      "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-choose-who-sees-your-maps.jpg"
+    ]
+  },
+  "collaborate": {
+    "title": "Collaborer pour résoudre plus de problèmes",
+    "bullets": [
+      "ArcGIS Online est collaboratif dans son essence. Vos cartes, idées et applications peuvent être utilisées, retravaillées et améliorées au sein de vos groupes.",
+      "Utilisez les mises à jour et le travail partagé pour amener les gens dans le groupe—à travers votre communauté.",
+      "Connectez-vous avec les équipes en utilisant des groupes sécurisés dans ArcGIS Online.",
+      "Partagez les connaissances et meilleures pratiques à travers votre organisation.",
+      "Construisez sur le travail de chacun pour créer de meilleures solutions ensemble."
+    ],
+    "ctaText": "Trouver des groupes ArcGIS près de moi",
+    "ctaHref": "#",
+    "stackedImages": [
+      "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-to-solve-more-problems.jpg"
+    ],
+    "bgGraphic": "/arcgisOnline/shareCollaborate/collab-bg.png"
+  },
+  "quote": {
+    "text": "La beauté d'ArcGIS Online est la façon dont il rassemble les personnes et départements à travers l'organisation, fournit un accès instantané à l'information et crée des économies de temps. ArcGIS Online ouvre les esprits, et les gens en demandent plus. C'est vraiment transformateur.",
+    "author": "Christina Kelso",
+    "role": "Gestionnaire SIG, Sonoma County GIS",
+    "bgGraphic": "/arcgisOnline/shareCollaborate/arcgis-online-indigo-banner-background-data-topography.jpg"
+  },
+  "discover": {
+    "heading": "Découvrir plus de capacités ArcGIS Online",
+    "cards": [
+      {
+        "title": "Créer des cartes",
+        "desc": "Créez rapidement des cartes ; stylisez les données visuellement.",
+        "linkText": "En savoir plus sur la création de cartes",
+        "href": "#",
+        "bgImage": "/arcgisOnline/shareCollaborate/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Créer des cartes"
+      },
+      {
+        "title": "Analyser les données",
+        "desc": "Découvrez des motifs complexes ; apprenez plus sur les données.",
+        "linkText": "Découvrir les outils d'analyse",
+        "href": "#",
+        "bgImage": "/arcgisOnline/shareCollaborate/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Analyser les données"
+      },
+      {
+        "title": "Travailler avec Vos Données",
+        "desc": "Apportez les données ; enrichissez-les ; transformez pour des insights.",
+        "linkText": "Explorer les outils de données",
+        "href": "#",
+        "bgImage": "/arcgisOnline/shareCollaborate/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Travailler avec les données"
+      }
+    ]
+  },
+  "duoCta": {
+    "left": {
+      "title": "Voulez-vous essayer ArcGIS Online ?",
+      "button": "Essayer maintenant",
+      "href": "#"
+    },
+    "right": {
+      "title": "Prêt à acheter ArcGIS Online ?",
+      "button": "Acheter",
+      "href": "#"
+    }
+  },
+  "help": {
+    "heading": "Avez-vous des questions ?",
+    "subHeading": "Besoin d'aide pour essayer ou acheter ArcGIS Online ? Ou avez-vous des questions ?",
+    "href": "Nous Contacter",
+    "link": "#"
+  }
+}

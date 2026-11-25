@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "title": "Gestion des installations",
+    "subtitle1": "Menez la voie vers une performance accrue",
+    "subtitle2": "Renforcez les opérations des installations grâce à la puissance de l’intelligence géographique",
+    "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-banner-bg.png"
+  },
+  "intro": {
+    "title": "Gardez tout sous contrôle",
+    "paragraph": "Gérer et maintenir une installation — sa sécurité, sa sûreté et ses opérations — est une tâche complexe et coûteuse. Les responsables des installations réussissent grâce à la gestion, l’analyse et la visualisation puissantes des données. Une approche numérique de la gestion des installations aide les dirigeants à évaluer les risques de sécurité, à élaborer des plans, à protéger le personnel et les actifs, et à améliorer les opérations quotidiennes."
+  },
+  "control": {
+    "title": "Gardez tout sous contrôle",
+    "body": "Utilisez une carte numérique des installations et des tableaux de bord pour unifier les données en une seule vue des bâtiments et campus. Comprenez les conditions, incidents, ordres de travail et actifs pour protéger les personnes et rationaliser les opérations quotidiennes.",
+    "image": "/Solutions/BusinessNeeds/FacilityManagement/control-city.jpg"
+  },
+  "efficiencies": {
+    "title": "Voyez des efficacités que d’autres ne peuvent pas",
+    "intro": "Les cartes intelligentes aident les gestionnaires d’installations à comprendre leurs espaces et les personnes qui s’y trouvent, et à superviser les opérations quotidiennes.",
+    "bullets": [
+      "Obtenez une connaissance opérationnelle en temps réel des espaces du campus, des inventaires d’actifs et de l’état des bâtiments.",
+      "Améliorez l’orientation avec la cartographie intérieure.",
+      "Visualisez en temps réel l’emplacement des demandes de service ou des alertes d’urgence.",
+      "Créez des plans d’étage pilotés par des cartes pour des espaces de travail qui minimisent les distractions et maximisent le travail d’équipe.",
+      "Obtenez un aperçu des schémas de mouvement grâce à la visualisation et découvrez des moyens de réduire les coûts, de protéger les actifs et d’augmenter la sécurité.",
+      "Simplifiez la coordination des projets de construction, de rénovation et de maintenance."
+    ],
+    "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-5050-see-the-efficiencies-others-cant.png"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Favorisez la prise de décision basée sur les données et l’efficacité opérationnelle grâce à la technologie d’intelligence géographique du cloud géospatial d’Esri.",
+    "items": [
+      {
+        "title": "Opérations sur le terrain",
+        "body": "Obtenez une perspective géographique sur les activités terrain en temps réel et utilisez des tableaux de bord riches visuellement pour éclairer les décisions. Découvrez ce qui peut être accompli grâce au travail en synergie et à la capture et navigation des données — même hors ligne.",
+        "cta": "Coordonnez les activités terrain",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/business-needs-capabilities-field-operatioins.jpg"
+      },
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Identifiez les vulnérabilités existantes dans votre organisation et surveillez les situations changeantes. Utilisez les big data et la technologie de l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées basées sur les informations les plus récentes.",
+        "cta": "Donnez du sens aux big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Cartographie",
+        "body": "Visualisez les personnes, les lieux et les actifs pour avoir une compréhension claire de toutes les opérations sur le terrain. Voyez ce qui se passe dans l’ensemble de l’organisation, créez un plan détaillé et sachez où coordonner et déployer efficacement les ressources.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur la gestion des installations",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Votre lieu de travail est-il suffisamment intelligent ?",
+        "source": "WhereNext Magazine",
+        "excerpt": "Les responsables des ressources humaines et des installations cherchent à créer une efficacité opérationnelle et des lieux de travail intelligents alimentés par la technologie géospatiale.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/is-your-workplace-smart-enough",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-card-is-your-workplace-smart-enough.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Le SIG et le BIM soutiennent l’université",
+        "source": "ArcUser",
+        "excerpt": "L’Ohio State University (OSU) a amélioré la prise de décision et la gestion de centaines d’installations sur ses campus grâce à la technologie Esri.",
+        "href": "https://www.esri.com/about/newsroom/arcuser/gis-and-bim-provide-life-cycle-support-for-universitys-assets",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-card-gis-bim-provide-support-university.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Comment la NASA a cartographié le jumeau numérique de Langley",
+        "source": "Esri Blog",
+        "excerpt": "Les technologues de Langley ont cartographié le campus de 764 acres pour gérer tout, de la maintenance quotidienne et la sécurité à la prévention des inondations et la durabilité.",
+        "href": "https://www.esri.com/about/newsroom/blog/nasa-langleys-digital-twin",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-card-how-nasa-mapped-langelys-digital-twin.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "hero": {
+    "title": "ArcGIS Maps for Microsoft Power BI",
+    "subtitle": "Take your map visualizations to the next level",
+    "image": "/arcgisMapsForPowerBI/powerbi-banner-hero-monitor-yellow-data.jpg",
+    "cta": { "label": "Get the visual", "href": "#" }
+  },
+  "intro": {
+    "paragraph": "Unlock the power of location in your business intelligence. With ArcGIS Maps for Power BI, available inside Microsoft Power BI, create beautiful map visualizations that surface patterns and trends in your data. Gain context with ArcGIS maps and demographic data. Make better business decisions with ArcGIS Maps for Power BI, available now at no cost."
+  },
+  "feature": {
+    "title": "Make maps, make good decisions",
+    "tabs": [
+      {
+        "title": "Get serious with maps",
+        "icon": "/arcgisMapsForPowerBI/map.svg"
+      },
+      {
+        "title": "Give context to data",
+        "icon": "/arcgisMapsForPowerBI/earthDB.svg"
+      },
+      {
+        "title": "Accurate spatial analysis",
+        "icon": "/arcgisMapsForPowerBI/analysis.svg"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Get serious with map visualizations",
+        "desc": "Smart mapping helps you choose the right style and display for your data so you can make your most powerful business case. Visualize your data as points, areas, or clusters, and use the best background to let your data tell its story.  ",
+        "image": "/arcgisMapsForPowerBI/powerbi-make-maps-get-serious-with-map-vizzes.jpg",
+        "side": "image-left",
+        "ctaLabel": "Learn more"
+      },
+      {
+        "title": "Give context to data",
+        "desc": "Leverage curated, ready-to-use data from ArcGIS to give perspective to your maps. Select from hundreds of demographic and reference layers such as income, population, or weather. Add this global content to analyze your data spatially in relation to other critical variables.",
+        "image": "/arcgisMapsForPowerBI/powerbi-make-maps-give-context-to-data.jpg",
+        "side": "image-left",
+        "ctaLabel": "Try smart mapping"
+      },
+      {
+        "title": "Accurate spatial analysis",
+        "desc": "Map any location value—an address, city, state, zip code, place name, boundary, or latitude and longitude. Make sense of your data by applying simple spatial analysis tools such as heat maps and drive times. Use maps to quickly expose relationships and patterns that impact decision-making.",
+        "image": "/arcgisMapsForPowerBI/powerbi-make-maps-accurate-spatial-analysis.jpg",
+        "side": "image-left",
+        "ctaLabel": "Explore basemaps"
+      }
+    ]
+  },
+  "how": {
+    "title": "How it works",
+    "desc": "Sign into Microsoft Power BI. Click on the ArcGIS Maps for Power BI icon. Create map visualizations.",
+    "steps": [
+      {
+        "title": "Sign in to Power BI",
+        "desc": "Open your report or new canvas in Power BI Desktop or Power BI Service."
+      },
+      {
+        "title": "Add ArcGIS Maps for Power BI",
+        "desc": "Choose the ArcGIS visual from the Visualizations pane and drop fields onto the visual."
+      },
+      {
+        "title": "Style & share",
+        "desc": "Pick a smart map style, add reference layers, and publish or share your insights."
+      }
+    ]
+  },
+  "caseStudy": {
+    "eyebrow": "Case study",
+    "title": "Stryker Case Study",
+    "desc": "Stryker Strengthens its Sales Force with Maps and Visual Data",
+    "cta": {
+      "label": "Read the case study",
+      "href": "https://www.esri.com/en-us/landing-page/product/2019/stryker-case-study"
+    },
+    "image": "/arcgisMapsForPowerBI/stryker-case-study-background.jpg"
+  },
+  "msGrid": {
+    "heading": "Delivering location to Microsoft products",
+    "desc": "ArcGIS Maps for Power BI is just one of the ways Esri brings quality data and advanced spatial tools to Microsoft products. ArcGIS software helps users unlock location intelligence in their business data. You will be able to see content in a new way for a more accurate perspective and better decision-making. Try other products that bring together Microsoft and Esri.",
+    "tiles": [
+      {
+        "title": "Get Microsoft Power BI",
+        "titleAlt": "Microsoft Power BI Platform",
+        "descAlt": "Power BI is a suite of business analytics tools to analyze data and share insights.",
+        "image": "/arcgisMapsForPowerBI/powerbi-app-microsoft-power-bi.jpg",
+        "cta": {
+          "label": "Get Microsoft Power BI",
+          "href": "https://www.microsoft.com/en-us/power-platform/products/power-bi/desktop"
+        }
+      },
+      {
+        "title": "ArcGIS Maps for Office",
+        "titleAlt": "Office Integration",
+        "descAlt": "Bring interactive mapping capabilities directly into Excel and PowerPoint to visualize and present your data with geographical context.",
+        "image": "/arcgisMapsForPowerBI/power-bi-overview-icon-maps-for-office.jpg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-microsoft-365%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-office%2Foverview%20arcgis-for-excel&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-maps-for-office%2Foverview&adumkts=product&adupro=ArcGIS_Maps_for_Power_BI&aduc=landing_page&adum=organic_visits&utm_Source=landing_page&aduca=p18arcgismapsforpowerbi&aduat=general_info&aduco=arcgismapsforpowerbi_productpage"
+        }
+      },
+      {
+        "title": "ArcGIS Maps for SharePoint",
+        "titleAlt": "SharePoint Integration",
+        "descAlt": "Enhance collaboration and data sharing with location-aware content and interactive mapping solutions integrated into your SharePoint environment.",
+        "image": "/arcgisMapsForPowerBI/power-bi-overview-icon-sharepoint.jpg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-microsoft-365%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-sharepoint%2Foverview%20arcgis-for-sharepoint&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-maps-for-sharepoint%2Foverview&adumkts=product&adupro=ArcGIS_Maps_for_Power_BI&aduc=landing_page&adum=organic_visits&utm_Source=landing_page&aduca=p18arcgismapsforpowerbi&aduat=general_info&aduco=arcgismapsforpowerbi_productpage"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "eyebrow": "Éducation",
+    "title": "L’éducation pour un avenir meilleur",
+    "kicker": "La cartographie et l’analyse spatiale enrichissent l’apprentissage dans les écoles et soutiennent les administrateurs.",
+    "backgroundImage": "/Solutions/Industries/education/overview-main-banner-wide.jpg",
+    "ctaHref": "Regarder maintenant",
+    "videoUrl": "https://www.youtube.com/embed/0NWKgTCCGwQ?si=CKk0w-JaEae2Z3HY"
+  },
+  "strengthen": {
+    "title": "Faire de chaque information un atout",
+    "paragraph": "Les établissements éducatifs performants comprennent les besoins des apprenants et de leur communauté. Les variations géographiques influencent les performances scolaires et administratives. Les cartes avancées et l’analyse spatiale offrent une compréhension plus profonde des relations et des tendances, répondent à des questions complexes et soutiennent la prise de décision.",
+    "imageSection": {
+      "image": "/Solutions/Industries/education/device-get-insight-before-action.png",
+      "title": "Obtenez des informations avant d’agir",
+      "description": "Analysez rapidement d’importants volumes de données éducatives pour surveiller les performances et saisir les opportunités d’amélioration avant qu’il ne soit trop tard."
+    }
+  },
+  "features": [
+    {
+      "title": "Découvrir de nouvelles opportunités éducatives",
+      "paragraph": "Comprenez les besoins des élèves, identifiez les écarts éducatifs et optimisez l’investissement dans l’enseignement et les infrastructures.",
+      "image": "/Solutions/Industries/education/device-discover-opportunities.png",
+      "backgroundImage": "/Solutions/Industries/education/discover-opportunities-background.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Placer l’élève au centre",
+      "paragraph": "Améliorez l’expérience d’apprentissage et enrichissez les services éducatifs grâce à une meilleure compréhension des étudiants et de leurs besoins.",
+      "image": "/Solutions/Industries/education/device-student-centered.png",
+      "backgroundImage": "/Solutions/Industries/education/student-centered-background.jpg",
+      "layout": "left"
+    }
+  ],
+  "empower": {
+    "title": "Accompagner l’apprentissage à chaque étape",
+    "items": [
+      {
+        "title": "Écoles",
+        "paragraph": "Les cartes interactives donnent vie aux matières principales — comme les sciences de l’environnement, les mathématiques, l’histoire et la littérature — et bien plus encore.",
+        "icon": "/Solutions/Industries/education/schools.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/industries/k-12-education/overview"
+        }
+      },
+      {
+        "title": "Enseignement supérieur",
+        "paragraph": "Les étudiants, enseignants et administrateurs appliquent la Science du Où pour améliorer la prise de décision et construire un avenir plus durable.",
+        "icon": "/Solutions/Industries/education/higherEducation.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/industries/higher-education/overview"
+        }
+      },
+      {
+        "title": "Apprentissage tout au long de la vie",
+        "paragraph": "Les utilisateurs de SIG de tous âges et niveaux de développement professionnel participent activement à l’apprentissage, à l’enseignement et au mentorat. Esri soutient l’apprentissage tout au long de la vie à chaque étape.",
+        "icon": "/Solutions/Industries/education/lifelongLearning.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "https://www.esri.com/en-us/industries/students/overview"
+        }
+      }
+    ]
+  },
+  "news": {
+    "title": "Actualités & événements",
+    "backgroundImage": "/Solutions/Industries/education/background-news-events.jpg",
+    "cards": [
+      {
+        "eyebrow": "Événement",
+        "title": "Conférence SIG pour l’éducation",
+        "blurb": "Septembre 15-16, 2025 | Paris, France",
+        "image": "/Solutions/Industries/education/event-education-conference.jpg",
+        "meta": "Septembre 15–16, Paris, France",
+        "href": "https://www.esri.com/en-us/about/events"
+      },
+      {
+        "eyebrow": "Événement",
+        "title": "Esri User Conference",
+        "blurb": "Juillet 9–13, 2025 | San Diego, Californie, USA",
+        "image": "/Solutions/Industries/education/event-user-conference.jpg",
+        "meta": "Juillet 9–13, San Diego, USA",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "eyebrow": "Actualité",
+        "title": "Les SIG transforment l’éducation en Afrique",
+        "blurb": "Les écoles et universités africaines utilisent ArcGIS pour améliorer l’accès à l’information et enrichir l’apprentissage.",
+        "image": "/Solutions/Industries/education/news-africa.jpg",
+        "href": "https://www.esri.com/about/newsroom/"
+      },
+      {
+        "eyebrow": "Actualité",
+        "title": "Des étudiants cartographient leur communauté",
+        "blurb": "Des projets étudiants utilisent ArcGIS pour créer des cartes interactives de leurs environnements locaux et améliorer la compréhension communautaire.",
+        "image": "/Solutions/Industries/education/news-students.jpg",
+        "href": "https://www.esri.com/about/newsroom/"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Découvrez comment Geomatic peut soutenir votre établissement.",
+    "ctaLabel": "Commencer",
+    "ctaHref": "#"
+  }
+}

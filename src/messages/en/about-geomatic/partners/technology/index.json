@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Technology Partners",
+    "bgGraphic": "/aboutGeomatic/partners/technology/partner-banner.png"
+  },
+  "intro": {
+    "subTitle": "Best-in-class platforms and tools",
+    "paragraph": "We collaborate with global leaders to bring modern, scalable geospatial capabilities to our customers."
+  },
+  "community": {
+    "cards": [
+      {
+        "title": "Esri",
+        "desc": "Esri is the global market leader in GIS and has helped customers improve results since 1969.",
+        "image": "/aboutGeomatic/partners/technology/partenr5.png",
+        "link": "https://www.esri.com/en-us/home"
+      }
+    ]
+  }
+}

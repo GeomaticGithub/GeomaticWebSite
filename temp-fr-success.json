@@ -1,0 +1,37 @@
+  "success": {
+    "background": "/arcgisOnline/arcgis-online-overview-banner-background-data-topography.jpg",
+    "title": "Urbanisme",
+    "desc": "Le comté de Kenton (Kentucky) utilise ArcGIS Online pour la visualisation, la narration cartographique et la collaboration avec les responsables, les citoyens et les entreprises.",
+    "ctaText": "Voir l'histoire",
+    "ctaHref": "#",
+    "pills": [
+      { 
+        "label": "Urbanisme",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-city-planning-thumbnail.jpg",
+        "backgroundImage": "/arcgisOnline/arcgis-online-overview-banner-background-data-topography.jpg",
+        "title": "Urbanisme",
+        "desc": "Le comté de Kenton (Kentucky) utilise ArcGIS Online pour la visualisation, la narration cartographique et la collaboration avec les responsables, les citoyens et les entreprises."
+      },
+      { 
+        "label": "Infrastructures",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-city-planning-thumbnail.jpg",
+        "backgroundImage": "/arcgisOnline/arcgis-online-overview-banner-background-data-topography.jpg",
+        "title": "Infrastructures",
+        "desc": "Gestion des infrastructures critiques avec surveillance en temps réel et analyse spatiale pour une meilleure prise de décision."
+      },
+      { 
+        "label": "Gestion d'urgence",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-emergency-management-thumbnail.jpg",
+        "backgroundImage": "/arcgisOnline/arcgis-online-overview-banner-background-data-topography.jpg",
+        "title": "Gestion d'urgence",
+        "desc": "Coordonnez les efforts de réponse d'urgence avec le partage de données en temps réel et des solutions de cartographie collaborative."
+      },
+      { 
+        "label": "Immobilier",
+        "image": "/arcgisOnline/arcgis-online-overview-case-study-real-estate-thumbnail.jpg",
+        "backgroundImage": "/arcgisOnline/arcgis-online-overview-banner-background-data-topography.jpg",
+        "title": "Immobilier",
+        "desc": "Analysez les tendances du marché et les valeurs immobilières avec une intelligence géographique complète et des données démographiques."
+      }
+    ]
+  }

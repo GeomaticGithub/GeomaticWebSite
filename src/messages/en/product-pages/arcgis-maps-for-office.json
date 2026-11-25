@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "kicker": "product",
+    "icon": "/arcgisMapsForOffice/MapsforOffice.png",
+    "title": "ArcGIS Maps for Office",
+    "subtitle": "Interactive maps in your spreadsheets and presentations",
+    "bgImage": "/arcgisMapsForOffice/overview-banner-circles-background.jpg",
+    "image": "/arcgisMapsForOffice/overview-banner-hero-device-map-data.png",
+    "text": "Spreadsheets and graphs bring data to life. Now, you can use interactive maps to see data from another perspective. ArcGIS Maps for Office puts Microsoft Excel data in context of location. You will see patterns and relationships to better understand a situation and make smarter decisions. Then, use Microsoft PowerPoint to share the results."
+  },
+  "blocks": [
+    {
+      "type": "band",
+      "kicker": "overview",
+      "title": "Maximize your information",
+      "text": "Map your data to extract maximum value by asking a whole new set of location-related questions. Gain new perspectives you've been missing.",
+      "image": "/arcgisMapsForOffice/overview-maximize-your-information.jpg"
+    },
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Work with trusted, verified data",
+          "text": "Augment your Excel spreadsheet data by mapping it along with layers of trusted, verified, global data on demographics, lifestyle, and geography.",
+          "image": "/arcgisMapsForOffice/overview-work-with-trusted-data.png"
+        },
+        {
+          "title": "Sync and share your work",
+          "text": "Give your team instant access to updated, reliable information. When you sync your maps to ArcGIS, you share your work securely and widely with whomever you choose.",
+          "image": "/arcgisMapsForOffice/overview-sync-and-share-work.png"
+        },
+        {
+          "title": "Tell more effective stories",
+          "text": "Impress your audience when you tell your story with map-based presentations in PowerPoint. Show key locations or use the interactive map to answer questions.",
+          "image": "/arcgisMapsForOffice/overview-tell-more-effective-stories.png"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "how",
+      "title": "How it works",
+      "steps": [
+        {
+          "title": "Start with your data",
+          "desc": "Find the data you need to create your map visualization."
+        },
+        {
+          "title": "Choose a map style",
+          "desc": "Find a style that best highlights your data for maximum show and tell."
+        },
+        {
+          "title": "See patterns, gain understanding",
+          "desc": "Interpret trends and relationships in your data to make better decisions."
+        },
+        {
+          "title": "Tell your story",
+          "desc": "Share the maps you made, with stakeholders and the public."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "microsoft",
+      "title": "Delivering location to Microsoft products",
+      "text": "ArcGIS software helps Microsoft users unlock location intelligence in their business data.",
+      "items": [
+        {
+          "title": "ArcGIS Maps for Power BI",
+          "text": "ArcGIS Maps for Power BI provides maps and demographic data inside Microsoft Power BI. Access data to make maps that help you see patterns and trends.",
+          "image": "/arcgisMapsForOffice/powerbi-banner-hero-monitor-yellow-data.jpg",
+          "href": "/arcgis/products/arcgis-maps-for-power-bi/overview",
+          "linkLabel": "See ArcGIS Maps for Power BI"
+        },
+        {
+          "title": "ArcGIS Maps for SharePoint",
+          "text": "ArcGIS Maps for SharePoint gives you a new way to map and search SharePoint content. Visualize, organize, and interact with SharePoint data via maps for better insights.",
+          "image": "/arcgisMapsForOffice/powerbi-banner-hero-monitor-yellow-data.jpg",
+          "href": "/arcgis/products/arcgis-maps-for-sharepoint/overview",
+          "linkLabel": "See ArcGIS Maps for SharePoint"
+        }
+      ]
+    }
+  ]
+}

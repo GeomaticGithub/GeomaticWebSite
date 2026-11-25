@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "title": "HTC speeds operations and response times. ",
+    "kicker": "North America’s largest telephone cooperative depends on GIS for marketing, engineering, and service delivery. Decision makers discover critical relationships in massive datasets that inform strategy. Reports and analysis run in minutes, not months. Maps available on any device improve communication with customers.",
+    "mediaImage": "/Solutions/Industries/telecommunications/video-hooray-telephone-cooperative.jpg",
+    "videoUrl": "https://www.youtube.com/embed/D53NsjG4SEw?si=0N3WoaWT-P7E2lkP"
+  },
+  "strengthen": {
+    "title": "GIS gives telecoms an advantage.",
+    "paragraph": "Location intelligence is fundamental to all telecommunications services—cable, wireless, and wireline. Esri’s ArcGIS is a complete GIS for telecommunications that empowers all aspects of an organization with geospatial infrastructure powered by the Esri Geospatial Cloud. ArcGIS offers a GIS system of record, system of engagement, and system of insight that use the power of location to directly impact your business drivers. Advancing your network transformation, resource optimization, revenue growth, and customer experience efforts."
+  },
+  "features": [
+    {
+      "title": "Mapping & Visualization",
+      "paragraph": "With a market leading GIS System of Engagement and Smart Mapping capabilities, your organization can easily visualize and map network assets with business data. Manage and share corporate maps creating better operational awareness across the organization.",
+      "image": "/Solutions/Industries/telecommunications/telecom-overview-mapping.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-monetize.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "Learn more",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fmapping-visualization"
+      }
+    },
+    {
+      "title": "Spatial Analytics",
+      "paragraph": "A robust GIS System of Insights for performing spatial analytics on millions of data points. Model and forecast subscriber behavior over geographic space and time, or predict necessary network maintenance.   Select optimal investment locations for network and operational resources, while ensuring maximum return on investment (ROI).",
+      "image": "/Solutions/Industries/telecommunications/Telecom- Overview-Analytics.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-analyze.jpg",
+      "layout": "left",
+      "cta": {
+        "label": "Learn more",
+        "href": "https://www.arcgis.com/apps/Cascade/index.html?appid=7dc16f2ac82441bc89f03bc0e4bbcc65"
+      }
+    },
+    {
+      "title": "Data Collection & Management",
+      "paragraph": "The most advanced GIS System of Record to easily collect, maintain, access, and share your data efficiently and securely. Design and manage complex telecom networks with an extensible framework that supports your organizations’ fiber, 5G, and software defined network (SDN) aspirations.",
+      "image": "/Solutions/Industries/telecommunications/telecom-overview-data-management.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-monetize.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "Learn more",
+        "href": "https://www.esri.com/en-us/capabilities/data-management?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fdata-management&rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/data-management"
+      }
+    },
+    {
+      "title": "Open & Interoperable",
+      "paragraph": "The only complete GIS with geospatial infrastructure that is open, flexible, and interoperable that supports innovation and agile development of geospatial apps. Develop apps in half the time with a rich set of API’s and SDK’s.",
+      "image": "/Solutions/Industries/telecommunications/telecom-overview-open.png",
+      "backgroundImage": "/Solutions/Industries/telecommunications/background-analyze.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "Learn more",
+        "href": "https://developers.arcgis.com/"
+      }
+    }
+  ],
+  "empower": {
+    "backgroundImage": "/Solutions/Industries/telecommunications/background-events-news.jpg",
+    "items": [
+      {
+        "title": "Resource Optimization",
+        "paragraph": "GIS optimizes network and operational resources. Unifies OSS/BSS through a common understanding of location. Enhances field operations and mobility.",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/telecommunications/business-areas/network-operations-maintenance?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fc%2Findustry%2Ftelecommunications%2Fresource-optimization-landing-page&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Fresource-optimization-landing-page"
+        }
+      },
+      {
+        "title": "Revenue Growth",
+        "paragraph": "GIS ensures higher return on investment (ROI) and revenue growth. Locate new opportunities and upsell potential with spatial analytics.  ",
+        "icon": "/Solutions/Industries/telecommunications/midstream.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/c/industry/telecommunications/revenue-growth-landing-page?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Frevenue-growth-landing-page"
+        }
+      },
+      {
+        "title": "Customer Experience",
+        "paragraph": "GIS improves customer experience. Located based customer sentiment reporting. Engage customers with mapping and visualizations.",
+        "icon": "/Solutions/Industries/telecommunications/downstream.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/telecommunications/business-areas/customer-service?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Fcustomer-experience-landing-page"
+        }
+      },
+      {
+        "title": "Network Transformation",
+        "paragraph": "GIS supports 5G, fiber, and software defined network (SDN) rollouts. Support remote engineering with geospatial planning tools and geographic data. One complete system to manage network planning, fulfillment, and assurance.",
+        "icon": "/Solutions/Industries/telecommunications/hse.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/c/industry/telecommunications/network-transformation-landing-page?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Findustry%2Ftelecommunications%2F2019%2Fnetwork-transformation-landing-page"
+        }
+      },
+      {
+        "title": "Digital Services",
+        "paragraph": "GIS enables innovative products and services. Location based services and mapping make IoT come to life.",
+        "icon": "/Solutions/Industries/telecommunications/hse.svg",
+        "cta": {
+          "label": "Learn more",
+          "href": "https://www.esri.com/en-us/industries/telecommunications/overview"
+        }
+      }
+    ]
+  },
+  "resources": {
+    "title": "Resources",
+    "description": "Enable Digital Transformation across the Organization.",
+    "cards": [
+      {
+        "title": "Videos",
+        "blurb": "Watch the latest videos from Esri Telecom to learn the power of location.",
+        "image": "/Solutions/Industries/telecommunications/get-involved-call-for-lightning-talk.jpg",
+        "href": "https://www.youtube.com/playlist?list=PLdVnJnpRENTkXQGcoQBpA-QwJHN6uKbDd"
+      },
+      {
+        "title": "Community",
+        "blurb": "Check out our Telecom GeoNet Community - ask questions, read and post blogs and find content about Telecommunications.",
+        "image": "/Solutions/Industries/telecommunications/geonet-thumbnail.png",
+        "href": "https://community.esri.com/t5/telecommunications/ct-p/telecommunications"
+      },
+      {
+        "title": "LinkedIn",
+        "blurb": "Get the latest information about Esri can help modernize how Telecoms manage their assets",
+        "image": "/Solutions/Industries/telecommunications/news-jack-interview.jpg",
+        "href": "https://www.linkedin.com/groups/3702226/"
+      },
+      {
+        "title": "X (Twitter)",
+        "blurb": "Get the latest news on Esri Telecom from our @EsriTelecom twitter feed.",
+        "image": "/Solutions/Industries/telecommunications/twitter-icon-thumbnail.png",
+        "href": "https://x.com/EsriTelecom"
+      }
+    ]
+  },
+  "news": {
+    "title": "Telecommunications Events",
+    "backgroundImage": "/Solutions/Industries/telecommunications/background-events-news.jpg",
+    "cards": [
+      {
+        "title": "Esri User Conference",
+        "blurb": "July 8-11 | San Diego, CA, USA",
+        "image": "/Solutions/Industries/telecommunications/event-user-conference-generic.jpg",
+        "href": "https://www.esri.com/en-us/about/events/uc/overview"
+      },
+      {
+        "title": "CableLabs Summer Conference 2019",
+        "blurb": "August 5 - 7, 2019   I   Keystone, CO, USA",
+        "image": "/Solutions/Industries/telecommunications/card-cablelabs-summer-conf-2019.jpg",
+        "href": "https://www.cablelabs.com/event/summer-conference-2019"
+      },
+      {
+        "title": "ISE Expo 2019",
+        "blurb": "September 25-26, 2019 | Dallas, Texas, USA",
+        "image": "/Solutions/Industries/telecommunications/card-ise-expo.jpg",
+        "href": "https://www.iseexpo.com/"
+      },
+      {
+        "title": "SCTE Cable-Tec 2019",
+        "blurb": "Sept 30 - Oct 3, 2019 | New Orleans, LA, USA",
+        "image": "/Solutions/Industries/telecommunications/card-scte-expo.jpg",
+        "href": "https://techexpo.scte.org/"
+      },
+      {
+        "title": "GeoConX",
+        "blurb": "October 27 - 30, 2019   I    Atlanta, GA, USA",
+        "image": "/Solutions/Industries/telecommunications/event-geocon-x.jpg",
+        "href": "https://www.esri.com/en-us/about/events/imgis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Fabout%2Fevents%2Fgeoconx%2Foverview"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Find out how Esri can help your organization.",
+    "ctaLabel": "Get started",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

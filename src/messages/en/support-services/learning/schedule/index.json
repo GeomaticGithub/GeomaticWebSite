@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "kicker": "Learning Services",
+    "text": "The session schedule is being prepared. In the meantime, browse the catalog or ask us for the next dates.",
+    "contact": "Ask for the next dates",
+    "anchor": "Prepare your training",
+    "meanwhileKicker": "In the meantime",
+    "meanwhileTitle": "Prepare your training"
+  },
+  "hero": {
+    "title": "Course schedule",
+    "description": "Coming soon",
+    "bgGraphic": "/support-services/learning/schedule/schedule.png"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Oil Spill Monitoring",
+    "text": "Geomatic provides a proactive monitoring service for oil spills, whether natural seeps or man-made spills such as illegal discharge from vessels and leakage from offshore oil infrastructure, which are major contributors to environmental pollution and its impact.",
+    "bgImage": "/Solutions/PartnersSolutions/oil/shutterstock127132946-2400.jpg"
+  },
+  "brochure": {
+    "title": "Oil spill monitoring solution",
+    "text": "Remote sensing monitoring service for offshore areas, with daily or weekly reporting during normal periods, especially for spill identification at sea.",
+    "image": "/Solutions/PartnersSolutions/oil/oil-spill_169w.webp"
+  },
+  "steps": {
+    "title": "From satellite image to dashboard",
+    "items": [
+      {
+        "title": "Data gathering",
+        "points": [
+          "Satellite imagery",
+          "Real-time data",
+          "GIS data"
+        ]
+      },
+      {
+        "title": "Oil spill analysis",
+        "points": [
+          "Oil spill analysis applying machine learning algorithms"
+        ]
+      },
+      {
+        "title": "Oil spill reports",
+        "points": [
+          "PDF reports",
+          "Shapefiles",
+          "Map services"
+        ]
+      },
+      {
+        "title": "Integrations",
+        "points": [
+          "Desktop application",
+          "Web application",
+          "Dashboard"
+        ]
+      }
+    ]
+  }
+}

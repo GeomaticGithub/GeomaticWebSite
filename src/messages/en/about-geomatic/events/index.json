@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "title": "Events",
+    "subtitle": "Conferences, summits, user groups",
+    "text": "Explore Geomatic’s events and those held by Esri and its community. Learn, connect, and stay current with the latest in GIS and location intelligence.",
+    "bgImage": "/aboutGeomatic/events/fed-gis-event.jpg"
+  },
+  "ui": {
+    "kicker": "About",
+    "contact": "Contact us",
+    "anchor": "See the events",
+    "geomaticKicker": "Geomatic",
+    "geomaticTitle": "Geomatic events",
+    "geomaticText": "GIS Days, hackathon and competition: each link opens the event’s post on LinkedIn.",
+    "linkedin": "See on LinkedIn",
+    "esriKicker": "Esri",
+    "esriTitle": "Esri events",
+    "esriText": "The conferences and summits Esri holds around the world, on esri.com.",
+    "search": "Search all Esri events"
+  },
+  "geomatic": [
+    {
+      "title": "GIS Day 2024",
+      "year": "2024",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7260643887772315648/"
+    },
+    {
+      "title": "Virtual competition: build an app with Experience Builder",
+      "year": "2024",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7259596965770932225/"
+    },
+    {
+      "title": "GIS Day 2023",
+      "year": "2023",
+      "link": "https://www.linkedin.com/posts/geomati_geomatic-esri-hackathon-activity-7132729791828373504-ixaU/"
+    },
+    {
+      "title": "Hackathon 2023 — Mapping Tomorrow: GIS at the heart of smart cities",
+      "year": "2023",
+      "link": "https://www.linkedin.com/posts/geomati_hackathon-smartcities-gisday-activity-7128803512276115456-kF7a/"
+    }
+  ],
+  "esri": [
+    {
+      "title": "Esri Developer & Technology Summit",
+      "link": "https://www.esri.com/en-us/about/events/devtech/overview"
+    },
+    {
+      "title": "Esri Infrastructure Management & GIS Conference",
+      "link": "https://www.esri.com/en-us/about/events/imgis/overview"
+    },
+    {
+      "title": "Geodesign Summit",
+      "link": "https://www.esri.com/en-us/about/events/geodesign-summit/overview"
+    },
+    {
+      "title": "Esri Energy Resources GIS Conference",
+      "link": "https://www.esri.com/en-us/about/events/esri-energy-resources-gis-conference/overview"
+    },
+    {
+      "title": "Esri European Infrastructure Management & GIS Conference",
+      "link": "https://www.esri.com/en-us/about/events/euro-imgis/overview"
+    },
+    {
+      "title": "Planning Directors Summit",
+      "link": "https://www.esri.com/en-us/about/events/planning-directors-summit/overview"
+    },
+    {
+      "title": "Esri European Developer & Technology Summit",
+      "link": "https://www.esri.com/en-us/about/events/euro-devtech/overview"
+    },
+    {
+      "title": "Esri Partner Conference",
+      "link": "https://www.esri.com/en-us/about/events/partner-conference/overview"
+    },
+    {
+      "title": "Redlands Forum",
+      "link": "https://www.esri.com/en-us/about/events/redlands-forum/overview"
+    },
+    {
+      "title": "Esri European Energy Resources GIS Conference",
+      "link": "https://www.esri.com/en-us/about/events/euro-energy-resources-gis-conference/overview"
+    },
+    {
+      "title": "Esri European Partner Conference",
+      "link": "https://www.esri.com/en-us/about/events/euro-partner-conference/overview"
+    },
+    {
+      "title": "Esri Southeast User Conference",
+      "link": "https://www.esri.com/en-us/about/events/esri-southeast-uc/save-date"
+    },
+    {
+      "title": "Education Summit @ Esri UC",
+      "link": "https://www.esri.com/en-us/about/events/education-summit/overview"
+    },
+    {
+      "title": "Esri Federal GIS Conference",
+      "link": "https://www.esri.com/en-us/about/events/fedgis/overview"
+    },
+    {
+      "title": "Esri User Conference",
+      "link": "https://www.esri.com/en-us/about/events/uc/overview"
+    },
+    {
+      "title": "Safety and Security Summit @ Esri UC",
+      "link": "https://www.esri.com/en-us/about/events/es3/overview"
+    }
+  ],
+  "searchLink": "https://events.esri.com/info/index.cfm#/"
+}

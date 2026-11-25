@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=block">
+<script src="https://cdn.jsdelivr.net/npm/mp4-muxer@5.1.3/build/mp4-muxer.min.js"></script>
+<style>html,body{margin:0;background:#000}canvas{display:block}</style>
+</head>
+<body>
+<canvas id="c" width="720" height="720"></canvas>
+<script>
+// Hero film — "space → country → analyses → signature", built on public-domain data only:
+//   1. Earth from space (NASA Blue Marble), Morocco outlined, its cities lit up (Wikidata, CC0)
+//   2. Satellite imagery: the night lights of Morocco (NASA Black Marble), raised as 3D columns of light
+//   3. Network analysis: drive-time service areas from Casablanca on the national road network (Natural Earth)
+//   3. Allocation: every road and city attached to the nearest regional capital (by travel time)
+//   4. Proximity analysis: 50 km buffers around the cities
+//   5. Population of the cities as 3D bars
+//   6. Pull back to the whole country + Geomatic signature
+// Base map of shots 2–6: NASA Blue Marble relief (assets/maroc-relief.jpg). Data: maroc.json (see extract-ne.mjs).
+const W = 720, H = 720, FPS = 30, T = 28; // seconds, loops (cross-fades back to the first frame)
+window.POSTER_T = 3.7;
+const lang = new URLSearchParams(location.search).get("lang") === "en" ? "en" : "fr";
+const CLEAN = new URLSearchParams(location.search).has("clean"); // stills without captions or signature (used for the site illustrations)
+const TXT = {
+  fr: { tag: "Systèmes d’information géographique · depuis 1988",
+        lights: "Imagerie satellite · lumières nocturnes", net: "Analyse de réseau · zones de desserte", alloc: "Affectation au centre le plus proche", cover: "Analyse de proximité · zones tampons", pop: "Population des villes" },
+  en: { tag: "Geographic information systems · since 1988",
+        lights: "Satellite imagery · night lights", net: "Network analysis · service areas", alloc: "Nearest-centre allocation", cover: "Proximity analysis · buffers", pop: "City population" },
+}[lang];
+const CASA = [-7.59, 33.57];
+// timeline: globe rotation / dive, then [fade-in start, fade-in end] of each following shot
+const G_ROT = 3.4, G_ZOOM = [4.0, 5.05];
+const S_LIGHTS = [4.55, 5.05], S_NET = [8.4, 9.0], S_ALLOC = [13.0, 13.6], S_COVER = [17.1, 17.7], S_POP = [21.1, 21.7], S_MAP = [24.3, 25.0], S_LOOP = [27.0, 27.9];
+
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = (x) => { x = clamp(x); return x * x * (3 - 2 * x); };
+const easeOut = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const lerp = (a, b, f) => a + (b - a) * f;
+const RAD = Math.PI / 180;
+let seed = 11; const rnd = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+function font(ctx, w, s) { ctx.font = `${w} ${s}px Figtree, "Segoe UI", sans-serif`; }
+const layer = (w = W, h = H) => { const c = document.createElement("canvas"); c.width = w; c.height = h; return c; };
+
+let DATA, MA, PLACES = [], logoWhite, relief, stats = {};
+const shotA = layer(), shotB = layer(), shotC = layer(), shotD = layer(), shotE = layer(), shotF = layer(), shotG = layer();
+
+/* ===================== 1. GLOBE ===================== */
+const TW = 4096, TH = 2048, CW = 2048, CH = 1024;
+let earth, clouds, stars = [], globeImg;
+// 3D value noise (seeded) for the procedural cloud layer
+const perm = new Uint8Array(512), nval = new Float32Array(256);
+function initNoise() { const p = [...Array(256).keys()]; for (let i = 255; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [p[i], p[j]] = [p[j], p[i]]; } for (let i = 0; i < 512; i++) perm[i] = p[i & 255]; for (let i = 0; i < 256; i++) nval[i] = rnd(); }
+function vnoise(x, y, z) { const xi = Math.floor(x), yi = Math.floor(y), zi = Math.floor(z); let xf = x - xi, yf = y - yi, zf = z - zi; xf = xf * xf * (3 - 2 * xf); yf = yf * yf * (3 - 2 * yf); zf = zf * zf * (3 - 2 * zf);
+  const X = xi & 255, Y = yi & 255, Z = zi & 255, A = perm[X] + Y, B = perm[X + 1] + Y;
+  const h = (a, dz) => nval[perm[perm[a] + Z + dz]];
+  const x00 = lerp(h(A, 0), h(B, 0), xf), x10 = lerp(h(A + 1, 0), h(B + 1, 0), xf), x01 = lerp(h(A, 1), h(B, 1), xf), x11 = lerp(h(A + 1, 1), h(B + 1, 1), xf);
+  return lerp(lerp(x00, x10, yf), lerp(x01, x11, yf), zf); }
+const fbm = (x, y, z, oct) => { let s = 0, a = 0.5, f = 1, n = 0; for (let i = 0; i < oct; i++) { s += a * vnoise(x * f, y * f, z * f); n += a; a *= 0.5; f *= 2.03; } return s / n; };
+function bakeClouds() { // equirectangular alpha map; fewer clouds over the desert belts, more at mid latitudes
+  clouds = new Uint8Array(CW * CH);
+  for (let j = 0; j < CH; j++) { const lat = (0.5 - (j + 0.5) / CH) * Math.PI, cl = Math.cos(lat), sl = Math.sin(lat), deg = Math.abs(lat / RAD);
+    const cov = 0.535 + 0.10 * Math.exp(-(((deg - 24) / 10) ** 2)) - 0.045 * Math.exp(-((deg / 9) ** 2)) - 0.06 * ease((deg - 38) / 20);
+    for (let i = 0; i < CW; i++) { const lon = ((i + 0.5) / CW - 0.5) * 2 * Math.PI, x = cl * Math.sin(lon), y = sl, z = cl * Math.cos(lon);
+      const wx = fbm(x * 2 + 5.2, y * 2 + 1.3, z * 2 + 9.1, 3) - 0.5, wy = fbm(x * 2 + 1.7, y * 2 + 9.2, z * 2 + 3.3, 3) - 0.5;
+      const d = fbm(x * 5.2 + wx * 2.6, y * 8.4 + wy * 2.6, z * 5.2 + wx * 2.0, 6) * 0.82 + fbm(x * 21 + wy * 3, y * 30 + wx * 3, z * 21, 3) * 0.18;
+      const a = clamp((d - cov) / 0.13); clouds[j * CW + i] = Math.round(a * a * (3 - 2 * a) * 255); } } }
+
+const LX = 0.62, LY = 0.47, LZ = 0.63; // sun direction in view space (upper right, towards the viewer)
+function globeParams(tg) {
+  const e = ease(tg / G_ROT), zk = Math.pow(clamp((tg - G_ZOOM[0]) / (G_ZOOM[1] - G_ZOOM[0])), 2.2), ze = ease((tg - G_ZOOM[0]) / 0.7);
+  return { lam0: lerp(lerp(-46, -9, e), CASA[0], ze) * RAD, phi0: lerp(lerp(10, 23, e), CASA[1], ze) * RAD, R: lerp(300, 455, ease(tg / 4.2)) * Math.exp(3.3 * zk),
+           cx: lerp(lerp(392, 446, ease(tg / 4.2)), 360, ze), cy: lerp(lerp(366, 402, ease(tg / 4.2)), 360, ze), zk, drift: tg * 0.5 * RAD,
+           aMorocco: ease((tg - 1.9) / 0.8) * (1 - 0.8 * zk), aRegion: ease((tg - 2.9) / 0.6) * (1 - 0.5 * zk) };
+}
+function renderGlobe(p) {
+  const d = globeImg.data; d.fill(0);
+  const { R, cx, cy, lam0, phi0 } = p, sinP = Math.sin(phi0), cosP = Math.cos(phi0), TWO = Math.PI * 2, HALO = 0.075;
+  const x0 = Math.max(0, Math.floor(cx - R * 1.08)), x1 = Math.min(W - 1, Math.ceil(cx + R * 1.08)), y0 = Math.max(0, Math.floor(cy - R * 1.08)), y1 = Math.min(H - 1, Math.ceil(cy + R * 1.08));
+  const E = earth, C = clouds, cloudFade = 1 - clamp(p.zk * 4); // clouds dissolve as we dive (their texture would pixelate)
+  for (let py = y0; py <= y1; py++) { const y = -(py + 0.5 - cy) / R;
+    for (let px = x0; px <= x1; px++) { const x = (px + 0.5 - cx) / R, r2 = x * x + y * y; if (r2 > 1.16) continue;
+      const o = (py * W + px) * 4;
+      if (r2 >= 1) { // atmosphere halo, brighter on the sunlit side
+        const rho = Math.sqrt(r2), g = 1 - (rho - 1) / HALO; if (g <= 0) continue;
+        const lf = clamp(((x * LX + y * LY) / rho) * 0.9 + 0.42); d[o] = 80; d[o + 1] = 160; d[o + 2] = 255; d[o + 3] = g * g * lf * 190; continue; }
+      const z = Math.sqrt(1 - r2), Y = y * cosP + z * sinP, Z = -y * sinP + z * cosP;
+      const lat = Math.asin(Y), lon = lam0 + Math.atan2(x, Z);
+      let u = lon / TWO + 0.5; u -= Math.floor(u); const v = 0.5 - lat / Math.PI;
+      // bilinear sample of the Blue Marble texture
+      const fx = u * TW - 0.5, fy = clamp(v * TH - 0.5, 0, TH - 1.001), ix = Math.floor(fx), iy = Math.floor(fy), ax = fx - ix, ay = fy - iy;
+      const i0 = ((ix + TW) % TW), i1 = (i0 + 1) % TW, a = (iy * TW + i0) * 4, b = (iy * TW + i1) * 4, c = ((iy + 1) * TW + i0) * 4, e2 = ((iy + 1) * TW + i1) * 4;
+      const w00 = (1 - ax) * (1 - ay), w10 = ax * (1 - ay), w01 = (1 - ax) * ay, w11 = ax * ay;
+      let r = E[a] * w00 + E[b] * w10 + E[c] * w01 + E[e2] * w11, g = E[a + 1] * w00 + E[b + 1] * w10 + E[c + 1] * w01 + E[e2 + 1] * w11, bl = E[a + 2] * w00 + E[b + 2] * w10 + E[c + 2] * w01 + E[e2 + 2] * w11;
+      // grade: slightly desaturated, cooler
+      const lum = 0.3 * r + 0.59 * g + 0.11 * bl; r = lerp(lum, r, 0.7) * 0.74; g = lerp(lum, g, 0.72) * 0.79; bl = lerp(lum, bl, 0.8) * 0.93;
+      // clouds
+      let cu = (lon + p.drift) / TWO + 0.5; cu -= Math.floor(cu); const ca = C[Math.min(CH - 1, Math.floor(v * CH)) * CW + Math.floor(cu * CW)] / 255 * 0.72 * cloudFade;
+      r = lerp(r, 214, ca); g = lerp(g, 222, ca); bl = lerp(bl, 236, ca);
+      // light: day side, soft terminator, deep-blue night side
+      const nl = x * LX + y * LY + z * LZ, day = clamp(nl * 1.35 + 0.12), dd = day * day * (3 - 2 * day);
+      r = r * (0.03 + 1.05 * dd); g = g * (0.045 + 1.05 * dd); bl = bl * (0.08 + 1.08 * dd) + 9 * (1 - dd);
+      // atmosphere on the limb
+      const rim = Math.pow(1 - z, 2.2) * (0.18 + 0.82 * dd); r += 60 * rim; g += 135 * rim; bl += 240 * rim;
+      d[o] = r; d[o + 1] = g; d[o + 2] = bl; d[o + 3] = r2 > 0.985 ? clamp((1 - Math.sqrt(r2)) * R) * 255 : 255;
+    } }
+}
+function globeXY(p, lon, lat) { const l = lon * RAD - p.lam0, f = lat * RAD, X = Math.cos(f) * Math.sin(l), Y = Math.sin(f), Z = Math.cos(f) * Math.cos(l);
+  const y = Y * Math.cos(p.phi0) - Z * Math.sin(p.phi0), z = Y * Math.sin(p.phi0) + Z * Math.cos(p.phi0); return [p.cx + X * p.R, p.cy - y * p.R, z]; }
+function globePath(ctx, p, ring) { ctx.beginPath(); let pen = false; for (const [lon, lat] of ring) { const [x, y, z] = globeXY(p, lon, lat); if (z <= 0.02) { pen = false; continue; } pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } ctx.closePath(); }
+const tmpGlobe = layer();
+function drawGlobe(ctx, tg) {
+  reset(ctx);
+  const p = globeParams(tg);
+  const bg = ctx.createRadialGradient(p.cx, p.cy, 100, p.cx, p.cy, 760); bg.addColorStop(0, "#050b16"); bg.addColorStop(1, "#010205"); ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  for (const [x, y, r, a] of stars) { ctx.fillStyle = `rgba(200,220,255,${a * (1 - p.zk)})`; ctx.fillRect(x, y, r, r); }
+  renderGlobe(p); tmpGlobe.getContext("2d").putImageData(globeImg, 0, 0); ctx.drawImage(tmpGlobe, 0, 0);
+  if (p.aMorocco > 0.01) { const ring = DATA.morocco[0];
+    ctx.save(); ctx.lineJoin = "round"; globePath(ctx, p, ring); ctx.fillStyle = `rgba(56,189,248,${0.2 * p.aMorocco})`; ctx.fill();
+    ctx.shadowColor = "rgba(56,189,248,0.95)"; ctx.shadowBlur = 14; ctx.strokeStyle = `rgba(125,225,255,${0.95 * p.aMorocco})`; ctx.lineWidth = 1.8; ctx.stroke(); ctx.restore(); }
+  if (p.aMorocco > 0.01) { // the cities of Morocco light up, largest first
+    ctx.save(); ctx.globalCompositeOperation = "lighter"; const k = Math.min(2.4, Math.sqrt(p.R / 455));
+    PLACES.forEach((c, i) => { const a = ease((tg - 2.3 - (i / PLACES.length) * 1.0) / 0.35) * (1 - 0.55 * p.zk); if (a <= 0) return;
+      const [x, y, z] = globeXY(p, c.lon, c.lat); if (z <= 0.05 || x < -20 || y < -20 || x > W + 20 || y > H + 20) return;
+      ctx.shadowColor = "rgba(255,190,100,0.95)"; ctx.shadowBlur = c.city ? 7 : 3; ctx.fillStyle = c.city ? `rgba(255,232,180,${0.98 * a})` : `rgba(255,206,130,${0.75 * a})`;
+      ctx.beginPath(); ctx.arc(x, y, c.r * 0.72 * k, 0, 6.283); ctx.fill(); });
+    ctx.restore(); }
+}
+
+/* ===================== helpers ===================== */
+const reset = (ctx) => { ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over"; ctx.shadowBlur = 0; ctx.setLineDash([]); ctx.lineCap = "butt"; ctx.lineJoin = "round"; ctx.filter = "none"; };
+const rgba = (c, a) => `rgba(${Math.round(c[0])},${Math.round(c[1])},${Math.round(c[2])},${a})`;
+const mix = (a, b, f) => [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f, a[2] + (b[2] - a[2]) * f];
+const dim = (c, f) => [c[0] * f, c[1] * f, c[2] * f];
+// discreet caption naming the analysis (bottom-left)
+function caption(ctx, text, a = 1) { if (a <= 0 || CLEAN) return; ctx.textBaseline = "alphabetic";
+  const g = ctx.createLinearGradient(0, H - 110, 0, H); g.addColorStop(0, "rgba(2,6,12,0)"); g.addColorStop(1, `rgba(2,6,12,${0.78 * a})`); ctx.fillStyle = g; ctx.fillRect(0, H - 110, W, 110);
+  ctx.fillStyle = `rgba(0,160,227,${a})`; ctx.fillRect(28, H - 37, 22, 3);
+  font(ctx, 600, 15); ctx.fillStyle = `rgba(226,236,246,${0.95 * a})`; ctx.fillText(text, 60, H - 28); }
+
+/* ===================== 2. 3D MAP OF MOROCCO (camera, relief base, layers) ===================== */
+const LON0 = -8.9, LAT0 = 28.55, K = 32, COS = Math.cos(LAT0 * RAD);
+const flat = (lon, lat) => [(lon - LON0) * COS * K, -(lat - LAT0) * K];
+const KM = K / 111.2; // flat units per kilometre
+let cam;
+const P = (x, y, z = 0) => [cam.cx + (x * cam.c - y * cam.s) * cam.sc, cam.cy + ((x * cam.s + y * cam.c) * cam.ct - z * cam.st) * cam.sc];
+const proj = ([lon, lat], z = 0) => { const [x, y] = flat(lon, lat); return P(x, y, z); };
+function pathRing(ctx, ring, dy = 0) { ctx.beginPath(); ring.forEach((p, i) => { const [x, y] = proj(p); i ? ctx.lineTo(x, y + dy) : ctx.moveTo(x, y + dy); }); ctx.closePath(); }
+// camera looking at (lon, lat), which lands on screen point (sx, sy)
+function setCam(lon, lat, sc, rzDeg, sx = 360, sy = 400, tiltDeg = 57) { const rz = rzDeg * RAD, tilt = tiltDeg * RAD;
+  cam = { c: Math.cos(rz), s: Math.sin(rz), ct: Math.cos(tilt), st: Math.sin(tilt), sc, rz, cx: 0, cy: 0 };
+  const [x, y] = flat(lon, lat); cam.cx = sx - (x * cam.c - y * cam.s) * sc; cam.cy = sy - (x * cam.s + y * cam.c) * cam.ct * sc; }
+// same camera as P(), applied to the canvas: what is drawn in flat units lands on the ground plane
+const camTransform = (ctx) => { ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.translate(cam.cx, cam.cy); ctx.scale(cam.sc, cam.sc * cam.ct); ctx.rotate(cam.rz); };
+// relief image: equirectangular crop, REL.ppd pixels per degree, top-left corner at (REL.w, REL.n)
+const REL = { w: -19, n: 38, ppd: 100 };
+function drawRelief(ctx, alpha) { const [x0, y0] = flat(REL.w, REL.n); ctx.save(); camTransform(ctx); ctx.translate(x0, y0); ctx.scale((COS * K) / REL.ppd, K / REL.ppd); ctx.globalAlpha = alpha; ctx.imageSmoothingQuality = "high"; ctx.drawImage(relief, 0, 0); ctx.restore(); }
+function drawBase(ctx) {
+  reset(ctx); ctx.fillStyle = "#02060c"; ctx.fillRect(0, 0, W, H);
+  drawRelief(ctx, 0.42); // sea and neighbouring countries, dimmed
+  const ring = DATA.morocco[0], wall = 7 * cam.st * cam.sc;
+  ctx.save(); ctx.shadowColor = "rgba(0,160,227,0.55)"; ctx.shadowBlur = 26; pathRing(ctx, ring, wall); ctx.fillStyle = "#061521"; ctx.fill(); ctx.restore();
+  for (let d = wall; d > 0; d -= 1.5) { pathRing(ctx, ring, d); ctx.fillStyle = "#0a2238"; ctx.fill(); }
+  ctx.save(); pathRing(ctx, ring); ctx.clip(); drawRelief(ctx, 1); ctx.restore();
+  reset(ctx); pathRing(ctx, ring); ctx.strokeStyle = "rgba(125,225,255,0.85)"; ctx.lineWidth = 1.5; ctx.stroke();
+}
+function finish(ctx) { reset(ctx);
+  let g = ctx.createLinearGradient(0, 0, 0, 190); g.addColorStop(0, "rgba(2,6,12,0.9)"); g.addColorStop(1, "rgba(2,6,12,0)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, 190);
+  g = ctx.createRadialGradient(360, 380, 270, 360, 380, 560); g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, "rgba(0,0,0,0.5)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); }
+
+// Layers drawn once in flat units (RS pixels per unit), then placed on the ground with the camera.
+const RS = 6, OX = -245, OY = -250, LW = 480 * RS, LH = 510 * RS;
+const L2 = (x, y) => [(x - OX) * RS, (y - OY) * RS];
+function drawLayer(ctx, canvas, alpha = 1, op = "lighter") { ctx.save(); camTransform(ctx); ctx.translate(OX, OY); ctx.scale(1 / RS, 1 / RS); ctx.globalAlpha = alpha; ctx.globalCompositeOperation = op; ctx.drawImage(canvas, 0, 0); ctx.restore(); }
+let roadsL, svcL, allocL, ROADS = [], HUBS = [];
+const NB = 60, TMAX = 360; // service areas: 60 time steps up to 6 hours
+let svcBuckets = [], svcDrawn = -1, allocBuckets = [], allocDrawn = -1;
+const BAND = [[215, 252, 255], [45, 212, 250], [90, 140, 255]]; // 0–2 h, 2–4 h, 4–6 h
+const HUE = [[80, 220, 255], [255, 190, 90], [186, 160, 255], [90, 235, 170], [255, 135, 175], [96, 160, 255]];
+const hubColor = (h) => HUE[[0, 1, 2, 3, 4, 5, 1, 0, 2, 3, 4, 5][h] ?? 0];
+function buildRoads() {
+  roadsL = layer(LW, LH); svcL = layer(LW, LH); allocL = layer(LW, LH);
+  ROADS = MA.roads.map((r) => { const pts = new Float32Array(r.p.length); for (let i = 0; i < r.p.length; i += 2) { const [x, y] = flat(r.p[i], r.p[i + 1]), [lx, ly] = L2(x, y); pts[i] = lx; pts[i + 1] = ly; } return { c: r.c, pts, t: r.t, h: r.h }; });
+  HUBS = MA.hubs.map((h) => { const [x, y] = flat(h.lon, h.lat); return { ...h, x, y, l: L2(x, y) }; });
+  const b = roadsL.getContext("2d"); b.lineCap = "round"; b.lineJoin = "round"; b.globalCompositeOperation = "lighter";
+  const stroke = (ctx, p) => { ctx.beginPath(); ctx.moveTo(p[0], p[1]); for (let i = 2; i < p.length; i += 2) ctx.lineTo(p[i], p[i + 1]); ctx.stroke(); };
+  b.strokeStyle = "rgba(255,150,70,0.55)"; b.lineWidth = 2.4; for (const r of ROADS) if (r.c === 2) stroke(b, r.pts);
+  b.shadowColor = "rgba(255,130,40,0.9)"; b.shadowBlur = 10; b.strokeStyle = "rgba(255,165,80,0.8)"; b.lineWidth = 3.4; for (const r of ROADS) if (r.c === 1) stroke(b, r.pts);
+  b.shadowColor = "rgba(255,120,30,1)"; b.shadowBlur = 22; b.strokeStyle = "rgba(255,150,60,0.9)"; b.lineWidth = 7; for (const r of ROADS) if (r.c === 0) stroke(b, r.pts);
+  b.shadowBlur = 0; b.strokeStyle = "rgba(255,232,190,0.95)"; b.lineWidth = 2.4; for (const r of ROADS) if (r.c === 0) stroke(b, r.pts);
+  // segments sorted into time steps (service areas) and into distance steps from their centre (allocation)
+  svcBuckets = Array.from({ length: NB }, () => []); allocBuckets = Array.from({ length: NB }, () => []);
+  let reached = 0, total = 0;
+  for (const r of ROADS) for (let i = 0; i + 3 < r.pts.length; i += 2) { const k = i / 2, seg = [r.pts[i], r.pts[i + 1], r.pts[i + 2], r.pts[i + 3], r.c]; total++;
+    const t = r.t[k] < 0 || r.t[k + 1] < 0 ? -1 : Math.min(r.t[k], r.t[k + 1]); if (t >= 0 && t < TMAX) { svcBuckets[Math.floor((t / TMAX) * NB)].push(seg); reached++; }
+    const h = r.h[k]; if (h >= 0) { const hub = HUBS[h], d = Math.hypot(seg[0] - hub.l[0], seg[1] - hub.l[1]) / RS / KM; allocBuckets[Math.min(NB - 1, Math.floor((d / 620) * NB))].push([...seg, h]); } }
+  return { segments: total, within6h: reached };
+}
+function updateBuckets(canvas, buckets, drawn, upTo, colorOf) { const c = canvas.getContext("2d"); if (upTo < drawn) { c.clearRect(0, 0, LW, LH); drawn = -1; }
+  c.globalCompositeOperation = "lighter"; c.lineCap = "round";
+  for (let b = drawn + 1; b <= Math.min(NB - 1, upTo); b++) for (const s of buckets[b]) { const col = colorOf(b / NB, s);
+    c.shadowColor = rgba(col, 0.9); c.shadowBlur = 12; c.strokeStyle = rgba(col, 0.95); c.lineWidth = s[4] === 0 ? 7.5 : s[4] === 1 ? 5 : 3.6; c.beginPath(); c.moveTo(s[0], s[1]); c.lineTo(s[2], s[3]); c.stroke(); }
+  return Math.max(drawn, Math.min(NB - 1, upTo)); }
+// the cities, as warm points of light
+function drawPlaces(ctx, t, alpha = 1, pulse = false) { ctx.save(); ctx.globalCompositeOperation = "lighter"; const ks = Math.sqrt(cam.sc / 1.3);
+  PLACES.forEach((c, i) => { const [x, y] = proj([c.lon, c.lat]); if (x < -30 || y < -30 || x > W + 30 || y > H + 30) return;
+    if (pulse && c.city) { const ph = (t * 0.7 + i * 0.137) % 1, rr = (c.r * 1.4 + ph * 5 * c.r) * ks; ctx.shadowBlur = 0; ctx.strokeStyle = `rgba(255,214,150,${(1 - ph) * 0.6 * alpha})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.ellipse(x, y, rr, rr * cam.ct, 0, 0, 6.283); ctx.stroke(); }
+    ctx.shadowColor = "rgba(255,190,100,0.95)"; ctx.shadowBlur = c.city ? 8 : 3; ctx.fillStyle = c.city ? `rgba(255,232,180,${0.98 * alpha})` : `rgba(255,206,130,${0.75 * alpha})`;
+    ctx.beginPath(); ctx.arc(x, y, c.r * 0.95 * ks, 0, 6.283); ctx.fill(); });
+  ctx.restore(); }
+
+/* ---- shot 2: satellite imagery, the night lights of Morocco (NASA Black Marble) as columns of light ---- */
+let nightL, COLS = [];
+function buildLights(img) {
+  const w = img.width, h = img.height, c = layer(w, h), x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(img, 0, 0);
+  const id = x.getImageData(0, 0, w, h), d = id.data, v = new Float32Array(w * h);
+  // light = what stands out of the dark-blue night background; the layer keeps only that, in a warm colour
+  for (let i = 0, p = 0; i < d.length; i += 4, p++) { const a = clamp(((d[i] + d[i + 1]) / 2 - 0.9 * d[i + 2] - 8) / 70); v[p] = a; d[i] = 255; d[i + 1] = 196 + 50 * a; d[i + 2] = 120 + 90 * a; d[i + 3] = 255 * Math.min(1, a * 1.25); }
+  x.putImageData(id, 0, 0); nightL = c;
+  // one column per lit cell of 4 × 4 pixels (0.04°, about 4 km) located inside the country
+  const ring = DATA.morocco[0], inside = (lon, lat) => { let c2 = false; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (yi > lat !== yj > lat && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) c2 = !c2; } return c2; };
+  const N = 4; COLS = [];
+  for (let gy = 0; gy + N <= h; gy += N) for (let gx = 0; gx + N <= w; gx += N) { let m = 0; for (let j = 0; j < N; j++) for (let i = 0; i < N; i++) m += v[(gy + j) * w + gx + i]; m /= N * N; if (m < 0.1) continue;
+    const lon = REL.w + (gx + N / 2) / REL.ppd, lat = REL.n - (gy + N / 2) / REL.ppd; if (!inside(lon, lat)) continue; const [fx, fy] = flat(lon, lat);
+    COLS.push({ x: fx, y: fy, v: Math.min(1, m), d: Math.hypot(lon - CASA[0], lat - CASA[1]), j: rnd() }); }
+  return COLS.length;
+}
+function drawLights(ctx, t) {
+  const k = clamp((t - S_LIGHTS[0]) / (S_NET[1] - S_LIGHTS[0])), e = ease(k * 1.35);
+  setCam(lerp(CASA[0], -6.75, e), lerp(CASA[1], 33.2, e), lerp(6.6, 3.9, e), lerp(-26, -18, k), 360, lerp(360, 415, e));
+  drawBase(ctx);
+  // the image itself, laid on the ground
+  { const [x0, y0] = flat(REL.w, REL.n); ctx.save(); camTransform(ctx); ctx.translate(x0, y0); ctx.scale((COS * K) / REL.ppd, K / REL.ppd); ctx.globalCompositeOperation = "lighter"; ctx.globalAlpha = 0.95; ctx.imageSmoothingQuality = "high"; ctx.drawImage(nightL, 0, 0); ctx.restore(); }
+  // columns of light: height follows the brightness measured by the satellite
+  ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.lineCap = "round";
+  for (const c of COLS) { const g = easeOut((t - S_LIGHTS[1] - 0.5 - c.d * 0.28 - c.j * 0.25) / 0.9); if (g <= 0) continue;
+    const p0 = P(c.x, c.y, 0); if (p0[0] < -20 || p0[0] > W + 20 || p0[1] < -10 || p0[1] > H + 120) continue;
+    const hgt = (1.2 + 15 * Math.pow(c.v, 1.3)) * g * (1 + 0.04 * Math.sin(t * 5 + c.j * 6.28)), p1 = P(c.x, c.y, hgt);
+    const col = mix([60, 215, 190], [235, 250, 255], c.v); ctx.strokeStyle = rgba(col, 0.34 + 0.4 * c.v); ctx.lineWidth = 0.9 + cam.sc * 0.22;
+    ctx.beginPath(); ctx.moveTo(p0[0], p0[1]); ctx.lineTo(p1[0], p1[1]); ctx.stroke();
+    ctx.fillStyle = rgba([255, 255, 255], 0.55 * g * c.v); ctx.fillRect(p1[0] - 0.8, p1[1] - 0.8, 1.6, 1.6); }
+  ctx.restore(); finish(ctx); caption(ctx, TXT.lights, ease((t - S_LIGHTS[1] - 0.2) / 0.6));
+}
+/* ---- shot 3: network analysis, drive-time service areas from Casablanca ---- */
+function drawNet(ctx, t) {
+  const k = clamp((t - S_NET[0]) / (S_ALLOC[1] - S_NET[0])), e = ease(k * 1.5);
+  setCam(lerp(-6.75, -6.7, e), lerp(33.2, 32.5, e), lerp(3.9, 2.75, e), lerp(-18, -10, k), 360, lerp(415, 410, e));
+  drawBase(ctx); drawLayer(ctx, roadsL, 0.85);
+  const reach = clamp((t - S_NET[1] - 0.6) / 3.1);
+  if (reach > 0) { svcDrawn = updateBuckets(svcL, svcBuckets, svcDrawn, Math.floor(reach * NB) - 1, (f) => BAND[Math.min(2, Math.floor(f * 3))]); drawLayer(ctx, svcL, 0.95); }
+  drawPlaces(ctx, t, 0.9);
+  const [ox, oy] = proj(CASA), ph = (t * 1.1) % 1, ao = ease((t - S_NET[1] - 0.2) / 0.4); // origin
+  ctx.strokeStyle = `rgba(255,255,255,${(1 - ph) * ao})`; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(ox, oy, 6 + ph * 30, (6 + ph * 30) * cam.ct, 0, 0, 6.283); ctx.stroke();
+  ctx.shadowColor = "#fff"; ctx.shadowBlur = 12; ctx.fillStyle = `rgba(255,255,255,${ao})`; ctx.beginPath(); ctx.arc(ox, oy, 5, 0, 6.283); ctx.fill();
+  finish(ctx); caption(ctx, TXT.net, ease((t - S_NET[1] - 0.2) / 0.6));
+}
+/* ---- shot 4: allocation of the network and of the cities to the nearest regional capital ---- */
+function drawAlloc(ctx, t) {
+  const k = clamp((t - S_ALLOC[0]) / (S_COVER[1] - S_ALLOC[0]));
+  setCam(lerp(-8.9, -9.3, k), lerp(29.9, 29.4, k), lerp(1.72, 1.56, ease(k)), lerp(-10, -2, k), 380, 400);
+  drawBase(ctx); drawLayer(ctx, roadsL, 0.3);
+  const g = clamp((t - S_ALLOC[1] - 0.3) / 2.4);
+  if (g > 0) { allocDrawn = updateBuckets(allocL, allocBuckets, allocDrawn, Math.floor(g * NB) - 1, (f, s) => hubColor(s[5])); drawLayer(ctx, allocL, 0.95); }
+  // each city joined to its centre, then the centres themselves
+  ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.lineWidth = 1;
+  for (const c of PLACES) { if (c.h < 0) continue; const hub = HUBS[c.h], d = Math.hypot(c.x - hub.x, c.y - hub.y) / KM, a = ease((g * 620 - d) / 60); if (a <= 0) continue;
+    const p0 = P(hub.x, hub.y), p1 = P(c.x, c.y), col = hubColor(c.h); ctx.strokeStyle = rgba(col, 0.45 * a); ctx.beginPath(); ctx.moveTo(p0[0], p0[1]); ctx.lineTo(p1[0], p1[1]); ctx.stroke();
+    ctx.fillStyle = rgba(mix(col, [255, 255, 255], 0.35), 0.95 * a); ctx.beginPath(); ctx.arc(p1[0], p1[1], c.r * 0.9, 0, 6.283); ctx.fill(); }
+  const ah = ease((t - S_ALLOC[1]) / 0.5);
+  HUBS.forEach((h, i) => { const [x, y] = P(h.x, h.y), col = hubColor(i), ph = (t * 0.8 + i * 0.21) % 1;
+    ctx.strokeStyle = rgba(col, (1 - ph) * 0.8 * ah); ctx.lineWidth = 1.4; ctx.beginPath(); ctx.ellipse(x, y, 5 + ph * 16, (5 + ph * 16) * cam.ct, 0, 0, 6.283); ctx.stroke();
+    ctx.shadowColor = rgba(col, 1); ctx.shadowBlur = 12; ctx.fillStyle = `rgba(255,255,255,${ah})`; ctx.beginPath(); ctx.arc(x, y, 4.2, 0, 6.283); ctx.fill(); ctx.shadowBlur = 0; });
+  ctx.restore(); finish(ctx); caption(ctx, TXT.alloc, ease((t - S_ALLOC[1]) / 0.5));
+}
+/* ---- shot 5: proximity analysis, 50 km buffers around the cities (merged, clipped to the country) ---- */
+const BUF_KM = 50, covL = layer();
+function drawCover(ctx, t) {
+  const k = clamp((t - S_COVER[0]) / (S_POP[1] - S_COVER[0]));
+  setCam(lerp(-6.9, -7.3, k), lerp(32.3, 31.9, k), lerp(2.75, 2.45, ease(k)), lerp(8, 15, k), 360, 400);
+  drawBase(ctx); drawLayer(ctx, roadsL, 0.4);
+  const c = covL.getContext("2d"); reset(c); c.clearRect(0, 0, W, H); c.fillStyle = "#ff8a2a"; const rings = [];
+  PLACES.forEach((p, i) => { const g = easeOut((t - S_COVER[1] - 0.2 - (i / PLACES.length) * 1.3) / 1.1); if (g <= 0) return;
+    const [x, y] = P(p.x, p.y), r = BUF_KM * KM * cam.sc * g; if (x < -r || y < -r || x > W + r || y > H + r) return;
+    c.beginPath(); c.ellipse(x, y, r, r * cam.ct, 0, 0, 6.283); c.fill(); rings.push([x, y, r, g]); });
+  ctx.save(); pathRing(ctx, DATA.morocco[0]); ctx.clip(); ctx.globalCompositeOperation = "lighter";
+  ctx.globalAlpha = 0.36; ctx.drawImage(covL, 0, 0); ctx.globalAlpha = 1;
+  ctx.lineWidth = 1; for (const [x, y, r, g] of rings) { ctx.strokeStyle = `rgba(255,196,130,${0.5 * (1.2 - g) + 0.12})`; ctx.beginPath(); ctx.ellipse(x, y, r, r * cam.ct, 0, 0, 6.283); ctx.stroke(); }
+  ctx.restore(); drawPlaces(ctx, t, 1);
+  finish(ctx); caption(ctx, TXT.cover, ease((t - S_COVER[1]) / 0.5));
+}
+/* ---- shot 6: population of the cities, as 3D bars ---- */
+const barColor = (f) => { const stops = [[30, 70, 150], [52, 190, 170], [214, 200, 255]]; const x = clamp(f) * 2, i = Math.min(1, Math.floor(x)), g = x - i; return mix(stops[i], stops[i + 1], g); };
+const NORMALS = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+function prism(ctx, x, y, half, h, cBot, cTop, alpha) {
+  if (h <= 0.2 || alpha <= 0.01) return;
+  const cs = [[x - half, y - half], [x + half, y - half], [x + half, y + half], [x - half, y + half]];
+  for (let i = 0; i < 4; i++) { const d = NORMALS[i][0] * cam.s + NORMALS[i][1] * cam.c; if (d <= 0.001) continue;
+    const a = cs[i], b = cs[(i + 1) % 4], a0 = P(a[0], a[1], 0), b0 = P(b[0], b[1], 0), a1 = P(a[0], a[1], h), b1 = P(b[0], b[1], h), shade = 0.45 + 0.5 * d;
+    const g = ctx.createLinearGradient(0, a0[1], 0, a1[1] - 0.01); g.addColorStop(0, rgba(dim(cBot, shade), alpha)); g.addColorStop(1, rgba(dim(cTop, shade), alpha));
+    ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(a0[0], a0[1]); ctx.lineTo(b0[0], b0[1]); ctx.lineTo(b1[0], b1[1]); ctx.lineTo(a1[0], a1[1]); ctx.closePath(); ctx.fill(); }
+  ctx.beginPath(); cs.forEach((c, i) => { const p = P(c[0], c[1], h); i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); }); ctx.closePath();
+  ctx.fillStyle = rgba(mix(cTop, [255, 255, 255], 0.4), alpha); ctx.fill();
+}
+function drawPop(ctx, t) {
+  const k = clamp((t - S_POP[0]) / (S_MAP[1] - S_POP[0]));
+  setCam(lerp(-6.6, -7.0, k), lerp(32.7, 32.9, k), lerp(3.0, 2.7, ease(k)), lerp(-20, -10, k), 360, 430);
+  drawBase(ctx); drawLayer(ctx, roadsL, 0.45);
+  const objs = [];
+  PLACES.forEach((c, i) => { const g = easeOut((t - S_POP[1] - 0.15 - (i / PLACES.length) * 1.0) / 0.9); if (g <= 0) return;
+    objs.push({ z: c.x * cam.s + c.y * cam.c, c, h: (2.5 + 62 * Math.sqrt(c.pop / 3.3e6)) * g * (1 + 0.03 * Math.sin(t * 4 + i)) }); });
+  objs.sort((a, b) => a.z - b.z);
+  for (const o of objs) { const v = Math.sqrt(o.c.pop / 3.3e6); prism(ctx, o.c.x, o.c.y, 1.35 + 1.5 * v, o.h, barColor(0.05), barColor(0.25 + v * 0.9), 0.9); }
+  finish(ctx); caption(ctx, TXT.pop, ease((t - S_POP[1]) / 0.5));
+}
+/* ===================== 3. WHOLE COUNTRY + SIGNATURE ===================== */
+function drawMap(ctx, t) {
+  const e = easeOut((t - S_MAP[0]) / 2.2);
+  setCam(lerp(-7.0, LON0, e), lerp(32.9, LAT0, e), lerp(2.7, 1.3, e), -12 + (t - S_MAP[0]) * 1.2, lerp(360, 420, e), lerp(430, 430, e));
+  drawBase(ctx); drawLayer(ctx, roadsL, 0.5); drawPlaces(ctx, t, 1, true);
+  const a = CLEAN ? 0 : ease((t - S_MAP[1] - 0.2) / 0.7); if (a > 0) { const X = 44; reset(ctx);
+    const sh = ctx.createLinearGradient(0, 0, 0, 250); sh.addColorStop(0, `rgba(3,8,14,${0.86 * a})`); sh.addColorStop(1, "rgba(3,8,14,0)"); ctx.fillStyle = sh; ctx.fillRect(0, 0, W, 250);
+    ctx.globalAlpha = a; ctx.drawImage(logoWhite, X - 4, 40 + (1 - a) * 8, 232, 104); ctx.globalAlpha = 1;
+    ctx.fillStyle = `rgba(0,160,227,${a})`; ctx.fillRect(X, 152, 44, 3);
+    font(ctx, 500, 18); ctx.textBaseline = "alphabetic"; ctx.fillStyle = `rgba(214,228,240,${a})`; ctx.fillText(TXT.tag, X, 184); }
+  reset(ctx); const v = ctx.createRadialGradient(W / 2, H / 2, 300, W / 2, H / 2, 560); v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,0.42)"); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+}
+
+/* ===================== timeline ===================== */
+// Each shot fades in over the previous one and stays until the next one has fully faded in.
+const SHOTS = [
+  { c: shotG, in: S_LIGHTS, draw: drawLights }, { c: shotB, in: S_NET, draw: drawNet }, { c: shotD, in: S_ALLOC, draw: drawAlloc }, { c: shotE, in: S_COVER, draw: drawCover },
+  { c: shotF, in: S_POP, draw: drawPop }, { c: shotC, in: S_MAP, draw: drawMap },
+];
+function draw(ctx, t) {
+  reset(ctx); ctx.fillStyle = "#000"; ctx.fillRect(0, 0, W, H);
+  if (t < S_LIGHTS[1]) { drawGlobe(shotA.getContext("2d"), t); ctx.drawImage(shotA, 0, 0); }
+  SHOTS.forEach((s, i) => { const until = SHOTS[i + 1]?.in[1] ?? S_LOOP[1]; if (t < s.in[0] || t >= until) return;
+    s.draw(s.c.getContext("2d"), t); ctx.globalAlpha = ease((t - s.in[0]) / (s.in[1] - s.in[0])); ctx.drawImage(s.c, 0, 0); ctx.globalAlpha = 1; });
+  if (t >= S_LOOP[0]) { drawGlobe(shotA.getContext("2d"), 0); ctx.globalAlpha = ease((t - S_LOOP[0]) / (S_LOOP[1] - S_LOOP[0])); ctx.drawImage(shotA, 0, 0); ctx.globalAlpha = 1; }
+}
+
+const loadImg = (src) => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => rej(new Error("cannot load " + src)); i.src = src; });
+const b64 = (buf) => { let s = ""; const u = new Uint8Array(buf); for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); };
+window.init = async () => {
+  [DATA, MA] = await Promise.all(["data.json", "maroc.json"].map(async (f) => (await fetch(f)).json()));
+  // cities: dot size follows the population; "city" = 100 000 inhabitants or more
+  PLACES = MA.places.map((c) => { const [x, y] = flat(c.lon, c.lat), city = c.pop >= 1e5; return { ...c, x, y, city, r: city ? 1.5 + 2.7 * Math.sqrt(Math.min(1, c.pop / 3.2e6)) : 1.05 }; });
+  stats.places = { cities: PLACES.filter((c) => c.city).length, towns: PLACES.filter((c) => !c.city).length };
+  await Promise.all([400, 500, 600, 700, 800].map((w) => document.fonts.load(`${w} 20px Figtree`, "Aéà")));
+  const [eimg, logo, rimg, nimg] = await Promise.all([loadImg("assets/earth.jpg"), loadImg("assets/logo.png"), loadImg("assets/maroc-relief.jpg"), loadImg("assets/maroc-nuit.jpg")]);
+  const tc = layer(TW, TH), tx = tc.getContext("2d", { willReadFrequently: true }); tx.drawImage(eimg, 0, 0, TW, TH); earth = tx.getImageData(0, 0, TW, TH).data;
+  // relief graded like the globe (cooler, darker) so the road and analysis colours stand out
+  relief = layer(rimg.width, rimg.height); { const rc = relief.getContext("2d"); rc.filter = "saturate(0.7) brightness(0.74) contrast(1.18)"; rc.drawImage(rimg, 0, 0); rc.filter = "none"; rc.globalCompositeOperation = "multiply"; rc.fillStyle = "rgb(165,195,235)"; rc.fillRect(0, 0, relief.width, relief.height);
+    // soft edges, so the limits of the image never show when the camera pulls back
+    rc.globalCompositeOperation = "destination-in"; const E = 260, w = relief.width, h = relief.height;
+    for (const [x0, y0, x1, y1] of [[0, 0, E, 0], [w, 0, w - E, 0], [0, 0, 0, E], [0, h, 0, h - E]]) { const g = rc.createLinearGradient(x0, y0, x1, y1); g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, "rgba(0,0,0,1)"); rc.fillStyle = g; rc.fillRect(0, 0, w, h); } }
+  initNoise(); bakeClouds(); globeImg = new ImageData(W, H);
+  for (let i = 0; i < 170; i++) stars.push([rnd() * W, rnd() * H, 0.5 + rnd() * 1.1, 0.15 + rnd() * 0.55]);
+  logoWhite = layer(logo.width, logo.height); const lc = logoWhite.getContext("2d"); lc.drawImage(logo, 0, 0); lc.globalCompositeOperation = "source-in"; lc.fillStyle = "#fff"; lc.fillRect(0, 0, logo.width, logo.height);
+  stats.roads = buildRoads(); stats.lightColumns = buildLights(nimg);
+  return { fonts: document.fonts.check("700 20px Figtree"), ...stats, hubs: HUBS.length, seconds: T };
+};
+window.still = (t) => { const c = document.getElementById("c"); draw(c.getContext("2d"), t); return c.toDataURL("image/jpeg", 0.88).split(",")[1]; };
+window.render = async (bitrate) => {
+  const c = document.getElementById("c"), ctx = c.getContext("2d");
+  const muxer = new Mp4Muxer.Muxer({ target: new Mp4Muxer.ArrayBufferTarget(), video: { codec: "avc", width: W, height: H, frameRate: FPS }, fastStart: "in-memory" });
+  let error = null;
+  const enc = new VideoEncoder({ output: (chunk, meta) => muxer.addVideoChunk(chunk, meta), error: (e) => (error = String(e)) });
+  enc.configure({ codec: "avc1.640028", width: W, height: H, bitrate, framerate: FPS, latencyMode: "quality" });
+  const N = T * FPS;
+  for (let i = 0; i < N; i++) {
+    draw(ctx, i / FPS);
+    const frame = new VideoFrame(c, { timestamp: Math.round((i * 1e6) / FPS), duration: Math.round(1e6 / FPS) });
+    enc.encode(frame, { keyFrame: i % 60 === 0 }); frame.close();
+    while (enc.encodeQueueSize > 8) await new Promise((r) => setTimeout(r, 2));
+    if (i % 20 === 0) await new Promise((r) => setTimeout(r, 0));
+    if (error) throw new Error(error);
+  }
+  await enc.flush(); muxer.finalize();
+  return JSON.stringify({ frames: N, video: b64(muxer.target.buffer) });
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "title": "ArcGIS Business Analyst",
+    "subtitle": "Intelligence de marché basée sur la localisation",
+    "rightImage": "/arcgisBusinessAnalyst/business-analyst-overview-banner-laptop-foreground-hero.png",
+    "bgGraphic": "/arcgisBusinessAnalyst/business-analyst-overview-banner-background-buildings.jpg"
+  },
+  "intro": {
+    "paragraph": "Voyez clairement les personnes et les opportunités grâce à ArcGIS Business Analyst. Via des applications de bureau, web et mobiles, ArcGIS Business Analyst fournit une intelligence basée sur la localisation pour la planification, la sélection de sites et la segmentation de la clientèle. Combinez des données démographiques, de style de vie et de consommation avec des analyses cartographiques pour obtenir des rapports précis et des présentations dynamiques."
+  },
+  "benefits": {
+    "title": "Avantages de Business Analyst",
+    "tabs": [
+      {
+        "title": "Données et rapports",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-data-and-reports.jpg"
+      },
+      {
+        "title": "Analyses puissantes",
+        "image": "Stunning infographics"
+      },
+      {
+        "title": "Infographies percutantes",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-data-and-reports.jpg"
+      },
+      {
+        "title": "Planification des zones",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-data-and-reports.jpg"
+      },
+      {
+        "title": "Segmentation des clients",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-data-and-reports.jpg"
+      }
+    ],
+    "blocks": [
+      {
+        "side": "image-left",
+        "title": "Des données pour orienter vos décisions de localisation",
+        "desc": "Adoptez une approche basée sur les données pour valider vos hypothèses sur la localisation. Combinez des données propriétaires sur les sites et les coûts immobiliers avec des informations sur les clients, patients ou prospects. Faites des prévisions précises à l’aide des données de l’année en cours et de projections à cinq ans.",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-data-and-reports.jpg",
+        "ctaLabel": "En savoir plus"
+      },
+      {
+        "side": "image-left",
+        "title": "Outils pour la sélection de sites et la planification de marché",
+        "desc": "Analysez les marchés pour savoir où vous développer ou réduire. Les outils incluent le profilage des consommateurs, le potentiel du marché, la prévision des ventes, les temps de trajet et zones isochrones. Réalisez des analyses démographiques, sélectionnez des sites d’implantation, créez des zones de chalandise et identifiez un marché pour vos produits ou services.",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-powerful-analytics.jpg",
+        "ctaLabel": "Explorer les outils"
+      },
+      {
+        "side": "image-left",
+        "title": "Présentez vos analyses de manière percutante",
+        "desc": "Créez des infographies attrayantes avec vos données et celles d’Esri : démographie, profils de marché, logement et éducation, populations à risque. Personnalisez-les selon votre image de marque. Partagez vos infographies à l’écran ou exportez-les en PDF, HTML ou image pour une distribution facile.",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-stunning-infographics.jpg",
+        "ctaLabel": "Voir les données"
+      },
+      {
+        "side": "image-left",
+        "title": "Des workflows pour améliorer les plans de territoire",
+        "desc": "Équilibrez votre réseau pour aider chaque site et responsable de territoire à réussir. Utilisez des workflows automatisés pour la conception des territoires, l’allocation des sites et l’analyse de pénétration du marché. Repérez les sites sous-performants. Prévoyez les indicateurs clés pour les sites proposés. Intégrez plusieurs couches de données pour analyser la pertinence des sites.",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-area-planning.jpg",
+        "ctaLabel": "Créer des rapports"
+      },
+      {
+        "side": "image-left",
+        "title": "Cibler de nouveaux clients et des clients existants",
+        "desc": "Comprenez leurs préférences et besoins afin de savoir qui cibler et comment les attirer. Divisez vos clients en groupes ciblés. Trouvez des données démographiques comme l’âge, le revenu, le sexe, la taille de la famille et l’historique de santé. Découvrez les préférences grâce aux données de style de vie et comportementales.",
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-customer-segmentation.jpg",
+        "ctaLabel": "Créer des rapports"
+      }
+    ],
+    "feature": {
+      "image": "/arcgisBusinessAnalyst/benefit-main.jpg",
+      "title": "Présentez vos analyses de manière percutante",
+      "desc": "Créez des infographies attrayantes avec vos données et celles d’Esri telles que la démographie, les profils de marché, le logement, l’éducation et les populations à risque. Personnalisez-les pour votre marque et exportez-les en PDF, HTML ou image."
+    }
+  },
+  "how": {
+    "title": "Comment fonctionne Business Analyst",
+    "steps": [
+      {
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-it-works-step-1.jpg",
+        "title": "Étape 1",
+        "desc": "Identifiez les zones à analyser en fonction des facteurs critiques pour votre secteur — de la sélection de sites pour l’immobilier aux abris pour la réponse d’urgence."
+      },
+      {
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-it-works-step-2.jpg",
+        "title": "Étape 2",
+        "desc": "Analysez les zones avec les données démographiques d’Esri combinées à vos propres données. Interprétez les résultats dans un contexte spatial, réalisez une analyse de marché et générez de belles cartes."
+      },
+      {
+        "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-it-works-step-3.jpg",
+        "title": "Étape 3",
+        "desc": "Présentez vos résultats avec des rapports personnalisés, des infographies percutantes et des récits cartographiques qui mettent en valeur vos analyses."
+      }
+    ]
+  },
+  "caseStudy": {
+    "background": "/arcgisBusinessAnalyst/burger.jpg",
+    "headTitle": "ÉTUDE DE CAS",
+    "title": "Histoires de réussite",
+    "desc": "Découvrez comment les organisations exploitent ArcGIS Business Analyst pour stimuler leur croissance et prendre des décisions éclairées basées sur la localisation.",
+    "pills": [
+      {
+        "label": "Chick-fil-A",
+        "image": "/arcgisBusinessAnalyst/case-study-thumbnail-chick-fil-a.jpg",
+        "title": "Chick-fil-A",
+        "desc": "L’analyse basée sur la localisation avec ArcGIS favorise une croissance fiable.",
+        "actionType": "story",
+        "actionText": "Lire l’étude de cas",
+        "actionUrl": "https://www.esri.com/content/dam/esrisites/en-us/media/misc/public-stories/chick-fil-a-case-study.pdf"
+      },
+      {
+        "label": "Horwath HTL Canada",
+        "image": "/arcgisBusinessAnalyst/toronto-skyline-thumbnail.png",
+        "title": "Horwath HTL Canada",
+        "desc": "Un leader mondial du conseil en hôtellerie, tourisme et loisirs utilise ArcGIS Business Analyst pour créer des projections basées sur les données spatiales pour ses clients.",
+        "actionType": "story",
+        "actionText": "Lire l’étude de cas",
+        "actionUrl": "https://resources.esri.ca/ann-stories/horwath-htl-leads-the-way-to-successful-hotels-with-arcgis-business-analyst"
+      },
+      {
+        "label": "The Shopping Center Group",
+        "image": "/arcgisBusinessAnalyst/case-study-thumbnail-shopping-center.jpg",
+        "title": "The Shopping Center Group",
+        "desc": "Une société immobilière atteint 30 % de croissance de revenus en utilisant ArcGIS pour l’intelligence de marché.",
+        "actionType": "video",
+        "actionText": "Regarder la vidéo",
+        "actionUrl": "https://www.youtube.com/embed/Td0_8SfbuDE?si=wQJ7tqhXiGMlsfEu"
+      },
+      {
+        "label": "Emerus Micro-hospitals",
+        "image": "/arcgisBusinessAnalyst/case-study-thumbnail-emerus-hospitals.jpg",
+        "title": "Emerus Micro-hospitals",
+        "desc": "Des hôpitaux de petit format fournissent des soins aux populations mal desservies.",
+        "actionType": "story",
+        "actionText": "Lire l’étude de cas",
+        "actionUrl": "https://www.esri.com/content/dam/esrisites/en-us/media/misc/public-stories/bringing-healthcare-underserved-populations.pdf"
+      },
+      {
+        "label": "Datastory Consulting",
+        "image": "/arcgisBusinessAnalyst/case-study-thumbnail-datastory-consulting.jpg",
+        "title": "Datastory Consulting",
+        "desc": "Les données démographiques, de style de vie et de consommation orientent la stratégie de marché.",
+        "actionType": "story",
+        "actionText": "Lire l’étude de cas",
+        "actionUrl": "https://www.esri.com/content/dam/esrisites/en-us/media/pdf/datastory-consulting-case-study.pdf"
+      }
+    ]
+  },
+  "integration": {
+    "title": "Business Analyst s’intègre pleinement à ArcGIS",
+    "desc": "Disponible partout où vous en avez besoin, sur tout appareil, à tout moment. Business Analyst peut être intégré dans votre flux de travail actuel comme solution SaaS via navigateur ou comme partie de votre écosystème ArcGIS sur site.",
+    "ctaLabel": "En savoir plus sur ArcGIS",
+    "image": "/arcgisBusinessAnalyst/business-analyst-overview-fully-integrated-platform.jpg",
+    "ctaUrl": "https://www.esri.com/en-us/arcgis/geospatial-platform/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fabout-arcgis%2Foverview"
+  }
+}

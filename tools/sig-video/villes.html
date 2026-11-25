@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=block">
+<script src="https://cdn.jsdelivr.net/npm/mp4-muxer@5.1.3/build/mp4-muxer.min.js"></script>
+<style>html,body{margin:0;background:#000}canvas{display:block}</style>
+</head>
+<body>
+<canvas id="c" width="720" height="720"></canvas>
+<script>
+// Version 2 of the hero film: 3D map of Morocco + real footage of five cities (clips/*.mp4, see clips.json).
+// Each city "opens" from its point on the map into full-frame video, then closes back onto the map.
+const W = 720, H = 720, FPS = 30, T = 24; // seconds, seamless loop
+const lang = new URLSearchParams(location.search).get("lang") === "en" ? "en" : "fr";
+const TXT = {
+  fr: { title: ["Le SIG", "au Maroc"], titleSub: "Comprendre le territoire par la donnée", outro: ["Des données", "aux décisions"], outroSub: "Geomatic · depuis 1988",
+        city: "Ville", names: { tanger: "Tanger" }, west: "O", dec: "," },
+  en: { title: ["GIS", "in Morocco"], titleSub: "Understanding the territory through data", outro: ["From data", "to decisions"], outroSub: "Geomatic · since 1988",
+        city: "City", names: { tanger: "Tangier" }, west: "W", dec: "." },
+}[lang];
+
+// Tour order. id = clip file in clips/, side = label side on the map.
+const TOUR = [
+  ["casablanca", -7.59, 33.57, 1, "l"], ["rabat", -6.84, 34.02, 0.85, "l"], ["tanger", -5.83, 35.77, 0.75, "l"],
+  ["chefchaouen", -5.27, 35.17, 0.6, "r"], ["marrakech", -7.99, 31.63, 0.8, "r"],
+].map(([id, lon, lat, w, side], i) => ({ id, lon, lat, w, side, i, name: TXT.names[id] ?? id[0].toUpperCase() + id.slice(1) }));
+// Other cities: small dots only (context) and weight for the analysis bars.
+const MINOR = [[-5.0, 34.03, 0.75], [-1.91, 34.68, 0.55], [-9.6, 30.42, 0.65], [-13.2, 27.15, 0.5], [-15.93, 23.72, 0.4]].map(([lon, lat, w]) => ({ lon, lat, w }));
+
+// Timeline (seconds)
+const T_CAM_IN = 2.3, T_COLS = 2.8, T_TOUR = 3.4, SLOT = 3.4, PRE = 0.25, OPEN = 0.5, CLOSE = 0.45;
+const T_TOUR_END = T_TOUR + TOUR.length * SLOT; // 20.4
+const T_GRID = T_TOUR_END, T_OUTRO = [20.7, 23.3], T_FADE = 22.7, T_CAM_OUT = 22.4, T_TITLE_BACK = 23.2;
+
+// --- map plane: equirectangular centred on Morocco (flat px, origin = map centre) ---
+const LON0 = -8.9, LAT0 = 28.55, K = 32, CX = 400, CY = 352, COS = Math.cos((LAT0 * Math.PI) / 180);
+const flat = (lon, lat) => [(lon - LON0) * COS * K, -(lat - LAT0) * K];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (x) => { x = clamp(x); return x * x * (3 - 2 * x); };
+const easeOut = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const win = (t, a, b, f = 0.45) => ease((t - a) / f) * (1 - ease((t - (b - f)) / f));
+const rgba = (c, a) => `rgba(${Math.round(c[0])},${Math.round(c[1])},${Math.round(c[2])},${a})`;
+const mix = (a, b, f) => [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f, a[2] + (b[2] - a[2]) * f];
+const dim = (c, f) => [c[0] * f, c[1] * f, c[2] * f];
+let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+
+// --- 3D camera: flat at the loop point, tilted for the rest ---
+const TILT = 57, ROT = -17, ZOOM = 0.34;
+let cam;
+function setCam(t) {
+  const k = ease((t - T_CAM_IN) / 1.3) * (1 - ease((t - T_CAM_OUT) / 1.5));
+  const tilt = (TILT * Math.PI / 180) * k, rz = ((ROT + Math.sin((t / T) * 6.283) * 2.5) * Math.PI / 180) * k;
+  cam = { k, c: Math.cos(rz), s: Math.sin(rz), ct: Math.cos(tilt), st: Math.sin(tilt), sc: 1 + ZOOM * k, cx: CX + 6 * k, cy: CY + 62 * k };
+}
+const P = (x, y, z = 0) => [cam.cx + (x * cam.c - y * cam.s) * cam.sc, cam.cy + ((x * cam.s + y * cam.c) * cam.ct - z * cam.st) * cam.sc];
+const depthOf = (x, y) => x * cam.s + y * cam.c;
+const proj = ([lon, lat], z = 0) => { const [x, y] = flat(lon, lat); return P(x, y, z); };
+
+let DATA, grid = [], stars = [], videos = {}, mini = null;
+function pointInRing(x, y, ring) { let inside = false; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside; } return inside; }
+
+function setup() {
+  const ring = DATA.morocco[0], all = [...TOUR, ...MINOR];
+  const step = 0.42; // analysis grid (illustrative values, not real statistics)
+  for (let lat = 20.9; lat < 36; lat += step) for (let lon = -17.2 + ((Math.round(lat / step) % 2) * step) / 2; lon < -0.9; lon += step) {
+    if (!pointInRing(lon, lat, ring)) continue;
+    let v = 0; for (const c of all) { const d = Math.hypot((lon - c.lon) * COS, lat - c.lat); v += c.w * Math.exp(-(d * d) / 1.6); }
+    const dc = Math.hypot((lon - TOUR[0].lon) * COS, lat - TOUR[0].lat); const [x, y] = flat(lon, lat);
+    grid.push({ x, y, v: clamp(v / 1.5), dc, j: rnd() });
+  }
+  all.forEach((c) => { [c.x, c.y] = flat(c.lon, c.lat); });
+  for (let i = 0; i < 90; i++) stars.push([rnd() * W, rnd() * H, 0.4 + rnd() * 0.9, rnd() * 6.28]);
+  // mini locator map: flat outline fitted in a 100px box
+  const pts = ring.map(([lon, lat]) => flat(lon, lat)); const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys), s = 100 / Math.max(x1 - x0, y1 - y0);
+  mini = { pts: pts.map(([x, y]) => [(x - x0) * s, (y - y0) * s]), w: (x1 - x0) * s, h: (y1 - y0) * s, at: (c) => [(c.x - x0) * s, (c.y - y0) * s] };
+}
+
+const barColor = (f) => { const stops = [[24, 52, 128], [52, 168, 138], [196, 181, 255]]; const x = clamp(f) * 2, i = Math.min(1, Math.floor(x)), g = x - i; return mix(stops[i], stops[i + 1], g); };
+function pathRing(ctx, ring, dy = 0) { ctx.beginPath(); ring.forEach((p, i) => { const [x, y] = proj(p); i ? ctx.lineTo(x, y + dy) : ctx.moveTo(x, y + dy); }); ctx.closePath(); }
+function font(ctx, w, s) { ctx.font = `${w} ${s}px Figtree, "Segoe UI", sans-serif`; }
+function wrap(ctx, text, x, y, maxW, lh) { let line = "", n = 0; for (const w of text.split(" ")) { const test = line ? line + " " + w : w; if (ctx.measureText(test).width > maxW && line) { ctx.fillText(line, x, y + n++ * lh); line = w; } else line = test; } ctx.fillText(line, x, y + n * lh); }
+function roundRect(ctx, x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+const NORMALS = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+function prism(ctx, x, y, half, h, cBot, cTop, alpha) {
+  if (h <= 0.4 || alpha <= 0.01) return;
+  const cs = [[x - half, y - half], [x + half, y - half], [x + half, y + half], [x - half, y + half]];
+  for (let i = 0; i < 4; i++) {
+    const d = NORMALS[i][0] * cam.s + NORMALS[i][1] * cam.c; if (d <= 0.001) continue;
+    const a = cs[i], b = cs[(i + 1) % 4], a0 = P(a[0], a[1], 0), b0 = P(b[0], b[1], 0), a1 = P(a[0], a[1], h), b1 = P(b[0], b[1], h);
+    const shade = 0.42 + 0.5 * d;
+    const g = ctx.createLinearGradient(0, a0[1], 0, a1[1] - 0.01); g.addColorStop(0, rgba(dim(cBot, shade), alpha)); g.addColorStop(1, rgba(dim(cTop, shade), alpha));
+    ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(a0[0], a0[1]); ctx.lineTo(b0[0], b0[1]); ctx.lineTo(b1[0], b1[1]); ctx.lineTo(a1[0], a1[1]); ctx.closePath(); ctx.fill();
+  }
+  ctx.beginPath(); cs.forEach((c, i) => { const p = P(c[0], c[1], h); i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); }); ctx.closePath();
+  ctx.fillStyle = rgba(mix(cTop, [255, 255, 255], 0.35), alpha); ctx.fill();
+}
+
+// Which city is on screen at time t, and how far its video "portal" is open (0..1).
+function tourState(t) {
+  if (t < T_TOUR || t >= T_TOUR_END) return null;
+  const i = Math.min(TOUR.length - 1, Math.floor((t - T_TOUR) / SLOT)), a = T_TOUR + i * SLOT, b = a + SLOT;
+  const open = ease((t - a - PRE) / OPEN) * (1 - ease((t - (b - CLOSE)) / CLOSE));
+  return { i, a, b, open, clipT: Math.max(0, t - a - PRE) };
+}
+// Seek the active clip to the frame needed at time t (must be awaited before draw()).
+async function prepare(t) {
+  const st = tourState(t); if (!st || st.open <= 0) return;
+  const v = videos[TOUR[st.i].id], target = Math.min(v.duration - 0.04, (Math.floor(st.clipT * FPS) + 0.5) / FPS);
+  if (Math.abs(v.currentTime - target) < 0.001) return;
+  v.currentTime = target; await new Promise((r) => v.addEventListener("seeked", r, { once: true }));
+}
+
+function draw(ctx, t) {
+  setCam(t);
+  const F = 1 - ease((t - T_FADE) / 1.2), st = tourState(t);
+  // ---------- 3D map ----------
+  const g = ctx.createRadialGradient(CX, CY - 40, 60, CX, CY, 620); g.addColorStop(0, "#0c2136"); g.addColorStop(0.55, "#07131f"); g.addColorStop(1, "#03080e");
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  for (const [x, y, r, ph] of stars) { ctx.fillStyle = `rgba(148,197,255,${0.10 + 0.10 * Math.sin(ph + (t / T) * 6.283 * 3)})`; ctx.fillRect(x, y, r, r); }
+  ctx.strokeStyle = "rgba(125,170,220,0.08)"; ctx.lineWidth = 1; ctx.beginPath();
+  for (let lon = -70; lon <= 50; lon += 5) { const a = proj([lon, -10]), b = proj([lon, 65]); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); }
+  for (let lat = -10; lat <= 65; lat += 5) { const a = proj([-70, lat]), b = proj([50, lat]); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); }
+  ctx.stroke();
+  ctx.fillStyle = "#0e1c2c"; for (const r of DATA.land) { pathRing(ctx, r); ctx.fill(); }
+  ctx.strokeStyle = "rgba(125,170,220,0.10)"; for (const r of DATA.land) { pathRing(ctx, r); ctx.stroke(); }
+  const ring = DATA.morocco[0], wall = 12 * cam.st * cam.sc;
+  ctx.save(); ctx.shadowColor = "rgba(0,160,227,0.55)"; ctx.shadowBlur = 26; pathRing(ctx, ring, wall); ctx.fillStyle = "#081a2b"; ctx.fill(); ctx.restore();
+  for (let d = wall; d > 0; d -= 1.5) { pathRing(ctx, ring, d); ctx.fillStyle = "#0a2238"; ctx.fill(); }
+  if (wall > 1) { pathRing(ctx, ring, wall); ctx.strokeStyle = "rgba(56,189,248,0.35)"; ctx.lineWidth = 1; ctx.stroke(); }
+  const mg = ctx.createLinearGradient(250, 80, 480, 620); mg.addColorStop(0, "#15405f"); mg.addColorStop(1, "#0d2740");
+  pathRing(ctx, ring); ctx.fillStyle = mg; ctx.fill();
+  ctx.lineJoin = "round"; ctx.strokeStyle = "rgba(56,189,248,0.85)"; ctx.lineWidth = 1.6; ctx.stroke();
+  let perimeter = 0; { let prev = null; for (const p of ring) { const q = proj(p); if (prev) perimeter += Math.hypot(q[0] - prev[0], q[1] - prev[1]); prev = q; } }
+  ctx.save(); ctx.setLineDash([70, perimeter - 70]); ctx.lineDashOffset = -((t / T) * 2 * perimeter); ctx.strokeStyle = "rgba(224,247,255,0.95)"; ctx.lineWidth = 2.4;
+  ctx.shadowColor = "#38bdf8"; ctx.shadowBlur = 12; pathRing(ctx, ring); ctx.stroke(); ctx.restore();
+
+  // minor cities: small dots
+  const colsIn = (c, i) => easeOut((t - T_COLS - i * 0.12) / 0.6) * F;
+  MINOR.forEach((c, i) => { const a = colsIn(c, i + 2) * 0.8; if (a <= 0) return; const [x, y] = P(c.x, c.y); ctx.fillStyle = `rgba(147,197,253,${a})`; ctx.beginPath(); ctx.arc(x, y, 2.6, 0, 6.283); ctx.fill(); });
+
+  // route of the tour, drawn as each city closes
+  ctx.save(); ctx.lineCap = "round"; ctx.strokeStyle = `rgba(125,211,252,${0.8 * F})`; ctx.lineWidth = 1.8; ctx.setLineDash([3, 6]); ctx.lineDashOffset = -t * 10;
+  for (let i = 0; i < TOUR.length - 1; i++) { const k = ease((t - (T_TOUR + (i + 1) * SLOT - CLOSE)) / 0.6); if (k <= 0) continue;
+    const A = TOUR[i], B = TOUR[i + 1], p0 = P(A.x, A.y), p1 = P(A.x + (B.x - A.x) * k, A.y + (B.y - A.y) * k); ctx.beginPath(); ctx.moveTo(p0[0], p0[1]); ctx.lineTo(p1[0], p1[1]); ctx.stroke(); }
+  ctx.restore();
+
+  // 3D objects back to front: analysis bars (end of film) and city columns
+  const visited = (c) => clamp((t - (T_TOUR + c.i * SLOT)) / 0.3);
+  const colH = (c) => (26 + 46 * c.w) * colsIn(c, c.i) * cam.k * (st && st.i === c.i ? 1.18 : 1) * (1 - 0.7 * ease((t - T_GRID) / 0.7));
+  const objs = [];
+  if (t > T_GRID - 0.1 && F > 0) for (const d of grid) {
+    const k = easeOut((t - T_GRID - d.dc * 0.045 - d.j * 0.25) / 0.7); if (k <= 0) continue;
+    const h = (5 + 92 * d.v * d.v + 14 * d.v) * k * (1 + 0.06 * Math.sin((t / T) * 6.283 * 8 + d.j * 6.28)) * F * cam.k;
+    objs.push({ z: depthOf(d.x, d.y), draw: () => prism(ctx, d.x, d.y, 3.4, h, barColor(0), barColor(0.25 + d.v * 0.85), (0.55 + 0.45 * d.v) * F) });
+  }
+  TOUR.forEach((c) => { const h = colH(c); if (h <= 0.4) return; const active = st && st.i === c.i;
+    const col = active ? [255, 255, 255] : mix([71, 110, 150], [56, 189, 248], visited(c));
+    objs.push({ z: depthOf(c.x, c.y) + 0.01, draw: () => { prism(ctx, c.x, c.y, 4.6 + c.w * 1.6, h, dim(col, 0.28), col, 0.96 * F);
+      const [tx, ty] = P(c.x, c.y, h), gl = ctx.createRadialGradient(tx, ty, 1, tx, ty, 22); gl.addColorStop(0, rgba(col, 0.55 * F)); gl.addColorStop(1, rgba(col, 0)); ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(tx, ty, 22, 0, 6.283); ctx.fill(); } }); });
+  objs.sort((a, b) => a.z - b.z).forEach((o) => o.draw());
+
+  // markers, then labels
+  for (const pass of ["marker", "label"]) TOUR.forEach((c) => {
+    const k = colsIn(c, c.i); if (k <= 0) return;
+    const [x, y] = P(c.x, c.y), [tx, ty] = P(c.x, c.y, colH(c)), R = 3 + c.w * 3, active = st && st.i === c.i;
+    if (pass === "marker") {
+      const ph = (t * (active ? 1.1 : 0.5) + c.i * 0.21) % 1, rr = (R + ph * (active ? 30 : 16 * c.w) + 2) * cam.sc;
+      ctx.strokeStyle = `rgba(${active ? "255,255,255" : "56,189,248"},${(1 - ph) * 0.7 * k})`; ctx.lineWidth = active ? 2 : 1.3; ctx.beginPath(); ctx.ellipse(x, y, rr, rr * Math.max(cam.ct, 0.2), 0, 0, 6.283); ctx.stroke();
+      ctx.save(); ctx.shadowColor = "#38bdf8"; ctx.shadowBlur = 12; ctx.fillStyle = `rgba(255,255,255,${k})`; ctx.beginPath(); ctx.arc(tx, ty, R, 0, 6.283); ctx.fill(); ctx.restore();
+      ctx.fillStyle = `rgba(0,121,193,${k})`; ctx.beginPath(); ctx.arc(tx, ty, R * 0.45, 0, 6.283); ctx.fill(); return;
+    }
+    font(ctx, active ? 700 : 600, 15); ctx.textBaseline = "middle";
+    const tw = ctx.measureText(c.name).width, gap = (7 + c.w * 2) * cam.sc + 6; const lx = c.side === "l" ? x - gap - tw : x + gap;
+    ctx.lineWidth = 3.5; ctx.strokeStyle = `rgba(4,12,20,${0.9 * k})`; ctx.strokeText(c.name, lx, y + 2);
+    ctx.fillStyle = `rgba(226,240,252,${k})`; ctx.fillText(c.name, lx, y + 2);
+  });
+
+  // ---------- city footage: opens as a circle from the city's point on the map ----------
+  if (st && st.open > 0) {
+    const c = TOUR[st.i], v = videos[c.id], [ox, oy] = P(c.x, c.y, colH(c));
+    const rMax = Math.max(Math.hypot(ox, oy), Math.hypot(W - ox, oy), Math.hypot(ox, H - oy), Math.hypot(W - ox, H - oy)) + 4, r = st.open * rMax;
+    ctx.save(); ctx.beginPath(); ctx.arc(ox, oy, r, 0, 6.283); ctx.clip();
+    const z = 1.03 + 0.05 * (st.clipT / SLOT); // gentle push-in
+    ctx.drawImage(v, (W - W * z) / 2, (H - H * z) / 2, W * z, H * z);
+    // legibility gradients
+    let gr = ctx.createLinearGradient(0, 0, 0, 260); gr.addColorStop(0, "rgba(3,8,14,0.78)"); gr.addColorStop(1, "rgba(3,8,14,0)"); ctx.fillStyle = gr; ctx.fillRect(0, 0, W, 260);
+    gr = ctx.createLinearGradient(0, H - 220, 0, H); gr.addColorStop(0, "rgba(3,8,14,0)"); gr.addColorStop(1, "rgba(3,8,14,0.6)"); ctx.fillStyle = gr; ctx.fillRect(0, H - 220, W, 220);
+    // text block
+    const a = st.open, X = 40; ctx.textBaseline = "alphabetic";
+    font(ctx, 700, 15); ctx.fillStyle = `rgba(125,211,252,${a})`; ctx.fillText(`${TXT.city.toUpperCase()} 0${st.i + 1} / 0${TOUR.length}`, X, 58);
+    for (let k = 0; k < TOUR.length; k++) { ctx.fillStyle = k <= st.i ? `rgba(56,189,248,${a})` : `rgba(226,232,240,${0.4 * a})`; ctx.fillRect(X + k * 30, 70, 24, 3); }
+    ctx.save(); ctx.shadowColor = "rgba(0,0,0,0.55)"; ctx.shadowBlur = 14; font(ctx, 800, 52); ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.fillText(c.name, X, 132); ctx.restore();
+    const f2 = (n) => Math.abs(n).toFixed(2).replace(".", TXT.dec);
+    font(ctx, 500, 18); ctx.fillStyle = `rgba(226,240,252,${a})`; ctx.fillText(`${f2(c.lat)}° N  ·  ${f2(c.lon)}° ${TXT.west}`, X, 162);
+    // viewfinder corners
+    ctx.strokeStyle = `rgba(255,255,255,${0.75 * a})`; ctx.lineWidth = 2; const m = 22, L = 24;
+    for (const [cx, cy, dx, dy] of [[m, m, 1, 1], [W - m, m, -1, 1], [m, H - m, 1, -1], [W - m, H - m, -1, -1]]) { ctx.beginPath(); ctx.moveTo(cx + dx * L, cy); ctx.lineTo(cx, cy); ctx.lineTo(cx, cy + dy * L); ctx.stroke(); }
+    // mini locator map (bottom-right)
+    const bw = mini.w + 36, bh = mini.h + 36, bx = W - bw - 40, by = H - bh - 40;
+    roundRect(ctx, bx, by, bw, bh, 10); ctx.fillStyle = `rgba(5,14,24,${0.78 * a})`; ctx.fill(); ctx.strokeStyle = `rgba(125,211,252,${0.4 * a})`; ctx.lineWidth = 1.2; ctx.stroke();
+    ctx.beginPath(); mini.pts.forEach(([x, y], i) => (i ? ctx.lineTo(bx + 18 + x, by + 18 + y) : ctx.moveTo(bx + 18 + x, by + 18 + y))); ctx.closePath();
+    ctx.fillStyle = `rgba(21,64,95,${a})`; ctx.fill(); ctx.strokeStyle = `rgba(56,189,248,${0.9 * a})`; ctx.lineWidth = 1.2; ctx.stroke();
+    const [mx, my] = mini.at(c), ph = (t * 1.1) % 1;
+    ctx.strokeStyle = `rgba(255,255,255,${(1 - ph) * a})`; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(bx + 18 + mx, by + 18 + my, 4 + ph * 12, 0, 6.283); ctx.stroke();
+    ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.beginPath(); ctx.arc(bx + 18 + mx, by + 18 + my, 4, 0, 6.283); ctx.fill();
+    ctx.restore();
+    // glowing edge of the portal while it opens/closes
+    if (st.open < 0.995) { ctx.save(); ctx.shadowColor = "#38bdf8"; ctx.shadowBlur = 18; ctx.strokeStyle = "rgba(186,230,253,0.95)"; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(ox, oy, r, 0, 6.283); ctx.stroke(); ctx.restore(); }
+  }
+
+  // ---------- titles over the map (start/end) ----------
+  const X = 40; ctx.textBaseline = "alphabetic";
+  const aT = 1 - ease((t - 2.2) / 0.6) + ease((t - T_TITLE_BACK) / 0.7), aO = win(t, T_OUTRO[0], T_OUTRO[1]);
+  if (aT > 0 || aO > 0) { const sh = ctx.createLinearGradient(0, 0, 0, 250); sh.addColorStop(0, `rgba(3,8,14,${0.8 * Math.max(aT * 0.6, aO)})`); sh.addColorStop(1, "rgba(3,8,14,0)"); ctx.fillStyle = sh; ctx.fillRect(0, 0, W, 250); }
+  const bigTitle = (lines, sub, a) => { if (a <= 0) return;
+    ctx.fillStyle = `rgba(0,160,227,${a})`; ctx.fillRect(X, 46, 44, 4);
+    font(ctx, 800, 46); ctx.fillStyle = `rgba(255,255,255,${a})`; lines.forEach((l, i) => ctx.fillText(l, X, 104 + i * 50));
+    font(ctx, 500, 19); ctx.fillStyle = `rgba(200,220,238,${a})`; wrap(ctx, sub, X, 104 + lines.length * 50 - 10, 270, 25); };
+  bigTitle(TXT.title, TXT.titleSub, aT);
+  bigTitle(TXT.outro, TXT.outroSub, aO);
+
+  const v = ctx.createRadialGradient(W / 2, H / 2, 300, W / 2, H / 2, 560); v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,0.42)");
+  ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+}
+
+const b64 = (buf) => { let s = ""; const u = new Uint8Array(buf); for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); };
+window.init = async () => {
+  DATA = await (await fetch("data.json")).json();
+  await Promise.all([400, 500, 600, 700, 800].map((w) => document.fonts.load(`${w} 20px Figtree`, "Aéà")));
+  await Promise.all(TOUR.map((c) => new Promise((res, rej) => { const v = document.createElement("video"); v.muted = true; v.preload = "auto"; v.src = `clips/${c.id}.mp4`;
+    v.addEventListener("loadeddata", res, { once: true }); v.addEventListener("error", () => rej(new Error("missing clips/" + c.id + ".mp4 (run: node make.mjs prep <srcDir>)")), { once: true }); videos[c.id] = v; })));
+  setup(); return { grid: grid.length, fonts: document.fonts.check("700 20px Figtree"), clips: Object.keys(videos).length, seconds: T };
+};
+window.still = async (t) => { const c = document.getElementById("c"); await prepare(t); draw(c.getContext("2d"), t); return c.toDataURL("image/jpeg", 0.86).split(",")[1]; };
+window.render = async (bitrate) => {
+  const c = document.getElementById("c"), ctx = c.getContext("2d");
+  const muxer = new Mp4Muxer.Muxer({ target: new Mp4Muxer.ArrayBufferTarget(), video: { codec: "avc", width: W, height: H, frameRate: FPS }, fastStart: "in-memory" });
+  let error = null;
+  const enc = new VideoEncoder({ output: (chunk, meta) => muxer.addVideoChunk(chunk, meta), error: (e) => (error = String(e)) });
+  enc.configure({ codec: "avc1.640028", width: W, height: H, bitrate, framerate: FPS, latencyMode: "quality" });
+  const N = T * FPS;
+  for (let i = 0; i < N; i++) {
+    await prepare(i / FPS); draw(ctx, i / FPS);
+    const frame = new VideoFrame(c, { timestamp: Math.round((i * 1e6) / FPS), duration: Math.round(1e6 / FPS) });
+    enc.encode(frame, { keyFrame: i % 60 === 0 }); frame.close();
+    while (enc.encodeQueueSize > 8) await new Promise((r) => setTimeout(r, 2));
+    if (error) throw new Error(error);
+  }
+  await enc.flush(); muxer.finalize();
+  return JSON.stringify({ frames: N, video: b64(muxer.target.buffer) });
+};
+</script>
+</body>
+</html>

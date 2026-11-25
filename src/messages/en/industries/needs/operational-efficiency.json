@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "Operational Efficiency",
+    "subtitle1": "Continually improve your operations",
+    "subtitle2": "Streamline processes and satisfy customers using location intelligence",
+    "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-bg.jpg"
+  },
+  "intro": {
+    "title": "Create smarter workflows",
+    "paragraph": "Many organizations struggle to develop strategic and practical plans for operational efficiency. Business leaders can use location intelligence to quickly manage and streamline hundreds of projects. Smart maps, analysis, and dashboards give real-time views of multiple locations and help identify business processes that need improvement. Harnessing authoritative data reduces errors while boosting productivity and reducing costs."
+  },
+  "opportunities": {
+    "title": "See your operations optimized",
+    "intro": "A real-time operational view of people, assets, and events reveals the big picture and areas of critical focus. This drives better task management, synergy, customer satisfaction, and competitive advantage.",
+    "bullets": [
+      "Collaborate and share real-time intelligence securely via maps, apps, dashboards, and reports.",
+      "Adopt modern workflows that eliminate wasted time and resources.",
+      "Combine multiple activity streams and processes into a unified workflow."
+    ],
+    "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-5050.jpg"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Optimize operations and enhance efficiency using location-driven insights from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Know where dangers exist right now across your community or business and monitor changing situations. Use big data and Internet of Things (IoT) technology to make quick, informed decisions based on the most up-to-date information.",
+        "cta": "Make sense of big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Field Operations",
+        "body": "Improve coordination and operational efficiency in workforce activities. Reduce or even replace paper reliance, modernize workflows, adopt data-driven decision-making, and harness the power of location intelligence.",
+        "cta": "Coordinate fieldwork",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/business-needs-capabilities-field-operatioins.jpg"
+      },
+      {
+        "title": "Mapping",
+        "body": "Visualize people, places, and assets to gain a clear understanding of threats. See what's happening across the organization, create robust safety plans, and know where to allocate resources.",
+        "cta": "Visualize your data",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Related needs",
+    "bgGraphic": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Asset Tracking and Analysis",
+        "body": "Visualize moving and fixed assets dynamically. Implement problem-solving tools to accurately record the locations and health of your assets.",
+        "href": "industries/needs/asset-tracking-analysis",
+        "icon": "/Solutions/BusinessNeeds/OperationalEfficiency/assetTrackingAndAnalysis.svg"
+      },
+      {
+        "title": "Real-Time Location Tracking",
+        "body": "Gain insights from your data whether you are tracking moving assets or stationary sensors. Make the right decision at the right time.",
+        "href": "/industries/needs/real-time-location-tracking",
+        "icon": "/Solutions/BusinessNeeds/OperationalEfficiency/realTimeLocationTracking.svg"
+      },
+      {
+        "title": "Field Service Management",
+        "body": "Digitally transform the approach to field operations. Gain efficiency from real-time data updates and integrate mobile field apps into workflows.",
+        "href": "/industries/needs/field-service-management",
+        "icon": "/Solutions/BusinessNeeds/OperationalEfficiency/fieldServiceManagement.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about operational efficiency",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Big Data Keeps the Lights On",
+        "source": "ArcNews",
+        "excerpt": "The North American Grid must work together to keep the lights on throughout the United States and parts of Canada and Mexico.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/big-data-keeps-the-lights-on",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-cards-big-data-keeps-lights-on.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "LI Saves Geneva Airport Millions",
+        "source": "WhereNext Magazine",
+        "excerpt": "A small airport with big operations had to expand its operational efficiency to keep up with high demand.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/location-intelligence-saves-geneva-airport-millions",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-cards-li-saves-geneva-airport-millions.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "Tracing Each Oyster from Tide to Table",
+        "source": "Esri Blog",
+        "excerpt": "Taylor Shellfish Farms improved the resilience of the shellfish it raised. This required complete digital transformation and adaptability.",
+        "href": "https://www.esri.com/about/newsroom/blog/tracing-each-oyster-from-tide-to-table",
+        "image": "/Solutions/BusinessNeeds/OperationalEfficiency/operational-efficiency-cards-tracing-each-oyster-tide-table .jpg"
+      }
+    ]
+  }
+}

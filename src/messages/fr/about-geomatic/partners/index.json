@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "kicker": "Écosystème",
+    "title": "Partenaires",
+    "lead": "Notre écosystème de partenaires",
+    "description": "Nous collaborons avec des partenaires technologiques, de solutions et d’imagerie pour offrir les meilleures capacités d’intelligence géographique à nos clients au Maroc et dans la région.",
+    "bgGraphic": "/aboutGeomatic/partners/partner-banner.png"
+  },
+  "ui": {
+    "all": "Voir la page",
+    "site": "Site du partenaire",
+    "count": "{count} partenaires",
+    "countOne": "1 partenaire",
+    "kicker": "Partenaires",
+    "solution": "Voir la solution",
+    "others": "Autres familles de partenaires",
+    "allPartners": "Tous les partenaires"
+  },
+  "categories": [
+    {
+      "key": "technology",
+      "title": "Partenaires technologiques",
+      "link": "/about-geomatic/partners/technology"
+    },
+    {
+      "key": "solutions",
+      "title": "Partenaires de solutions",
+      "link": "/about-geomatic/partners/solutions"
+    },
+    {
+      "key": "imagery",
+      "title": "Partenaires d’imagerie",
+      "link": "/about-geomatic/partners/imagery"
+    }
+  ]
+}

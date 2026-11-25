@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "kicker": "online",
+    "title": "Partager et Collaborer",
+    "subtitle": "Partagez des cartes avec n'importe qui, n'importe où. Collaborez avec des collègues pour résoudre des problèmes.",
+    "bgImage": "/arcgisOnline/shareCollaborate/arcgis-online-indigo-banner-background-data-topography.jpg",
+    "image": "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-banner-foreground.png"
+  },
+  "blocks": [
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Partagez vos cartes pour commencer une conversation",
+          "bullets": [
+            "Les histoires basées sur les cartes communiquent des insights. Elles racontent des histoires, partagent des insights et inspirent les gens à agir.",
+            "Partagez instantanément des cartes à un public public, restreint ou privé.",
+            "Présentez des insights dans un flux unifié, de style médias sociaux.",
+            "Intégrez des cartes dans des sites web ou applications ; générez des liens sécurisés.",
+            "Publiez une fois ; mettez à jour le contenu pour un groupe sélectionné de personnes."
+          ],
+          "image": "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-share-your-maps-start-conversation.jpg"
+        },
+        {
+          "title": "Choisissez qui voit vos cartes",
+          "bullets": [
+            "Laissez seulement vous-même voir les cartes en brouillon.",
+            "Partagez privément avec les équipes en utilisant des groupes sécurisés dans ArcGIS Online.",
+            "Rendez le partage à l'échelle de l'organisation disponible à travers votre entreprise.",
+            "Partagez publiquement sur le web quand vous êtes prêt."
+          ],
+          "image": "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-choose-who-sees-your-maps.jpg"
+        },
+        {
+          "title": "Collaborer pour résoudre plus de problèmes",
+          "bullets": [
+            "ArcGIS Online est collaboratif dans son essence. Vos cartes, idées et applications peuvent être utilisées, retravaillées et améliorées au sein de vos groupes.",
+            "Utilisez les mises à jour et le travail partagé pour amener les gens dans le groupe—à travers votre communauté.",
+            "Connectez-vous avec les équipes en utilisant des groupes sécurisés dans ArcGIS Online.",
+            "Partagez les connaissances et meilleures pratiques à travers votre organisation.",
+            "Construisez sur le travail de chacun pour créer de meilleures solutions ensemble."
+          ],
+          "image": "/arcgisOnline/shareCollaborate/arcgis-online-share-and-collaborate-to-solve-more-problems.jpg"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "quote": "La beauté d'ArcGIS Online est la façon dont il rassemble les personnes et départements à travers l'organisation, fournit un accès instantané à l'information et crée des économies de temps. ArcGIS Online ouvre les esprits, et les gens en demandent plus. C'est vraiment transformateur.",
+      "author": "Christina Kelso",
+      "role": "Gestionnaire SIG, Sonoma County GIS"
+    },
+    {
+      "type": "cards",
+      "kicker": "online",
+      "title": "Découvrir plus de capacités ArcGIS Online",
+      "items": [
+        {
+          "title": "Créer des cartes",
+          "text": "Créez rapidement des cartes ; stylisez les données visuellement.",
+          "linkLabel": "En savoir plus sur la création de cartes"
+        },
+        {
+          "title": "Analyser les données",
+          "text": "Découvrez des motifs complexes ; apprenez plus sur les données.",
+          "href": "/arcgis/products/arcgis-online/capabilities/analyze-data",
+          "linkLabel": "Découvrir les outils d'analyse"
+        },
+        {
+          "title": "Travailler avec Vos Données",
+          "text": "Apportez les données ; enrichissez-les ; transformez pour des insights.",
+          "linkLabel": "Explorer les outils de données"
+        }
+      ]
+    }
+  ]
+}

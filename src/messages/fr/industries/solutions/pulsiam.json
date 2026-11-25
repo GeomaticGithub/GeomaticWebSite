@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "SafetyNet",
+    "subtitle": "Solution de gestion des incidents",
+    "text": "Une des principales raisons pour lesquelles les agences de sécurité publique dans le monde entier utilisent la suite SafetyNet de Pulsiam est l’implication directe des clients dans le processus de conception du produit. Les utilisateurs ont la possibilité de personnaliser et d’améliorer les applications SafetyNet — y compris l’interface utilisateur, les règles métiers et la base de données back-end — et Pulsiam intègre également leurs idées dans ses produits de base.",
+    "bgImage": "/Solutions/PartnersSolutions/pulsiam/adobestock86119858.jpeg"
+  },
+  "sections": [
+    {
+      "title": "SafetyNet CAD",
+      "paragraphs": [
+        "SafetyNet CAD est un système de répartition assistée par ordinateur en temps réel, multi-agences et multi-juridictions, destiné aux forces de l’ordre, aux pompiers et aux services médicaux d’urgence."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/p1.png",
+      "fit": "contain"
+    },
+    {
+      "title": "SafetyNet Mobile",
+      "paragraphs": [
+        "Solution CAD pour ordinateurs portables mobiles, offrant aux premiers intervenants un accès direct et en temps réel aux informations et dossiers d’incidents CAD, avec transmission silencieuse d’informations critiques comme la localisation automatique des véhicules (AVL) et prise en charge des drones aériens. SafetyNet Mobile peut être déployé sur des réseaux radio privés et cellulaires."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/mobile-banner3.png"
+    },
+    {
+      "title": "SafetyNet Fire Records Management System",
+      "paragraphs": [
+        "SafetyNet FMS est un système complet de gestion des dossiers incendie doté d’une interface utilisateur intuitive basée sur navigateur, permettant aux services d’incendie et aux services médicaux d’urgence de simplifier l’administration et la gestion opérationnelle."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/insightbanner.png"
+    },
+    {
+      "title": "SafetyNet Records Management System",
+      "paragraphs": [
+        "SafetyNet RMS est un système de gestion des dossiers pour les forces de l’ordre, conçu pour réduire la saisie de données et simplifier la gestion des enregistrements."
+      ],
+      "image": "/Solutions/PartnersSolutions/pulsiam/p2.png",
+      "fit": "contain"
+    }
+  ]
+}

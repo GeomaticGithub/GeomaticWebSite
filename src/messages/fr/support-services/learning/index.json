@@ -1,0 +1,51 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Demander un devis",
+    "anchor": "Explorer les formations",
+    "exploreTitle": "Catalogue, calendrier et devis",
+    "catalogKicker": "Catalogue",
+    "catalogTitle": "{count} formations ArcGIS",
+    "catalogText": "Un aperçu des formations proposées par Geomatic.",
+    "catalogMore": "et {count} autres formations",
+    "catalogCta": "Voir tout le catalogue"
+  },
+  "hero": {
+    "title": "Services de formation",
+    "description": "",
+    "bgGraphic": "/support-services/learning/learning.png"
+  },
+  "intro": {
+    "title": "Développez les compétences ArcGIS de votre équipe",
+    "subTitle": "Services de formation Geomatic",
+    "bgGraphic": "/support-services/learning/learning_secondary.jpg",
+    "paragraph": "Montez en compétences grâce à des cours sélectionnés, des horaires flexibles et des formations privées adaptées à l’environnement ArcGIS de votre organisation."
+  },
+  "community": {
+    "title": "Explorer",
+    "cards": [
+      {
+        "title": "Cours",
+        "desc": "Parcourez les {count} formations ArcGIS du catalogue.",
+        "gradient": "from-amber-600 to-slate-800",
+        "link": "/support-services/learning/courses",
+        "cta": "Parcourir les cours"
+      },
+      {
+        "title": "Calendrier",
+        "desc": "Les dates des prochaines sessions de formation.",
+        "badge": "Bientôt disponible",
+        "gradient": "from-amber-600 to-slate-800",
+        "link": "/support-services/learning/schedule",
+        "cta": "Voir le calendrier"
+      },
+      {
+        "title": "Obtenir un devis",
+        "desc": "Formation privée ou plan de formation pour votre équipe : demandez nos tarifs.",
+        "gradient": "from-amber-600 to-slate-800",
+        "link": "/about-geomatic/contact",
+        "cta": "Demander les tarifs"
+      }
+    ]
+  }
+}

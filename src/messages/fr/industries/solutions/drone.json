@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Surveillance par drone",
+    "text": "La surveillance par drone devient de plus en plus complexe. Les opérateurs doivent intégrer et gérer des technologies aériennes variées — drones à voilure fixe de longue endurance, drones à voilure tournante, liaisons satellitaires, systèmes d’imagerie assistés par l’IA — pour répondre à une demande croissante : surveillance des frontières en temps réel, évaluation des catastrophes, protection des infrastructures, gestion des foules.",
+    "bgImage": "/Solutions/PartnersSolutions/drone/drone-serveillence.jpg"
+  },
+  "lead": "Il devient donc essentiel de disposer d’un système unifié de commandement, de contrôle et de traitement des données, capable de prendre en charge tout drone, tout capteur et tout type de mission, jusqu’au plan de vol individuel. C’est la clé pour savoir précisément ce qui se passe au sol, transmettre le renseignement aérien aux décideurs en temps réel et gérer efficacement la qualité, la fiabilité et la sécurité des opérations de surveillance.",
+  "brochure": {
+    "title": "Zain Drone",
+    "text": "Associée à ArcGIS Pro, la technologie Zain Drone permet aux clients d’analyser, de visualiser et de partager les données captées par la flotte de drones de Zain Drone. ArcGIS Pro transforme les images en orthomosaïques géoréférencées, nuages de points et modèles numériques d’élévation, de surface et de terrain.",
+    "image": "/Solutions/PartnersSolutions/drone/drone5.png",
+    "href": "https://d364xagvl9owmk.cloudfront.net/media-10-4-18/media/filer_public/6d/9d/6d9df62f-2a20-42ed-8145-e00af26c028e/zain_drone_inside_a5_-kuwait2019.pdf"
+  },
+  "examples": [
+    {
+      "title": "Inspection de lignes électriques",
+      "text": "Des données de drone géoréférencées, captées lors de l’inspection de lignes électriques, sont superposées dans ArcGIS Pro à des images visuelles et thermiques pour localiser précisément les poteaux en bois.",
+      "image": "/Solutions/PartnersSolutions/drone/1597818066524.png"
+    },
+    {
+      "title": "Levé aérien",
+      "text": "Zain Drone a réalisé le levé aérien d’une zone résidentielle avec un drone à voilure fixe. Les images ont été traitées dans ArcGIS Pro pour produire une orthomosaïque et un modèle numérique d’élévation, utilisés pour l’analyse des inondations.",
+      "image": "/Solutions/PartnersSolutions/drone/1597818233439.png"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "strengthen": {
+    "title": "Soutenir des décisions fondées sur les données",
+    "paragraph": "Le SIG apporte des gains d’efficacité et de meilleures informations à toute votre organisation. De la planification à la livraison, en passant par les opérations et la maintenance, mettez la puissance de l’intelligence de localisation au service de votre activité. Utilisez les logiciels ArcGIS pour organiser vos informations et prendre de meilleures décisions tout en renforçant la satisfaction client.",
+    "imageSection": {
+      "image": "/Solutions/Industries/transportation/device-build-a-system-of-record.jpg",
+      "title": "Créer un système d’enregistrement",
+      "description": "Organisez et intégrez les informations à l’échelle de l’organisation afin de mieux soutenir vos objectifs métier."
+    }
+  },
+  "features": [
+    {
+      "title": "Donnez les moyens à vos équipes",
+      "paragraph": "Fournissez à chaque entité métier les informations adaptées, sur n’importe quel appareil, à tout moment et en tout lieu.",
+      "image": "/Solutions/Industries/transportation/device-empower-your-workforce.png",
+      "backgroundImage": "/Solutions/Industries/transportation/empower-your-workforce-banner-wide.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "En savoir plus",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fmapping-visualization"
+      }
+    },
+    {
+      "title": "Créez des flux de travail fluides",
+      "paragraph": "Apportez l’intelligence spatiale à vos systèmes d’entreprise. Brisez les silos et révélez des insights plus profonds.",
+      "image": "/Solutions/Industries/transportation/device-create-seemless-workflows.png",
+      "backgroundImage": "/Solutions/Industries/transportation/background-create-seemless-workflows-wide.jpg",
+      "layout": "left",
+      "cta": {
+        "label": "En savoir plus",
+        "href": "https://www.arcgis.com/apps/Cascade/index.html?appid=7dc16f2ac82441bc89f03bc0e4bbcc65"
+      }
+    },
+    {
+      "title": "Emmenez le SIG sur le terrain",
+      "paragraph": "Améliorez la coordination et gagnez en efficacité opérationnelle pour les équipes terrain. Réduisez, voire éliminez, votre dépendance au papier.",
+      "image": "/Solutions/Industries/transportation/device-take-gis-to-the-field.png",
+      "backgroundImage": "/Solutions/Industries/transportation/background-take-gis-to-the-field-wide.jpg",
+      "layout": "right",
+      "cta": {
+        "label": "En savoir plus",
+        "href": "https://www.esri.com/en-us/capabilities/data-management?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fdata-management&rmedium=www_esri_com_EtoF&rsource=/en-us/arcgis/data-management"
+      }
+    }
+  ],
+  "empower": {
+    "title": "Exploitez l’intelligence de localisation",
+    "paragraph": "Mettez la puissance du SIG au service d’analyses plus fines et d’une meilleure performance opérationnelle.",
+    "items": [
+      {
+        "title": "Routes et Autoroutes",
+        "paragraph": "Planifiez, surveillez et gérez plus efficacement les infrastructures stratégiques.",
+        "icon": "/Solutions/Industries/transportation/roadsAndHighways.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/transportation/segments/roads-highways"
+        }
+      },
+      {
+        "title": "Transports publics et ferroviaire",
+        "paragraph": "Surveillez les actifs en temps réel, optimisez les itinéraires et améliorez la communication.",
+        "icon": "/Solutions/Industries/transportation/publicTransportAndRail.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/transportation/segments/public-transport"
+        }
+      },
+      {
+        "title": "Aéroports et aviation",
+        "paragraph": "Améliorez la gestion, la sûreté et la conformité réglementaire.",
+        "icon": "/Solutions/Industries/transportation/airportsAndAviation.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/industries/transportation/segments/airports-aviation"
+        }
+      },
+      {
+        "title": "Ports et maritime",
+        "paragraph": "Gérez les actifs tout en renforçant votre durabilité et votre sécurité.",
+        "icon": "/Solutions/Industries/transportation/portsAndMaritime.svg",
+        "cta": {
+          "label": "En savoir plus",
+          "href": "/transportation/segments/ports-maritime"
+        }
+      }
+    ]
+  },
+  "cta": {
+    "title": "Découvrez comment Esri peut aider votre organisation.",
+    "ctaLabel": "Commencer",
+    "ctaHref": "https://www.esri.com/en-us/industries/petroleum/overview"
+  }
+}

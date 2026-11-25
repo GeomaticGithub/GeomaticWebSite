@@ -1,0 +1,159 @@
+{
+  "ui": {
+    "kicker": "Produit ArcGIS",
+    "contact": "Parler à un expert",
+    "discover": "Voir les fonctionnalités",
+    "howKicker": "Fonctionnement",
+    "storiesKicker": "Études de cas",
+    "ecosystemKicker": "Écosystème",
+    "softwareKicker": "Plateforme",
+    "howTitle": "Comment fonctionne ArcGIS Enterprise"
+  },
+  "hero": {
+    "title": "ArcGIS Enterprise",
+    "subtitle": "Alimentez votre intelligence de localisation. Déployez dans votre infrastructure et gardez le contrôle total sur la sécurité, la fiabilité et l'évolutivité.",
+    "bgImage": "/arcgisEntreprise/enterprise-overview-banner-background.jpg",
+    "montageImage": "/arcgisEntreprise/enterprise-overview-banner-foreground-3.png",
+    "montageAlt": "Montage ArcGIS Enterprise",
+    "logoImage": "/arcgisEntreprise/ArcGIS-Enterprise.png"
+  },
+  "intro": {
+    "paragraph": "Construisez vos fondations avec la plateforme qui a tout commencé—ArcGIS Enterprise—le système complet pour tous vos besoins géospatiaux. Obtenez les outils pour créer des cartes, analyser des données, résoudre des problèmes et partager des données géospatiales. Derrière votre pare-feu ou dans le nuage, notre logiciel de cartographie SIG Enterprise leader du marché soutiendra votre travail et livrera des résultats."
+  },
+  "software": {
+    "heading": "Cartographiez et analysez avec le logiciel SIG leader",
+    "subheading": "Construisez vos solutions avec ArcGIS Enterprise.",
+    "image": "/arcgisEntreprise/enterprise-overview-leading-platform-dashboard.png",
+    "imageAlt": "Personnes utilisant ArcGIS dans une scène hexagonale"
+  },
+  "capabilities": {
+    "items": [
+      {
+        "title": "Déploiement d'entreprise sécurisé",
+        "desc": "Avec des outils d'automatisation pour être opérationnel rapidement, ArcGIS Enterprise peut être déployé sur site ou dans le nuage. Choisissez de personnaliser autant que vous voulez en ajoutant des capacités et applications prêtes à l'emploi.",
+        "cta": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "title": "Gestion des données",
+        "desc": "Connectez-vous à vos magasins de données existants et au stockage prêt à utiliser. Profitez de la vaste collection de données géospatiales organisées d'Esri pour une perspective enrichie.",
+        "cta": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "title": "Cartographie et visualisation",
+        "desc": "Visualisez vos données spatialement et commencez à connecter les points pour améliorer vos décisions d'affaires. D'une simple carte web à une application entièrement personnalisée, vous pouvez choisir la façon dont vous voulez que vos données soient affichées pour un impact maximum.",
+        "cta": "En savoir plus",
+        "href": "#"
+      },
+      {
+        "title": "Analyse et découverte",
+        "desc": "Effectuez des analyses dans votre navigateur web avec les outils ArcGIS Enterprise qui vous aident à voir les motifs, tendances et anomalies dans vos données. Découvrez la puissance de vos données—qu'elles soient raster, big data ou temps réel—avec ArcGIS Enterprise.",
+        "cta": "En savoir plus",
+        "href": "#"
+      }
+    ]
+  },
+  "howItWorks": {
+    "rows": [
+      {
+        "title": "Accéder",
+        "desc": "La prise de décision basée sur les données commence avec une plateforme d'entreprise sécurisée basée sur navigateur qui vous permet de contrôler, stocker et accéder aux données."
+      },
+      {
+        "title": "Analyser",
+        "desc": "Débloquez l'intelligence de localisation quand vous regardez les données à travers une lentille spatiale. Effectuez des analyses qui vous permettent de voir et comprendre les données d'une manière plus profonde."
+      },
+      {
+        "title": "Partager",
+        "desc": "Mettez les données entre les mains de ceux qui en ont besoin, quand ils en ont besoin. Partagez l'information au sein de votre organisation et au-delà pour que vous puissiez prendre des décisions basées sur les données."
+      }
+    ],
+    "graphic": "/arcgisEntreprise/enterprise-overview-how-it-works.png",
+    "graphicAlt": "Comment ArcGIS Enterprise fonctionne"
+  },
+  "success": {
+    "background": "/arcgisEntreprise/entreprise-overview-banner-background-topography-dark.png",
+    "headTitle": "ÉTUDE DE CAS",
+    "title": "Excellence SIG Enterprise",
+    "desc": "Découvrez comment les organisations exploitent ArcGIS Enterprise pour transformer leurs opérations et stimuler l'innovation.",
+    "ctaText": "En savoir plus",
+    "ctaHref": "#",
+    "pills": [
+      {
+        "label": "Farr West Engineering",
+        "image": "/arcgisEntreprise/arcgis-enterprise-farr-west-centered-content-switcher-thumbnail.jpg",
+        "title": "Farr West Engineering",
+        "desc": "Le grand argument de vente était une technologie qui était meilleure, plus rapide et plus rentable.",
+        "actionType": "study",
+        "actionText": "Lire l'histoire",
+        "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview/farr-west-engineering-case-study?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Flanding-page%2Fproduct%2F2019%2Ffarr-west-engineering-case-study"
+      },
+      {
+        "label": "Three Rivers Park District",
+        "image": "/arcgisEntreprise/arcgis-enterprise-case-study-center-content-switcher-thumbnail.jpg",
+        "title": "Three Rivers Park District",
+        "desc": "Il nous est finalement apparu que la façon d'autonomiser les utilisateurs pour qu'ils aient vraiment le contrôle des données était d'utiliser la collaboration distribuée entre ArcGIS Enterprise et ArcGIS Online.",
+        "actionType": "study",
+        "actionText": "Lire l'histoire",
+        "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview/three-rivers-park-district-case-study"
+      },
+      {
+        "label": "Lyse Energi",
+        "image": "/arcgisEntreprise/thumbnail-case-study-lyse-field-crews.jpg",
+        "title": "Lyse Energi",
+        "desc": "La carte est devenue une ressource encore plus importante pour le partage d'informations chez Lyse. L'accès sur tous types d'appareils a particulièrement donné à nos équipes de terrain un outil important.",
+        "actionType": "study",
+        "actionText": "Lire l'histoire",
+        "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview/lyse-energi-location-awareness?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-enterprise%2Foverview%2Fcase-study-lyse"
+      },
+      {
+        "label": "Chick-fil-A",
+        "image": "/arcgisEntreprise/thumbnail-case-study-chick-fil-a.jpg",
+        "title": "Chick-fil-A",
+        "desc": "Le SIG n'est pas seulement intégral dans notre processus de prise de décision quotidien en immobilier, mais devient rapidement la plateforme commune dans toute l'entreprise.",
+        "actionType": "study",
+        "actionText": "Lire l'histoire",
+        "actionUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview/spatially-mapping-chick-fil-a-restaurants?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-enterprise%2Foverview%2Fcase-study-chick-fil-a"
+      }
+    ]
+  },
+  "foundation": {
+    "heading": "Construisez vos fondations avec ArcGIS Enterprise",
+    "blurb": "Commencez avec ArcGIS Enterprise, la plateforme géospatiale leader de l'industrie. Boostez votre expertise spatiale avec la vaste collection d'applications et de capacités complémentaires d'Esri.",
+    "tiles": [
+      {
+        "title": "ArcGIS Pro",
+        "desc": "ArcGIS Enterprise alimente la technologie SIG desktop dynamique de nouvelle génération qui vous donne tout ce dont vous avez besoin pour créer et partager des cartes 2D et 3D.",
+        "hrefText": "En savoir plus sur ArcGIS Pro",
+        "hrefUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview",
+        "bg": "bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700",
+        "icon": "/arcgisEntreprise/arcgis-pro-banner-icon.png.webp"
+      },
+      {
+        "title": "ArcGIS Online",
+        "desc": "ArcGIS Enterprise collabore parfaitement avec cette application logiciel-en-tant-que-service, vous donnant les mêmes outils de cartographie puissants dans le nuage pour votre commodité.",
+        "hrefText": "En savoir plus sur ArcGIS Online",
+        "hrefUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-online/overview",
+        "icon": "/arcgisEntreprise/ArcGISOnline.png",
+        "bg": "bg-gradient-to-r from-violet-400 via-violet-500 to-violet-600"
+      },
+      {
+        "title": "Applications pour tous",
+        "desc": "Étendez la puissance d'ArcGIS Enterprise avec des applications qui améliorent votre flux de travail du bureau au terrain.",
+        "hrefText": "En savoir plus sur les Applications ArcGIS",
+        "hrefUrl": "https://www.esri.com/en-us/arcgis/products/index?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fapps-for-everyone%2Foverview",
+        "icon": "/arcgisEntreprise/arcgis-esri-map-logo.png",
+        "bg": "bg-gradient-to-r from-green-600 via-green-700 to-green-800"
+      },
+      {
+        "title": "Créez vos propres applications",
+        "desc": "Vous ne voyez pas ce dont vous avez besoin ? Utilisez nos API et SDK pour construire vos propres applications SIG pour desktop, web et mobile.",
+        "hrefText": "Aller à ArcGIS for Developers",
+        "hrefUrl": "https://developers.arcgis.com/",
+        "icon": "/arcgisEntreprise/arcgis-enterprise-developers-icon.png",
+        "bg": "bg-gradient-to-r from-rose-600 via-rose-700 to-rose-800"
+      }
+    ]
+  }
+}

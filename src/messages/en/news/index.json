@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "kicker": "News",
+    "title": "Publications",
+    "text": "Thought-provoking insights on how geospatial technology is powering a huge range of digital transformation projects to provide greater insights about our world, work together more collaboratively and improve everyday life.",
+    "bgImage": "/news/publications-banner2.png",
+    "contact": "Talk to an expert",
+    "anchor": "See the publications"
+  },
+  "list": {
+    "kicker": "Explore",
+    "title": "Three ways to keep informed"
+  },
+  "cards": [
+    {
+      "key": "stories",
+      "desc": "{count} organizations tell what ArcGIS changed for them, on video or in a case study.",
+      "link": "/news/customer-stories",
+      "cta": "Read the stories"
+    },
+    {
+      "key": "ebook",
+      "desc": "Books to read online or download, to go deeper into GIS and spatial analysis.",
+      "link": "/news/ebook",
+      "cta": "See the books"
+    },
+    {
+      "key": "newsletter",
+      "desc": "ArcGIS news, customer experience and practical tips.",
+      "badge": "Coming soon",
+      "link": "/news/newsletter",
+      "cta": "Learn more"
+    }
+  ]
+}

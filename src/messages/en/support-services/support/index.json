@@ -1,0 +1,72 @@
+{
+  "ui": {
+    "kicker": "Support & services",
+    "contact": "Contact support",
+    "anchor": "Resources by product",
+    "reachKicker": "Reach us",
+    "emailLabel": "By email",
+    "phoneLabel": "By phone",
+    "formLabel": "With the contact form",
+    "formCta": "Write to the team",
+    "prepareTitle": "For a faster answer, tell us:",
+    "productsKicker": "Esri resources",
+    "productsText": "Documentation, technical articles and downloads, grouped by product family on the Esri support site."
+  },
+  "hero": {
+    "title": "Support",
+    "description": "The Science of Where",
+    "bgGraphic": "/support-services/support/support_overview_banner.jpg"
+  },
+  "intro": {
+    "title": "Get expert help for your Esri software",
+    "subTitle": "Geomatic Support Services",
+    "bgGraphic": "/support-services/support/support_services_secondary_banner.jpg",
+    "paragraph": "Our industry-leading support services are backed by a dedicated team of support professionals who are ready to address any question or issue related to the ArcGIS platform."
+  },
+  "prepare": [
+    "The ArcGIS product concerned and its version",
+    "The error message or a screenshot",
+    "The steps that lead to the problem"
+  ],
+  "community": {
+    "title": "Esri Products",
+    "cards": [
+      {
+        "title": "Desktop",
+        "image": "/support-services/support/desktop.svg",
+        "gradient": "from-purple-600 to-purple-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Enterprise",
+        "image": "/support-services/support/entreprise.svg",
+        "gradient": "from-green-600 to-green-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Online",
+        "image": "/support-services/support/online.svg",
+        "gradient": "from-purple-600 to-purple-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Developers",
+        "image": "/support-services/support/developers.svg",
+        "gradient": "from-green-600 to-green-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "Apps",
+        "image": "/support-services/support/apps.svg",
+        "gradient": "from-purple-600 to-purple-800",
+        "link": "https://support.esri.com/en-us/products"
+      },
+      {
+        "title": "More Esri Products",
+        "image": "/support-services/support/moreEsriProducts.svg",
+        "gradient": "from-green-600 to-green-800",
+        "link": "https://support.esri.com/en-us/products"
+      }
+    ]
+  }
+}

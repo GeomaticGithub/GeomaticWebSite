@@ -1,0 +1,350 @@
+{
+  "nav": {
+    "search": "Rechercher",
+    "chooseLanguage": "Choisir la langue",
+    "close": "Fermer",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "menu": "Menu",
+    "home": "Geomatic — accueil",
+    "searchPlaceholder": "Rechercher une page…",
+    "searchHint": "Tapez pour filtrer les pages du site. Flèches haut et bas pour parcourir la liste, Entrée pour ouvrir la page, Échap pour fermer.",
+    "searchSuggestions": "Accès rapide",
+    "searchResults": "Résultats",
+    "searchCount": "{count} résultat(s)",
+    "searchClear": "Effacer",
+    "noResultsHint": "Essayez un nom de produit, un secteur ou un service.",
+    "kbdNavigate": "parcourir",
+    "kbdOpen": "ouvrir",
+    "kbdClose": "fermer",
+    "kbdEsc": "Échap",
+    "noResults": "Aucune page ne correspond à « {query} ».",
+    "escHint": "Appuyez sur Échap pour fermer.",
+    "products": "Produits",
+    "solutions": "Solutions",
+    "support": "Support & Services",
+    "news": "Actualités",
+    "about": "À propos",
+    "headings": {
+      "capabilities": "Fonctionnalités",
+      "gisAndMappingProducts": "Produits SIG et cartographie",
+      "locationEnabledProducts": "Produits basés sur la localisation",
+      "locationAnalytics": "Analyse spatiale",
+      "exploreMore": "Explorer plus",
+      "data": "Données",
+      "publications": "Publications",
+
+      "businessNeeds": "Besoins métiers",
+      "industries": "Secteurs",
+      "partnersSolutions": "Solutions partenaires"
+    },
+    "links": {
+      "mapping": "Cartographie",
+      "fieldOperations": "Opérations sur le terrain",
+      "spatialAnalytics": "Analyse spatiale et science des données",
+      "imageryRemoteSensing": "Imagerie et télédétection",
+      "realTime": "Visualisation et analyses en temps réel",
+      "threeD": "Visualisation et analyses 3D",
+
+      "arcgisOnline": "ArcGIS Online",
+      "arcgisPro": "ArcGIS Pro",
+      "arcgisEnterprise": "ArcGIS Enterprise",
+      "arcgisForDevelopers": "ArcGIS pour les développeurs",
+
+      "arcgisUrban": "ArcGIS Urban",
+      "arcgisBusinessAnalyst": "ArcGIS Business Analyst",
+      "arcgisHub": "ArcGIS Hub",
+      "arcgisExcalibur": "ArcGIS Excalibur",
+      "arcgisMission": "ArcGIS Mission",
+      "arcgisIndoors": "ArcGIS Indoors",
+
+      "arcgisInsights": "ArcGIS Insights",
+      "arcgisMapsForOffice": "ArcGIS Maps for Office",
+      "arcgisMapsForMicrosoftPowerBI": "ArcGIS Maps for Microsoft Power BI",
+      "arcgisMapsForSharePoint": "ArcGIS Maps for SharePoint",
+
+      "allProducts": "Tous les produits",
+      "whatIsGis": "Qu’est-ce qu’un SIG ?",
+
+      "AssetTrackingAndAnalysis": "Suivi et analyse des actifs",
+      "economicDevelopment": "Développement économique",
+      "facilityManagement": "Gestion des installations",
+      "fieldServiceManagement": "Gestion des services sur le terrain",
+      "logisticsAndFulfillment": "Logistique et exécution",
+      "marketAndCustomerAnalysis": "Analyse du marché et des clients",
+      "operationalEfficiency": "Efficacité opérationnelle",
+      "performanceMonitoring": "Suivi des performances",
+      "realTimeLocationTracking": "Suivi de localisation en temps réel",
+      "siteAnalysisAndTerritoryPlanning": "Analyse de site et planification de territoire",
+      "situationalAwareness": "Conscience situationnelle",
+
+      "petroleum": "Pétrole",
+      "banking": "Banque",
+      "education": "Éducation",
+      "electricAndGasUtilities": "Services électriques et gaziers",
+      "municipalities": "Municipalités",
+      "health": "Santé",
+      "insurance": "Assurances",
+      "telecommunications": "Télécommunications",
+      "transportation": "Transport",
+      "retailAndCPG": "Commerce de détail et biens de grande consommation",
+      "naturalResources": "Ressources naturelles",
+
+      "oilSpillMonitoring": "Surveillance des marées noires",
+      "geoAttendance": "Présence géolocalisée",
+      "pulsiam": "Solution de gestion des incidents SafetyNet",
+      "vgis": "Réalité augmentée et réalité virtuelle",
+      "buildingAndFacilitiesManagement": "Gestion des bâtiments et des installations",
+      "telecominfrastructureManagement": "Gestion des infrastructures télécoms",
+      "droneSurveillance": "Surveillance par drone",
+
+      "logisticsFulfillment": "Logistique et exécution",
+      "marketCustomerAnalysis": "Analyse du marché et des clients",
+      "realTimeLocation": "Suivi de localisation en temps réel",
+      "siteAnalysisTerritory": "Analyse de site et planification de territoire",
+
+      "overview": "Aperçu",
+      "consultancyServices": "Services de conseil",
+      "supportServices": "Services de support",
+      "learningServices": "Services de formation",
+
+      "newsletters": "Newsletters Geomatic",
+      "ebooks": "Livres électroniques",
+      "customerStories": "Histoires clients",
+
+      "aboutUs": "À propos de nous",
+      "companyProfile": "Profil de l’entreprise",
+      "events": "Événements",
+      "partners": "Partenaires",
+      "careers": "Carrières",
+      "contactUs": "Contactez-nous"
+    }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "message": "Désolé, nous n’avons pas trouvé la page que vous recherchez.",
+    "backHome": "Retour à l’accueil"
+  },
+  "home": {
+    "dualPromo": {
+      "aboutTitle": "À propos de Geomatic",
+      "aboutAria": "À propos de Geomatic",
+      "gisTitle": "Qu’est-ce que le SIG",
+      "gisAria": "Qu’est-ce que le SIG"
+    },
+    "industryPromo": {
+      "imgAlt": "Personnes et lieux",
+      "title": "Voir clairement les systèmes interconnectés du monde.",
+      "body": "Prenez des décisions avec contexte et clarté. En enracinant notre réflexion dans la géographie, nous pouvons visualiser les relations complexes entre la société et la nature, identifier des points de levier critiques et, en fin de compte, transformer notre manière d’interagir avec notre planète pour créer un avenir plus durable.",
+      "cta": "En savoir plus",
+      "link": "https://www.esri.com/en-us/about/about-esri/overview"
+    },
+    "splitFeature": {
+      "kicker1": "Plateforme ArcGIS",
+      "body1": "Cartographie, analyse spatiale, collecte sur le terrain et tableaux de bord : une seule plateforme, déployée et accompagnée au Maroc par Geomatic.",
+      "points1": ["Cartographier et visualiser vos données","Analyser pour décider plus vite","Collecter sur le terrain et suivre en temps réel"],
+      "kicker2": "Secteurs",
+      "row1Href": "/fr-ma/arcgis/products/index",
+      "heading1": "Déployer la puissance inégalée d’ArcGIS, le système d’information géographique leader mondial.",
+      "row1Cta": "Découvrir les produits ArcGIS",
+      "heading2": "Donner à chaque secteur l’avantage stratégique de ses données.",
+      "body2": "Collectivités, banques, énergie, télécoms : nous adaptons ArcGIS aux enjeux de chaque métier, de la collecte des données à la prise de décision.",
+      "cta2": "Voir les secteurs",
+      "newsHref": "/fr-ma/arcgis/products/arcgis-online/overview",
+      "newsTitle": "Nouveautés ArcGIS Online :",
+      "newsCta": "En savoir plus",
+      "row2ImgAlt": "Parc éolien sur des collines verdoyantes",
+      "tag": "Élargissez vos horizons géospatiaux | Printemps 2025 | ArcUser",
+      "iotCaption": "Aussi important que de demander ce que le SIG peut faire, c’est de se demander ce qu’il peut faire pour vous ↗"
+    },
+    "useCases": {
+      "eyebrow": "Cas d’usage",
+      "title": "Ce que le SIG change concrètement",
+      "subtitle": "Six situations où la dimension géographique fait gagner du temps, de l’argent ou de la sécurité.",
+      "more": "Découvrir",
+      "items": [
+        {
+          "tag": "Logistique",
+          "title": "Optimiser les tournées et les délais de livraison",
+          "desc": "Calculez les zones de desserte et les meilleurs itinéraires sur le réseau routier réel.",
+          "href": "/industries/needs/logistics-fulfillment",
+          "image": "/Solutions/BusinessNeeds/LogisticsAndFulfillment/logistics-fulfillment-5050-see-the-smartest-routes-others-cant.png",
+          "focus": "center"
+        },
+        {
+          "tag": "Implantation",
+          "title": "Choisir le bon emplacement",
+          "desc": "Croisez densité, accessibilité et concurrence pour comparer vos sites potentiels.",
+          "href": "/industries/needs/site-analysis-territory-planning",
+          "image": "/Solutions/BusinessNeeds/SiteAnalysisAndTerritoryPlanning/site-analysis-territory-planning-5050.jpg",
+          "focus": "70% center"
+        },
+        {
+          "tag": "Télécoms",
+          "title": "Planifier la couverture réseau",
+          "desc": "Simulez la zone couverte par une antenne en tenant compte du relief et des bâtiments.",
+          "href": "/industries/telecommunications/overview",
+          "image": "/Solutions/Industries/telecommunications/Telecom- Overview-Analytics.png",
+          "focus": "center 40%"
+        },
+        {
+          "tag": "Urbanisme",
+          "title": "Mesurer l’impact d’un projet en 3D",
+          "desc": "Visualisez ce qu’un nouveau bâtiment masque ou révèle avant de le construire.",
+          "href": "/arcgis/3d-gis/overview",
+          "image": "/3d-gis/main-banner-wide.jpg",
+          "focus": "60% center"
+        },
+        {
+          "tag": "Opérations",
+          "title": "Suivre vos équipes en temps réel",
+          "desc": "Localisez véhicules et agents de terrain sur une carte mise à jour en continu.",
+          "href": "/industries/needs/real-time-location-tracking",
+          "image": "/Solutions/BusinessNeeds/realTimeLocationTracking/real-time-location-tracking-5050-see-movement-patterns-others-cant.jpg",
+          "focus": "60% center"
+        },
+        {
+          "tag": "Patrimoine",
+          "title": "Gérer vos actifs sur tout le territoire",
+          "desc": "Inventoriez, localisez et analysez vos infrastructures, de Tanger à Dakhla.",
+          "href": "/industries/needs/asset-tracking-analysis",
+          "image": "/Solutions/BusinessNeeds/AssetTrackingAndAnalysis/asset-tracking-5050-see-the-performance-others-cant.jpg",
+          "focus": "55% center"
+        }
+      ]
+    },
+    "contactCta": {
+      "title": "Un projet géospatial ? Parlons-en.",
+      "subtitle": "Nos experts vous aident à choisir la bonne solution ArcGIS et à la déployer.",
+      "primary": "Nous contacter",
+      "secondary": "Qu’est-ce que le SIG ?"
+    },
+    "whoUses": {
+      "title": "Qui utilise notre technologie ?",
+      "subtitle": "Institutions publiques, banques, régies et grands groupes industriels font confiance à Geomatic et à ArcGIS pour leurs projets géospatiaux.",
+      "clientsTitle": "Nos références"
+    },
+    "hero": {
+      "title": "Geomatic",
+      "tagline": "Le leader marocain des systèmes d’information géographique depuis 1988",
+      "subtitle": "Distributeur officiel d’Esri, Geomatic accompagne les organisations au Maroc, en Afrique de l’Ouest et dans le Golfe avec ArcGIS, l’imagerie satellite et le conseil, pour transformer leurs données en décisions.",
+      "cta": "À propos de Geomatic",
+      "ctaHref": "/fr-ma/about-geomatic/overview",
+      "video": "/videos/sig-maroc-casablanca-fr.mp4",
+      "poster": "/videos/sig-maroc-casablanca-fr-poster.jpg",
+      "videoAlt": "Film : la Terre vue de l’espace, puis le Maroc et la Mauritanie, où s’allument leurs villes. Suivent quatre analyses SIG calculées sur des données réelles de Casablanca : zones de desserte sur le réseau routier, ligne de visée depuis le Twin Center sur une maquette 3D, zone de couverture d’une antenne et densité du bâti en barres 3D. Le film se termine sur la carte du Maroc et de la Mauritanie avec leurs villes et la signature Geomatic.",
+      "play": "Lire la vidéo",
+      "pause": "Mettre la vidéo en pause"
+    }
+  },
+  "footer": {
+    "nav": "Liens du pied de page",
+    "follow": "Suivez-nous",
+    "tagline": "Distributeur officiel Esri au Maroc",
+    "contact": {
+      "title": "Contact",
+      "addressLabel": "Adresse",
+      "address": [
+        "7, Rue Franche Comté, Gauthier",
+        "20000 Casablanca, Maroc"
+      ],
+      "mapLabel": "Voir sur la carte",
+      "phoneLabel": "Téléphone",
+      "phones": [
+        "+212 5 22 22 16 69",
+        "+212 5 22 27 47 74",
+        "+212 5 22 20 27 31"
+      ],
+      "faxLabel": "Fax",
+      "fax": "+212 5 22 22 38 67",
+      "emailLabel": "E-mail",
+      "email": "sales@geomatic.ma"
+    },
+    "headings": {
+      "arcgis": "ARCGIS",
+      "community": "COMMUNAUTÉ",
+      "understanding": "COMPRENDRE LES SIG",
+      "about": "À PROPOS"
+    },
+    "links": {
+      "arcgisPro": {
+        "text": "ArcGIS Pro",
+        "href": "/arcgis/products/arcgis-pro/overview"
+      },
+      "arcgisEnterprise": {
+        "text": "ArcGIS Enterprise",
+        "href": "/arcgis/products/arcgis-enterprise/overview"
+      },
+      "arcgisOnline": {
+        "text": "ArcGIS Online",
+        "href": "/arcgis/products/arcgis-online/overview"
+      },
+      "arcgisDevelopers": {
+        "text": "ArcGIS pour les développeurs",
+        "href": "/arcgis/products/arcgis-for-developers/overview"
+      },
+      "events": {
+        "text": "Événements",
+        "href": "/about-geomatic/events"
+      },
+      "whatIsGis": {
+        "text": "Qu’est-ce qu’un SIG ?",
+        "href": "/what-is-gis/overview"
+      },
+      "aboutGeomatic": {
+        "text": "À propos de Geomatic",
+        "href": "/about-geomatic/overview"
+      },
+      "contactUs": {
+        "text": "Contactez-nous",
+        "href": "/about-geomatic/contact"
+      },
+      "careers": {
+        "text": "Carrières",
+        "href": "/about-geomatic/careers"
+      },
+      "partners": {
+        "text": "Partenaires",
+        "href": "/about-geomatic/partners"
+      }
+    },
+    "social": {
+      "facebook": {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/GeomaticESRI/"
+      },
+      "twitter": {
+        "text": "Twitter",
+        "href": "https://twitter.com"
+      },
+      "instagram": {
+        "text": "Instagram",
+        "href": "https://instagram.com"
+      },
+      "linkedin": {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/company/geomati/"
+      },
+      "youtube": {
+        "text": "YouTube",
+        "href": "https://youtube.com"
+      },
+      "esriCommunity": {
+        "text": "Esri Community",
+        "href": "https://community.esri.com/"
+      }
+    },
+    "lang": {
+      "current": "{language} (Global)",
+      "english": "Anglais",
+      "french": "Français"
+    },
+    "legalNav": "Informations légales",
+    "legal": [
+      { "text": "Confidentialité", "href": "/legal/privacy" },
+      { "text": "Accessibilité", "href": "/legal/accessibility" },
+      { "text": "Mentions légales", "href": "/legal/legal-notice" }
+    ],
+    "copyright": "© {year} Geomatic. Tous droits réservés."
+  }
+}

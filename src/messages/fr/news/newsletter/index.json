@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Newsletters Geomatic",
+    "subtitle": "Bientôt disponible",
+    "text": "Cette page accueillera les newsletters de Geomatic : nouveautés ArcGIS, retours d’expérience et conseils pratiques pour votre pratique du SIG.",
+    "bgImage": "/news/newsletters/shutterstock448468954-2400.jpg"
+  },
+  "ui": {
+    "kicker": "Publications",
+    "contact": "Être prévenu de la parution",
+    "anchor": "En attendant",
+    "othersKicker": "En attendant",
+    "othersTitle": "D’autres publications à consulter"
+  }
+}

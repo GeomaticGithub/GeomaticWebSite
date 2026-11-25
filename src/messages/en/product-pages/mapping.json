@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "kicker": "capability",
+    "title": "Mapping",
+    "subtitle": "Software to visualize and understand your data spatially",
+    "bgImage": "/mapping/overview-banner-background.jpg",
+    "image": "/mapping/overview-banner-layerstack.png",
+    "text": "Create interactive maps to visualize and explore your data using Esri's dynamic mapping software. Powerful analysis tools and map styles help you discover and refine your data's story. Enrich your maps by incorporating content from Esri's rich data library. Use custom symbols and basemaps to personalize your maps. Share engaging maps that tell your data's story and influence change."
+  },
+  "blocks": [
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Map your data",
+          "paragraphs": [
+            "Bring your data into a map and discover spatial relationships for the first time. Many file types are supported by Esri's mapping software, including spreadsheets, KML, GeoJSON, and common geospatial files. Esri provides complete data hosting, or you can host it on your infrastructure.",
+            "Use geocoding to transform your addresses into points on a map and set up multimodal routes. Create maps that display data dynamically as soon as it is updated and improve the quality of your decisions by referencing the most up-to-date data."
+          ],
+          "image": "/mapping/map-your-data.gif"
+        },
+        {
+          "title": "Interact with your map",
+          "paragraphs": [
+            "Interactive web maps give you and your team the opportunity to explore and update data. As you zoom in, additional data and insights become available. Click on the map to discover location-specific data displayed in charts or infographics. Filter data and change the symbology to gain additional perspectives and reveal new patterns.",
+            "Use your maps even without a network or cellular connection. Download your maps before you go, and conveniently access them on your smartphone or tablet. Once you are connected again any data you or your team added is automatically synchronized. "
+          ],
+          "image": "/mapping/interact-with-map.gif"
+        },
+        {
+          "title": "Understand your data",
+          "paragraphs": [
+            "Discover and refine your data's story using a set of intuitive analysis tools, such as drive times and buffers. Smart mapping, pioneered by Esri, uses data-driven styling, colors, and symbols to guide your exploration and transform your raw data into useful information. You can also understand your data better by visualizing it with different map styles."
+          ],
+          "image": "/mapping/undertand-data.jpg"
+        },
+        {
+          "title": "Enhance your data",
+          "paragraphs": [
+            "Deepen your understanding and expose relationships by adding authoritative data, such as demographics, imagery, boundaries, and live feeds, to your map. ArcGIS Living Atlas of the World, the most comprehensive collection of global geographic information, is included with every ArcGIS mapping product."
+          ],
+          "image": "/mapping/enrich-data.jpg"
+        },
+        {
+          "title": "Personalize your maps",
+          "paragraphs": [
+            "Brand and personalize your maps using custom symbols, colors, and basemaps. Make your data pop by placing it on a historic, creative, or present-day basemap. You can also customize the basemaps or build your own."
+          ],
+          "image": "/mapping/personalize-map.gif"
+        }
+      ]
+    },
+    {
+      "type": "tabs",
+      "kicker": "share",
+      "title": "Share your story",
+      "text": "Create apps that enable your audience to not only view your map but also interact with the data. Choose from a variety of focused app templates and create an app in just a few clicks. Include them on your website using the convenient embed code. Each app has a specific purpose to help tell your story and keep your audience engaged.",
+      "items": [
+        {
+          "title": "ArcGIS Configurable Apps",
+          "text": "Easily create and share your maps as interactive web apps. Select from a variety of ready-to-use templates.",
+          "image": "/mapping/share-configurable.jpg",
+          "thumb": "/mapping/share-configurable-thumb.jpg"
+        },
+        {
+          "title": "ArcGIS StoryMaps",
+          "text": "Bring text, photos, and videos together with maps to create remarkable stories that resonate with your audience.",
+          "image": "/mapping/share-storymaps.jpg",
+          "thumb": "/mapping/share-storymaps-thumb.jpg"
+        },
+        {
+          "title": "ArcGIS Dashboards",
+          "text": "Create a dynamic dashboard to gain a real-time operational view of your people, services, assets, and events.",
+          "image": "/mapping/share-ops-dashboard.jpg",
+          "thumb": "/mapping/share-ops-dashboard-thumb.jpg"
+        },
+        {
+          "title": "Web AppBuilder for ArcGIS",
+          "text": "Create custom apps using preconfigured tools that do not require coding.",
+          "image": "/mapping/share-app-builder.jpg",
+          "thumb": "/mapping/share-app-builder-thumb.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "products",
+      "title": "Start mapping and understanding your data",
+      "text": "There are many ways to access Esri’s mapping capabilities including cloud-based SaaS, self-managed infrastructure, developer tools, and desktop software. Identify how you would like to access the capabilities and learn more about the corresponding product.",
+      "items": [
+        {
+          "label": "Cloud-based SaaS",
+          "title": "ArcGIS Online",
+          "text": "Get started with ArcGIS Online, Esri's cloud-based, software-as-a-service product. Your maps, apps, and data are hosted and accessible anywhere.",
+          "href": "/arcgis/products/arcgis-online/overview"
+        },
+        {
+          "label": "Self-managed infrastructure",
+          "title": "ArcGIS Enterprise",
+          "text": "Do you manage your own infrastructure behind a firewall or in the cloud? Use ArcGIS Enterprise for your mapping and location enablement needs.",
+          "href": "/arcgis/products/arcgis-enterprise/overview"
+        },
+        {
+          "label": "Developer tools",
+          "title": "ArcGIS Developer Tools",
+          "text": "Use a robust set of developer tools to develop apps or customize maps and apps built in ArcGIS Online or ArcGIS Enterprise.",
+          "href": "/arcgis/products/arcgis-for-developers/overview"
+        },
+        {
+          "label": "Desktop",
+          "title": "ArcGIS Pro",
+          "text": "Complete advanced mapping, analysis, and data management workflows using ArcGIS Pro.",
+          "href": "/arcgis/products/arcgis-pro/overview"
+        }
+      ]
+    }
+  ]
+}

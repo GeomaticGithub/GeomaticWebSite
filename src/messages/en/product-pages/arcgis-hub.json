@@ -1,0 +1,212 @@
+{
+  "hero": {
+    "kicker": "product",
+    "icon": "/arcgisHub/ArcGIS-Hub.png",
+    "title": "ArcGIS Hub",
+    "subtitle": "Transform how you engage and collaborate with your community.",
+    "bgImage": "/arcgisHub/banner-background.jpg",
+    "image": "/arcgisHub/banner.png"
+  },
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Part of Esri Geospatial Cloud, ArcGIS Hub is an easy-to-configure community engagement platform that organizes people, data, and tools through information-driven initiatives. Organizations of any type and any size, including government agencies, nonprofit groups, and academia, can maximize engagement, communication, collaboration, and data sharing using the ArcGIS Hub initiative-based approach. With ArcGIS Hub, organizations can leverage their existing data and technology and work together with internal and external stakeholders to track progress, improve outcomes, and create vibrant communities."
+    },
+    {
+      "type": "tabs",
+      "kicker": "benefits",
+      "title": "What ArcGIS Hub can do for you",
+      "items": [
+        {
+          "title": "Share open data",
+          "text": "Data is vital to decision-making. Whether you are choosing a neighborhood to live in, curious about city projects, or opening a new business, having information you can trust is essential. With ArcGIS Hub, organizations can share their authoritative data so the community can make better decisions.",
+          "image": "/arcgisHub/arcgis-share.jpg"
+        },
+        {
+          "title": "Create unlimited websites",
+          "text": "Create as many websites and web pages as you need with no coding required. Simply drag and drop components. Incorporate your organization's logos and styles to match existing websites, and share data, maps, and apps on your sites. Use the sites you make to engage your community.",
+          "image": "/arcgisHub/arcgis-create.jpg"
+        },
+        {
+          "title": "Organize around initiatives",
+          "text": "Sharing open data is the first step on the journey to effective community engagement. Give your data purpose and align it with your organization's top priorities by organizing around initiatives. Any real-world issue, mission, or project can become an initiative in your hub.",
+          "image": "/arcgisHub/arcgis-organize.jpg"
+        },
+        {
+          "title": "Enable collaboration",
+          "text": "ArcGIS Hub makes it easy to create teams comprising staff, external community members, or both. You can invite trusted members of the community to collaborate with your organization, which will increase your staff's ability to solve problems.",
+          "image": "/arcgisHub/arcgis-enable.jpg"
+        },
+        {
+          "title": "Inspire action",
+          "text": "Initiatives can drive engagement by giving community members a goal to rally around as well as a focused way to participate. Presenting information via charts, maps, and stories makes it easier for everyone to have a shared understanding of the goal, which can pave the way to action.",
+          "image": "/arcgisHub/arcgis-inspire.jpg"
+        },
+        {
+          "title": "Benefit from a full system",
+          "text": "ArcGIS Hub leverages Esri Geospatial Cloud. Unlike other solutions that require piecing tools together, ArcGIS Hub comes with everything you'll need: integrated event management, surveys, and more. Work done in your hub also feeds directly back into your organization's operational systems.",
+          "image": "/arcgisHub/arcgis-benefit.jpg"
+        }
+      ]
+    },
+    {
+      "type": "stories",
+      "kicker": "stories",
+      "title": "Community Success Stories",
+      "text": "Discover how organizations leverage ArcGIS Hub to engage communities and drive collaborative decision-making.",
+      "items": [
+        {
+          "label": "Improving decision-making and service delivery",
+          "title": "Improving decision-making and service delivery",
+          "desc": "Brampton, Canada, uses ArcGIS Hub to create a place where everyone can discover, analyze, and download city data. See why and how they did it.",
+          "image": "/arcgisHub/cs-brampton-thumb.jpg",
+          "actionText": "watch demo",
+          "actionUrl": "https://www.youtube.com/watch?v=niorEFSjFt4"
+        },
+        {
+          "label": "Smart City Hub Meets the Needs of Modern Citizens",
+          "title": "Smart City Hub Meets the Needs of Modern Citizens",
+          "desc": "Coral Gables, Florida, used ArcGIS Hub to launch an open data site to improve access to city data and services and advance key initiatives.",
+          "image": "/arcgisHub/cs-coral-gables-thumb.jpg",
+          "actionText": "Read the article",
+          "actionUrl": "https://www.esri.com/about/newsroom/arcnews/smart-city-hub-meets-the-needs-of-modern-citizens"
+        },
+        {
+          "label": "Smart Zwolle Hub tackles climate initiatives",
+          "title": "Smart Zwolle Hub tackles climate initiatives",
+          "desc": "See how this Dutch municipality is using its Smart Zwolle Hub to gather data from citizen-adopted sensors and tackle their climate-based initiatives.",
+          "image": "/arcgisHub/cs-zwolle-thumb.jpg",
+          "actionText": "Watch demo",
+          "actionUrl": "https://www.youtube.com/watch?v=ly4Adwjxi8E"
+        },
+        {
+          "label": "Hub helps city departments & citizens collaborate",
+          "title": "Hub helps city departments & citizens collaborate",
+          "desc": "We don't want our citizens to have to ask us for information about a government building that is already going up in their area. We want them to know what's going on from the start.",
+          "image": "/arcgisHub/cs-gilbert-thumb.jpg",
+          "actionText": "Read the article",
+          "actionUrl": "https://www.esri.com/about/newsroom/arcnews/open-data-strengthens-lean-government"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "examples",
+      "title": "Hub sites worth checking out",
+      "text": "Cities, nonprofits, and organizations of all types are using ArcGIS Hub to publish and share their open data to engage their communities with data-driven initiatives. Check out these successful hub sites for ideas and inspiration.",
+      "items": [
+        {
+          "title": "Fighting Diabetes in Los Angeles",
+          "text": "Thousands of people are living with diabetes, and more are likely to be diagnosed. See how the city uses a hub site to fight this problem.",
+          "image": "/arcgisHub/sites-la.jpg",
+          "href": "https://diabetes-2-commhealth.hub.arcgis.com/"
+        },
+        {
+          "title": "A one-stop shop for city data",
+          "text": "Johns Creek, Georgia, uses ArcGIS Hub to enhance city services and drive economic development. Data is shared using dashboards, charts, and more.",
+          "image": "/arcgisHub/sites-john-creek.jpg",
+          "href": "https://datahub.johnscreekga.gov/"
+        },
+        {
+          "title": "A data hub for Sustainable Development Goals",
+          "text": "The Open SDG Data Hub promotes the use of authoritative Sustainable Development Goals (SDG) data sources for evidence-based decision-making.",
+          "image": "/arcgisHub/sites-sdg.jpg",
+          "href": "https://unstats-undesa.opendata.arcgis.com/"
+        },
+        {
+          "title": "Earth Challenge 2020",
+          "text": "Earth Challenge 2020 is a global citizen science initiative that will demonstrate how small digital acts of science can add up to global change.",
+          "image": "/arcgisHub/sites-earth.jpg",
+          "href": "https://www.earthday.org/"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "quote": "A lot of cities create open data portals in the name of transparency, but we've taken it further. We couldn’t do this without having a foundation built on ArcGIS and ArcGIS Hub.",
+      "author": "Dana Berchman",
+      "role": "Chief Digital Officer, Gilbert, Arizona",
+      "avatar": "/arcgisHub/quote-dana-berchman.jpg"
+    },
+    {
+      "type": "cards",
+      "kicker": "capabilities",
+      "title": "ArcGIS Hub capabilities",
+      "text": "ArcGIS Hub is a bridge between your organization and the community it serves. Your foundational GIS work, done by internal departments, will help your entire community collaborate on projects.",
+      "items": [
+        {
+          "title": "Maps and apps",
+          "text": "Make it easier for people to visualize the data you share about policies, desired outcomes, and initiatives.",
+          "icon": "/arcgisHub/mapsAndApps.svg",
+          "bullets": [
+            "Informative charts",
+            "Interactive maps",
+            "Narrative Story Maps",
+            "Dashboards",
+            "Data-driven microsites"
+          ]
+        },
+        {
+          "title": "A place to collaborate",
+          "text": "Use ArcGIS Hub as your engagement platform to connect with trusted members of the community.",
+          "icon": "/arcgisHub/collaborate.svg",
+          "bullets": [
+            "Local businesses",
+            "Universities",
+            "NGOs",
+            "Startups",
+            "Citizen scientists"
+          ]
+        },
+        {
+          "title": "Capture data & input",
+          "text": "Enlist ArcGIS Hub participants to gather the data you need in a useful digital format.",
+          "icon": "/arcgisHub/captureData.svg",
+          "bullets": [
+            "Initiative-related surveys",
+            "Development proposals",
+            "Community events and meetups"
+          ]
+        },
+        {
+          "title": "Tools for innovation",
+          "text": "Make it easy for others to find and use your community’s data.",
+          "icon": "/arcgisHub/tools.svg",
+          "bullets": [
+            "Civic developers",
+            "Volunteers",
+            "Students",
+            "Open source community"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "resources",
+      "items": [
+        {
+          "title": "Hub readiness assessment",
+          "text": "Answer a few short questions to reveal your organization's hub readiness and see what next steps you can take.",
+          "image": "/arcgisHub/paper.svg",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-hub/hub-self-assessment",
+          "linkLabel": "Start the assessment"
+        },
+        {
+          "title": "E-book",
+          "text": "Learn more about how to use the hub framework and the key factors essential for collaborating more effectively.",
+          "image": "/arcgisHub/location.svg",
+          "href": "https://www.esri.com/en-us/landing-page/product/2019/city-transformation-starts-with-a-hub-ebook",
+          "linkLabel": "Download the e-book"
+        },
+        {
+          "title": "Newsletter",
+          "text": "Get the latest product news, customer success stories, and up-to-date resources to help you do more with ArcGIS Hub.",
+          "image": "/arcgisHub/journal.svg",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-hub/news-sign-up",
+          "linkLabel": "Subscribe to ArcGIS Hub News"
+        }
+      ]
+    }
+  ]
+}

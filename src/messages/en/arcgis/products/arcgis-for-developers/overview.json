@@ -1,0 +1,180 @@
+{
+  "hero": {
+    "title": "ArcGIS for Developers",
+    "subtitle": "Mapping solutions for developers",
+    "ctaLabel": "Sign up for free ↗",
+    "rightImage": "/arcgisForDevelopers/banner.png",
+    "bgGraphic": "/arcgisForDevelopers/banner-background.png",
+    "ctaLink": "https://developers.arcgis.com/migration/"
+  },
+  "iconStrip": [
+    {
+      "icon": "/arcgisForDevelopers/perf.svg",
+      "title": "High performance",
+      "caption": "GPU-accelerated drawing and client-side analytics"
+    },
+    {
+      "icon": "/arcgisForDevelopers/easy.svg",
+      "title": "Easy to use",
+      "caption": "Integrate maps & geocoding with minimal code"
+    },
+    {
+      "icon": "/arcgisForDevelopers/secure.svg",
+      "title": "Private and secure",
+      "caption": "Store data in the cloud or behind the firewall"
+    },
+    {
+      "icon": "/arcgisForDevelopers/price.svg",
+      "title": "Affordable pricing",
+      "caption": "Start free, pay as you grow"
+    }
+  ],
+  "visualText": {
+    "bgGraphic": "/arcgisForDevelopers/banner-background.png",
+    "visualImage": "/arcgisForDevelopers/visual-mountain.jpg",
+    "title": "Build powerful mapping solutions with ArcGIS for Developers",
+    "paragraph": "ArcGIS for Developers offers a full suite of developer tools and resources to build mapping and analytics solutions that support your business needs. Use ArcGIS APIs to create robust, location-based web and native applications for web, desktop, and mobile devices. Build, manage, and deploy apps as quickly as possible by using the specific tools you need, when you need them—priced to fit your individual needs."
+  },
+  "capabilities": {
+    "heading": "Explore ArcGIS capabilities",
+    "tabs": [
+      "Map & visualize",
+      "Ready-to-use data",
+      "Search & geocoding",
+      "Routing & directions",
+      "Demographics & lifestyle",
+      "Spacial analysis"
+    ],
+    "blocks": [
+      {
+        "side": "image-left",
+        "title": "Map and visualize",
+        "desc": "Create rich, interactive data visualizations in 2D or 3D while taking advantage of data-driven visualizations. ArcGIS offers best-in-class resolution and sophisticated symbology with these features:",
+        "bullets": [
+          "2D and 3D capabilities in the same API",
+          "GPU-accelerated rendering",
+          "Rich popups"
+        ],
+        "image": "/arcgisForDevelopers/capability-map.jpg",
+        "ctaLabel": "Learn more ↗"
+      },
+      {
+        "side": "image-right",
+        "title": "Ready-to-use data",
+        "desc": "Get access to the world's largest geospatial content library. Access thousands of ready-to-use basemaps and authoritative datasets provided by Esri, its partners and distributors, government agencies, our user community, and commercial content providers.",
+        "image": "/arcgisForDevelopers/capability-data.jpg",
+        "ctaLabel": "Learn more ↗"
+      },
+      {
+        "side": "image-left",
+        "title": "Search & geocoding",
+        "desc": "Geocoding is the first and most important step in making sense of location information. Find addresses, place-names, cities, and businesses, and display their locations on a map with ArcGIS. Features include the following:",
+        "bullets": [
+          "Global coverage",
+          "Geosearch, batch geocode, and reverse geocode",
+          "Searchable locations—search up to one million locations for free"
+        ],
+        "image": "/arcgisForDevelopers/capability-search.jpg",
+        "ctaLabel": "Learn more ↗"
+      },
+      {
+        "side": "image-left",
+        "title": "Routing & directions",
+        "desc": "Generate optimized routes and turn-by-turn directions using real-time traffic. With ArcGIS, you can do the following:",
+        "bullets": [
+          "Receive localized directions",
+          "Incorporate real-world restrictions and barriers",
+          "Route multiple vehicles"
+        ],
+        "image": "/arcgisForDevelopers/capability-routing.jpg",
+        "ctaLabel": "Learn more ↗"
+      },
+      {
+        "side": "image-left",
+        "title": "Demographic and lifestyle data",
+        "desc": "Enhance your authoritative content with detailed location intelligence. Get access to thousands of business and demographic variables for addresses, locations, and study areas in more than 130 countries. Enrich your data with industry-leading authoritative content. Generate PDF reports to display results and much more.",
+        "image": "/arcgisForDevelopers/capability-demographic.jpg",
+        "ctaLabel": "Learn more ↗"
+      },
+      {
+        "side": "image-left",
+        "title": "Spatial analysis",
+        "desc": "Gain insights into your data by understanding spatial relationships and patterns. Perform the following functions in ArcGIS:",
+        "bullets": [
+          "Identify patterns and make informed decisions",
+          "Utilize a vast set of analytic tools",
+          "Quickly and easily use the results in your apps"
+        ],
+        "image": "/arcgisForDevelopers/capability-spatial.gif",
+        "ctaLabel": "Learn more ↗"
+      }
+    ],
+    "sections": [
+      {
+        "side": "image-right",
+        "title": "Hosted data",
+        "desc": "Store your data securely in the cloud or behind your firewall. Manage, query, and edit data with ArcGIS tools and your own applications. With ArcGIS, you can do the following:",
+        "bullets": [
+          "Manage data access and security",
+          "Import, create, and manage spatial and nonspatial data",
+          "Add your data to maps"
+        ],
+        "image": "/arcgisForDevelopers/capability-hosted.jpg",
+        "ctaLabel": "Learn more ↗"
+      },
+      {
+        "side": "image-left",
+        "title": "Work offline",
+        "desc": "Build native applications for use when your device goes offline and gain access to these features:",
+        "bullets": [
+          "Display maps",
+          "Edit and sync data",
+          "Search, geocode, and get routes and directions"
+        ],
+        "image": "/arcgisForDevelopers/capability-offline.jpg",
+        "ctaLabel": "Learn more ↗"
+      }
+    ]
+  },
+  "resources": {
+    "heading": "Resources",
+    "tiles": [
+      {
+        "title": "ArcGIS tutorials",
+        "desc": "Learn how to build mapping apps with ArcGIS APIs and SDKs with ArcGIS tutorials.",
+        "icon": "/arcgisForDevelopers/resource-tutorials.jpg",
+        "href": "https://developers.arcgis.com/documentation/mapping-and-location-services/tutorials/"
+      },
+      {
+        "title": "Success stories",
+        "desc": "Discover how our customers succeed. See real-world application planning, implementation, and deployment using ArcGIS for Developers tools.",
+        "icon": "/arcgisForDevelopers/resource-stories.jpg",
+        "href": "https://www.esri.com/en-us/arcgis/products/develop-with-arcgis/overview#success-stories"
+      },
+      {
+        "title": "Developer blog",
+        "desc": "The latest from ArcGIS for Developers blogs.",
+        "icon": "/arcgisForDevelopers/resource-documentation.jpg",
+        "href": "https://www.esri.com/arcgis-blog/developers"
+      },
+      {
+        "title": "Developer community",
+        "desc": "Connect and collaborate with other ArcGIS developers online. Share ideas, content, and code in our GeoNet community.",
+        "icon": "/arcgisForDevelopers/resource-community.jpg",
+        "href": "https://community.esri.com/t5/developers-general/ct-p/developers-general"
+      },
+      {
+        "title": "Documentation",
+        "desc": "Learn about ArcGIS core concepts and ArcGIS APIs and SDKs, as well as scripting, automation, and extensions.",
+        "icon": "/arcgisForDevelopers/resource-documentation.jpg",
+        "href": "https://developers.arcgis.com/documentation/"
+      }
+    ]
+  },
+  "purpleCta": {
+    "title": "Build solutions to extend the ArcGIS platform",
+    "desc": "Explore key components of the ArcGIS platform, many of which can be scripted and extended to add new capabilities. Learn how to leverage them in your apps. ",
+    "ctaLabel": "Explore plans ↗",
+    "href": "https://location.arcgis.com/pricing/"
+  }
+}

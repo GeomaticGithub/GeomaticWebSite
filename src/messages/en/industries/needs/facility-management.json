@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "title": "Facility Management",
+    "subtitle1": "Lead the way to higher performance",
+    "subtitle2": "Strengthen facility operations with the power of location intelligence",
+    "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-banner-bg.png"
+  },
+  "intro": {
+    "title": "Keep it all under control",
+    "paragraph": "To manage and maintain any facility—its safety, security, and operations—is a complex and expensive effort. Facility managers achieve success using powerful data management, analysis, and visualization. A digital approach to facility management helps leaders assess security risks, develop plans, protect staff and assets, and improve daily operations."
+  },
+  "control": {
+    "title": "Keep it all under control",
+    "body": "Use a digital facility map and dashboards to unify data into a single view of buildings and campuses. Understand conditions, incidents, work orders, and assets to protect people and streamline day-to-day operations.",
+    "image": "/Solutions/BusinessNeeds/FacilityManagement/control-city.jpg"
+  },
+  "efficiencies": {
+    "title": "See efficiencies others can’t",
+    "intro": "Smart maps help facility managers understand their spaces and the people in them and oversee daily operations.",
+    "bullets": [
+      "Get real-time operational awareness of campus spaces, asset inventories, and building conditions.",
+      "Improve wayfinding with indoor mapping.",
+      "See the locations of service requests or emergency alerts in real time.",
+      "Create map-driven floor plans for work spaces that minimize distractions and maximize teamwork.",
+      "Gain insight into movement patterns through visualization and discover ways to cut costs, protect assets, and increase safety.",
+      "Simplify coordination of construction, renovation, and maintenance projects."
+    ],
+    "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-5050-see-the-efficiencies-others-cant.png"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "blurb": "Drive data-driven decision-making and operational efficiency with location intelligence technology from the Esri Geospatial Cloud.",
+    "items": [
+      {
+        "title": "Field Operations",
+        "body": "Gain location perspective on real-time field activities and use visually rich dashboards to inform decisions. See what can be accomplished through working in unison and capturing and navigating data—even while offline",
+        "cta": "Coordinate field activities",
+        "href": "https://www.esri.com/en-us/capabilities/field-operations/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Ffield-operations%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/business-needs-capabilities-field-operatioins.jpg"
+      },
+      {
+        "title": "Real-Time Visualization and Analytics",
+        "body": "Know where vulnerabilities exist right now across your business and monitor changing situations. Use big data and Internet of Things (IoT) technology to make quick, informed decisions based on the most up-to-date information.",
+        "cta": "Make sense of big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Mapping",
+        "body": "Visualize people, places, and assets to gain a clear understanding of all operations in the field. See what's happening across the organization, create a detailed plan, and know where to effectively coordinate and dispatch resources.",
+        "cta": "Visualize your data",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Learn more about facility management",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Is Your Workplace Smart Enough?",
+        "source": "WhereNext Magazine",
+        "excerpt": "Human resources and facilities executives look to create operational efficiency and smart workplaces powered by location-aware technology.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/is-your-workplace-smart-enough",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-card-is-your-workplace-smart-enough.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "GIS and BIM Provide Support for University",
+        "source": "ArcUser",
+        "excerpt": "Ohio State University (OSU) improved decision-making and management of the hundreds of facilities on its campuses with Esri technology.",
+        "href": "https://www.esri.com/about/newsroom/arcuser/gis-and-bim-provide-life-cycle-support-for-universitys-assets",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-card-gis-bim-provide-support-university.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "How NASA Mapped Langley’s Digital Twin",
+        "source": "Esri Blog",
+        "excerpt": "Langley technologists mapped the 764-acre campus to manage everything from daily maintenance and safety to flood prevention and sustainability.",
+        "href": "https://www.esri.com/about/newsroom/blog/nasa-langleys-digital-twin",
+        "image": "/Solutions/BusinessNeeds/FacilityManagement/facilities-management-card-how-nasa-mapped-langelys-digital-twin.jpg"
+      }
+    ]
+  }
+}

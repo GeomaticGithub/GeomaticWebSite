@@ -1,0 +1,170 @@
+{
+  "hero": {
+    "kicker": "product",
+    "title": "ArcGIS for Developers",
+    "subtitle": "Solutions de cartographie pour les développeurs",
+    "bgImage": "/arcgisForDevelopers/banner-background.png",
+    "image": "/arcgisForDevelopers/banner.png"
+  },
+  "blocks": [
+    {
+      "type": "band",
+      "kicker": "overview",
+      "title": "Créez des solutions de cartographie puissantes avec ArcGIS for Developers",
+      "text": "ArcGIS for Developers propose une suite complète d’outils et de ressources pour développer des solutions de cartographie et d’analyse répondant aux besoins de votre entreprise. Utilisez les API ArcGIS pour créer des applications web et natives robustes, basées sur la localisation, pour le web, le bureau et les appareils mobiles. Créez, gérez et déployez des applications aussi rapidement que possible en utilisant les outils spécifiques dont vous avez besoin, quand vous en avez besoin — à un prix adapté à vos besoins.",
+      "image": "/arcgisForDevelopers/visual-mountain.jpg"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Haute performance",
+          "text": "Rendu accéléré par GPU et analyses côté client",
+          "icon": "/arcgisForDevelopers/perf.svg"
+        },
+        {
+          "title": "Facile à utiliser",
+          "text": "Intégrez cartes et géocodage avec un minimum de code",
+          "icon": "/arcgisForDevelopers/easy.svg"
+        },
+        {
+          "title": "Privé et sécurisé",
+          "text": "Stockez les données dans le cloud ou derrière le pare-feu",
+          "icon": "/arcgisForDevelopers/secure.svg"
+        },
+        {
+          "title": "Tarification abordable",
+          "text": "Commencez gratuitement, payez selon votre croissance",
+          "icon": "/arcgisForDevelopers/price.svg"
+        }
+      ]
+    },
+    {
+      "type": "tabs",
+      "kicker": "capabilities",
+      "title": "Explorez les fonctionnalités d’ArcGIS",
+      "items": [
+        {
+          "title": "Cartographier et visualiser",
+          "text": "Créez des visualisations de données riches et interactives en 2D ou 3D tout en profitant de représentations basées sur les données. ArcGIS offre une résolution de pointe et une symbologie sophistiquée avec les fonctionnalités suivantes :",
+          "bullets": [
+            "Capacités 2D et 3D dans la même API",
+            "Rendu accéléré par GPU",
+            "Fenêtres contextuelles riches"
+          ],
+          "image": "/arcgisForDevelopers/capability-map.jpg"
+        },
+        {
+          "title": "Données prêtes à l’emploi",
+          "text": "Accédez à la plus grande bibliothèque de contenus géospatiaux au monde. Accédez à des milliers de fonds de carte prêts à l’emploi et à des ensembles de données de référence fournis par Esri, ses partenaires et distributeurs, des agences gouvernementales, notre communauté d’utilisateurs et des fournisseurs commerciaux.",
+          "image": "/arcgisForDevelopers/capability-data.jpg"
+        },
+        {
+          "title": "Recherche et géocodage",
+          "text": "Le géocodage est la première étape essentielle pour comprendre les informations de localisation. Trouvez des adresses, des noms de lieux, des villes et des entreprises, et affichez leurs emplacements sur une carte avec ArcGIS. Les fonctionnalités incluent :",
+          "bullets": [
+            "Couverture mondiale",
+            "Recherche géographique, géocodage par lot et géocodage inverse",
+            "Jusqu’à un million d’emplacements recherchables gratuitement"
+          ],
+          "image": "/arcgisForDevelopers/capability-search.jpg"
+        },
+        {
+          "title": "Itinéraires et directions",
+          "text": "Générez des itinéraires optimisés et des indications détaillées en utilisant le trafic en temps réel. Avec ArcGIS, vous pouvez :",
+          "bullets": [
+            "Recevoir des directions localisées",
+            "Intégrer des restrictions et obstacles réels",
+            "Planifier des itinéraires pour plusieurs véhicules"
+          ],
+          "image": "/arcgisForDevelopers/capability-routing.jpg"
+        },
+        {
+          "title": "Données démographiques et style de vie",
+          "text": "Améliorez vos contenus de référence avec une intelligence de localisation détaillée. Accédez à des milliers de variables commerciales et démographiques pour des adresses, emplacements et zones d’étude dans plus de 130 pays. Enrichissez vos données avec des contenus de référence de premier plan. Générez des rapports PDF pour afficher les résultats et bien plus encore.",
+          "image": "/arcgisForDevelopers/capability-demographic.jpg"
+        },
+        {
+          "title": "Analyse spatiale",
+          "text": "Obtenez des informations sur vos données en comprenant les relations et schémas spatiaux. Effectuez les fonctions suivantes dans ArcGIS :",
+          "bullets": [
+            "Identifier des modèles et prendre des décisions éclairées",
+            "Utiliser un vaste ensemble d’outils analytiques",
+            "Utiliser rapidement et facilement les résultats dans vos applications"
+          ],
+          "image": "/arcgisForDevelopers/capability-spatial.gif"
+        }
+      ]
+    },
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Données hébergées",
+          "text": "Stockez vos données en toute sécurité dans le cloud ou derrière votre pare-feu. Gérez, interrogez et modifiez vos données avec les outils ArcGIS et vos propres applications. Avec ArcGIS, vous pouvez :",
+          "bullets": [
+            "Gérer l’accès et la sécurité des données",
+            "Importer, créer et gérer des données spatiales et non spatiales",
+            "Ajouter vos données aux cartes"
+          ],
+          "image": "/arcgisForDevelopers/capability-hosted.jpg"
+        },
+        {
+          "title": "Travailler hors ligne",
+          "text": "Créez des applications natives utilisables lorsque votre appareil est hors ligne et accédez aux fonctionnalités suivantes :",
+          "bullets": [
+            "Afficher des cartes",
+            "Modifier et synchroniser les données",
+            "Rechercher, géocoder et obtenir des itinéraires et directions"
+          ],
+          "image": "/arcgisForDevelopers/capability-offline.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "resources",
+      "title": "Ressources",
+      "items": [
+        {
+          "title": "Tutoriels ArcGIS",
+          "text": "Apprenez à créer des applications de cartographie avec les API et SDK ArcGIS grâce aux tutoriels ArcGIS.",
+          "icon": "/arcgisForDevelopers/resource-tutorials.jpg",
+          "href": "https://developers.arcgis.com/documentation/mapping-and-location-services/tutorials/"
+        },
+        {
+          "title": "Histoires de réussite",
+          "text": "Découvrez comment nos clients réussissent. Consultez la planification, la mise en œuvre et le déploiement d’applications réelles utilisant les outils ArcGIS for Developers.",
+          "icon": "/arcgisForDevelopers/resource-stories.jpg",
+          "href": "https://www.esri.com/en-us/arcgis/products/develop-with-arcgis/overview#success-stories"
+        },
+        {
+          "title": "Blog développeur",
+          "text": "Les dernières nouvelles des blogs ArcGIS for Developers.",
+          "icon": "/arcgisForDevelopers/resource-documentation.jpg",
+          "href": "https://www.esri.com/arcgis-blog/developers"
+        },
+        {
+          "title": "Communauté développeurs",
+          "text": "Connectez-vous et collaborez avec d’autres développeurs ArcGIS en ligne. Partagez des idées, du contenu et du code dans notre communauté GeoNet.",
+          "icon": "/arcgisForDevelopers/resource-community.jpg",
+          "href": "https://community.esri.com/t5/developers-general/ct-p/developers-general"
+        },
+        {
+          "title": "Documentation",
+          "text": "Découvrez les concepts clés d’ArcGIS et ses API et SDK, ainsi que le scripting, l’automatisation et les extensions.",
+          "icon": "/arcgisForDevelopers/resource-documentation.jpg",
+          "href": "https://developers.arcgis.com/documentation/"
+        }
+      ]
+    },
+    {
+      "type": "band",
+      "dark": true,
+      "title": "Créez des solutions pour étendre la plateforme ArcGIS",
+      "text": "Découvrez les composants clés de la plateforme ArcGIS, dont beaucoup peuvent être scriptés et étendus pour ajouter de nouvelles fonctionnalités. Apprenez à les exploiter dans vos applications.",
+      "href": "https://location.arcgis.com/pricing/",
+      "linkLabel": "Explorer les offres"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "kicker": "online",
+    "title": "Analyze Data",
+    "subtitle": "Analyze data in the context of location",
+    "bgImage": "/arcgisOnline/analyzeData/arcgis-online-indigo-banner-background-data-topography.jpg",
+    "image": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-banner-foreground.png"
+  },
+  "blocks": [
+    {
+      "type": "rows",
+      "items": [
+        {
+          "title": "Understand your data",
+          "text": "Analysis is an iterative process. Viewing your results on an interactive map makes it easy to adjust and tweak your analysis until you find the answers you need.",
+          "bullets": [
+            "Analyze patterns to make predictions and determine next steps",
+            "Reveal relationships and outliers in your data",
+            "Join data located in multiple places or add a location element to your data"
+          ],
+          "image": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-understand-your-data.jpg"
+        },
+        {
+          "title": "Find the best location",
+          "text": "Ready to start or expand your business? Choosing the correct location is critical for success. Using the analysis tools in ArcGIS Online you can:",
+          "bullets": [
+            "Discover locations that meet your requirements",
+            "Identify locations with similar characteristics of other locations",
+            "Map the demographics and population segments of potential and existing customers",
+            "Identify the optimum site to maximize profit and minimize customer travel"
+          ],
+          "image": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-find-the-best-location.jpg"
+        },
+        {
+          "title": "Use optimal directions and routes",
+          "text": "Need to choose your route based on specific requirements such as speed limits, toll roads, or overpass heights? Hoping to save money by cutting travel costs? ArcGIS Online analysis tools help you optimize your directions and routes.",
+          "bullets": [
+            "Identify the best routes",
+            "Calculate travel costs by time and distance",
+            "Choose directions based on organizational requirements or vehicle limitations",
+            "Gain maximum efficiency by planning stops and routes for each vehicle"
+          ],
+          "image": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-use-optimal-directions-and-routes.jpg"
+        },
+        {
+          "title": "Learn more about your location",
+          "text": "Looking to learn more about what is going on in your neighborhood, city, or state? Wondering how many people are impacted by an event? ArcGIS Online includes tools to help you understand what’s going on at any given location.",
+          "bullets": [
+            "Gather information about people, places of interest, and businesses",
+            "Identify the number and type of people or facilities within a certain number of miles.",
+            "Estimate the number of people impacted by an event"
+          ],
+          "image": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-learn-more-about-your-location.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "online",
+      "title": "Discover more ArcGIS Online capabilities",
+      "items": [
+        {
+          "title": "Make maps",
+          "text": "Quickly create maps and make your data visually stunning.",
+          "linkLabel": "Learn more about making maps"
+        },
+        {
+          "title": "Share & collaborate",
+          "text": "Instantly share your maps with anyone, anywhere. Collaborate with your colleagues.",
+          "href": "/arcgis/products/arcgis-online/capabilities/share-collaborate",
+          "linkLabel": "Ways to share and collaborate"
+        },
+        {
+          "title": "Work with Your Data",
+          "text": "Bring your data into a powerful system that geoenables, hosts, and scales.",
+          "linkLabel": "Explore data tools"
+        }
+      ]
+    }
+  ]
+}

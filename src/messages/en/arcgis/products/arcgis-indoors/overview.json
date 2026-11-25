@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "title": "ArcGIS Indoors",
+    "subtitle": "Smart building management",
+    "image": "/arcgisIndoors/arcgis-indoors-banner-fg-3.png",
+    "ctaText": "Request a demo",
+    "ctaLink": "#",
+    "bgGraphic": "/arcgisIndoors/arcgis-indoors-banner-bg.jpg",
+    "icon": "/arcgisIndoors/arcgis-indoors-product-icon.png"
+  },
+  "intro": {
+    "paragraph": "ArcGIS Indoors is a complete system for indoor mapping used to create a connected workplace. It provides a common operating picture for executives, workplace services personnel, and other employees and visitors to understand, manage, and use their workplace environment. Through an extended version of ArcGIS Pro, native web and mobile applications including iOS, and an indoor information model, ArcGIS Indoors helps you create, customize, share, and apply workplace maps and location data so you can manage workplace operations and build an environment that is comfortable and engaging for your people."
+  },
+  "workplace": {
+    "heading": "Enable, engage, and empower your workplace",
+    "subheading": "Evaluate your business activities within the workplace environment, enabling a more comfortable, confident, and collaborative workforce.",
+    "image": "/arcgisIndoors/arcgis-indoors-lcs-enable-engage-empower-3.jpg",
+    "pillars": [
+      {
+        "title": "Improve collaboration and productivity",
+        "desc": "Your workplace occupants will spend less time stressing where exactly they need to be. With indoor wayfinding and navigation, they will always know where to go, where their colleagues are, and where there is available space to meet their needs."
+      },
+      {
+        "title": "Operationalize your workplace data",
+        "desc": "Connect your business operations data like space type allocations and utilizations with project-based Building Information Modeling (BIM) formats to create a complete workplace map. You can use this information to support workplace operations and decision-making."
+      },
+      {
+        "title": "Build a safer, more secure workplace",
+        "desc": "Workplace security and continuity are under constant threat in the face of increasingly frequent natural and human catastrophes. A workplace map serves as a record of assets and the perfect tool for planning and monitoring your operational details, persons, or areas."
+      },
+      {
+        "title": "Spend less time connecting the dots",
+        "desc": "Ensure your workplace remains functional with your operations and maintenance staff knowing all the crucial details of reported service issues (where, what, by who) so that they may be quickly resolved."
+      }
+    ]
+  },
+  "how": {
+    "steps": [
+      {
+        "title": "Indoor mapping",
+        "desc": "Unlimited user access, and identity-based permissions, allow everyone across the workplace to access specifically curated indoor maps."
+      },
+      {
+        "title": "Indoor wayfinding",
+        "desc": "Improve on-site mobility by providing indoor resource exploration and navigation to employees, contractors, and even visitors."
+      },
+      {
+        "title": "Indoor location tracking",
+        "desc": "Capture real-time indoor location information for easy navigation and resource monitoring, allocation, and management."
+      }
+    ],
+    "illustration": "/arcgisIndoors/arcgis-indoors-fss-fg-3.png",
+    "illustrationAlt": "ArcGIS Indoors workflow illustration"
+  },
+  "build": {
+    "heading": "Build an indoor GIS",
+    "desc": "ArcGIS Indoors is designed to work with other parts of the ArcGIS platform, so you can extend the capability to natively leverage other aspects of ArcGIS, the world’s leading mapping and spatial analytics platform. Powered by ArcGIS Enterprise and portal, ArcGIS Indoors can be accessed and used for visualization and analysis with applications such as:",
+    "image": "/arcgisIndoors/50-50-arcgis-indoors-os.jpg",
+    "items": [
+      "ArcGIS Operations Dashboard: visualization and monitoring of the workplace in real time",
+      "ArcGIS GeoEvent Server: Real-time streaming and analytics of workplace data.",
+      "ArcGIS field operations apps, including Survey123 for workplace 311 requests"
+    ]
+  },
+  "ips": {
+    "heading": "Indoor Positioning System (IPS)",
+    "desc1": "Experience indoor positioning with the same level of comfort you are used to outdoors.",
+    "desc2": "ArcGIS Indoors makes real-time wayfinding, analytical location data, and tracking services available inside buildings. ArcGIS Indoors does this by providing floor-aware 3D maps and focused apps to support a variety of workplace and facility users, including owner/operators, maintenance and service personnel, security staff, employees, and visitors. The system is being built to support multiple existing IPS providers.",
+    "leftImage": "/arcgisIndoors/arcgis-indoors-ips-5050.jpg",
+    "rightImage": "/arcgisIndoors/ips-right.jpg",
+    "learnMore": { "label": "Learn more", "href": "#" }
+  },
+  "docs": {
+    "heading": "Documentation",
+    "desc": "Find answers and information about Indoors.",
+    "cards": [
+      {
+        "title": "ArcGIS Indoors Web",
+        "linkLabel": "What’s new",
+        "link": "https://doc.arcgis.com/en/indoors/latest/viewer/introduction-to-indoor-viewer.htm"
+      },
+      {
+        "title": "ArcGIS Indoors for iOS",
+        "linkLabel": "Sneak peek",
+        "link": "https://doc.arcgis.com/en/indoors/mobile/ios/introduction-to-the-deployment-of-indoors.htm"
+      },
+      {
+        "title": "ArcGIS Indoors for Android",
+        "linkLabel": "Sneak peek",
+        "link": "https://doc.arcgis.com/en/indoors/mobile/android/introduction-to-the-deployment-of-indoors.htm"
+      },
+      {
+        "title": "Requirements",
+        "linkLabel": "Requirements",
+        "link": "https://doc.arcgis.com/en/collector/faq/requirements.htm"
+      },
+      {
+        "title": "What’s new",
+        "linkLabel": "What’s new",
+        "link": "https://doc.arcgis.com/en/collector/faq/whats-new.htm"
+      },
+      {
+        "title": "Sneak peek",
+        "linkLabel": "Sneak peek",
+        "link": "https://doc.arcgis.com/en/collector/faq/faq.htm#GUID-F3CAB304-A75D-42D1-8239-99CD7D7772E8"
+      },
+      {
+        "title": "ArcGIS Indoors for Pro",
+        "linkLabel": "ArcGIS Indoors for Pro",
+        "link": "https://pro.arcgis.com/en/pro-app/latest/help/data/indoors/get-started-with-arcgis-indoors.htm"
+      },
+      {
+        "title": "What’s new",
+        "linkLabel": "What’s new",
+        "link": "https://doc.arcgis.com/en/arcgis-online/reference/whats-new.htm"
+      }
+    ]
+  },
+  "community": {
+    "leftImage": "/arcgisIndoors/getNet.svg",
+    "leftTitle": "GeoNet",
+    "leftDesc": "Exchange ideas, solve problems, and build relationships with the Esri community.",
+    "leftLink": "https://community.esri.com/t5/arcgis-indoors/ct-p/arcgis-indoors",
+    "leftCta": "Explore GeoNet",
+    "centerImage": "/arcgisIndoors/bulb.svg",
+    "centerTitle": "Register for a webinar",
+    "centerDesc": "Join us for one of our webinars, as part of our Indoors Webinar Series.",
+    "centerLink": "https://www.esri.com/en-us/lg/product/arcgis-indoors-2021-webinar-series?rsource=%2Fen-us%2Flanding-page%2Fproduct%2F2019%2Farcgis-indoors-webinar-series",
+    "centerCta": "Register here",
+    "rightImage": "/arcgisIndoors/blog.svg",
+    "rightTitle": "Read the blog",
+    "rightDesc": "Get the latest news on ArcGIS Indoors. Find out what's new and what's coming soon.",
+    "rightLink": "https://www.esri.com/arcgis-blog/?s=#&products=arcgis-indoors",
+    "rightCta": "Read the ArcGIS Blog"
+  },
+  "contact": {
+    "heading": "Contact sales",
+    "desc": "Need Help in Choosing the Right Apps or Designing a Workflow? Or Have Questions on Spacial Analysis and Data Science?",
+    "link": "#",
+    "linkText": "Contact Us"
+  }
+}

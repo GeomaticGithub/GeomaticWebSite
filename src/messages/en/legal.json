@@ -1,0 +1,302 @@
+{
+  "ui": {
+    "kicker": "Legal information",
+    "updated": "Last updated: {date}",
+    "toc": "On this page",
+    "fields": {
+      "name": "Company name",
+      "legalForm": "Legal form",
+      "capital": "Share capital",
+      "address": "Registered office",
+      "rc": "Trade register",
+      "ice": "ICE",
+      "taxId": "Tax ID",
+      "publisher": "Publication director",
+      "phone": "Phone",
+      "fax": "Fax",
+      "email": "Email",
+      "website": "Website",
+      "hostName": "Hosting provider",
+      "hostAddress": "Address"
+    }
+  },
+  "updated": "23 November 2026",
+  "pages": {
+    "legal-notice": {
+      "nav": "Legal notice",
+      "title": "Legal notice",
+      "intro": "Who publishes this site, who owns its content and the terms under which you may use it.",
+      "sections": [
+        {
+          "id": "publisher",
+          "title": "Site publisher",
+          "blocks": [
+            {
+              "p": "The site {website} is published by:"
+            },
+            {
+              "dl": [
+                "name",
+                "legalForm",
+                "capital",
+                "address",
+                "rc",
+                "ice",
+                "taxId",
+                "phone",
+                "fax",
+                "email",
+                "publisher"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hosting",
+          "title": "Hosting",
+          "requires": "hostName",
+          "blocks": [
+            {
+              "dl": [
+                "hostName",
+                "hostAddress"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "intellectual-property",
+          "title": "Intellectual property",
+          "blocks": [
+            {
+              "p": "The elements of this site (text, images, videos, logos, layout) are protected by applicable copyright and industrial property law. Unless stated otherwise, they belong to Geomatic or its partners."
+            },
+            {
+              "p": "Any reproduction or reuse, in whole or in part, without prior written permission is prohibited. To request permission, write to {email}."
+            }
+          ]
+        },
+        {
+          "id": "trademarks",
+          "title": "Trademarks",
+          "blocks": [
+            {
+              "p": "Esri, ArcGIS, the Esri logo and “The Science of Where” are trademarks of Esri, registered or used in the United States and other countries. Geomatic uses them as the official Esri distributor in Morocco."
+            },
+            {
+              "p": "Other company and product names mentioned on this site may be trademarks of their respective owners."
+            }
+          ]
+        },
+        {
+          "id": "credits",
+          "title": "Credits",
+          "blocks": [
+            {
+              "ul": [
+                "Map data in the home page video (streets and buildings of Casablanca, cities of Morocco): © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL license.",
+                "Image of the Earth from space: NASA, Blue Marble Next Generation.",
+                "Country outlines: Natural Earth, public domain.",
+                "ArcGIS product presentation content (text, images, videos): Esri."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "external-links",
+          "title": "Links to other sites",
+          "blocks": [
+            {
+              "p": "This site contains links to third-party sites, in particular those of Esri. Geomatic does not control these sites and is not responsible for their content or practices."
+            }
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "Liability",
+          "blocks": [
+            {
+              "p": "Geomatic strives to publish accurate and up-to-date information. It is nevertheless provided for information only and is not a contractual commitment. Product and service features may change without notice."
+            },
+            {
+              "p": "For precise information about a product, a license or pricing, [contact us](/about-geomatic/contact)."
+            }
+          ]
+        },
+        {
+          "id": "governing-law",
+          "title": "Governing law",
+          "blocks": [
+            {
+              "p": "This site and this notice are governed by Moroccan law. Any dispute falls under the jurisdiction of the competent courts of Casablanca."
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "nav": "Privacy",
+      "title": "Privacy policy",
+      "intro": "What personal data Geomatic receives through this site, what we do with it and how to exercise your rights.",
+      "sections": [
+        {
+          "id": "summary",
+          "title": "In short",
+          "blocks": [
+            {
+              "ul": [
+                "You can browse this site without giving us any information: there are no user accounts.",
+                "The site sets no cookies and uses no analytics or advertising tools.",
+                "We only receive your data if you fill in the contact form, write to us or call us."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "controller",
+          "title": "Data controller",
+          "blocks": [
+            {
+              "dl": [
+                "name",
+                "address",
+                "email"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "title": "Data we receive",
+          "blocks": [
+            {
+              "p": "When you use the contact form, we receive the information you enter: your name, organization, email address, phone number, the topic and your message. It is sent to us by email; the site does not store it in a database."
+            },
+            {
+              "p": "To limit abuse, the IP address the form is sent from is kept in memory for a few minutes, without being recorded."
+            },
+            {
+              "p": "When you contact us directly by email or phone, we likewise receive the information you give us."
+            },
+            {
+              "p": "As with any website, the server hosting the site may record technical connection data (IP address, date and time, page viewed, browser type) to keep the service secure and working properly."
+            }
+          ]
+        },
+        {
+          "id": "purposes",
+          "title": "What we do with it",
+          "blocks": [
+            {
+              "p": "We use this information to answer your request, prepare an offer and follow up on our business relationship."
+            },
+            {
+              "p": "It is restricted to the Geomatic teams concerned. We do not sell or rent it. It is kept for as long as needed to handle your request and follow up on the business relationship, in compliance with legal obligations."
+            }
+          ]
+        },
+        {
+          "id": "third-parties",
+          "title": "Cookies and third-party services",
+          "blocks": [
+            {
+              "p": "The site itself sets no cookies. Some pages do embed videos hosted by YouTube (Google) and by Esri. When you open these pages, your browser connects to those services, which may set their own cookies and collect data under their own rules:"
+            },
+            {
+              "ul": [
+                "[Google Privacy Policy](https://policies.google.com/privacy)",
+                "[Esri Privacy Statement](https://www.esri.com/en-us/privacy/overview)"
+              ]
+            },
+            {
+              "p": "Links to Google Maps, social networks and Esri sites are plain links: no data is sent to these services until you click them."
+            }
+          ]
+        },
+        {
+          "id": "your-rights",
+          "title": "Your rights",
+          "blocks": [
+            {
+              "p": "Under Moroccan Law No. 09-08 on the protection of individuals with regard to the processing of personal data, you have the right to access, rectify and object to the processing of data about you."
+            },
+            {
+              "p": "To exercise these rights, write to {email} or by post to the address above."
+            },
+            {
+              "p": "This processing has been declared to the CNDP under number {cndp}.",
+              "requires": "cndp"
+            },
+            {
+              "p": "You may also contact the Moroccan data protection authority (CNDP): [www.cndp.ma](https://www.cndp.ma)."
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to this policy",
+          "blocks": [
+            {
+              "p": "This policy may change, for example if a new tool is added to the site. The date of the last update is shown at the top of the page."
+            }
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "nav": "Accessibility",
+      "title": "Accessibility",
+      "intro": "What we have put in place so that as many people as possible can use this site, and what still needs work.",
+      "sections": [
+        {
+          "id": "commitment",
+          "title": "Our commitment",
+          "blocks": [
+            {
+              "p": "Geomatic wants this site to be usable by everyone, whatever the device and the way of browsing. We rely on the international WCAG 2.1 guidelines, level AA."
+            }
+          ]
+        },
+        {
+          "id": "in-place",
+          "title": "What is in place",
+          "blocks": [
+            {
+              "ul": [
+                "Menus, search and dialogs work with the keyboard. The Escape key closes the open dialog.",
+                "The element that has keyboard focus is always shown with a visible outline.",
+                "The language of each page (French or English) is declared for screen readers.",
+                "Animations are reduced if you have turned on that setting on your device.",
+                "The home page video is silent and can be paused.",
+                "The layout adapts to small screens and to browser zoom."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "limitations",
+          "title": "Known limitations",
+          "blocks": [
+            {
+              "ul": [
+                "This site has not yet had a formal accessibility audit.",
+                "Videos embedded from YouTube and Esri do not always have captions.",
+                "Some images do not yet have a text description.",
+                "Some links lead to external sites that we do not control."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "report",
+          "title": "Report a problem",
+          "blocks": [
+            {
+              "p": "If you have trouble accessing any content, write to {email} with the address of the page and the problem you ran into. We will send you the information in another form and fix the page."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

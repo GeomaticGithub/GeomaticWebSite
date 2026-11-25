@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Conscience situationnelle",
+    "subtitle1": "Surveillez les impacts des événements en temps réel",
+    "subtitle2": "Prenez des décisions éclairées quand elles comptent le plus",
+    "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-bg.jpg"
+  },
+  "intro": {
+    "title": "Agissez rapidement grâce aux données et à l’analyse",
+    "paragraph": "Dans le contexte complexe des opérations commerciales ou des événements de grande ampleur, il est difficile de savoir ce qui se passe et où. Grâce à l’intelligence géographique, les dirigeants et les premiers intervenants disposent d’une vue d’ensemble de la situation : données en temps réel sur la météo et la circulation, mises à jour de terrain, ainsi que localisation des actifs, équipes et autres ressources. Cette approche conduit à des décisions intelligentes sur le moment et à des capacités prédictives pour l’avenir."
+  },
+  "opportunities": {
+    "title": "Voyez la vue d’ensemble que d’autres ne perçoivent pas",
+    "intro": "Les décideurs gagnent en clarté grâce à l’intelligence géographique, qu’il s’agisse de réagir à des perturbations de la chaîne d’approvisionnement, de réparer un réseau de services publics endommagé ou de coordonner les premiers intervenants lors d’une urgence.",
+    "bullets": [
+      "Surveillez les ressources et les opérations en temps réel.",
+      "Intégrez des données issues de multiples sources, y compris l’Internet des objets (IoT) et les flux de médias sociaux.",
+      "Visualisez et partagez toutes les informations clés sur une seule carte.",
+      "Réalisez rapidement une analyse spatiale d’un événement imminent.",
+      "Élaborez un plan de réponse aux incidents en quelques minutes."
+    ],
+    "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-5050.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Surveillez les opérations, partagez des données et créez des renseignements exploitables grâce à l’intelligence géographique du cloud géospatial Esri.",
+    "items": [
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Sachez où se situent les dangers à l’instant présent dans votre communauté ou votre entreprise et surveillez l’évolution des situations. Exploitez le big data et l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées basées sur les informations les plus récentes.",
+        "cta": "Donnez du sens au big data",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Visualisation et analyses 3D",
+        "body": "Créez votre vision et tirez parti de vos données brutes. Découvrez des relations, schémas et tendances cachés. Partagez vos idées avec d’autres.",
+        "cta": "Ajoutez une dimension à vos données",
+        "href": "https://www.esri.com/en-us/capabilities/3d-gis/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2F3d-gis%2Foverview",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/business-needs-capabilities-3d-gis.jpg"
+      },
+      {
+        "title": "Cartographie",
+        "body": "Visualisez les personnes, lieux et actifs pour obtenir des informations essentielles sur vos clients et concurrents. Observez ce qui se passe dans un réseau de sites, élaborez des plans solides et sachez où allouer vos ressources.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Besoins associés",
+    "bgGraphic": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Suivi de localisation en temps réel",
+        "body": "Obtenez des informations à partir de vos données, que vous suiviez des actifs en mouvement ou des capteurs fixes. Prenez la bonne décision au bon moment.",
+        "href": "/industries/needs/real-time-location-tracking",
+        "icon": "/Solutions/BusinessNeeds/SituationalAwareness/realTimeLocationTracking.svg"
+      },
+      {
+        "title": "Réponse aux crises",
+        "body": "Lorsqu’un événement se produit, traitez rapidement les impacts, maintenez une conscience opérationnelle, effectuez des évaluations des dommages et informez les parties prenantes.",
+        "href": "/industries/needs/crisis-response",
+        "icon": "/Solutions/BusinessNeeds/SituationalAwareness/crisisResponse.svg"
+      },
+      {
+        "title": "Sécurité et sûreté",
+        "body": "Bénéficiez d’une vue proactive des menaces et dangers émergents pour répondre plus rapidement et sauver des vies.",
+        "href": "/industries/needs/safety-and-security",
+        "icon": "/Solutions/BusinessNeeds/SituationalAwareness/safetyAndSecurity.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur la conscience situationnelle",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Gérer un marathon avec une conscience en temps réel",
+        "source": "Esri Blog",
+        "excerpt": "Chicago a utilisé une conscience en temps réel du parcours du marathon pour guider la réponse de sécurité publique et l’allocation des ressources.",
+        "href": "https://www.esri.com/about/newsroom/blog/chicago-adds-real-time-awareness",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-cards-managing-marathon-real-time-awareness.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "San Antonio se prépare pour la NCAA Final Four",
+        "source": "Esri Blog",
+        "excerpt": "La police de San Antonio a utilisé le SIG en temps réel pour assurer la sécurité des joueurs, entraîneurs, employés et spectateurs de la NCAA.",
+        "href": "https://www.esri.com/about/newsroom/blog/san-antonio-real-time-gis-ncaa-final-four",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/real-time-location-tracking-card-san-antonio-prepares-for-the-ncaa-final-four.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "L’Argentine lutte contre les braconniers de poissons",
+        "source": "Esri Blog",
+        "excerpt": "L’agence de sécurité nationale utilise le SIG et le suivi en temps réel pour renforcer la lutte anti-braconnage en Argentine, en intégrant capteurs et données satellitaires.",
+        "href": "https://www.esri.com/about/newsroom/blog/argentina-guards-against-fish-poachers",
+        "image": "/Solutions/BusinessNeeds/SituationalAwareness/situational-awareness-cards-agentina-guards-against-fish-poachers.jpg"
+      }
+    ]
+  }
+}

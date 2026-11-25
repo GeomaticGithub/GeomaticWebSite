@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "kicker": "Fonctionnalités",
+    "contact": "Parler à un expert",
+    "anchor": "Voir les atouts",
+    "videoKicker": "Vidéo",
+    "benefitsKicker": "Atouts",
+    "benefitsTitle": "Pourquoi ArcGIS pour l’analyse spatiale",
+    "productsKicker": "Produits",
+    "productLink": "Découvrir",
+    "resourcesKicker": "Ressources",
+    "resourcesTitle": "Pour aller plus loin"
+  },
+  "hero": {
+    "title": "Analyse spatiale et science des données",
+    "subtitle": "Analyse avec The Science of Where",
+    "image": "/spacialAnalysisAndDataScience/overview-banner-layerstack.png",
+    "bgImage": "/spacialAnalysisAndDataScience/overview-banner-background.jpg"
+  },
+  "intro": {
+    "paragraph": "Reliez ce qui semble déconnecté grâce à l’ensemble le plus complet de méthodes analytiques et d’algorithmes spatiaux disponibles. Utilisez la localisation comme fil conducteur pour révéler des schémas cachés, améliorer la modélisation prédictive et créer un avantage concurrentiel. Exploitez la puissance de l’analyse spatiale et de la science des données à la demande et à grande échelle avec le cloud géospatial d’Esri."
+  },
+  "sections": {
+    "map": {
+      "title": "Utilisez la science spatiale pour transformer les données en actions",
+      "p1": "Le cloud géospatial d’Esri fournit l’ensemble d’outils dont vous avez besoin pour révéler des modèles, relations, anomalies et incidents dans d’énormes volumes de données spatiales, quel qu’en soit le format ou la source. Exploitez des outils d’analyse spatiale prêts à l’emploi, des algorithmes de machine learning et des techniques d’intelligence artificielle.",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-01.jpg"
+    },
+    "interact": {
+      "title": "Accessible et interopérable",
+      "p1": "Restez agile dans vos capacités de résolution de problèmes. Le cloud géospatial d’Esri est ouvert et interopérable, vous permettant d’intégrer et d’utiliser les outils et langages que vous connaissez déjà, comme Python, Jupyter Notebooks et R.",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-02.jpg"
+    },
+    "understand": {
+      "title": "Des données géographiques mondiales à portée de main",
+      "p1": "Ajoutez du contexte avec un contenu mondial prêt à l’emploi, inégalé par d’autres fournisseurs, incluant cartes, applications et couches de données. Utilisez le service unique GeoEnrichment d’Esri pour enrichir vos données de localisation avec des données démographiques, psychographiques et socioéconomiques détaillées, comprenant plus de 15 000 variables.",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-03.jpg"
+    },
+    "enrich": {
+      "title": "Un leader de confiance",
+      "p1": "ArcGIS, faisant partie du cloud géospatial d’Esri, est le logiciel d’analyse spatiale et de science des données le plus puissant au monde, utilisé par plus de 75 % des entreprises du Fortune 500. Esri investit massivement en recherche et développement pour fournir des solutions innovantes intégrant les méthodes les plus avancées de science des données.",
+      "image": "/spacialAnalysisAndDataScience/overview-benefits-04.jpg"
+    }
+  },
+  "share": {
+    "title": "Partagez votre histoire",
+    "description": "Créez des applications qui permettent à votre audience non seulement de visualiser vos cartes mais aussi d’interagir avec les données. Choisissez parmi une variété de modèles d’applications prêts à l’emploi et créez une application en quelques clics. Intégrez-les à votre site web via un code d’intégration pratique. Chaque application a un objectif spécifique pour vous aider à raconter votre histoire et maintenir l’intérêt de votre audience.",
+    "cta": "En savoir plus",
+    "items": {
+      "configurable": {
+        "label": "Applications configurables ArcGIS",
+        "title": "Applications configurables ArcGIS",
+        "desc": "Créez et partagez facilement vos cartes en tant qu’applications web interactives. Sélectionnez parmi une variété de modèles prêts à l’emploi.",
+        "avatarImage": "/mapping/share-configurable-thumb.jpg",
+        "mainImage": "/mapping/share-configurable.jpg",
+        "linkText": "Voir les applications configurables ArcGIS",
+        "href": "#"
+      },
+      "story": {
+        "label": "ArcGIS StoryMaps",
+        "title": "ArcGIS StoryMaps",
+        "desc": "Combinez textes, photos et vidéos avec des cartes pour créer des récits remarquables qui résonnent avec votre audience.",
+        "avatarImage": "/mapping/share-storymaps-thumb.jpg",
+        "mainImage": "/mapping/share-storymaps.jpg",
+        "linkText": "Explorer ArcGIS StoryMaps",
+        "href": "#"
+      },
+      "dashboard": {
+        "label": "ArcGIS Dashboards",
+        "title": "ArcGIS Dashboards",
+        "desc": "Créez un tableau de bord dynamique pour obtenir une vue opérationnelle en temps réel de vos personnes, services, actifs et événements.",
+        "avatarImage": "/mapping/share-ops-dashboard-thumb.jpg",
+        "mainImage": "/mapping/share-ops-dashboard.jpg",
+        "linkText": "Explorer Operations Dashboard",
+        "href": "#"
+      },
+      "appbuilder": {
+        "label": "Web AppBuilder for ArcGIS",
+        "title": "Web AppBuilder for ArcGIS",
+        "desc": "Créez des applications personnalisées à l’aide d’outils préconfigurés sans besoin de coder.",
+        "avatarImage": "/mapping/share-app-builder-thumb.jpg",
+        "mainImage": "/mapping/share-app-builder.jpg",
+        "linkText": "Explorer Web AppBuilder",
+        "href": "#"
+      }
+    }
+  },
+  "products": {
+    "title": "Traduire les problèmes en réponses spatiales",
+    "online": {
+      "category": "SaaS basé sur le cloud",
+      "title": "ArcGIS Online",
+      "desc": "Commencez avec ArcGIS Online, la solution SaaS d’Esri. Vos cartes, applications et données sont hébergées et accessibles partout.",
+      "img": "/mapping/product-arcgis-online.jpg",
+      "href": "/arcgis/products/arcgis-online/overview"
+    },
+    "enterprise": {
+      "category": "Infrastructure auto-gérée",
+      "title": "ArcGIS Enterprise",
+      "desc": "Gérez-vous votre propre infrastructure derrière un pare-feu ou dans le cloud ? Utilisez ArcGIS Enterprise pour vos besoins de cartographie et de géolocalisation.",
+      "img": "/mapping/product-arcgis-enterprise.jpg",
+      "href": "/arcgis/products/arcgis-enterprise/overview"
+    },
+    "devtools": {
+      "category": "Outils pour développeurs",
+      "title": "Outils pour développeurs ArcGIS",
+      "desc": "Utilisez un ensemble robuste d’outils pour développer des applications ou personnaliser des cartes et applications créées dans ArcGIS Online ou ArcGIS Enterprise.",
+      "img": "/mapping/product-dev-tools.jpg",
+      "href": "/arcgis/products/arcgis-for-developers/overview"
+    },
+    "pro": {
+      "category": "Bureau",
+      "title": "ArcGIS Pro",
+      "desc": "Réalisez des flux de travail avancés de cartographie, d’analyse et de gestion de données avec ArcGIS Pro.",
+      "img": "/mapping/product-arcgis-pro.jpg",
+      "href": "/arcgis/products/arcgis-pro/overview"
+    }
+  },
+  "dualPromo": {
+    "SpacialAnalysisTitle": "Découvrez la puissance de l’analyse spatiale",
+    "SpacialAnalysisDesc": "Lisez *The Language of Spatial Analysis*. Apprenez la définition, le vocabulaire et le processus de l’analyse spatiale.",
+    "SpacialAnalysisCta": "Lire l’ebook",
+    "SpacialAnalysisHref": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/books/the-language-of-spatial-analysis.pdf",
+    "blogTitle": "Lire notre blog",
+    "blogDesc": "Obtenez les dernières actualités sur l’analyse spatiale et la science des données.",
+    "blogCta": "Lire le blog ArcGIS",
+    "blogHref": "https://www.esri.com/arcgis-blog/overview/"
+  },
+  "videoBlock": {
+    "title": "Analyse spatiale et science des données avec ArcGIS",
+    "desc": "Découvrez comment ArcGIS associe analyse spatiale, apprentissage automatique et science des données pour révéler des tendances et anticiper la suite.",
+    "url": "https://www.esri.com/videos/iframe?videoid=XrU8GX7manc"
+  },
+  "contact": {
+    "title": "Contacter l’équipe commerciale",
+    "desc": "Besoin d’aide pour choisir les bonnes applications ou concevoir un flux de travail ? Des questions sur l’analyse spatiale et la science des données ?",
+    "cta": "Nous contacter"
+  }
+}

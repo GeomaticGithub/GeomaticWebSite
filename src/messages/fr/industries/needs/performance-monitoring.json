@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "title": "Suivi de la performance",
+    "subtitle1": "Travaillez à des niveaux optimaux",
+    "subtitle2": "Gérez les opérations grâce aux analyses en temps réel",
+    "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/performance-monitoring-banner-fg.png",
+    "bgGraphic": "/Solutions/BusinessNeeds/PerformanceMonitoring/performance-monitoring-banner-bg.jpg"
+  },
+  "intro": {
+    "title": "Obtenez une vue claire des projets et des workflows",
+    "paragraph": "Les dirigeants des secteurs public et privé sont soumis à une pression croissante pour être plus efficaces et transparents. Les leaders innovants utilisent l’intelligence géographique pour surveiller, gérer et analyser les indicateurs clés de performance. Cette vue en temps réel des performances des actifs et des opérations aide à identifier les inefficacités et facilite le partage des données."
+  },
+  "band": {
+    "title": "Obtenez une vue claire des projets et des workflows",
+    "body": "Fusionnez cartes intelligentes, analyses et tableaux de bord pour visualiser la performance en temps réel des personnes, services, actifs et événements."
+  },
+  "opportunities": {
+    "title": "Voyez des résultats opérationnels que d’autres ne voient pas",
+    "intro": "Une vue partagée des performances sur une carte, enrichie par des analyses en temps réel, conduit à une plus grande efficacité et à une résolution collaborative des problèmes.",
+    "bullets": [
+      "Exploitez cartes intelligentes, analyses et tableaux de bord pour une vue en temps réel des opérations, personnes, services, actifs et événements.",
+      "Identifiez les zones d’amélioration en analysant les indicateurs clés de performance dans leur contexte géographique.",
+      "Collaborez et partagez les données efficacement et en toute sécurité via cartes, applications et tableaux de bord.",
+      "Renforcez le contrôle qualité dans les processus métier.",
+      "Améliorez le temps de réponse aux problèmes et incidents."
+    ],
+    "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/performance-monitoring-5050-see-operational-results-others-cant.jpg"
+  },
+  "capabilities": {
+    "title": "Fonctionnalités",
+    "blurb": "Activez la surveillance de la performance en temps réel grâce à l’intelligence géographique du cloud géospatial Esri.",
+    "items": [
+      {
+        "title": "Visualisation et analyses en temps réel",
+        "body": "Identifiez dès maintenant les vulnérabilités au sein de votre entreprise et surveillez les situations en évolution. Exploitez le big data et l’Internet des objets (IoT) pour prendre rapidement des décisions éclairées avec les informations les plus récentes.",
+        "cta": "Voir en temps réel",
+        "href": "https://www.esri.com/en-us/capabilities/real-time/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Freal-time%2Foverview",
+        "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/business-needs-capabilities-real-time-visualization-analytics.jpg"
+      },
+      {
+        "title": "Analyse spatiale et science des données",
+        "body": "Utilisez la localisation comme fil conducteur pour révéler des tendances et des schémas cachés. Créez un avantage concurrentiel en intégrant la localisation dans les modèles d’apprentissage automatique et d’intelligence artificielle.",
+        "cta": "Améliorez vos analyses",
+        "href": "https://www.esri.com/en-us/capabilities/spatial-analytics-data-science/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fspatial-analytics-data-science%2Foverview",
+        "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/business-needs-capabilities-spatial-analysis-data-sciences.jpg"
+      },
+      {
+        "title": "Cartographie",
+        "body": "Visualisez personnes, lieux et actifs afin de comprendre clairement la performance. Observez ce qui se passe dans toute l’organisation, créez des plans robustes de réduction des risques et sachez où allouer vos ressources.",
+        "cta": "Visualisez vos données",
+        "href": "https://www.esri.com/en-us/capabilities/mapping/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Fmapping",
+        "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/business-needs-capabilities-mapping-visualization.jpg"
+      }
+    ]
+  },
+  "related": {
+    "title": "Besoins associés",
+    "bgGraphic": "/Solutions/BusinessNeeds/PerformanceMonitoring/performance-monitoring-simple-cards-bg.jpg",
+    "items": [
+      {
+        "title": "Suivi et analyse des actifs",
+        "body": "Visualisez vos actifs mobiles et fixes de manière dynamique. Mettez en œuvre des outils pour enregistrer avec précision l’emplacement et l’état de vos actifs.",
+        "href": "/industries/needs/asset-tracking-analysis",
+        "icon": "/Solutions/BusinessNeeds/PerformanceMonitoring/assetTrackingAndAnalysis.svg"
+      },
+      {
+        "title": "Gestion des risques",
+        "body": "Sachez quels risques se produisent et où grâce aux cartes intelligentes. Identifiez les tendances et communiquez efficacement lors de la mitigation et de la réponse.",
+        "href": "/industries/needs/risk-management",
+        "icon": "/Solutions/BusinessNeeds/PerformanceMonitoring/riskManagement.svg"
+      },
+      {
+        "title": "Efficacité opérationnelle",
+        "body": "Rationalisez vos projets et identifiez les domaines nécessitant des améliorations. Fiez-vous à des données fiables pour réduire les erreurs et mieux allouer vos ressources.",
+        "href": "/industries/needs/operational-efficiency",
+        "icon": "/Solutions/BusinessNeeds/PerformanceMonitoring/operationalEfficiency.svg"
+      }
+    ]
+  },
+  "articles": {
+    "title": "En savoir plus sur le suivi de la performance",
+    "items": [
+      {
+        "tag": "Article",
+        "title": "Le Big Data maintient l’alimentation électrique",
+        "source": "ArcNews",
+        "excerpt": "Le réseau nord-américain doit collaborer pour maintenir l’alimentation électrique aux États-Unis ainsi qu’au Canada et au Mexique.",
+        "href": "https://www.esri.com/about/newsroom/arcnews/big-data-keeps-the-lights-on",
+        "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/performance-monitoring-card-big-data-keeps-the-lights-on.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "L’intelligence géographique fait économiser des millions à l’aéroport de Genève",
+        "source": "WhereNext Magazine",
+        "excerpt": "Un petit aéroport avec de grandes opérations a dû améliorer son efficacité opérationnelle pour répondre à la forte demande.",
+        "href": "https://www.esri.com/about/newsroom/publications/wherenext/location-intelligence-saves-geneva-airport-millions",
+        "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/performance-monitoring-card-li-saves-geneva-airport-millions.jpg"
+      },
+      {
+        "tag": "Article",
+        "title": "De la marée à l’assiette : le suivi des huîtres",
+        "source": "Esri Blog",
+        "excerpt": "Taylor Shellfish Farms a amélioré la résilience de ses coquillages grâce à une transformation numérique complète et une grande adaptabilité.",
+        "href": "https://www.esri.com/about/newsroom/blog/tracing-each-oyster-from-tide-to-table",
+        "image": "/Solutions/BusinessNeeds/PerformanceMonitoring/performance-monitoring-card-tracing-each-oysterfrom-tide-to-table.jpg"
+      }
+    ]
+  }
+}

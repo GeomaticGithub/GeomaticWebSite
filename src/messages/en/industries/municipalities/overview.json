@@ -1,0 +1,34 @@
+{
+  "strengthen": {
+    "title": "Smart maps and analysis advance government",
+    "paragraph": "Governments collect and manage vast amounts of data—all tied to location. Maps and spatial analysis quickly make sense of it so it’s easier to use. Making data-driven decisions that improve quality of life is essential in national, state, and local governments. ArcGIS software makes it possible.",
+    "imageSection": {
+      "image": "/Solutions/Industries/municipalities/overvew-insightful-analytics.png",
+      "title": "Insightful analytics",
+      "description": "Create and share easy-to-use maps and analytics that improve everyone's understanding. Analyze complex issues and reveal hidden patterns in data. Facilitate informed decision-making."
+    }
+  },
+  "features": [
+    {
+      "title": "Rapid data collection",
+      "paragraph": "Simplify data collection on any device, including smartphones, drones, and Internet of Things (IoT) sensors. Quickly assemble data from real-time feeds, multiple databases, or any online public data repository.",
+      "image": "/Solutions/Industries/municipalities/overvew-rapid-date-collection.png",
+      "backgroundImage": "/Solutions/Industries/municipalities/background-rapid-data-collection.jpg",
+      "layout": "right"
+    },
+    {
+      "title": "Simplified sharing",
+      "paragraph": "Share maps and analytics securely with staff or citizens to support smart initiatives. Dashboards, story maps, interactive web maps, and infographics provide intuitive and effective communication tools.",
+      "image": "/Solutions/Industries/municipalities/overvew-simplified-sharing.png",
+      "backgroundImage": "/Solutions/Industries/municipalities/background-simplified-sharing.jpg",
+      "layout": "left"
+    },
+    {
+      "title": "Coordinated response",
+      "paragraph": "Synchronize first responders with real-time status data and maps in a single, unified dashboard. Act with confidence in dynamically changing situations to speed assistance and keep people safe.",
+      "image": "/Solutions/Industries/municipalities/overvew-coordinated-response.png",
+      "backgroundImage": "/Solutions/Industries/municipalities/background-rapid-data-collection.jpg",
+      "layout": "right"
+    }
+  ]
+}

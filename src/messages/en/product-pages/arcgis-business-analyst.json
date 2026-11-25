@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "kicker": "product",
+    "title": "ArcGIS Business Analyst",
+    "subtitle": "Location-based market intelligence",
+    "bgImage": "/arcgisBusinessAnalyst/business-analyst-overview-banner-background-buildings.jpg",
+    "image": "/arcgisBusinessAnalyst/business-analyst-overview-banner-laptop-foreground-hero.png",
+    "text": "See people and opportunities clearly using ArcGIS Business Analyst. Through desktop, web, and mobile apps, ArcGIS Business Analyst provides location-based intelligence for planning, site selection, and customer segmentation. Combine demographic, lifestyle, and spending data with map-based analytics for accurate reports and dynamic presentations."
+  },
+  "blocks": [
+    {
+      "type": "tabs",
+      "kicker": "benefits",
+      "title": "Benefits of Business Analyst",
+      "items": [
+        {
+          "title": "Data and reports",
+          "heading": "Data to drive location decisions",
+          "text": "Take a data-driven approach to validate your assumptions about location. Combine proprietary data on locations and property costs with data about prospective customers, clients, or patients. Make accurate predictions using current-year data and five-year projections.",
+          "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-data-and-reports.jpg"
+        },
+        {
+          "title": "Powerful analytics",
+          "heading": "Tools for site selection and market planning",
+          "text": "Analyze marketplaces to see where to expand or reduce. Tools include consumer profiling, market potential, sales forecasting, drive-time and rings. You can perform demographic analysis, select facility sites, create trade areas around a location, and identify a market for your products or services.",
+          "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-powerful-analytics.jpg"
+        },
+        {
+          "title": "Stunning infographics",
+          "heading": "Showcase your analysis in a compelling way",
+          "text": "Create compelling infographics with your information and data from Esri such as demographics, market profiles, housing and education, and at-risk populations. Customize infographics for your branding. Share your infographics on-screen or export as a PDF, HTML, or image file for easy distribution.",
+          "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-stunning-infographics.jpg"
+        },
+        {
+          "title": "Area planning",
+          "heading": "Workflows improve territory plans",
+          "text": "Balance your network to help each location and territory manager succeed. Use automated workflows for territory design, location allocation, and market penetration analyses. Locate underperforming sites. Predict KPIs for proposed locations. Integrate multiple data layers to analyze site suitability.",
+          "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-area-planning.jpg"
+        },
+        {
+          "title": "Customer segmentation",
+          "heading": "Target new and existing customers",
+          "text": "Understand their preferences and needs so you know who to target and how to attract them. Divide customers into targeted groups. Find demographics including age, income, gender, family size, and health history. Learn what people prefer using lifestyle and behavioral data. ",
+          "image": "/arcgisBusinessAnalyst/business-analyst-overview-how-will-you-use-customer-segmentation.jpg"
+        }
+      ]
+    },
+    {
+      "type": "band",
+      "title": "Showcase your analysis in a compelling way",
+      "text": "Create compelling infographics with your information and data from Esri such as demographics, market profiles, housing and education, and at-risk populations. Customize for your branding and export as PDF, HTML, or image files.",
+      "image": "/arcgisBusinessAnalyst/benefit-main.jpg"
+    },
+    {
+      "type": "steps",
+      "kicker": "how",
+      "title": "How Business Analyst works",
+      "steps": [
+        {
+          "title": "Step 1",
+          "desc": "Identify areas for analysis based on circumstances critical to your industry—from site selection for real estate to shelter locations for emergency response."
+        },
+        {
+          "title": "Step 2",
+          "desc": "Analyze the areas using Esri Demographics alongside your own data. Interpret the results in a spatial context, run market analysis, and generate beautiful maps."
+        },
+        {
+          "title": "Step 3",
+          "desc": "Present your findings with custom reports, stunning infographics, and map-based stories that showcase your analysis."
+        }
+      ]
+    },
+    {
+      "type": "stories",
+      "kicker": "stories",
+      "title": "Business Success Stories",
+      "text": "Discover how organizations leverage ArcGIS Business Analyst to drive growth and make informed location-based decisions.",
+      "items": [
+        {
+          "label": "Chick-fil-A",
+          "title": "Chick-fil-A",
+          "desc": "Location-based analysis with ArcGIS improves reliable growth.",
+          "image": "/arcgisBusinessAnalyst/case-study-thumbnail-chick-fil-a.jpg",
+          "actionText": "Read the case study",
+          "actionUrl": "https://www.esri.com/content/dam/esrisites/en-us/media/misc/public-stories/chick-fil-a-case-study.pdf"
+        },
+        {
+          "label": "Horwath HTL Canada",
+          "title": "Horwath HTL Canada",
+          "desc": "A global leader in hotel, tourism, and leisure consulting uses ArcGIS Business Analyst to create spatial data-driven projections for their clients.",
+          "image": "/arcgisBusinessAnalyst/toronto-skyline-thumbnail.png",
+          "actionText": "Read the case study",
+          "actionUrl": "https://resources.esri.ca/ann-stories/horwath-htl-leads-the-way-to-successful-hotels-with-arcgis-business-analyst"
+        },
+        {
+          "label": "The Shopping Center Group",
+          "title": "The Shopping Center Group",
+          "desc": "Real estate company achieves 30% revenue growth using ArcGIS for market intelligence.",
+          "image": "/arcgisBusinessAnalyst/case-study-thumbnail-shopping-center.jpg",
+          "actionText": "Watch the video",
+          "actionUrl": "https://www.youtube.com/watch?v=Td0_8SfbuDE"
+        },
+        {
+          "label": "Emerus Micro-hospitals",
+          "title": "Emerus Micro-hospitals",
+          "desc": "Small-format hospitals deliver healthcare to underserved populations.",
+          "image": "/arcgisBusinessAnalyst/case-study-thumbnail-emerus-hospitals.jpg",
+          "actionText": "Read the case study",
+          "actionUrl": "https://www.esri.com/content/dam/esrisites/en-us/media/misc/public-stories/bringing-healthcare-underserved-populations.pdf"
+        },
+        {
+          "label": "Datastory Consulting",
+          "title": "Datastory Consulting",
+          "desc": "Demographic, lifestyle, and spending data drive marketplace strategy.",
+          "image": "/arcgisBusinessAnalyst/case-study-thumbnail-datastory-consulting.jpg",
+          "actionText": "Read the case study",
+          "actionUrl": "https://www.esri.com/content/dam/esrisites/en-us/media/pdf/datastory-consulting-case-study.pdf"
+        }
+      ]
+    },
+    {
+      "type": "band",
+      "kicker": "platform",
+      "title": "Business Analyst fully integrates in ArcGIS",
+      "text": "Available wherever you need it, on any device, anywhere, anytime. Business Analyst can be implemented into your current workflow as a web browser SaaS solution or as part of your on-premises ArcGIS ecosystem.",
+      "image": "/arcgisBusinessAnalyst/business-analyst-overview-fully-integrated-platform.jpg",
+      "href": "https://www.esri.com/en-us/arcgis/geospatial-platform/overview",
+      "linkLabel": "Learn more about ArcGIS"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Analyser les Données",
+    "subtitle": "Analysez les données dans le contexte de la localisation",
+    "bgGraphic": "/arcgisOnline/analyzeData/arcgis-online-indigo-banner-background-data-topography.jpg",
+    "mediaImage": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-banner-foreground.png",
+    "mediaAlt": "Analyste explorant des graphiques et des données spatiales"
+  },
+  "understand": {
+    "title": "Comprendre vos données",
+    "desc": "L'analyse est un processus itératif. Visualiser vos résultats sur une carte interactive facilite l'ajustement et le peaufinage de votre analyse jusqu'à ce que vous trouviez les réponses dont vous avez besoin.",
+    "bullets": [
+      "Analyser les motifs pour faire des prédictions et déterminer les prochaines étapes",
+      "Révéler les relations et les valeurs aberrantes dans vos données",
+      "Joindre des données situées en plusieurs endroits ou ajouter un élément de localisation à vos données"
+    ],
+    "collageLeft": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-understand-your-data.jpg",
+    "ctaText": "Explorer les styles ArcGIS",
+    "ctaHref": "#"
+  },
+  "findLocation": {
+    "title": "Trouver le meilleur emplacement",
+    "desc": "Prêt à démarrer ou développer votre entreprise ? Choisir l'emplacement correct est critique pour le succès. En utilisant les outils d'analyse dans ArcGIS Online vous pouvez :",
+    "bullets": [
+      "Découvrir des emplacements qui répondent à vos exigences",
+      "Identifier des emplacements avec des caractéristiques similaires à d'autres emplacements",
+      "Cartographier la démographie et les segments de population de clients potentiels et existants",
+      "Identifier le site optimal pour maximiser le profit et minimiser les déplacements clients"
+    ],
+    "photoRight": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-find-the-best-location.jpg",
+    "photoAlt": "Devanture de magasin",
+    "overlayMap": "/arcgisOnline/analyzeData/location-map.png"
+  },
+  "routes": {
+    "title": "Utiliser des directions et itinéraires optimaux",
+    "desc": "Besoin de choisir votre itinéraire basé sur des exigences spécifiques comme les limites de vitesse, routes à péage, ou hauteurs de passages ? Espérez économiser de l'argent en réduisant les coûts de voyage ? Les outils d'analyse ArcGIS Online vous aident à optimiser vos directions et itinéraires.",
+    "bullets": [
+      "Identifier les meilleurs itinéraires",
+      "Calculer les coûts de voyage par temps et distance",
+      "Choisir des directions basées sur les exigences organisationnelles ou limitations de véhicules",
+      "Obtenir une efficacité maximale en planifiant les arrêts et itinéraires pour chaque véhicule"
+    ],
+    "photoLeft": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-use-optimal-directions-and-routes.jpg",
+    "photoAlt": "Coursier livrant des colis",
+    "overlayRoute": "/arcgisOnline/analyzeData/routes-overlay.png"
+  },
+  "learnLocation": {
+    "title": "En apprendre plus sur votre emplacement",
+    "desc": "Cherchez à en apprendre plus sur ce qui se passe dans votre quartier, ville ou état ? Vous demandez combien de personnes sont impactées par un événement ? ArcGIS Online inclut des outils pour vous aider à comprendre ce qui se passe à tout emplacement donné.",
+    "bullets": [
+      "Recueillir des informations sur les personnes, lieux d'intérêt et entreprises",
+      "Identifier le nombre et type de personnes ou installations dans un certain nombre de kilomètres",
+      "Estimer le nombre de personnes impactées par un événement"
+    ],
+    "photoRight": "/arcgisOnline/analyzeData/arcgis-online-analyze-data-learn-more-about-your-location.jpg",
+    "photoAlt": "Client utilisant une tablette"
+  },
+  "discover": {
+    "heading": "Découvrir plus de capacités ArcGIS Online",
+    "cards": [
+      {
+        "title": "Créer des cartes",
+        "desc": "Créez rapidement des cartes et rendez vos données visuellement époustouflantes.",
+        "linkText": "En savoir plus sur la création de cartes",
+        "href": "#",
+        "bgImage": "/arcgisOnline/analyzeData/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Créer des cartes"
+      },
+      {
+        "title": "Partager et collaborer",
+        "desc": "Partagez instantanément vos cartes avec n'importe qui, n'importe où. Collaborez avec vos collègues.",
+        "linkText": "Façons de partager et collaborer",
+        "href": "#",
+        "bgImage": "/arcgisOnline/analyzeData/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Partager et collaborer"
+      },
+      {
+        "title": "Travailler avec Vos Données",
+        "desc": "Apportez vos données dans un système puissant qui géo-active, héberge et évolue.",
+        "linkText": "Explorer les outils de données",
+        "href": "#",
+        "bgImage": "/arcgisOnline/analyzeData/arcgis-online-capability-make-maps.avif",
+        "bgAlt": "Travailler avec les données"
+      }
+    ]
+  },
+  "duoCta": {
+    "left": {
+      "title": "Voulez-vous essayer ArcGIS Online ?",
+      "button": "Essayer maintenant",
+      "href": "#"
+    },
+    "right": {
+      "title": "Prêt à acheter ArcGIS Online ?",
+      "button": "Acheter",
+      "href": "#"
+    }
+  },
+  "help": {
+    "heading": "Avez-vous des questions ?",
+    "subHeading": "Besoin d'aide pour essayer ou acheter ArcGIS Online ? Ou avez-vous des questions ?",
+    "href": "Nous Contacter",
+    "link": "#"
+  }
+}

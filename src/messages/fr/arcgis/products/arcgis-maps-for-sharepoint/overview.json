@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "title": "ArcGIS Maps for SharePoint",
+    "subtitle": "Cartographiez et recherchez le contenu Microsoft SharePoint avec ArcGIS",
+    "image": "/arcgisMapsForSharePoint/sharepoint-banner-hero-laptop-blue.jpg",
+    "icon": "/arcgisMapsForSharePoint/MapsForSharepoint.png"
+  },
+  "intro": {
+    "paragraph": "ArcGIS Maps for SharePoint est une application qui vous permet de cartographier et de rechercher du contenu dans Microsoft SharePoint. Visualisez vos données sur des cartes ArcGIS. Utilisez les outils ArcGIS pour gérer et analyser vos données afin d’obtenir une meilleure compréhension et de prendre de meilleures décisions. Améliorez vos données et vos cartes grâce au contenu géographique prêt à l’emploi d’ArcGIS. Puis partagez les cartes que vous créez."
+  },
+  "featureLead": {
+    "title": "Étiquetez et trouvez vos documents facilement",
+    "desc": "Aidez votre équipe à retrouver rapidement les documents importants. Glissez-déposez des documents sur une carte pour les géolocaliser. Lorsque vous avez besoin de ces données, cliquez sur l’entité cartographique pour afficher les données étiquetées.",
+    "image": "/arcgisMapsForSharePoint/sharepoint-image-tag-and-find-documents-easily.jpg"
+  },
+  "featuresGrid": {
+    "items": [
+      {
+        "title": "Ajoutez des cartes à vos pages SharePoint",
+        "desc": "Transformez vos listes SharePoint en cartes pour plus de clarté. Ajoutez des données géographiques prêtes à l’emploi d’Esri à vos pages SharePoint pour une meilleure perspective sur vos projets.",
+        "image": "/arcgisMapsForSharePoint/sharepoint-image-add-maps-to-your-sharepoint-pages.jpg",
+        "colorBg": "#00B9FF"
+      },
+      {
+        "title": "Configurez les composants web pour correspondre à votre marque",
+        "desc": "Aucune programmation n’est nécessaire pour utiliser les composants ArcGIS Maps for SharePoint ou accéder aux paramètres du site. Formatez facilement vos cartes pour refléter l’identité et le style de votre entreprise.",
+        "image": "/arcgisMapsForSharePoint/sharepoint-image-configure-web-parts-to-match-brand.jpg",
+        "colorBg": "#0079C1"
+      }
+    ]
+  },
+  "features": {
+    "title": "Une toute nouvelle façon de voir le contenu SharePoint",
+    "items": [
+      {
+        "title": "Localisez-le",
+        "desc": "Grâce au flux de travail ArcGIS Maps Locate, vous pouvez activer vos listes SharePoint pour les utiliser sur une carte. Les listes restent à jour même lorsque vous ajoutez de nouvelles données.",
+        "image": "/arcgisMapsForSharePoint/sharepoint-how-it-works-locate-it.jpg",
+        "cta": {
+          "label": "Comment préparer vos données",
+          "href": "https://doc.arcgis.com/en/maps-for-sharepoint/foundation-server/prepare-data/about-maps-for-sharepoint.htm"
+        }
+      },
+      {
+        "title": "Cartographiez-le",
+        "desc": "Concevez et utilisez des cartes pour visualiser vos données métier sur les pages de site SharePoint à l’aide du composant web ArcGIS Maps. Ajoutez du contenu géographique depuis ArcGIS pour donner du contexte.",
+        "image": "/arcgisMapsForSharePoint/sharepoint-how-it-works-map-it.jpg",
+        "cta": {
+          "label": "Comment ajouter du contenu ArcGIS",
+          "href": "https://doc.arcgis.com/en/maps-for-sharepoint/foundation-server/use-maps/add-data-from-arcgis.htm"
+        }
+      },
+      {
+        "title": "Trouvez rapidement vos documents",
+        "desc": "Glissez-déposez des documents sur une carte pour les géolocaliser à l’aide de l’application ArcGIS Map Search. Retrouvez facilement ces données en cliquant sur l’entité cartographique.",
+        "image": "/arcgisMapsForSharePoint/sharepoint-how-it-works-find-documents-quickly.jpg",
+        "cta": {
+          "label": "Comment étiqueter et rechercher",
+          "href": "https://doc.arcgis.com/en/maps-for-sharepoint/foundation-server/geotag/get-started-with-arcgis-search.htm"
+        }
+      }
+    ]
+  },
+  "msGrid": {
+    "heading": "Apporter la localisation aux produits Microsoft",
+    "desc": "ArcGIS Maps for SharePoint est l’un des moyens par lesquels Esri apporte des données de qualité et des outils spatiaux avancés aux produits Microsoft. Les logiciels ArcGIS aident les utilisateurs de Microsoft à exploiter l’intelligence de localisation dans leurs données métier pour une meilleure perspective et une prise de décision plus éclairée.",
+    "tiles": [
+      {
+        "title": "ArcGIS Maps for Power BI",
+        "titleAlt": "ArcGIS Maps for Power BI",
+        "descAlt": "ArcGIS Maps for Power BI fournit des cartes et des données démographiques directement dans Microsoft Power BI. Accédez à vos données pour créer des cartes révélant motifs et tendances.",
+        "image": "/arcgisMapsForSharePoint/sharepoint-app-arcgis-maps-for-power-bi.jpg",
+        "cta": {
+          "label": "Voir ArcGIS Maps for Power BI",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-microsoft-365%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-power-bi%2Foverview%20arcgis-for-power-bi&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-maps-for-power-bi%2Foverview"
+        }
+      },
+      {
+        "title": "ArcGIS Maps for Office",
+        "titleAlt": "Intégration Office",
+        "descAlt": "ArcGIS Maps for Office vous permet de poser des questions liées à la localisation directement dans Microsoft Excel et de partager vos résultats dans PowerPoint.",
+        "image": "/arcgisMapsForSharePoint/sharepoint-overview-new-maps-for-office.png",
+        "cta": {
+          "label": "Voir ArcGIS Maps for Office",
+          "href": "https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-microsoft-365%2Foverview&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-for-office%2Foverview%20arcgis-for-excel&rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-maps-for-office%2Foverview"
+        }
+      }
+    ]
+  }
+}

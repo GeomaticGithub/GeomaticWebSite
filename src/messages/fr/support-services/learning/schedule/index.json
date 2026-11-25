@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "kicker": "Services de formation",
+    "text": "Le calendrier des sessions est en préparation. En attendant, consultez le catalogue ou demandez-nous les prochaines dates.",
+    "contact": "Demander les prochaines dates",
+    "anchor": "Préparer votre formation",
+    "meanwhileKicker": "En attendant",
+    "meanwhileTitle": "Préparez votre formation"
+  },
+  "hero": {
+    "title": "Calendrier des formations",
+    "description": "Bientôt disponible",
+    "bgGraphic": "/support-services/learning/schedule/schedule.png"
+  }
+}
